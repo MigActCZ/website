@@ -1,0 +1,16 @@
+{{ define "main" }}
+<main>
+  <dl class="attributes">
+    {{ with .Params.registration }}
+    <dt>📝 {{ i18n "registration" }}</dt><dd><a href="{{ . }}">{{ i18n "signup" }}</a></dd>
+    {{ end }}
+    {{ with .OutputFormats.Get "calendar" }}
+    <dt>📅 {{ i18n "calendar" }}</dt><dd><a href="{{ .RelPermalink }}" rel="alternate" type="text/calendar" download>{{ i18n "download" }}</a></dd>
+    {{ end }}
+  </dl>
+  <section>
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+  </section>
+</main>
+{{ end }}

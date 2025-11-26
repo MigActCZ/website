@@ -1,0 +1,42 @@
+{{ define "main" }}
+<main>
+    <h1>{{ .Title }}</h1>
+    <address>
+        <dl id="contacts-container" class="cards">
+            <div>
+                <img src='{{ (.Resources.Get "phone.svg").RelPermalink }}' />
+                <dt>{{ i18n "phone" }}</dt>
+                {{ $val := .Site.Params.contact.phone }}
+                <dd><a href='tel:{{ $val }}'>{{ $val }}</a></dd>
+            </div>
+            <div>
+                <img src='{{ (.Resources.Get "email.svg").RelPermalink }}' />
+                <dt>{{ i18n "email" }}</dt>
+                {{ $val := .Site.Params.contact.email }}
+                <dd><a href='mailto:{{ $val }}'>{{ $val }}</a></dd>
+            </div>
+            <div>
+                <img src='{{ (.Resources.Get "location.svg").RelPermalink }}' />
+                <dt>{{ i18n "address" }}</dt>
+                <dd>{{ .Site.Params.contact.address.office }}</dd>
+                <dd>{{ .Site.Params.contact.address.registration }}</dd>
+            </div>
+            <div>
+                <img src='{{ (.Resources.Get "schedule.svg").RelPermalink }}' />
+                <dt>{{ i18n "schedule" }}</dt>
+                <dd>{{ i18n "appointment" }}</dd>
+            </div>
+            <div>
+                <img src='{{ (.Resources.Get "ico.svg").RelPermalink }}' />
+                <dt>{{ i18n "ico" }}</dt>
+                <dd>{{ .Site.Params.contact.ico }}</dd>
+            </div>
+            <div>
+                <img src='{{ (.Resources.Get "databox.svg").RelPermalink }}' />
+                <dt>{{ i18n "databox" }}</dt>
+                <dd>{{ .Site.Params.contact.databox }}</dd>
+            </div>
+        </dl>
+    </address>
+</main>
+{{ end }}

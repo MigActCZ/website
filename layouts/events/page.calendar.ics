@@ -1,0 +1,12 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//MigAct//gohugo.io//EN
+BEGIN:VEVENT
+UID:{{ .File.UniqueID }}@migact.net
+DTSTAMP:{{ .Lastmod.UTC.Format "20060102T150405Z" }}{{ $start := time.AsTime .Params.dtstart }}
+DTSTART:{{ $start.UTC.Format "20060102T150405Z" }}{{ with .Params.tend }}
+DTEND:{{ $start.UTC.Format "20060102" }}T{{ replace . ":" "" }}Z{{ end }}
+SUMMARY:{{ replaceRE "([,;])" "\\$1" .Title }}{{ with .Params.location }}
+LOCATION:{{ replaceRE "([,;])" "\\$1" . }}{{ end }}
+END:VEVENT
+END:VCALENDAR

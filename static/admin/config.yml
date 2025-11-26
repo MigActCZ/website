@@ -1,0 +1,135 @@
+backend:
+  name: github
+  repo: MigActCZ/website
+  branch: main
+
+media_folder: static/media
+public_folder: /media
+media_libraries:
+  stock_assets:
+    providers: []
+  default:
+    config:
+      slugify_filename: true
+      transformations:
+        raster_image: # original format
+          format: webp # new format, only `webp` is supported
+          quality: 85 # default: 85
+          width: 2048 # default: original size
+          height: 2048 # default: original size
+        svg:
+          optimize: true
+collections:
+  - name: partners
+    label: Partners
+    folder: content/partners
+    path: "{{slug}}/index"
+    create: true
+    slug: "{{slug}}"
+    media_folder: ''
+    public_folder: ''
+    i18n: true
+    fields:
+      - {label: Title, name: title, widget: string, i18n: duplicate }
+      - {label: Logo, name: image, widget: image, choose_url: false, i18n: duplicate }
+      - {label: Link, name: website, widget: string, i18n: duplicate }
+      - {label: Body, name: body, widget: markdown, i18n: true }
+  - name: team
+    label: Team
+    folder: content/team
+    path: "{{slug}}/index"
+    create: true
+    slug: "{{slug}}"
+    media_folder: ''
+    public_folder: ''
+    i18n: true
+    fields:
+      - {label: Name, name: title, widget: string, i18n: duplicate }
+      - {label: Contact, name: contact, widget: string, i18n: duplicate }
+      - {label: Photo, name: image, widget: image, choose_url: false, i18n: duplicate }
+      - {label: Position, name: position, widget: string, i18n: duplicate }
+      - {label: Order, name: weight, widget: number, value_type: int, i18n: duplicate }
+      - {label: Body, name: body, widget: markdown, i18n: true }
+  - name: projects
+    label: Projects
+    folder: content/projects
+    path: "{{slug}}/index"
+    create: true
+    slug: "{{slug}}"
+    media_folder: ''
+    public_folder: ''
+    i18n: true
+    fields:
+      - { label: Title, name: title, widget: string, i18n: true }
+      - { label: Status, name: status, widget: select, options: [ongoing, finished], default: ongoing, i18n: duplicate }
+      - { label: Starts, name: dtstart, widget: datetime, time_format: false, i18n: duplicate}
+      - { label: Ends, name: dtend, widget: datetime, time_format: false, i18n: duplicate }
+      - label: Partners
+        name: partners
+        widget: relation
+        collection: partners
+        value_field: "{{slug}}"
+        display_fields: [title]
+        search_fields: [title]
+        required: false
+        multiple: true
+        i18n: duplicate
+      - { label: Body, name: body, widget: markdown, i18n: true }
+      - label: Gallery
+        name: images
+        widget: image
+        choose_url: false
+        required: false
+        i18n: duplicate
+        multiple: true
+
+  - name: events
+    label: Events
+    folder: content/events
+    path: "{{slug}}/index"
+    create: true
+    slug: "{{year}}-{{month}}_{{slug}}"
+    media_folder: ''
+    public_folder: ''
+    i18n: true
+    fields:
+      - { label: Title, name: title, widget: string, i18n: true }
+      - { label: Featured Image, name: featured, widget: image, choose_url: false, i18n: duplicate }
+      - { label: Starts, name: dtstart, widget: datetime, i18n: duplicate }
+      - { label: Ends, name: tend, widget: datetime, date_format: false, i18n: duplicate }
+      - { label: Location, name: location, widget: string, i18n: duplicate, required: false }
+      - { label: Registration, name: registration, widget: string, required: false, i18n: duplicate }
+      - label: Project
+        name: project
+        widget: relation
+        collection: projects
+        value_field: "{{slug}}"
+        display_fields: [title]
+        search_fields: [title]
+        i18n: duplicate
+      - { label: Body, name: body, widget: markdown, i18n: true }
+
+  - name: news
+    label: News
+    folder: content/news
+    path: "{{slug}}/index"
+    create: true
+    slug: "{{slug}}"
+    media_folder: ''
+    public_folder: ''
+    i18n: true
+    fields:
+      - { label: Title, name: title, widget: string, i18n: true }
+      - { label: Body, name: body, widget: markdown, i18n: true }
+      - label: Attachment
+        name: resources
+        widget: file
+        choose_url: false
+        required: false
+        i18n: duplicate
+        multiple: true
+
+i18n:
+  structure: multiple_files
+  locales: [en, cs]
+  default_locale: en

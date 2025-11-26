@@ -1,0 +1,54 @@
+# Navigation menus
+about: Who are we
+team: Our Team
+events_news: Events & news
+projects: Our projects
+join_us: Get involved
+contact: Get in touch
+
+# Dynamic lists
+ongoing_projects: Ongoing Projects
+finished_projects: Finished Projects
+news: News
+events: Events
+home: Home
+
+# Project
+finished: Finished
+ongoing: Ongoing
+duration: Duration
+partners: Partners
+
+# Event
+date: When
+time: At
+location: Where
+registration: Registration
+tba: To be announced
+signup: Sign up here
+calendar: Calendar
+download: Download
+
+# Footer
+footer_about: About
+footer_events: Attend events
+footer_involve: Get active
+copyright: Copyright %v %s
+motto: We strive towards an inclusive and diverse civil society.
+
+# Contact page
+phone: Phone
+email: Email
+address: Address
+schedule: Office hours
+appointment: By appointment
+ico: ICO
+databox: Data box
+
+# Involvement section
+how_to_get_involved: How do I get involved
+sign_up_newsletter: Sign up to our newsletter
+contact_us: Contact us
+participate_events: Participate in our events
+donate: Donate
+follow_socials: Follow us on socials

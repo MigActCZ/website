@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.LanguageCode }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
+    <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+        <link rel="stylesheet" href='{{ (resources.Get "css/style.css" | resources.Minify).RelPermalink }}'>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    {{ if hugo.IsMultilingual }}
+        {{ range .AllTranslations }}
+            <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .RelPermalink }}">
+        {{ end }}
+    {{ end }}
+    {{ partial "opengraph.html" . }}
+</head>
+<body>
+    {{ $logo := resources.Get "images/migact_logo.svg" }}
+    {{ $facebook := resources.Get "images/facebook-f.svg" }}
+    {{ $instagram := resources.Get "images/instagram.svg" }}
+    {{ $linkedin := resources.Get "images/linkedin-in.svg" }}
+    <header id="site-header">
+        <a href="{{ $.Site.Home.RelPermalink }}" alt='{{ i18n "home" }}'>
+            <img class="logo" src='{{ $logo.RelPermalink }}' alt="{{ $.Site.Title }}">
+        </a>
+        <label id='menu-toggle'>
+            <input type="checkbox" />
+            <svg width="30" height="30">
+                <line class="top" x1="0" y1="5" x2="30" y2="5"/>
+                <line class="mid" x1="0" y1="15" x2="30" y2="15"/>
+                <line class="bot" x1="0" y1="25" x2="30" y2="25"/>
+            </svg>
+        </label>
+        {{- partial "menu.html" (dict "menuID" "main" "page" .) }}
+    </header>
+    {{ block "main" . }}{{ end }}
+    <footer id="site-footer">
+        <div id="footer-content">
+            <a href="{{ $.Site.Home.RelPermalink }}" alt='{{ i18n "home" }}'>
+                <img class="logo" src='{{ $logo.RelPermalink }}' alt="{{ $.Site.Title }}">
+            </a>
+            <p id="motto">{{ i18n "motto" }}</p>
+            <ul id="footer-socials">
+                <li><a href="{{ .Site.Params.socials.facebook}}">
+                    <img class="brand" src='{{ $facebook.RelPermalink }}' alt="Facebook"></a></li>
+                <li><a href="{{ .Site.Params.socials.instagram}}">
+                    <img class="brand" src='{{ $instagram.RelPermalink }}' alt="Instagram"></a></li>
+                <li><a href="{{ .Site.Params.socials.linkedin}}">
+                    <img class="brand" src='{{ $linkedin.RelPermalink }}' alt="LinkedIn"></a></li>
+              </ul>
+        </div>
+        <div id="footer-links">
+        {{ range site.Menus.footer }}
+            <div>
+                <h1>{{ i18n .Identifier }}</h1>
+                <ul>
+                    {{ range .Children }}
+                        <li><a href="{{ .URL }}">{{ i18n .Identifier }}</a></li>
+                    {{ end }}
+                </ul>
+            </div>
+        {{ end }}
+        </div>
+        <p id="footer-copyright">{{ printf (i18n "copyright") now.Year .Site.Title }}</p>
+    </footer>
+</body>
+</html>

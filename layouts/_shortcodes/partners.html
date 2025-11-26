@@ -1,0 +1,15 @@
+{{ with site.GetPage "partners" }}
+<ul class="partners">
+    {{ range .Pages.ByTitle }}
+      <li>
+        <article>
+            {{ $image := .Resources.Get .Params.image  }}
+            <img src="{{ $image.Permalink }}" alt="Logo of {{ .Title }}."/>
+            <h1>{{ .Title }}</h1>
+            <a href="{{ .Params.website }}">{{ .Title }}</a>
+            {{ .Content }}
+        </article>
+      </li>
+    {{ end }}
+</ul>
+{{ end }}

@@ -1,0 +1,54 @@
+# Navigation menus
+about: Kto jsme
+team: Náš tým
+events_news: Události & zprávy
+projects: Naše projekty
+join_us: Přidejte se
+contact: Kontaktujte nás
+
+# Dynamic lists
+ongoing_projects: Probíhající projekty
+finished_projects: Dokončené projekty
+news: Zprávy
+events: Události
+home: Domov
+
+# Project
+finished: Ukoncen
+ongoing: Probiha
+duration: Realizace
+partners: Partneri
+
+# Event
+date: Kdy
+time: O
+location: Kde
+registration: Registrace
+tba: Bude oznameno
+signup: Prihlaste se zde
+calendar: Kalendář
+download: Stáhnout
+
+# Footer
+footer_about: O nás
+footer_events: Přijdte na akci
+footer_involve: Zapojte se
+copyright: Autorska prava vyhrazena %v %s
+motto: Usilujeme o inkluzivní a rozmanitou občanskou společnost.
+
+# Contact page
+phone: Telefon
+email: Email
+address: Adresa
+schedule: Úřední hodiny
+appointment: Po domluvě
+ico: IČO
+databox: Datová schránka
+
+# Involvement section
+how_to_get_involved: Jak se zapojit
+sign_up_newsletter: Přihlásit se k odběru newsletteru
+contact_us: Kontaktujte nás
+participate_events: Zúčastnit se našich akcí
+donate: Přispějte
+follow_socials: Sledujte nás na sociálních sítích

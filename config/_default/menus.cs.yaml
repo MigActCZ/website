@@ -1,0 +1,48 @@
+main:
+  - identifier: about
+    pageRef: /about
+    weight: 10
+  - identifier: team
+    pageRef: /team
+    weight: 20
+  - identifier: events_news
+    pageRef: /events-news
+    weight: 30
+  - identifier: projects
+    pageRef: /projects
+    weight: 40
+  - identifier: join_us
+    pageRef: /join-us
+    weight: 50
+  - identifier: contact
+    pageRef: /contact
+    weight: 60
+footer:
+  - identifier: footer_about
+    weight: 10
+  - identifier: about
+    pageRef: /about
+    parent: footer_about
+    weight: 11
+  - identifier: team
+    pageRef: /team
+    parent: footer_about
+    weight: 12
+  - identifier: footer_involve
+    weight: 20
+  - identifier: join_us
+    pageRef: /join-us
+    parent: footer_involve
+    weight: 21
+  - identifier: footer_events
+    pageRef: /events-news
+    parent: footer_involve
+    weight: 22
+  - identifier: contact
+    pageRef: /contact
+    parent: footer_involve
+    weight: 23
+  - identifier: donate
+    url: https://www.darujme.cz/projekt/1210263
+    parent: footer_involve
+    weight: 24

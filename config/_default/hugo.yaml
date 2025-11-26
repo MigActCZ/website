@@ -1,0 +1,56 @@
+baseURL: https://migact.net/
+defaultContentLanguage: en
+enableGitInfo: true
+enableRobotsTXT: true
+timeZone: Europe/Prague
+disableKinds:
+  - taxonomy
+  - term
+params:
+  contact:
+    phone: +420 774 324 035
+    email: contact@migact.net
+    ico: '19843631'
+    databox: fdxji3v
+    address:
+      office: Revoluční 762/13, Praha 1, 110 00
+      registration: Světova 523/1, Praha 8
+  socials:
+    facebook: https://www.facebook.com/migactinitiative
+    instagram: https://www.instagram.com/mig.act/
+    linkedin: https://www.linkedin.com/company/migact-initiative/
+languages:
+  en:
+    languageName: English
+    languageCode: en-US
+    title: MigAct - Support of Civic Engagement
+    weight: 1
+    params:
+      description: Supporting civic engagement and community building for people with
+        migration backgrounds in Prague
+    permalinks:
+      page:
+        events: /events-news/:slug/
+        news: /events-news/:slug/
+  cs:
+    languageName: Čeština
+    languageCode: cs-CZ
+    title: MigAct - Podpora občanské angažovanosti
+    weight: 2
+    params:
+      description: Podpora občanské angažovanosti a budování komunity pro lidi s migračním
+        pozadím v Praze
+    permalinks:
+      page:
+        events: /udalosti-zpravy/:slug/
+        news: /udalosti-zpravy/:slug/
+        events-news: /udalosti-zpravy/:slug/
+        projects: /projekty/:slug/
+      section:
+        events-news: /udalosti-zpravy/
+        projects: /projekty/
+minify:
+  minifyOutput: true
+outputFormats:
+  calendar:
+    baseName: invitation

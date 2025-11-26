@@ -1,0 +1,11 @@
+<article class="card">
+  <a class="card-title" href="{{ .RelPermalink }}">   
+    <h2>{{ .Title }}</h2>
+  </a>
+  <dl class="attributes">
+    {{ with .Params.registration }}
+    <dt>📝 {{ i18n "registration" }}</dt><dd><a href="{{ . }}">{{ i18n "signup" }}</a></dd>
+    {{ end }}
+  </dl>
+  {{ .Summary }}
+</article>

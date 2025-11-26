@@ -1,0 +1,10 @@
+<article class="member">
+  {{ $photo := .Resources.GetMatch "photo.*" }}
+  {{ if $photo }}
+    <img src='{{ $photo.RelPermalink }}' alt="Portrait of {{ .Title }}"/>
+  {{ end }}
+  <h2>{{ .Title }}</h2>
+  <h6>{{ .Params.position }}</h6>
+  <a href="mailto:{{ .Params.contact }}">{{ .Params.contact }}</a>
+  {{ .Content }}
+</article>
