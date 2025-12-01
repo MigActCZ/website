@@ -5,4 +5,4 @@ image: photo.webp
 position: Board member
 weight: 3
 ---
-Marina is one of the co-founders of MigAct and current Board member. She oversees organizational development and operations. With more than ten years of experience in civil society development and democracy assistance, she has worked on projects across Eastern Europe, the South Caucasus, the Western Balkans, Russia, and Burma. Her long-term focus is on creating capacity-building programs for activists from diverse backgrounds. In addition, she is committed to advocating for civil society development and human rights topics on national and international levels.
+Marina je jednou ze spoluzakladatelek MigActu, jako členka správní rady dohlíží na rozvoj organizace a její provoz. Má více než desetileté zkušenosti s rozvojem občanské společnosti a podporou demokracie, přičemž pracovala na projektech ve východní Evropě, na jižním Kavkaze, na západním Balkáně, v Rusku a Barmě. Její dlouhodobé zaměření spočívá ve vytváření programů na budování kapacit pro aktivisty z různých prostředí. Kromě toho se věnuje advokacii v oblasti rozvoje občanské společnosti a tématům lidských práv na národní i mezinárodní úrovni.
