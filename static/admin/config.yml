@@ -47,7 +47,7 @@ collections:
       - {label: Name, name: title, widget: string, i18n: duplicate }
       - {label: Contact, name: contact, widget: string, i18n: duplicate }
       - {label: Photo, name: image, widget: image, choose_url: false, i18n: duplicate }
-      - {label: Position, name: position, widget: string, i18n: duplicate }
+      - {label: Position, name: position, widget: string, i18n: true }
       - {label: Order, name: weight, widget: number, value_type: int, i18n: duplicate }
       - {label: Body, name: body, widget: markdown, i18n: true }
   - name: projects
@@ -94,7 +94,7 @@ collections:
     i18n: true
     fields:
       - { label: Title, name: title, widget: string, i18n: true }
-      - { label: Featured Image, name: featured, widget: image, choose_url: false, i18n: duplicate }
+      - { label: Featured Image, name: featured, widget: image, choose_url: false, i18n: true }
       - { label: Starts, name: dtstart, widget: datetime, i18n: duplicate }
       - { label: Ends, name: tend, widget: datetime, date_format: false, i18n: duplicate }
       - { label: Location, name: location, widget: string, i18n: duplicate, required: false }
