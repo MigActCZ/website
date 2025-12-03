@@ -88,7 +88,7 @@ collections:
     folder: content/events
     path: "{{slug}}/index"
     create: true
-    slug: "{{year}}-{{month}}_{{slug}}"
+    slug: "{{slug}}"
     media_folder: ''
     public_folder: ''
     i18n: true
