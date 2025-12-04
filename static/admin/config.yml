@@ -25,6 +25,7 @@ collections:
     folder: content/partners
     path: "{{slug}}/index"
     create: true
+    delete: false
     slug: "{{slug}}"
     media_folder: ''
     public_folder: ''
@@ -34,6 +35,19 @@ collections:
       - {label: Logo, name: image, widget: image, choose_url: false, i18n: duplicate }
       - {label: Link, name: website, widget: string, i18n: duplicate }
       - {label: Body, name: body, widget: markdown, i18n: true }
+      - name: build
+        label: Build options
+        widget: object
+        i18n: true
+        fields:
+          - name: list
+            label: State
+            widget: select
+            options:
+              - { label: "Relevant", value: "always" }
+              - { label: "Archived", value: "never" }
+            default: { label: "Relevant", value: "always" }
+            i18n: duplicate
   - name: team
     label: Team
     folder: content/team
@@ -55,6 +69,7 @@ collections:
     folder: content/projects
     path: "{{slug}}/index"
     create: true
+    delete: false
     slug: "{{slug}}"
     media_folder: ''
     public_folder: ''
