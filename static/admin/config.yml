@@ -53,6 +53,7 @@ collections:
     folder: content/team
     path: "{{slug}}/index"
     create: true
+    delete: false
     slug: "{{slug}}"
     media_folder: ''
     public_folder: ''
@@ -64,6 +65,19 @@ collections:
       - {label: Position, name: position, widget: string, i18n: true }
       - {label: Order, name: weight, widget: number, value_type: int, i18n: duplicate }
       - {label: Body, name: body, widget: markdown, i18n: true }
+      - name: build
+        label: Build options
+        widget: object
+        i18n: true
+        fields:
+          - name: list
+            label: State
+            widget: select
+            options:
+              - { label: "Relevant", value: "always" }
+              - { label: "Archived", value: "never" }
+            default: { label: "Relevant", value: "always" }
+            i18n: duplicate
   - name: projects
     label: Projects
     folder: content/projects
