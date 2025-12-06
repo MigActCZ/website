@@ -1,11 +1,14 @@
 :root {
-  --color-text: #4a4a4a;
-  --color-bg: #f9f9f9;
-  --color-primary: #ffb33d;
-  --color-primary-visited: #f37c14;
-  --color-accent: #548feb;
-  --color-muted: #f1f1f1;
-  --logo-height: 3rem;
+  --color-bg: white;
+  --color-red: #F37C14;
+  --color-orange: #FFB33D;
+  --color-teal: #229FA3;
+  --color-blue: #548FEB;
+  --color-text: #1A1A1A;
+  --color-text-light: #6B6B6B;
+  
+  --content-width: 80rem;
+  --logo-height: 2rem;
 }
 
 /* colors {#548feb;#ffb33d;#f37c14;#229fa3;}*/
@@ -27,7 +30,7 @@ body {
   & > header,
   & > main,
   & > footer {
-    padding-inline: max(1rem, calc(50vw - 800px));
+    padding-inline: max(1rem, calc(50% - var(--content-width) / 2));
   }
 
   & > main {
@@ -59,12 +62,16 @@ video {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: radial-gradient(ellipse at right bottom,
-      var(--color-bg),
-      var(--color-primary));
-  border-bottom: 2px solid var(--color-primary);
   position: relative;
   padding-block: calc(var(--logo-height) / 2);
+  border-top: 6px solid;
+  border-image: linear-gradient(
+    to right,
+    var(--color-red) 0 25%,
+    var(--color-orange) 25% 50%,
+    var(--color-teal) 50% 75%,
+    var(--color-blue) 75% 100%
+  ) 1;
 }
 
 #menu-toggle {
@@ -106,21 +113,27 @@ video {
   z-index: 1;
   overflow-y: auto;
   height: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 
   ul {
     list-style-type: none;
-    margin: 0;
+    margin-block: 0;
+  }
+
+
+  a {
+    display: block;
+    padding: .5rem 1rem;
+    color: var(--color-text);
   }
 }
 
 #site-nav {
   padding: 0 1rem;
-  font-size: 1.5rem;
-  font-weight: bold;
 
   a {
-    display: block;
-    padding: 1rem;
     border-bottom: 1px solid black;
   }
 }
@@ -130,32 +143,26 @@ video {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 50px;
+  border: 1.6px solid var(--color-teal);
+  width: fit-content;
+  padding: 0;
+  margin-inline: auto;
 
   a {
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    font-weight: 600;
-    text-transform: uppercase;
-    border: 2px solid transparent;
-    /* prevent layout shift */
+    border-radius: 50px;
+    color: var(--color-teal);
+    font-weight: 700;
   }
 
-  a:hover {
-    background: var(--color-bg);
-    color: var(--color-primary);
-  }
-
-  a.active {
-    background: transparent;
-    color: var(--color-primary);
-    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.05) inset;
-    /* subtle focus ring */
+  a.active, a:hover {
+    background: var(--color-teal);
+    color: var(--color-bg);
   }
 }
 
 /* || FOOTER */
 #site-footer {
-  background: var(--color-primary);
   padding-block-start: calc(var(--logo-height) / 2);
   display: flex;
   flex-flow: column wrap;
@@ -174,12 +181,11 @@ video {
     display: block;
     width: 40px;
     height: 40px;
-    background: var(--color-muted);
     border-radius: 40%;
   }
 
   a:hover {
-    background: var(--color-accent);
+    background: var(--color-teal);
   }
 }
 
@@ -195,9 +201,9 @@ video {
 
 #footer-copyright {
   text-align: center;
-  border-top: 1px solid var(--color-text);
+  border-top: 1px solid var(--color-text-light);
   font-size: 0.5rem;
-  color: var(--color-text);
+  color: var(--color-text-light);
   margin-block-end: 0;
 }
 
@@ -246,7 +252,7 @@ video {
     padding: 1rem 0;
     text-align: center;
     font-weight: 600;
-    color: var(--color-accent);
+    color: var(--color-text);
     box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
     transition: transform 0.14s ease, box-shadow 0.14s ease;
     display: block;
@@ -262,7 +268,7 @@ video {
 }
 
 #donate a {
-  color: var(--color-primary-visited);
+  color: var(--color-red);
 }
 
 #donate,
@@ -302,7 +308,7 @@ video {
 
 .logo {
   display: block;
-  max-height: var(--logo-height);
+  height: var(--logo-height);
 }
 
 /* || CARD GRID */
@@ -325,7 +331,7 @@ video {
 }
 
 .card-title {
-  color: var(--color-accent);
+  color: var(--color-text);
 }
 
 /* || TEAM PAGE */
@@ -422,12 +428,14 @@ video {
     position: revert;
     background: revert;
     height: revert;
-    display: flex;
+    flex-direction: row;
+    gap: 8.75rem;
   }
 
   #site-nav {
     padding: 0;
     display: flex;
+    gap: .25rem;
     font-size: revert;
 
     li > ul {

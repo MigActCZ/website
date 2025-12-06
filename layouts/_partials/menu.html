@@ -19,7 +19,7 @@
           {{- with $v }}
             {{- printf " %s=%q" $k $v | safeHTMLAttr }}
           {{- end }}
-        {{- end -}}>{{ .Language.LanguageName | upper }}</a>
+        {{- end -}}>{{ .Language.Lang | upper }}</a>
       </li>  
     {{ end }}
   </ul>
