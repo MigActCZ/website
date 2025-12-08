@@ -22,7 +22,7 @@
 /* || GENERAL */
 html {
   font-family: "Hanken Grotesk", sans-serif;
-  font-size: clamp(1rem, 0.8rem + 0.8vw, 1.5rem);
+  /* font-size: clamp(1rem, 0.8rem + 0.8vw, 1.5rem); */
   height: 100%;
 }
 
@@ -35,7 +35,7 @@ body {
 
   & > header,
   & > main {
-    padding-inline: max(1rem, calc(50% - var(--content-width) / 2));
+    padding-inline: 1.5rem;
   }
 
   & > main {
@@ -64,7 +64,7 @@ video {
 
 .logo {
   display: block;
-  height: 2rem;
+  height: 2.5rem;
 }
 
 #site-header, #site-footer {
@@ -84,7 +84,7 @@ video {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  padding-block: 1rem;
+  padding-block: 1.25rem;
 }
 
 #menu-toggle {
@@ -474,6 +474,12 @@ video {
 
 /* ============================================     Tablet (768px+)     ============================================ */
 @media (min-width: 768px) {
+  body > header,
+  body > main,
+  body > footer {
+    padding-inline: max(1rem, calc(50% - var(--content-width) / 2));
+  }
+
   #site-footer {
     display: grid;
     grid-template-columns: 2rem 1fr 1fr 1fr 2rem;
@@ -482,7 +488,6 @@ video {
       ". logo links contact ."
       ". logo links contact ."
       ". copyright copyright copyright .";
-    padding-inline: max(1rem, calc(50% - var(--content-width) / 2));
 
     #footer-content{
       grid-area: logo;
