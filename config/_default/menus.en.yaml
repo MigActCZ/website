@@ -18,31 +18,19 @@ main:
     pageRef: /contact
     weight: 60
 footer:
-  - identifier: footer_about
+  - identifier: newsletter
+    pre: images/parchment.svg
+    url: https://2989c05a.sibforms.com/serve/MUIFALW0J6CnxbjAGy7C2dsOFYgIFoOzRy0yACp00IUtr70Zkc5QcABcb87f-bxzTIoxdqxt4-Mxjw30LvYM2g_miXoJJT8cilNA-eSpjz_8HMMEV2ewEaX53I_N6hsAwkrymSEXNrVOdls-n65l5_-0T7NNebwBF1aLKfwyNPvP497Ob1rtAzKJHpkgah4BaxxIIwKe-1GmeQ0a
     weight: 10
-  - identifier: about
-    pageRef: /about
-    parent: footer_about
-    weight: 11
-  - identifier: team
-    pageRef: /team
-    parent: footer_about
-    weight: 12
-  - identifier: footer_involve
-    weight: 20
-  - identifier: join_us
-    pageRef: /join-us
-    parent: footer_involve
-    weight: 21
-  - identifier: footer_events
-    pageRef: /events-news
-    parent: footer_involve
-    weight: 22
-  - identifier: contact
-    pageRef: /contact
-    parent: footer_involve
-    weight: 23
   - identifier: donate
+    pre: images/heart.svg
     url: https://www.darujme.cz/projekt/1210263?locale=en
-    parent: footer_involve
-    weight: 24
+    weight: 20
+  - identifier: projects
+    pre: images/briefcase.svg
+    pageRef: /projects
+    weight: 30
+  - identifier: events_news
+    pre: images/calendar.svg
+    pageRef: /events-news
+    weight: 40

@@ -8,13 +8,13 @@ disableKinds:
   - term
 params:
   contact:
-    phone: +420 774 324 035
+    phone: +420 774 324 035
     email: contact@migact.net
     ico: '19843631'
     databox: fdxji3v
     address:
-      office: Revoluční 762/13, Praha 1, 110 00
-      registration: Světova 523/1, Praha 8
+      office: Revoluční 762/13, Praha 1, 110 00
+      registration: Světova 523/1, Praha 8
   socials:
     facebook: https://www.facebook.com/migactinitiative
     instagram: https://www.instagram.com/mig.act/

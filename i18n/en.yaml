@@ -30,11 +30,9 @@ calendar: Calendar
 download: Download
 
 # Footer
-footer_about: About
-footer_events: Attend events
-footer_involve: Get active
+footer_actions: Quick actions
+newsletter: Newsletter
 copyright: Copyright %v %s
-motto: We strive towards an inclusive and diverse civil society.
 
 # Contact page
 phone: Phone

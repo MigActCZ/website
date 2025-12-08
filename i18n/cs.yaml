@@ -30,11 +30,9 @@ calendar: Kalendář
 download: Stáhnout
 
 # Footer
-footer_about: O nás
-footer_events: Přijdte na akci
-footer_involve: Zapojte se
-copyright: Autorska prava vyhrazena %v %s
-motto: Usilujeme o inkluzivní a rozmanitou občanskou společnost.
+footer_actions: Rychle akce
+newsletter: Newsletter
+copyright: Autorská práva vyhrazena %v %s
 
 # Contact page
 phone: Telefon
