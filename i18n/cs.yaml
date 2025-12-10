@@ -6,6 +6,9 @@ projects: Naše projekty
 join_us: Přidejte se
 contact: Kontaktujte nás
 
+# Homepage
+learn: Learn more
+
 # Dynamic lists
 ongoing_projects: Probíhající projekty
 finished_projects: Dokončené projekty

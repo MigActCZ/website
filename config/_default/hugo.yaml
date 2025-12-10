@@ -54,3 +54,10 @@ minify:
 outputFormats:
   calendar:
     baseName: invitation
+markup:
+  goldmark:
+    parser:
+      wrapStandAloneImageWithinParagraph: false
+      attribute:
+        block: true
+        title: true

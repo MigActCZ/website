@@ -1,17 +1,17 @@
 {{ define "main" }}
 <main id="home">
+  <section id="about">
+      {{- .Content -}}
+      {{ with resources.Get "images/about.avif" }}
+        <img id="hero" src="{{ .RelPermalink }}"/>
+      {{ end }}
+      <menu>
+        <li><a id="cta" href='{{ .RelRef (dict "path" "join-us") }}'>{{ i18n "join_us" }}</a></li>
+        <li><a href='{{ .RelRef (dict "path" "about") }}'>{{ i18n "learn" }}</a></li>
+      </menu>
+  </section>
   {{ with .Page.GetPage "/home-sections" }}
     {{ $page := . }}
-    {{ with .Resources.Get "about.md" }}
-  <section id="about">
-      {{ with $page.Resources.Get .Params.image }}
-    <img src="{{ .RelPermalink }}"/>
-      {{ end }}
-    <div>
-      {{ .Content }}
-    </div>
-  </section>
-    {{ end }}
     {{ with .Resources.Match "activities/*" }}
   <section id="activities">
     {{ $page.Content }}
