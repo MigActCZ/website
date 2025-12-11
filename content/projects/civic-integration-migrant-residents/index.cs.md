@@ -1,7 +1,8 @@
 ---
 title: Cesty k občanské integraci obyvatel s migračním původem
 status: ongoing
-dtstart: '2025-01-01'
+date: 2025-03-18
+dtstart: '2025-04-01'
 dtend: '2025-12-31'
 partners:
   - mc-praha-7

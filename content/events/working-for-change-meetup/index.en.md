@@ -1,5 +1,6 @@
 ---
 title: Meetup – Working for change in your country of origin, while also making a difference where you live
+date: 2025-03-14
 dtstart: 2025-03-21T17:30:00
 tend: 19:30:00
 location: ''

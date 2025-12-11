@@ -1,6 +1,7 @@
 ---
 title: Jak budovat komunity posilující sounáležitost a aktivní občanství?
 featured: featured.webp
+date: 2025-09-04
 dtstart: 2025-09-29T17:30:00
 tend: 20:00:00
 location: Dům U Kamenného zvonu, Staroměstské náměstí 605/13, 11000 Praha 1

@@ -1,6 +1,7 @@
 ---
 title: City for All – Support for Civic Participation in an Intercultural Environment
 status: finished
+date: 2024-03-13
 dtstart: 2024-05-01
 dtend: 2024-12-31
 partners:

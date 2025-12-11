@@ -1,5 +1,6 @@
 ---
 title: Meetup – Jak se angažovat v důležitých tématech ve své zemi původu a zároveň se zapojit do témat v zemi, kde žiješ
+date: 2025-03-14
 dtstart: 2025-03-21T17:30:00
 tend: 19:30:00
 location: ''

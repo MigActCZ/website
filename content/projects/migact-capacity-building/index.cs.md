@@ -1,8 +1,9 @@
 ---
 title: Posílení kapacit MigAct
-status: ongoing
-dtstart: '2025-11-21'
-dtend: '2025-11-21'
+status: finished
+date: 2024-03-13
+dtstart: '2024-06-01'
+dtend: '2025-03-31'
 partners:
   - amiga-zs
   - friendship-prague

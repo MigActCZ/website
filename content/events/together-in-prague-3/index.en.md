@@ -1,6 +1,7 @@
 ---
 title: Together in Prague 3
 featured: featured.webp
+date: 2025-10-01
 dtstart: 2025-10-23T17:30:00
 tend: 19:00:00
 location: Krenovka, Husitská 22, Prague 3

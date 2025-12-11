@@ -1,6 +1,7 @@
 ---
 title: Metropole všech – podpora občanské participace v interkulturním prostředí
 status: finished
+date: 2024-03-13
 dtstart: 2024-05-01
 dtend: 2024-12-31
 partners:
