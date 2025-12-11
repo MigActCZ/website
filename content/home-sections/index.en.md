@@ -1,9 +1,6 @@
 ---
 headless: true
 ---
-# What we do
-Discover our diverse programs designed to empower, connect, and support our community members.
-
 {{<cards>}}
 {{<card title="MigAct Meetups" image="/meetups.webp" icon="images/people.svg">}}
 Connect with locals, civic initiatives, NGOs, and government institutions. Take the time to listen, reflect, and gain inspiration. Strengthen your network, exchange knowledge and ideas, and support one another.
