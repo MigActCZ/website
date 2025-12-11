@@ -10,7 +10,7 @@ Volunteers help us organize community gatherings, support during events, take ph
 Your time and skills can make a real difference — and you’ll meet great people along the way. Get in touch to learn more about current opportunities.
 
 ## Come to Our Events
-Our community gatherings, workshops, and informal meet-ups are open to everyone — whether you’ve just arrived in Prague or have lived here your whole life. Come meet people, share stories, and find out how you can get involved. See upcoming [events](events-news).
+Our community gatherings, workshops, and informal meet-ups are open to everyone — whether you’ve just arrived in Prague or have lived here your whole life. Come meet people, share stories, and find out how you can get involved. See upcoming [events](events).
 
 ## Become Our Partner and Co-Create With Us
 We work with local institutions, NGOs, community centers, and initiatives to build stronger, more connected neighborhoods. If you represent an organization — or are an individual interested in collaboration, sponsorship, or co-creating projects — we’d love to hear from you. 

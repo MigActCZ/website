@@ -1,0 +1,10 @@
+{{ define "main" }}
+<main id="event-news">
+  <h2>{{ i18n "events" }}</h2>
+  <nav class="card-grid">
+    {{ range .RegularPages }}
+        {{ .Render "view_event" }}
+    {{ end }}
+  </nav>
+</main>
+{{ end }}

@@ -5,8 +5,8 @@ main:
   - identifier: team
     pageRef: /team
     weight: 20
-  - identifier: events_news
-    pageRef: /events-news
+  - identifier: events
+    pageRef: /events
     weight: 30
   - identifier: projects
     pageRef: /projects
@@ -30,7 +30,7 @@ footer:
     pre: images/briefcase.svg
     pageRef: /projects
     weight: 30
-  - identifier: events_news
+  - identifier: events
     pre: images/calendar.svg
-    pageRef: /events-news
+    pageRef: /events
     weight: 40

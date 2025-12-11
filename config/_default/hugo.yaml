@@ -28,10 +28,6 @@ languages:
     params:
       description: Supporting civic engagement and community building for people with
         migration backgrounds in Prague
-    permalinks:
-      page:
-        events: /events-news/:slug/
-        news: /events-news/:slug/
   cs:
     languageName: Čeština
     languageCode: cs-CZ
@@ -42,12 +38,8 @@ languages:
         pozadím v Praze
     permalinks:
       page:
-        events: /udalosti-zpravy/:slug/
-        news: /udalosti-zpravy/:slug/
-        events-news: /udalosti-zpravy/:slug/
         projects: /projekty/:slug/
       section:
-        events-news: /udalosti-zpravy/
         projects: /projekty/
 minify:
   minifyOutput: true
