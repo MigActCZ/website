@@ -2,7 +2,7 @@
 headless: true
 ---
 {{<cards>}}
-{{<card title="MigAct Meetups" image="/meetups.webp" icon="images/people.svg">}}
+{{<card title="MigAct Networking" image="/meetups.webp" icon="images/people.svg">}}
 Connect with locals, civic initiatives, NGOs, and government institutions. Take the time to listen, reflect, and gain inspiration. Strengthen your network, exchange knowledge and ideas, and support one another.
 {{</card>}}
 {{<card title="Learning Hubs" image="/learning_hubs.webp" icon="images/book.svg">}}

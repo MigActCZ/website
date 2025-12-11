@@ -2,7 +2,7 @@ main:
   - identifier: about
     pageRef: /about
     weight: 10
-  - identifier: team
+  - identifier: our_team
     pageRef: /team
     weight: 20
   - identifier: events

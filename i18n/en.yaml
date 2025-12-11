@@ -1,9 +1,10 @@
 # Navigation menus
-about: Who are we
-team: Our Team
-events_news: Events & news
-projects: Our projects
-join_us: Get involved
+about: About us
+our_team: Our Team
+our_partners: Our partners and donors
+events: Events
+projects: Projects
+join_us: Join us
 contact: Get in touch
 
 # Footer
@@ -37,7 +38,6 @@ instagram_text: Follow our stories
 ongoing_projects: Ongoing Projects
 finished_projects: Finished Projects
 news: News
-events: Events
 home: Home
 
 # Project

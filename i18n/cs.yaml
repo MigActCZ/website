@@ -1,9 +1,10 @@
 # Navigation menus
-about: Kto jsme
-team: Náš tým
-events_news: Události & zprávy
-projects: Naše projekty
-join_us: Přidejte se
+about: O nás
+our_team: Náš tým
+our_partners: Naši partneři a dárci
+events: Akce
+projects: Projekty
+join_us: Přidejte se k nám
 contact: Kontaktujte nás
 
 # Footer
@@ -13,7 +14,7 @@ copyright: Autorská práva vyhrazena %v %s
 # Homepage
 learn: Learn more
 # Activities section
-what_we_do: What we do
+what_we_do: Co děláme
 what_we_do_text: Discover our diverse programs designed to empower, connect, and support our community members.
 # Involvement section
 how_to_get_involved: How do I get involved
@@ -37,7 +38,6 @@ instagram_text: Follow our stories
 ongoing_projects: Probíhající projekty
 finished_projects: Dokončené projekty
 news: Zprávy
-events: Události
 home: Domov
 
 # Project

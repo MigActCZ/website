@@ -1,8 +1,7 @@
 ---
 title: MigAct - Support of Civic Engagement
-description: Supporting civic engagement for people with migration backgrounds in Prague
 ---
-**MigAct is a community-driven organization based in Prague, committed to fostering an inclusive environment where residents—whether of migration backgrounds or Czech-born—can actively participate in civic life.**
+**MigAct je komunitní organizace, jejímž cílem je vytvářet inkluzivní prostředí, ve kterém se může každý plně zapojit do občanského života.**
 {#featured}
 
-We create collaborative spaces, provide educational activities, and offer multilingual resources to meet the practical needs of individuals and organizations. We engage in reducing barriers to full civic participation, guided by the values of cooperation, equity, responsibility, and active participation. As a diverse community of individuals, organizations, and institutions, we believe in co-creating and actively involving our supporters in our development and programs.
+Nabízíme vzdělávací programy, budujeme prostory pro spolupráci a poskytujeme praktické vícejazyčné zdroje, které pomáhají naplňovat potřeby jednotlivců i organizací. Kromě poskytování služeb posilujeme kapacity nevládních organizací a komunitních lídrů, aby mohli lépe podporovat rozmanité komunity. Naše práce se řídí hodnotami spolupráce, rovnosti a aktivní účasti, věříme ve společné nacházení řešení spolu s naší komunitou a partnery.
