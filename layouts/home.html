@@ -10,24 +10,9 @@
         <li><a href='{{ .RelRef (dict "path" "about") }}'>{{ i18n "learn" }}</a></li>
       </menu>
   </section>
-  {{ with .Page.GetPage "/home-sections" }}
-    {{ $page := . }}
-    {{ with .Resources.Match "activities/*" }}
   <section id="activities">
-    {{ $page.Content }}
-    <dl class="cards">
-      {{ range . }}
-      <div>
-        {{ with $page.Resources.Get .Params.image }}
-        <img src="{{ .RelPermalink }}"/>
-        {{ end }}
-        <dt>{{ .Title }}</dt>
-        <dd>{{ .Content }}</dd>
-      </div>
-      {{ end }}
-    </dl>
+    {{ (.Page.GetPage "/home-sections").Content }}
   </section>
-    {{ end }}
   <section id="involvement">
     <h1>{{ i18n "how_to_get_involved" }}</h1>
       <nav id="actions" aria-label="Ways to get involved">
@@ -52,6 +37,5 @@
         </ul>
       </nav>
   </section>
-  {{ end }} 
 </main>
 {{ end }}

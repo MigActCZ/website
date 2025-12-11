@@ -65,8 +65,9 @@ menu {
 
 img,
 picture,
-video {
+video, svg {
   max-width: 100%;
+  display: block;
 }
 
 :is(#site-header, #site-footer) a {
@@ -367,15 +368,49 @@ video {
 #activities {
   text-align: center;
 
-  img {
-    height: 8rem;
-    margin: 1rem auto;
-    display: block;
+  .card {
+    text-align: start;
+    position: relative;
+    border-radius: 2.5rem;
+    background: var(--color-bg);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.10), 0 4px 6px -4px rgba(0, 0, 0, 0.10);
+    overflow: hidden;
+
+    .content {
+      padding: 2rem;
+    }
+
+    &:nth-child(1) > .icon {
+      background-color: var(--color-red);
+    }
+
+    &:nth-child(2) > .icon {
+      background-color: var(--color-teal);
+    }
+
+    &:nth-child(3) > .icon {
+      background-color: var(--color-blue);
+    }
+
+    &:nth-child(4) > .icon {
+      background-color: var(--color-orange);
+    }
   }
 
-  .cards > div {
-    margin: 0 1rem;
-    flex: 1;
+  div.icon {
+    display: block;
+    width: 1.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 1rem;
+    border-radius: 50%;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.10), 0 4px 6px -4px rgba(0, 0, 0, 0.10);
+    color: var(--color-bg);
+  }
+
+  svg {
+    display: block;
   }
 }
 
@@ -397,7 +432,7 @@ video {
 
   a {
     text-decoration: none;
-    background: white;
+    background: var(--color-bg);
     border-radius: 12px;
     padding: 1rem 0;
     text-align: center;
@@ -467,7 +502,7 @@ video {
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.5s ease-in, box-shadow 0.5s ease-in;
-  padding: 1rem;
+  /* padding: 1rem;  TODO*/
 }
 
 .card:hover {
@@ -522,6 +557,21 @@ video {
     width: 200px;
     height: auto;
     margin: 20px;
+  }
+}
+
+/* || Utility */
+.scroll-row {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 75%;
+  gap: 2rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  scroll-snap-type: x mandatory;
+
+  & > .card {
+    scroll-snap-align: start;
   }
 }
 
@@ -603,8 +653,14 @@ video {
 
 /* ============================================     Desktop (1024px+)     ============================================ */
 @media (min-width: 1024px) {
-  #activities .cards {
-    display: flex;
+  #activities {
+
+    dl {
+      padding-inline: 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
   }
 
   #menu-toggle {
