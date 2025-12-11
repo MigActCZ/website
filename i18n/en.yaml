@@ -35,16 +35,16 @@ facebook_text: Join our community
 instagram_text: Follow our stories
 
 # Dynamic lists
-ongoing_projects: Ongoing Projects
-finished_projects: Finished Projects
 news: News
 home: Home
 
 # Project
+status: Status
 finished: Finished
 ongoing: Ongoing
-duration: Duration
+timeline: Timeline
 partners: Partners
+linked_events: Linked events
 
 # Event
 date: When

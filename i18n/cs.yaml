@@ -35,16 +35,16 @@ facebook_text: Join our community
 instagram_text: Follow our stories
 
 # Dynamic lists
-ongoing_projects: Probíhající projekty
-finished_projects: Dokončené projekty
 news: Zprávy
 home: Domov
 
 # Project
-finished: Ukoncen
-ongoing: Probiha
-duration: Realizace
-partners: Partneri
+status: Status
+finished: Ukončen
+ongoing: Probíha
+timeline: Realizace
+partners: Partneři
+linked_events: Akce projektu
 
 # Event
 date: Kdy

@@ -1,47 +1,50 @@
 {{ define "main" }}
-<main>
-  <dl class="attributes">
-    {{ with .Params.status }}
-      <dt>Status</dt><dd>{{ i18n . }}</dd>
-    {{ end }}
-    {{ if .Params.dtstart }}
-      <dt>{{ i18n "duration" }}</dt><dd>{{.Params.dtstart}} -- {{.Params.dtend}}</dd>
-    {{ end }}
-    {{ with .Params.partners }}
-    {{ $partnersPage := site.GetPage "partners" }}
-      <dt>{{ i18n "partners" }}</dt>
-      <dd class="partners">
-      {{ range . }}
-          {{ $partnerPage := $partnersPage.GetPage . }}
-          {{ $image := $partnerPage.Resources.GetMatch "logo.*" }}
-          <img src="{{ $image.Permalink }}" alt="{{ $partnerPage.Title }}">
+<main id="project">
+    <h1>{{ .Title }}</h1>
+    <dl class="attributes">
+      <div><dt>{{ i18n "status" }}</dt><dd>{{ i18n .Params.status }}</dd></div>
+      <div><dt>{{ i18n "timeline" }}</dt><dd>{{ .Params.dtstart | dateFormat "2 Jan 2006" }} - {{ .Params.dtend | dateFormat "2 Jan 2006" }}</dd></div>
+      {{ with .Params.partners }}
+      <div>
+      {{ $partnersPage := site.GetPage "partners" }}
+        <dt>{{ i18n "partners" }}</dt>
+        <div>
+          {{ range . }}
+          <dd class="partners">
+            {{ $partnerPage := $partnersPage.GetPage . }}
+            {{ $image := $partnerPage.Resources.GetMatch "logo.*" }}
+            <img class="partner-logo" src="{{ $image.Permalink }}" alt="Logo of {{ $partnerPage.Title }}">
+          </dd>
+          {{ end }}
+        </div>
+      </div>
       {{ end }}
-      </dd>
-    {{ end }}
+    </dl>
+    {{ .Content }}
     {{ $events := site.GetPage "events" }}
     {{ $key := path.Base $.Path }}
     {{ $related := where $events.RegularPages "Params.project" $key }}
     {{ with $related }}
-      <dt>Events</dt>
-      {{ range . }}
-        <dd><a href="{{ .Permalink }}">{{ .Title }}</a></dd>
-      {{ end }}
-    {{ end }}
-  </dl>
-  <section>
-    <h1>{{ .Title }}</h1>
-    {{ .Content }}
-    {{ with .Params.images }}
-    <section>
-      <h2>Gallery</h2>
-      <div class="gallery">
+      <section>
+      <h2>{{ i18n "linked_events" }}</h2>
         {{ range . }}
-        {{ $image := $.Resources.Get . }}
-        <img src="{{ $image.Permalink }}" alt="{{ . }}">
+          <article>
+            <div>{{ .Params.dtstart | dateFormat "2 Jan 2006" }}</div>
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+          </article>
         {{ end }}
-      </div>
-    </section>
+      </section>
     {{ end }}
-  </section>
+    {{ with .Params.images }}
+      <section>
+        <h2>Gallery</h2>
+        <div class="gallery">
+          {{ range . }}
+          {{ $image := $.Resources.Get . }}
+          <img src="{{ $image.Permalink }}" alt="{{ . }}">
+          {{ end }}
+        </div>
+      </section>
+    {{ end }}
 </main>
 {{ end }}

@@ -1,27 +1,10 @@
 {{ define "main" }}
+<h1 id="projects-title">{{ .Title }}</h1>
 <main id="projects">
-    <!-- Ongoing Projects -->
-    {{ with where .Pages ".Params.status" "ongoing" }}
-    <section id="ongoing" class="projects">
-      <h2>{{ i18n "ongoing_projects" | default "Ongoing Projects" }}</h2>
-      <div class="card-grid">
-        {{ range . }}
-            {{ .Render "view_project" }}
-        {{ end }}
-      </div>
-    </section>
+  <nav class="card-grid">
+    {{ range .RegularPages }}
+        {{ .Render "view_project" }}
     {{ end }}
-
-    <!-- Finished Projects -->
-    {{ with where .Pages ".Params.status" "finished" }}
-    <section id="finished" class="projects">
-      <h2>{{ i18n "finished_projects" | default "Finished Projects" }}</h2>
-      <div class="card-grid">
-        {{ range . }}
-            {{ .Render "view_project" }}
-        {{ end }}
-      </div>
-    </section>
-    {{ end }}
+  </nav>
 </main>
 {{ end }}

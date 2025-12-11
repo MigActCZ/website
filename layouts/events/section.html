@@ -1,6 +1,6 @@
 {{ define "main" }}
-<main id="event-news">
-  <h2>{{ i18n "events" }}</h2>
+<main id="events">
+  <h1>{{ .Title }}</h1>
   <nav class="card-grid">
     {{ range .RegularPages }}
         {{ .Render "view_event" }}

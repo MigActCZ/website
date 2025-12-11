@@ -1,20 +1,10 @@
 <article class="card">
-  <a class="card-title" href="{{ .RelPermalink }}">   
-    <h2>{{ .Title }}</h2>
+  <div class="attributes">
+    <div class="status">{{ i18n .Params.status }}</div>
+    <div class="dates">{{ .Params.dtstart | dateFormat "2 Jan 2006" }} - {{ .Params.dtend | dateFormat "2 Jan 2006" }}</div>
+  </div>
+  <a class="card-title" href="{{ .RelPermalink }}">
+    <h1>{{ .Title }}</h1>
   </a>
-  <dl class="attributes">
-    {{ with .Params.status }}
-      <dt>Status</dt><dd>{{ i18n . }}</dd>
-    {{ end }}
-    {{ if .Params.start_date }}
-      <dt>{{ i18n "duration" }}</dt><dd>{{.Params.start_date}} -- {{.Params.end_date}}</dd>
-    {{ end }}
-    {{ with .Params.partners }}
-      <dt>{{ i18n "partners" }}</dt>  
-      {{ range . }}
-        <dd>{{ . }}</dd>
-      {{ end }}
-    {{ end }}
-  </dl>
-  {{ .Summary }}
+  <div class="partners">{{ delimit .Params.partners ", " }}</div>
 </article>

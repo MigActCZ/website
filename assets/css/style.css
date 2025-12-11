@@ -35,12 +35,22 @@ body {
 
   & > header,
   & > main,
-  & > footer {
+  & > footer,
+  & > h1 {
     padding-inline: 1.5rem;
   }
 
   & > main {
+    padding-block: 2rem;
+  }
+
+  & > header + * {
     border-top: thin solid var(--color-teal);
+  }
+
+  & > h1 {
+    margin: 0;
+    padding-block: 15rem 2.5rem;
   }
 }
 
@@ -74,6 +84,10 @@ video, svg {
 nav a {
   text-decoration: none;
   color: var(--color-text);
+}
+
+dd {
+  margin-inline-start: 0;
 }
 
 .logo {
@@ -361,9 +375,7 @@ nav a {
 #activities {
   .card {
     position: relative;
-    border-radius: 2.5rem;
     background: var(--color-bg);
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.10), 0 4px 6px -4px rgba(0, 0, 0, 0.10);
     overflow: hidden;
 
     .content {
@@ -373,10 +385,6 @@ nav a {
     dt {
       margin-block-end: 1rem;
       font-size: 1.5rem;
-    }
-
-    dd {
-      margin-inline-start: 0;
     }
 
     &:nth-child(1) > .icon {
@@ -470,19 +478,85 @@ nav a {
 }
 
 .card {
-  border-radius: 10px;
+  border-radius: 2rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.5s ease-in, box-shadow 0.5s ease-in;
+  transition: transform 0.25s ease-in, box-shadow 0.25s ease-in;
   /* padding: 1rem;  TODO*/
-}
-
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
 .card-title {
   color: var(--color-text);
+}
+#projects-title{
+  background: linear-gradient(.25turn, var(--color-orange), 30%, var(--color-bg-light), 60%, var(--color-blue))
+}
+
+#projects {
+  & > h1 {
+    font-size: 3rem;
+    padding: 15rem 0 2.5rem;
+  }
+
+  .card {
+    padding: 2.5rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+
+    background-color: #EAEAEA;
+  }
+
+  .attributes {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .status {
+    background-color: #B2B2B2;
+    padding: .5rem 1.25rem;
+    border-radius: 2.5rem;
+  }
+  .dates {
+    flex: 1;
+  }
+  .card-title {
+    flex: 1;
+  }
+}
+
+#project {
+  & > h1 {
+    font-size: 3.5rem;
+    font-weight: normal;
+  }
+
+  & > .attributes {
+    padding: 2.5rem;
+    border-radius: 1rem;
+    background: linear-gradient(135deg, rgba(34, 159, 163, 0.08) 0%, rgba(84, 143, 235, 0.08) 100%);
+
+    display: grid;
+    grid-template: min-content 1fr / 1fr 1fr;
+    gap: 2rem;
+
+    dt {
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-block-end: .4rem;
+    }
+
+    .partner-logo {
+      width: 10rem;
+      height: auto;
+      background-color: var(--color-bg);
+    }
+  }
+
+  & > p {
+    font-size: 1.125rem;
+  }
 }
 
 /* || TEAM PAGE */
@@ -504,26 +578,19 @@ nav a {
 }
 
 /* || Dynamic pages */
-.attributes {
-  flex-shrink: 0;
-}
-
-.attributes dt::after {
-  content: ":";
-}
 
 .gallery {
-  display: flex;
+  display: grid;
   gap: .5rem;
-  flex-wrap: wrap;
+  grid-template-columns: repeat(6, 1fr);
 
   img {
-    flex: 0 1 30%;
-    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
   }
 }
 
-.partners {
+#partners {
   img {
     width: 200px;
     height: auto;
@@ -550,7 +617,8 @@ nav a {
 @media (min-width: 768px) {
   body > header,
   body > main,
-  body > footer {
+  body > footer,
+  body > h1  {
     padding-inline: max(1rem, calc(50% - var(--content-width) / 2));
   }
 
@@ -626,15 +694,15 @@ nav a {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .card-grid {
+  #projects .card-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 /* ============================================     Desktop (1024px+)     ============================================ */
 @media (min-width: 1024px) {
-
   .scroll-row {
+    gap: 1rem 2rem; 
     grid-auto-flow: unset;
     grid-template-columns: 1fr 1fr;
 
@@ -681,12 +749,20 @@ nav a {
   }
 
   .card-grid {
+    gap: 1rem 2rem;
+  }
+
+  #events .card-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  main:has(> .attributes) {
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 5%;
+  .card {
+    margin-block: .5rem;
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    }
+  /* Hover effect and space to hover. Grids have smaller gaps to accomodate. */
   }
 }
