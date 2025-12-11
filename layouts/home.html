@@ -23,7 +23,7 @@
       <p>{{ i18n "how_to_get_involved_text" }}</p>
     </header>
     <nav id="actions" aria-label="Ways to get involved">
-      <ul>
+      <menu>
         <li id="donate">
           {{ $donation_link := "https://www.darujme.cz/projekt/1210263" }}
           {{ if eq .Language.Lang "en" }}
@@ -46,7 +46,7 @@
               {{ i18n "contact_us" }}</a>
             <p>{{ i18n "contact_us_text" }}</p>
           </li>
-      </ul>
+      </menu>
     </nav>
   </section>
   <section id="stay_connected">
@@ -55,14 +55,14 @@
       <p>{{ i18n "stay_connected_text" }}</p>
     </header>
     <nav id="socials">
-      <ul>
+      <menu>
         <li><a href="{{ .Site.Params.socials.linkedin}}">LinkedIn</a>
           <p>{{ i18n "linked_in_text" }}</p></li>
         <li><a href="{{ .Site.Params.socials.facebook}}">Facebook</a>
           <p>{{ i18n "facebook_text" }}</p></li>
         <li><a href="{{ .Site.Params.socials.instagram}}">Instagram</a>
           <p>{{ i18n "instagram_text" }}</p></li>
-      </ul>
+      </menu>
     </nav>
 
   </section>

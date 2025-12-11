@@ -3,11 +3,11 @@
 
 {{- with index site.Menus $menuID }}
 <nav id="nav-panel" aria-label="Main navigation">
-  <ul id="site-nav">
+  <menu id="site-nav">
     {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
-  </ul>
+  </menu>
   {{- with $page }}
-  <ul id="lang-switcher">
+  <menu id="lang-switcher">
     {{ range $index, $translation := .AllTranslations }}
     <li>
       {{- $attrs := dict "href" .RelPermalink "hreflang" .Language.Lang }}
@@ -22,7 +22,7 @@
         {{- end -}}>{{ .Language.Lang | upper }}</a>
       </li>  
     {{ end }}
-  </ul>
+  </menu>
   {{- end }}
 </nav>
 {{- end }}
@@ -46,9 +46,9 @@
         {{- end -}}
       >{{ $name }}</a>
       {{- with .Children }}
-        <ul>
+        <menu>
           {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
-        </ul>
+        </menu>
       {{- end }}
     </li>
   {{- end }}
