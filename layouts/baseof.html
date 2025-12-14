@@ -18,13 +18,9 @@
     {{ partial "opengraph.html" . }}
 </head>
 <body>
-    {{ $logo := resources.Get "images/migact_logo.svg" }}
-    {{ $facebook := resources.Get "images/facebook.svg" }}
-    {{ $instagram := resources.Get "images/instagram.svg" }}
-    {{ $linkedin := resources.Get "images/linkedin.svg" }}
     <header id="site-header">
         <a href="{{ $.Site.Home.RelPermalink }}" alt='{{ i18n "home" }}'>
-            <svg viewbox="0 0 320 96" class="logo"><use href="{{ $logo.RelPermalink }}"/></svg>
+            {{- partial "inline-svg" "logos/migact" -}}
         </a>
         <label id='menu-toggle'>
             <input type="checkbox" />
@@ -40,15 +36,15 @@
     <footer id="site-footer">
         <nav id="footer-content">
             <a href="{{ $.Site.Home.RelPermalink }}" alt='{{ i18n "home" }}'>
-                <svg viewbox="0 0 320 96" class="logo"><use href="{{ $logo.RelPermalink }}"/></svg>
+                {{- partial "inline-svg" "logos/migact" -}}
             </a>
             <menu id="footer-socials">
                 <li><a href="{{ .Site.Params.socials.linkedin}}">
-                    <svg viewbox="0 0 32 32" class="brand"><use href='{{ $linkedin.RelPermalink }}'/></svg></a></li>
+                    {{- partial "inline-svg" "logos/linkedin" -}}</a></li>
                 <li><a href="{{ .Site.Params.socials.facebook}}">
-                    <svg viewbox="0 0 32 32" class="brand"><use href='{{ $facebook.RelPermalink }}'/></svg></a></li>
+                    {{- partial "inline-svg" "logos/facebook" -}}</a></li>
                 <li><a href="{{ .Site.Params.socials.instagram}}">
-                    <svg viewbox="0 0 32 32" class="brand"><use href='{{ $instagram.RelPermalink }}'/></svg></a></li>
+                    {{- partial "inline-svg" "logos/instagram" -}}</a></li>
               </menu>
         </nav>
         <nav id="footer-links">
@@ -56,24 +52,24 @@
             <menu>
                 {{ range site.Menus.footer }}
                 <li><a href="{{ .URL }}">
-                    <svg viewbox="0 0 20 20"><use href='{{ (resources.Get .Pre).RelPermalink }}'/></svg>
+                    {{- partial "inline-svg" .Pre -}}
                     {{ i18n .Identifier }}</a></li>
                 {{ end }}
             </menu>
         </nav>
-        <nav id="footer-contacts">
+        <address id="footer-contacts">
             <h4>{{ i18n "contact_us" }}</h4>
             <menu>
-                <li><svg viewbox="0 0 1 1"><use href='{{ (resources.Get "images/pin.svg").RelPermalink }}'/></svg>
-                    <a>{{- .Site.Params.contact.address.office -}}</a></li>
-                <li><svg viewbox="0 0 1 1"><use href='{{ (resources.Get "images/envelope.svg").RelPermalink }}'/></svg>
-                    {{ $val := .Site.Params.contact.email }}
-                    <a href='mailto:{{ $val }}'>{{ $val }}</a></li>
-                <li><svg viewbox="0 0 1 1"><use href='{{ (resources.Get "images/phone.svg").RelPermalink }}'/></svg>
-                    {{ $val := .Site.Params.contact.phone }}
-                    <a href='tel:{{ $val }}'>{{ $val }}</a></li>
+                <li><a>{{- partial "inline-svg" "icons/map-pin" -}}
+                    {{- .Site.Params.contact.address.office -}}</a></li>
+                <li>{{ $val := .Site.Params.contact.email }}
+                    <a href='mailto:{{ $val }}'>{{- partial "inline-svg" "icons/mail" -}}
+                        {{ $val }}</a></li>
+                <li>{{ $val := .Site.Params.contact.phone }}
+                    <a href='tel:{{ $val }}'>{{- partial "inline-svg" "icons/phone" -}}
+                        {{ $val }}</a></li>
             </menu>
-        </nav>
+        </address>
         <p id="footer-copyright">{{ printf (i18n "copyright") now.Year .Site.Title }}</p>
     </footer>
 </body>

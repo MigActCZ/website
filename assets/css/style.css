@@ -15,6 +15,11 @@
   --color-blue-bg: color-mix(in srgb, var(--color-blue) 10%, transparent);
   
   --content-width: 80rem;
+  --icon-dim-small: 1rem;
+  --icon-dim-mid: 1.25rem;
+  --icon-dim-big: 1.75rem;
+
+  --brand-dim: 1.875rem;
 }
 
 /* colors {#548feb;#ffb33d;#f37c14;#229fa3;}*/
@@ -81,9 +86,12 @@ video, svg {
   display: block;
 }
 
-nav a {
-  text-decoration: none;
-  color: var(--color-text);
+nav, address {
+  font-style: normal;
+  a {
+    text-decoration: none;
+    color: var(--color-text);
+  }
 }
 
 dd {
@@ -202,51 +210,37 @@ dd {
   flex-direction: column;
   gap: 1.5rem;
   color: var(--color-text);
-
-  #footer-content {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+  
+  h4 {
+    margin: 0;
+    font-weight: 600;
   }
 
   .logo {
     height: 4rem;
   }
 
+  #footer-content, #footer-links, #footer-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
   #footer-socials {
     display: flex;
     gap: .75rem;
   
-    a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 4rem;
-      height: 4rem;
+    svg {
+      height: var(--brand-dim);
+      width: var(--brand-dim);
+      padding: calc(2rem - var(--brand-dim) / 2);
       border-radius: .75rem;
       color: var(--color-text-light);
       background: var(--color-bg-light);
     }
-  
-    a:hover {
-      background: var(--color-teal);
-    }
-
-    svg {
-      width: 2rem;
-    }
   }
   
   #footer-links {
-    display: flex;
-    gap: 1.5rem;
-    flex-direction: column;
-  
-    h4 {
-      margin: 0;
-      font-weight: 600;
-    }
-
     menu {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -256,8 +250,6 @@ dd {
 
     a {
       background-color: var(--color-bg-light);
-      box-sizing: border-box;
-      height: 5rem;
       padding: 1rem;
       border-radius: 1rem;
       display: flex;
@@ -265,47 +257,46 @@ dd {
       justify-content: center;
       align-items: start;
       gap: .5rem;
-    }
 
-    svg {
-      height: 1.25rem;
+      svg {
+        height: var(--icon-dim-mid);
+        width: var(--icon-dim-mid);
+      }
     }
   }
 
   #footer-contacts {
-    a {
-      color: var(--color-text-light);
-    }
-
     menu {
       display: flex;
       flex-direction: column;
       gap: 1rem;
     }
-
-    li {
+    
+    a {
+      color: var(--color-text-light);
       display: flex;
       align-items: center;
       gap: .75rem;
+
+      svg {
+        height: var(--icon-dim-small);
+        width: var(--icon-dim-small);
+        padding: .5rem;
+        border-radius: 35%;
+      }
     }
 
-    li:nth-child(1) > svg {
+    li:nth-child(1) > a > svg {
       background-color: var(--color-teal-bg);
       color: var(--color-teal);
     }
-    li:nth-child(2) > svg {
+    li:nth-child(2) > a > svg {
       background-color: var(--color-blue-bg);
       color: var(--color-blue);
     }
-    li:nth-child(3) > svg {
+    li:nth-child(3) > a > svg {
       background-color: var(--color-red-bg);
       color: var(--color-red);
-    }
-
-    svg {
-      height: 1rem;
-      padding: .5rem;
-      border-radius: .75rem;
     }
   }
   
@@ -405,19 +396,19 @@ dd {
   }
 
   div.icon {
-    display: block;
-    width: 1.5rem;
     position: absolute;
     top: 1rem;
     right: 1rem;
+
     padding: 1rem;
     border-radius: 50%;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.10), 0 4px 6px -4px rgba(0, 0, 0, 0.10);
     color: var(--color-bg);
-  }
 
-  svg {
-    display: block;
+    svg {
+      width: var(--icon-dim-mid);
+      height: var(--icon-dim-mid);
+    }
   }
 }
 

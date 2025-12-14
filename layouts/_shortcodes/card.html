@@ -1,10 +1,9 @@
 {{ $image := .Page.Resources.Get (.Get "image") }}
-{{ $icon := resources.Get (.Get "icon") }}
 
 <div class="card">
     <img src="{{ $image.RelPermalink }}"/>
     <div class="icon">
-        <svg viewbox="0 0 24 24"><use href="{{ $icon.RelPermalink }}"/></svg>
+        {{- partial "inline-svg" (.Get "icon") -}}
     </div>
     <div class="content">
         <dt>{{ .Get "title" }}</dt>
