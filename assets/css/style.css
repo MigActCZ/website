@@ -199,6 +199,13 @@ svg.socials {
 
   a {
     border-bottom: 1px solid var(--color-text);
+    svg {
+      display: none;
+    }
+  }
+
+  li > menu {
+    padding-inline-start: 2.5rem;
   }
 }
 
@@ -846,10 +853,24 @@ svg.socials {
 
     a {
       border: revert;
+
+      &:has(svg) {
+        display: flex;
+        align-items: center;
+      }
+
+      svg {
+        display: block;
+        height: var(--icon-dim-small);
+        width: var(--icon-dim-small);
+      }
     }
 
     li:has(menu):hover > menu {
       display: block;
+    }
+    li:has(menu):hover svg {
+      transform: rotate(90deg);
     }
   }
 

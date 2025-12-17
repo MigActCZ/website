@@ -3,8 +3,13 @@ main:
     pageRef: /about
     weight: 10
   - identifier: our_team
+    parent: about
     pageRef: /team
     weight: 20
+  - identifier: our_partners
+    parent: about
+    pageRef: /partners
+    weight: 25
   - identifier: events
     pageRef: /events
     weight: 30

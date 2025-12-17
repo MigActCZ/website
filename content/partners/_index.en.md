@@ -1,5 +1,5 @@
 ---
-title: Our partners and supporters
+title: Our partners and donors
 build:
   render: always
 cascade:

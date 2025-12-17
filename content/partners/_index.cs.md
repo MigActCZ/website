@@ -1,5 +1,5 @@
 ---
-title: Nasi partneri a podporovatele
+title: Naši partneři a dárci
 slug: partneri
 build:
   render: always

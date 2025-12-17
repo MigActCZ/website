@@ -44,7 +44,7 @@
             {{- printf " %s=%q" $k $v | safeHTMLAttr }}
           {{- end }}
         {{- end -}}
-      >{{ $name }}</a>
+      >{{ $name }}{{ if .Children }}{{ partial "inline-svg" "icons/chevron-right" }}{{ end }}</a>
       {{- with .Children }}
         <menu>
           {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
