@@ -1,5 +1,8 @@
 ---
-title: Our partners and supporters
+title: Nasi partneri a podporovatele
+slug: partneri
+build:
+  render: always
 cascade:
 - build:
     list: local

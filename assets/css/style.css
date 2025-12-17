@@ -21,7 +21,9 @@
 
   --brand-dim: 1.875rem;
 
-  --content-inline-padding: 1.5rem;
+  --min-inline-padding: 1.5rem;
+  --content-inline-padding: max(var(--min-inline-padding), calc(50% - var(--content-width) / 2));
+
   --medium-gap: 1rem;
   --wide-gap: calc(var(--medium-gap) * 3 / 2);
   --big-gap: calc(var(--medium-gap) * 2);
@@ -56,6 +58,8 @@ body {
     border-top: thin solid var(--color-teal);
   }
 
+  /* I need some space before footer, but some elements have background. So their box needs to stretch up to the footer.
+    TODO: Maybe specify specific elements later? */
   & > main > *:last-child {
     padding-block-end: 8rem;
   }
@@ -66,7 +70,11 @@ body {
     font-size: 3rem;
   }
 }
-
+nav {
+  a {
+    text-decoration: none;
+  }
+}
 menu {
   list-style: none inside;
   margin-block: 0;
@@ -74,6 +82,7 @@ menu {
 
   a {
     display: block;
+    color: var(--color-text);
   }
 }
 
@@ -94,12 +103,8 @@ video, svg {
   display: block;
 }
 
-nav, address {
+address {
   font-style: normal;
-  a {
-    text-decoration: none;
-    color: var(--color-text);
-  }
 }
 
 dd {
@@ -632,6 +637,24 @@ svg.socials {
   }
 }
 
+/* || PARTNERS PAGE */
+#partners {
+  .card {
+    padding: var(--wide-gap);
+
+    img {
+      aspect-ratio: 1 / 1;
+      width: 100%;
+      height: auto;
+      object-fit: scale-down;
+      object-position: center;
+    }
+
+    a {
+      font-size: 1.5rem;
+    }
+  }
+}
 /* || TEAM PAGE */
 #team {
   display: grid;
@@ -663,14 +686,6 @@ svg.socials {
   }
 }
 
-#partners {
-  img {
-    width: 200px;
-    height: auto;
-    margin: 20px;
-  }
-}
-
 /* || Utility */
 .scroll-row {
   display: grid;
@@ -689,23 +704,16 @@ svg.socials {
 
 /* ============================================     Tablet (768px+)     ============================================ */
 @media (min-width: 768px) {
-  body > header,
-  body > main,
-  body > footer,
-  body > h1  {
-    padding-inline: max(1rem, calc(50% - var(--content-width) / 2));
-  }
-
   #home {
     line-height: 2;
     padding-inline: 0;
 
     & > section:nth-child(odd){
-      padding-inline: max(1rem, calc(50% - var(--content-width) / 2));
+      padding-inline: var(--content-inline-padding);
     }
     
     & > section:nth-child(even){
-      padding-inline: max(1rem, calc(50% - (var(--content-width) / 2 - 2rem)));
+      padding-inline: max(var(--min-inline-padding), var(--content-inline-padding) - 2rem);
     }
   }
 
@@ -785,6 +793,10 @@ svg.socials {
   #projects .card-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  #partners.card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* ============================================     Desktop (1024px+)     ============================================ */
@@ -850,6 +862,7 @@ svg.socials {
   }
 
   .card {
+    /* For hover effect to have space to float.*/
     margin-block: var(--separator-gap);
 
     &:hover {
