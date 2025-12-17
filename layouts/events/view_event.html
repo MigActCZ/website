@@ -1,11 +1,19 @@
 <article class="card">
-  <a class="card-title" href="{{ .RelPermalink }}">   
-    <h2>{{ .Title }}</h2>
+  <header>
+    <div class="date">{{ .Params.dtstart | dateFormat "2 Jan 2006" }}</div>
+    <div class="time">{{ .Params.dtstart | dateFormat "15:04" }} - {{ time (printf "2006-01-02T%s" .Params.tend) | dateFormat "15:04" }}</div>
+    <div class="status">Upcoming</div>
+  </header>
+  <a class="card-title" href="{{ .RelPermalink }}">
+    <h1>{{ .Title }}</h1>
+    {{ .Summary }}
   </a>
-  <dl class="attributes">
-    {{ with .Params.registration }}
-    <dt>📝 {{ i18n "registration" }}</dt><dd><a href="{{ . }}">{{ i18n "signup" }}</a></dd>
-    {{ end }}
-  </dl>
-  {{ .Summary }}
+  <footer>
+    <div class="location">{{ .Params.location }}</div>
+    <div class="language">EN</div>
+  </footer>
+  <div class="actions">
+    <a>Details</a>
+    <a>Register</a>
+  </div>
 </article>

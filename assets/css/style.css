@@ -623,6 +623,18 @@ svg.socials {
   }
 }
 
+#events {
+
+  .card {
+    padding: var(--wide-gap);
+
+    header {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
 #project {
   & > h1 {
     font-size: 3.5rem;
