@@ -12,7 +12,8 @@ footer_actions: Rychle akce
 copyright: Autorská práva vyhrazena %v %s
 
 # Homepage
-learn: Learn more
+get_involved: Zapojte se
+learn: Více informací
 # Activities section
 what_we_do: Co děláme
 what_we_do_text: Discover our diverse programs designed to empower, connect, and support our community members.
@@ -30,7 +31,7 @@ join_events_text: Participate in our upcoming workshops and meetups
 # Stay connected section
 stay_connected: Stay connected
 stay_connected_text: Follow us on social media to stay updated on events, stories, and opportunities to engage with our community.
-linked_in_text: Connect professionally
+linkedin_text: Connect professionally
 facebook_text: Join our community
 instagram_text: Follow our stories
 

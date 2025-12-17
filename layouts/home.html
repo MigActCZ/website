@@ -6,7 +6,9 @@
         <img id="hero" src="{{ .RelPermalink }}"/>
       {{ end }}
       <menu>
-        <li><a id="cta" href='{{ .RelRef (dict "path" "join-us") }}'>{{ i18n "join_us" }}</a></li>
+        <li><a id="cta" href='{{ .RelRef (dict "path" "join-us") }}'>{{ i18n "get_involved" }}
+          {{ partial "inline-svg" "icons/arrow-right" }}
+        </a></li>
         <li><a href='{{ .RelRef (dict "path" "about") }}'>{{ i18n "learn" }}</a></li>
       </menu>
   </section>
@@ -49,19 +51,16 @@
       </menu>
     </nav>
   </section>
-  <section id="stay_connected">
+  <section id="stay-connected">
     <header>
       <h1>{{ i18n "stay_connected" }}</h1>
       <p>{{ i18n "stay_connected_text" }}</p>
     </header>
     <nav id="socials">
-      <menu>
-        <li><a href="{{ .Site.Params.socials.linkedin}}">LinkedIn</a>
-          <p>{{ i18n "linked_in_text" }}</p></li>
-        <li><a href="{{ .Site.Params.socials.facebook}}">Facebook</a>
-          <p>{{ i18n "facebook_text" }}</p></li>
-        <li><a href="{{ .Site.Params.socials.instagram}}">Instagram</a>
-          <p>{{ i18n "instagram_text" }}</p></li>
+      <menu class="scroll-row">
+        <li>{{- partial "socials-card" "LinkedIn" -}}</li>
+        <li>{{- partial "socials-card" "Facebook" -}}</li>
+        <li>{{- partial "socials-card" "Instagram" -}}</li>
       </menu>
     </nav>
 
