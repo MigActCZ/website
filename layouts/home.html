@@ -6,10 +6,10 @@
         <img id="hero" src="{{ .RelPermalink }}"/>
       {{ end }}
       <menu>
-        <li><a id="cta" href='{{ .RelRef (dict "path" "join-us") }}'>{{ i18n "get_involved" }}
+        <li><a id="cta" class="button" href='{{ .RelRef (dict "path" "join-us") }}'>{{ i18n "get_involved" }}
           {{ partial "inline-svg" "icons/arrow-right" }}
         </a></li>
-        <li><a href='{{ .RelRef (dict "path" "about") }}'>{{ i18n "learn" }}</a></li>
+        <li><a class="button" href='{{ .RelRef (dict "path" "about") }}'>{{ i18n "learn" }}</a></li>
       </menu>
   </section>
   <section id="activities">

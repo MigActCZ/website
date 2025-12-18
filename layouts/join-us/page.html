@@ -1,0 +1,41 @@
+{{ define "main" }}
+<section id="join-us-header" class="page-header">
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+</section>
+<main id="join-us">
+    <section id="join-volunteer">
+        <img src='{{ (.Resources.Get "join.avif").RelPermalink }}'/>
+        {{ with .Resources.Get "volunteers.md" }}
+        <div class="content">{{ .Content }}
+            <a class="button" href='{{ .Ref (dict "path" "contact") }}'>
+                {{ i18n "contact" }}</a>
+        </div>
+        {{ end }}
+    </section>
+    <section id="join-events">
+        {{ with .Resources.Get "events.md" }}
+            {{ .Content }}
+        {{ end }}
+        {{ with (site.GetPage "events").RegularPages }}
+        <menu class="card-grid">
+            {{ range first 3 . }}
+                <li>{{ .Render "view-event" }}{{ debug.Dump . }}</li>
+            {{ end }}
+        </menu>
+        {{ end }}
+    </section>
+    <section id="join-partners">
+    {{ with .Resources.Get "partners.md" }}
+        {{ .Content }}
+    {{ end }}
+    </section>
+    <section id="join-donate" class="card">
+        <div class="content">
+        {{ with .Resources.Get "donate.md" }}
+            {{ .Content }}
+        {{ end }}
+        </div>
+    </section>
+</main>
+{{ end }}
