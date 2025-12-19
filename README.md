@@ -28,3 +28,19 @@ Decided to use Sveltia, looks and feels better than DecapCMS. Mainly it allows s
 
 # CSS
 I use semantic class names and brittle CSS intentionally.
+
+## Hamburger menu
+I used CSS only tricks to avoid javascript. I have a hidden checkbox, which keeps track of open/close menu.
+The menu appears using change in height, because visibility is not animatable.
+
+# SVG
+## HTML
+I use partial template to embed all SVG's.
+I want to be able to style them and <img> tag doesn't allow it.
+I could use svg/use, but that markup was ugly, the viewbox didn't work on the outside svg and that resulted in many unnecessary requests.
+I also considered creating svg bundle of symbols, which would solve the requests and caching, but that would complicate the build step.
+So I opted for the easiest, most straightforward solution.
+
+## CSS
+I don't use svg's in CSS, because it complicate things with styling.
+Maybe embedding it completely would work, but then I'd need template machinery for CSS.

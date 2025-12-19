@@ -129,7 +129,7 @@ svg.socials {
   color: var(--color-text-light);
   background: var(--color-bg-light);
 }
-
+/* Rainbow top border */
 #site-header, #site-footer {
   border-top: 6px solid;
   border-image: linear-gradient(
@@ -143,100 +143,103 @@ svg.socials {
 
 /* || HEADER + NAVIGATION */
 #site-header {
+  position: relative; /* Nav panel anchor */
+  padding-block: 1.25rem;
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
-  padding-block: 1.25rem;
-}
 
-#menu-toggle {
-  & > input {
-    display: none;
-  }
-
-  svg line {
-    stroke: #000;
-    stroke-width: 3;
-    transition: transform 0.3s;
-    transform-origin: center;
-  }
-
-  & > input:checked ~ svg .top {
-    transform: rotate(45deg) translateY(10px);
-  }
-
-  & > input:checked ~ svg .mid {
-    opacity: 0;
-  }
-
-  & > input:checked ~ svg .bot {
-    transform: rotate(-45deg) translateY(-10px);
-  }
-
-  &:has(input:checked) ~ #nav-panel {
-    height: 100vh;
-  }
-}
-
-#nav-panel {
-  position: absolute;
-  top: calc(100% + 1px);
-  left: 0;
-  right: 0;
-  background: var(--color-bg);
-  transition: all 0.5s ease-out;
-  z-index: 1;
-  overflow-y: auto;
-  height: 0;
-  display: flex;
-  flex-direction: column;
-  gap: var(--medium-gap);
-
-  a {
-    padding: var(--separator-gap) var(--medium-gap);
-    color: var(--color-text);
-  }
-}
-
-#site-nav {
-  padding: 0 var(--medium-gap);
-
-  a {
-    border-bottom: 1px solid var(--color-text);
-    svg {
+  & > #menu-toggle {
+    /* Hide the state checkbox */
+    & > input {
       display: none;
+    }
+    /* Hamburger menu style */
+    svg line {
+      stroke: var(--color-text);
+      stroke-width: 3;
+      transition: transform 0.3s;
+      transform-origin: center;
+    }
+    /* Checked animation  */
+    & > input:checked ~ svg .top {
+      transform: rotate(45deg) translateY(10px);
+    }
+    & > input:checked ~ svg .mid {
+      opacity: 0;
+    }
+    & > input:checked ~ svg .bot {
+      transform: rotate(-45deg) translateY(-10px);
+    }
+    /* Stretch navpanel to entire screen */
+    &:has(input:checked) ~ #nav-panel {
+      height: 100vh;
     }
   }
 
-  li > menu {
-    padding-inline-start: 2.5rem;
+  & > #nav-panel {
+    position: absolute;
+    top: calc(100% + 1px);
+    left: 0;
+    right: 0;
+
+    background: var(--color-bg);
+    z-index: 1;
+
+    height: 0; /* When checked this changes and creates a smooth appearance */
+    transition: height 0.5s ease-out;
+    overflow-y: auto; /* To allow scrolling if the menu is bigger than screen */
+    
+    display: flex;
+    flex-direction: column;
+    gap: var(--medium-gap);
+    /* Navigation links when mobile menu is active */
+    a {
+      padding: var(--separator-gap) var(--medium-gap);
+      color: var(--color-text);
+    }
+    & > #site-nav {
+      padding: 0 var(--medium-gap); /* Keeps menuitems and underline from edges of the screen */
+
+      a {
+        border-bottom: 1px solid var(--color-text); /* Create nice division between menu items */
+        /* I don't want the submenu indicator in mobile menu */
+        svg {
+          display: none;
+        }
+      }
+      /* Revert to basic indent for submenus */
+      li > menu {
+        padding-inline-start: revert;
+      }
+    }
+    /* || Language Switcher */
+    & > #lang-switcher {
+      --radius: 50px;
+      margin-inline: auto; /* Center in mobile version */
+      padding: 0; /* For blending the border with selected language */
+      width: fit-content;
+      border-radius: var(--radius);
+      border: 1.6px solid var(--color-teal);
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      a {
+        border-radius: var(--radius);
+        color: var(--color-teal);
+        font-weight: 700;
+
+        &.active, &:hover {
+          background: var(--color-teal);
+          color: var(--color-bg);
+        }
+      }
+    }
   }
 }
-
-/* || Language Switcher */
-#lang-switcher {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50px;
-  border: 1.6px solid var(--color-teal);
-  width: fit-content;
-  padding: 0;
-  margin-inline: auto;
-
-  a {
-    border-radius: 50px;
-    color: var(--color-teal);
-    font-weight: 700;
-  }
-
-  a.active, a:hover {
-    background: var(--color-teal);
-    color: var(--color-bg);
-  }
-}
-
 /* || FOOTER */
 #site-footer {
   padding-block-start: 5rem;
@@ -1010,50 +1013,55 @@ main#join-us > section {
     display: none;
   }
 
-  #nav-panel {
+  #site-header > #nav-panel {
     position: revert;
     background: revert;
     height: revert;
     flex-direction: row;
     gap: 8.75rem;
-  }
-
-  #site-nav {
-    padding: 0;
-    display: flex;
-    gap: .25rem;
     font-size: revert;
 
-    li > menu {
-      display: none;
-      position: absolute;
-      background-color: #f9f9f9;
-      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-      padding: 0px;
-    }
-
-    a {
-      border: revert;
-
-      &:has(svg) {
-        display: flex;
-        align-items: center;
+    & > #site-nav {
+      padding: 0;
+      display: flex;
+      gap: var(--tight-gap);
+      /* Hide submenus on load */
+      li > menu {
+        display: none;
+        position: absolute;
+        background-color: var(--color-bg);
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        padding: 0px;
       }
-
-      svg {
-        display: block;
-        height: var(--icon-dim-small);
-        width: var(--icon-dim-small);
+  
+      a {
+        border: revert; /* I need to revert the bottom border of mobile menu */
+        /* Parent menuitem has svg indicator of submenu */
+        &:has(svg) {
+          display: flex;
+          align-items: center;
+        }
+  
+        svg {
+          display: block;
+          height: var(--icon-dim-small);
+          width: var(--icon-dim-small);
+        }
       }
-    }
-
-    li:has(menu):hover > menu {
-      display: block;
-    }
-    li:has(menu):hover svg {
-      transform: rotate(90deg);
+      /* Top level menu item with submenu */
+      & > li:has(menu):hover {
+        /* Display submenu on hover */
+        & > menu {
+          display: block;
+        }
+        /* I expect parent menuitem to have an svg indicator */
+        svg {
+          transform: rotate(90deg);
+        }
+      }
     }
   }
+
 
   .card-grid {
     gap: var(--medium-gap) var(--big-gap);

@@ -1,14 +1,15 @@
 {{- $page := .page }}
 {{- $menuID := .menuID }}
 
-{{- with index site.Menus $menuID }}
 <nav id="nav-panel" aria-label="Main navigation">
+  {{- with index site.Menus $menuID }}
   <menu id="site-nav">
     {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
   </menu>
-  {{- with $page }}
+  {{- end }}
+  {{ with $page.AllTranslations }}
   <menu id="lang-switcher">
-    {{ range $index, $translation := .AllTranslations }}
+    {{ range . }}
     <li>
       {{- $attrs := dict "href" .RelPermalink "hreflang" .Language.Lang }}
       {{- if eq .Language $page.Language }}
@@ -20,12 +21,11 @@
             {{- printf " %s=%q" $k $v | safeHTMLAttr }}
           {{- end }}
         {{- end -}}>{{ .Language.Lang | upper }}</a>
-      </li>  
+    </li>
     {{ end }}
   </menu>
-  {{- end }}
+  {{ end }}
 </nav>
-{{- end }}
 
 {{- define "_partials/inline/menu/walk.html" }}
   {{- $page := .page }}
