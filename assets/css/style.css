@@ -545,16 +545,14 @@ svg.socials {
 }
 
 /* || Contact */
-#contacts-container {
+#contacts {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: var(--medium-gap);
   margin: 0;
   padding: 0;
-  font-style: normal;
-  /* if inside <address> */
 
-  & > div {
+  & > .dl-item {
     background: #f8f8f8;
     border-radius: 0.75rem;
     padding: var(--medium-gap);
@@ -562,11 +560,11 @@ svg.socials {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
-  img {
+  svg {
     width: 40px;
     height: 40px;
+    margin-inline: auto;
     margin-bottom: 0.5rem;
-    opacity: 0.85;
   }
 }
 
@@ -970,7 +968,7 @@ main#join-us > section {
     }
   }
   
-  #contacts-container {
+  #contacts {
     grid-template-columns: repeat(3, 1fr);
   }
 
