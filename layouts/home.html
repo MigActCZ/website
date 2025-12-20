@@ -24,42 +24,37 @@
       <h1>{{ i18n "how_to_get_involved" }}</h1>
       <p>{{ i18n "how_to_get_involved_text" }}</p>
     </header>
-    <nav id="actions" aria-label="Ways to get involved">
-      <menu>
-        <li id="donate">
-          <a href='{{ partial "get-donate-link" . }}'>{{ i18n "donate" }}</a>
-          <p>{{ i18n "donate_text" }}</p>
+    <menu>
+      <li id="donate">
+        <a href='{{ partial "get-donate-link" . }}'>{{ i18n "donate" }}</a>
+        <p>{{ i18n "donate_text" }}</p>
+      </li>
+      <li><a href='{{ .Site.Params.newsletter }}'>
+        {{ i18n "newsletter" }}</a>
+        <p>{{ i18n "newsletter_text" }}</p>
+      </li>
+        <li>
+          <a href='{{ .RelRef (dict "path" "events") }}'>
+            {{ i18n "join_events" }}</a>
+          <p>{{ i18n "join_events_text" }}</p>
         </li>
-        <li><a href='{{ .Site.Params.newsletter }}'>
-          {{ i18n "newsletter" }}</a>
-          <p>{{ i18n "newsletter_text" }}</p>
+        <li>
+          <a href='{{ .RelRef (dict "path" "contact") }}'>
+            {{ i18n "contact_us" }}</a>
+          <p>{{ i18n "contact_us_text" }}</p>
         </li>
-          <li>
-            <a href='{{ .RelRef (dict "path" "events") }}'>
-              {{ i18n "join_events" }}</a>
-            <p>{{ i18n "join_events_text" }}</p>
-          </li>
-          <li>
-            <a href='{{ .RelRef (dict "path" "contact") }}'>
-              {{ i18n "contact_us" }}</a>
-            <p>{{ i18n "contact_us_text" }}</p>
-          </li>
-      </menu>
-    </nav>
+    </menu>
   </section>
   <section id="stay-connected">
     <header>
       <h1>{{ i18n "stay_connected" }}</h1>
       <p>{{ i18n "stay_connected_text" }}</p>
     </header>
-    <nav id="socials">
-      <menu class="scroll-row">
-        <li>{{- partial "socials-card" "LinkedIn" -}}</li>
-        <li>{{- partial "socials-card" "Facebook" -}}</li>
-        <li>{{- partial "socials-card" "Instagram" -}}</li>
-      </menu>
-    </nav>
-
+    <menu id="socials" class="scroll-row">
+      <li>{{- partial "socials-card" "LinkedIn" -}}</li>
+      <li>{{- partial "socials-card" "Facebook" -}}</li>
+      <li>{{- partial "socials-card" "Instagram" -}}</li>
+    </menu>
   </section>
 </main>
 {{ end }}

@@ -41,63 +41,58 @@ html {
 }
 
 body {
+  /* Fill entire page */
   margin: 0;
   min-width: 360px;
   min-height: 100%;
   display: grid;
   grid-template-rows: auto 1fr auto;
 
-  & > header,
-  & > main,
-  & > footer,
-  & > section.page-header {
+  & > header, & > footer,
+  & > main > .card-grid, & > main > .intro, #contacts {
     padding-inline: var(--content-inline-padding);
   }
 
-  & > header + * {
-    border-top: thin solid var(--color-teal);
-  }
-
-  /* I need some space before footer, but some elements have background. So their box needs to stretch up to the footer.
-    TODO: Maybe specify specific elements later? */
-  & > main > *:last-child {
-    padding-block-end: 8rem;
-  }
-
-  & > section.page-header {
-    padding-block: 15rem 2.5rem;
+  /* Workaround because of rainbow image */
+  & > main {
+    border-block-start: thin solid var(--color-teal);
+  
+    /* I need some space before footer, but some elements have background. So their box needs to stretch up to the footer.
+      TODO: Maybe specify specific elements later? */
+    & > section:last-child, .card-grid {
+      padding-block-end: 8rem;
+    }
     
-    h1 {
-      margin: 0;
-      font-size: 3rem;
+    /* Headers of standalone pages*/
+    & > section.intro {
+      padding-block: 15rem 2.5rem;
+      text-align: center;
+      
+      h1 {
+        margin-block: 0;
+        font-size: 3rem;
+      }
+    }
+    & > .intro {
+      padding-block: 10rem 5rem;
     }
   }
 }
-
-nav {
-  a {
-    text-decoration: none;
-  }
+  
+/* Links in navs don't need underline */
+nav a {
+  text-decoration: none;
 }
 
+/* Special lists have special visuals */
 menu, ul.buttons {
   list-style: none inside;
-  margin-block: 0;
-  padding: 0;
+  margin-block: unset;
+  padding-inline-start: unset;
 
   a {
     display: block;
     color: var(--color-text);
-  }
-}
-
-section > header {
-  margin-block: 3rem;
-  text-align: center;
-
-  h1 {
-    margin-block: 0;
-    font-weight: normal;
   }
 }
 
@@ -114,11 +109,6 @@ address {
 
 dd {
   margin-inline-start: 0;
-}
-
-.logo {
-  display: block;
-  height: 2.5rem;
 }
  
 svg.socials {
@@ -150,6 +140,9 @@ svg.socials {
   justify-content: space-between;
   align-items: center;
 
+  .logo {
+    height: 2.5rem;
+  }
   & > #menu-toggle {
     /* Hide the state checkbox */
     & > input {
@@ -364,7 +357,13 @@ svg.socials {
     padding-inline-start: var(--wide-gap);
 
     & > header{
+      text-align: center;
+      margin-block: 3rem;
       padding-inline-end: 1.5rem;
+      h1 {
+        margin-block: 0;
+        font-weight: normal;
+      }
     }
   }
 
@@ -470,30 +469,14 @@ svg.socials {
   }
 }
 
-#actions {
-  a {
-    text-decoration: none;
-    background: var(--color-bg);
-    border-radius: .75rem;
-    padding: var(--medium-gap) 0;
-    text-align: center;
-    font-weight: 600;
-    color: var(--color-text);
-    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
-    transition: transform 0.14s ease, box-shadow 0.14s ease;
-    display: block;
-    /* the boxes should be aligned, remove for baseline */
-    box-sizing: border-box;
-    height: 100%;
-  }
-
-  a:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 26px rgba(15, 23, 42, 0.08);
-  }
-}
-
 #socials{
+  li {
+    padding: var(--big-gap);
+    border: 1.6px solid var(--card-color);
+    border-radius: 1rem;
+    background: var(--color-bg);
+  }
+
   h3 {
     color: var(--color-text);
     font-weight: normal;
@@ -509,15 +492,7 @@ svg.socials {
   li:nth-child(3n + 3) {
     --card-color: var(--color-blue);
   }
-  a {
-    padding: var(--big-gap);
-    border: 1.6px solid var(--card-color);
-    border-radius: 1rem;
-    background: var(--color-bg);
-
-    scroll-snap-align: start;
-  }
-
+  /* SVG class */
   .socials {
     color: var(--card-color);
     background-color: color-mix(in srgb, var(--card-color) 10%, transparent);
@@ -527,7 +502,7 @@ svg.socials {
     color: var(--color-text-light);
   }
 
-  p:last-child {
+  a {
     color: var(--card-color);
     margin-block-start: var(--medium-gap);
     display: flex;
@@ -548,7 +523,7 @@ svg.socials {
 }
 
 /* || Contact */
-#contacts {
+#contacts > dl {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: var(--medium-gap);
@@ -579,6 +554,10 @@ svg.socials {
 }
 
 .card {
+  /* Needed to stretch to entire row height */
+  box-sizing: border-box;
+  height: 100%;
+
   border-radius: 2rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.25s ease-in, box-shadow 0.25s ease-in;
@@ -594,7 +573,6 @@ svg.socials {
 }
 
 #projects {
-
   .card {
     padding: 2.5rem;
 
@@ -603,24 +581,24 @@ svg.socials {
     gap: var(--separator-gap);
 
     background-color: #EAEAEA;
-  }
 
-  .attributes {
-    display: flex;
-    gap: var(--medium-gap);
-    align-items: center;
-  }
-
-  .status {
-    background-color: #B2B2B2;
-    padding: var(--separator-gap) 1.25rem;
-    border-radius: 2.5rem;
-  }
-  .dates {
-    flex: 1;
-  }
-  .card-title {
-    flex: 1;
+    header {
+      display: flex;
+      gap: var(--medium-gap);
+      align-items: center;
+    }
+  
+    .status {
+      background-color: #B2B2B2;
+      padding: var(--separator-gap) 1.25rem;
+      border-radius: 2.5rem;
+    }
+    .dates {
+      flex: 1;
+    }
+    h1 {
+      flex: 1;
+    }
   }
 }
 
@@ -706,7 +684,7 @@ svg.socials {
 }
 
 /* || JOIN US */
-#join-us-header, #join-us {
+#join-us {
   color: var(--color-text-light);
   h1 {
     color: var(--color-text);
@@ -714,21 +692,17 @@ svg.socials {
   p {
     font-size: 1.25rem;
   }
+  
+  & > section {
+    padding-block: 6rem;
+  }
 }
-#join-us-header, #join-events{
+#join-events{
   text-align: center;
   p {
     margin: auto;
     width: 60%;
   }
-}
-
-#join-us-header {
-  font-size: 1.5rem;
-}
-
-main#join-us > section {
-  padding-block: 6rem;
 }
 
 #join-volunteer {
@@ -870,7 +844,7 @@ main#join-us > section {
     object-fit: cover;
   }
 }
-
+  
 /* || Utility */
 .scroll-row {
   display: grid;
@@ -933,7 +907,7 @@ main#join-us > section {
       gap: var(--big-gap);
 
       a {
-        padding: 0 var(--big-gap);
+        padding: var(--medium-gap) var(--big-gap);
       }
     }
   }
@@ -949,7 +923,6 @@ main#join-us > section {
     grid-template-columns: var(--big-gap) 1fr 1fr 1fr var(--big-gap);
     grid-template-rows: auto auto;
     grid-template-areas:
-      ". logo links contact ."
       ". logo links contact ."
       ". copyright copyright copyright .";
 
@@ -971,16 +944,16 @@ main#join-us > section {
     }
   }
   
-  #contacts {
+  #partners.card-grid, #events.card-grid, #contacts > dl{
     grid-template-columns: repeat(3, 1fr);
   }
 
-  #projects .card-grid {
+  .card-grid {
+    gap: var(--medium-gap) var(--big-gap);
+  }
+
+  #projects.card-grid {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  #partners.card-grid {
-    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -998,7 +971,7 @@ main#join-us > section {
     }
   }
 
-  #socials .scroll-row {
+  #socials.scroll-row {
     grid-auto-flow: unset;
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -1060,15 +1033,6 @@ main#join-us > section {
         }
       }
     }
-  }
-
-
-  .card-grid {
-    gap: var(--medium-gap) var(--big-gap);
-  }
-
-  #events .card-grid {
-    grid-template-columns: repeat(3, 1fr);
   }
 
   #special.card { /*TODO zisti kedy a replace special */

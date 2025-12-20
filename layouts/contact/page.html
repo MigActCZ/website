@@ -1,8 +1,8 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
 <main>
-    <address>
-        <dl id="contacts">
+    <h1 class="intro">{{ .Title }}</h1>
+    <address id="contacts">
+        <dl>
             <div class="dl-item">
                 {{ partial "inline-svg" "icons/phone"}}
                 <dt>{{ i18n "phone" }}</dt>

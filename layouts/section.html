@@ -1,7 +1,10 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
-  {{ range .Pages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-  {{ end }}
+<main>
+    <h1 class="intro">{{ .Title }}</h1>
+    <menu id="{{ .Section }}" class="card-grid">
+        {{ range .RegularPages }}
+            <li>{{ .Render (printf "view_%s" (singularize .Section )) }}</li>
+        {{ end }}
+    </menu>
+</main>
 {{ end }}
