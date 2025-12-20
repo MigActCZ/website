@@ -5,6 +5,7 @@ date: 2024-09-10
 dtstart: 2024-09-12T17:30:00
 tend: 19:30:00
 location: Škodův palác - room n. 201, Jungmannova 35, 110 00 Nové Město
+languages: EN CZ
 registration: https://forms.gle/ypc2Ksn3xB7TVTvv8
 project: city-for-all
 ---

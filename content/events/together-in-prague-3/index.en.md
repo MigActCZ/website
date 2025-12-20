@@ -1,11 +1,13 @@
 ---
 title: Together in Prague 3
 featured: featured.webp
-date: 2025-10-01
 dtstart: 2025-10-23T17:30:00
 tend: 19:00:00
 location: Krenovka, Husitská 22, 130 00 Praha 3-Žižkov
+languages: EN CZ
 registration: https://forms.gle/6hr5bcXfJC544gUs5
+project: together-for-prague
+date: 2025-10-01
 ---
 Join us for an evening of meaningful connections at Krenovka! Meet socially engaged neighbors and share stories and inspirations from civic and community life in Prague 3.
 

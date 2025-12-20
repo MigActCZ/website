@@ -52,11 +52,13 @@ upcoming: Upcoming
 past: Past
 date: When
 location: Where
+languages: Languages
 registration: Registration
 tba: To be announced
 signup: Sign up here
 calendar: Calendar
 download: Download
+details: Details
 
 # Contact page
 phone: Phone
