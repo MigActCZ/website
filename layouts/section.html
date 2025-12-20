@@ -1,11 +1,12 @@
 {{ define "main" }}
-<main>
+<main class="{{ .Kind }}">
     <h1 class="intro">{{ .Title }}</h1>
     <menu id="{{ .Section }}" class="card-grid">
-        {{ range .RegularPages }}
+        {{ range (.Paginate .RegularPages).Pages }}
             <li>{{ .Render (printf "view_%s" (singularize .Section )) }}</li>
         {{ end }}
     </menu>
+    {{ partial "pagination.html" . }}
 </main>
 {{ end }}
 {{ define "inline-scripts" }}

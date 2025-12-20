@@ -59,7 +59,7 @@ body {
   
     /* I need some space before footer, but some elements have background. So their box needs to stretch up to the footer.
       TODO: Maybe specify specific elements later? */
-    & > section:last-child, .card-grid {
+    & > section:last-child, &.section {
       padding-block-end: 8rem;
     }
     
@@ -85,7 +85,7 @@ nav a {
 }
 
 /* Special lists have special visuals */
-menu, ul.buttons {
+menu, ul.buttons, ul.pagination {
   list-style: none inside;
   margin-block: unset;
   padding-inline-start: unset;
@@ -118,6 +118,61 @@ svg.socials {
   border-radius: .75rem;
   color: var(--color-text-light);
   background: var(--color-bg-light);
+}
+
+/* || Dynamic pages */
+#gallery {
+  display: grid;
+  gap: var(--separator-gap);
+  grid-template-columns: repeat(6, 1fr);
+
+  img {
+    aspect-ratio: 3/2;
+    object-fit: cover;
+  }
+}
+
+[data-toggle] {
+  display: none;
+}
+[data-archived="false"] [data-toggle="future"],
+[data-archived="true"] [data-toggle="past"] {
+  display: inline;
+}
+
+.status-tag {
+  background-color: #B2B2B2;
+  padding: var(--separator-gap) 1.25rem;
+  border-radius: 2.5rem;
+  padding-inline: var(--separator-gap);
+  &[data-toggle="future"] {
+    color: white;
+  }
+  &[data-toggle="past"] {
+    color: #111;
+  }
+}
+  
+/* || Utility */
+.scroll-row {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 85%;
+  gap: var(--medium-gap);
+  overflow-x: auto;
+  padding-block-end: var(--medium-gap);
+  scroll-snap-type: x mandatory;
+  
+  & > * {
+    min-width: 0;
+    scroll-snap-align: start;
+  }
+}
+ul.pagination{
+  display: flex;
+  justify-content: center;
+  gap: var(--big-gap);
+  padding: var(--big-gap);
 }
 /* Rainbow top border */
 #site-header, #site-footer {
@@ -824,57 +879,6 @@ svg.socials {
     dd {
       grid-area: def;
     }
-  }
-}
-/* || Dynamic pages */
-
-#gallery {
-  display: grid;
-  gap: var(--separator-gap);
-  grid-template-columns: repeat(6, 1fr);
-
-  img {
-    aspect-ratio: 3/2;
-    object-fit: cover;
-  }
-}
-
-[data-toggle] {
-  display: none;
-}
-
-[data-archived="false"] [data-toggle="future"],
-[data-archived="true"] [data-toggle="past"] {
-  display: inline;
-}
-
-.status-tag {
-
-  background-color: #B2B2B2;
-  padding: var(--separator-gap) 1.25rem;
-  border-radius: 2.5rem;
-  padding-inline: var(--separator-gap);
-  &[data-toggle="future"] {
-    color: white;
-  }
-  &[data-toggle="past"] {
-    color: #111;
-  }
-}
-  
-/* || Utility */
-.scroll-row {
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: 85%;
-  gap: var(--medium-gap);
-  overflow-x: auto;
-  padding-block-end: var(--medium-gap);
-  scroll-snap-type: x mandatory;
-  
-  & > * {
-    min-width: 0;
-    scroll-snap-align: start;
   }
 }
 

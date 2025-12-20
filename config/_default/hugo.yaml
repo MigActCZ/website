@@ -43,11 +43,13 @@ languages:
         projects: /projekty/:slug/
       section:
         projects: /projekty/
-minify:
-  minifyOutput: true
 outputFormats:
   calendar:
     baseName: invitation
+pagination:
+  pagerSize: 18
+minify:
+  minifyOutput: true
 markup:
   goldmark:
     parser:
