@@ -16,6 +16,7 @@
         {{ end }}
     {{ end }}
     {{ partial "opengraph.html" . }}
+    {{ block "scripts" . }}{{ end }}
 </head>
 <body>
     <header id="site-header">
@@ -23,7 +24,7 @@
             {{- partial "inline-svg" "logos/migact" -}}
         </a>
         <label id='menu-toggle'>
-            <input type="checkbox" />
+            <input id="state" type="checkbox" />
             <svg width="30" height="30">
                 <line class="top" x1="0" y1="5" x2="30" y2="5"/>
                 <line class="mid" x1="0" y1="15" x2="30" y2="15"/>
@@ -79,5 +80,6 @@
         </address>
         <p id="footer-copyright">{{ printf (i18n "copyright") now.Year .Site.Title }}</p>
     </footer>
+    {{ block "inline-scripts" . }}{{ end }}
 </body>
 </html>

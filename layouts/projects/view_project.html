@@ -1,7 +1,14 @@
-<article class="card">
+<article class="card" data-archived="false">
   <header>
-    <div class="status">{{ i18n .Params.status }}</div>
-    <div class="dates">{{ .Params.dtstart | dateFormat "2 Jan 2006" }} - {{ .Params.dtend | dateFormat "2 Jan 2006" }}</div>
+    <div class="status-tag" data-toggle="future">{{ i18n "ongoing" }}</div>
+    <div class="status-tag" data-toggle="past">{{ i18n "finished" }}</div>
+    <div class="timeline">
+      <time datetime='{{ .Params.dtstart }}'>
+        {{ .Params.dtstart | dateFormat "2 Jan 2006" }}</time>
+      -
+      <time datetime='{{ .Params.dtend }}'>
+        {{ .Params.dtend | dateFormat "2 Jan 2006" }}</time>
+    </div>
   </header>
   <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
   <footer>{{ delimit .Params.partners ", " }}</footer>

@@ -1,8 +1,19 @@
-<article class="card">
+{{ $dtend := partial "combine-date-time.html" (dict "date" .Params.dtstart "time" .Params.tend ) }}
+{{ $dtstart := time .Params.dtstart }}
+{{ $dtstart_utc := $dtstart | dateFormat "2006-01-02T15:04Z0700" }}
+{{ $dtend_utc := $dtend | dateFormat "2006-01-02T15:04Z0700" }}
+<article class="card" data-archived="false">
   <header>
-    <div class="date">{{ .Params.dtstart | dateFormat "2 Jan 2006" }}</div>
-    <div class="time">{{ .Params.dtstart | dateFormat "15:04" }} - {{ time (printf "2006-01-02T%s" .Params.tend) | dateFormat "15:04" }}</div>
-    <div class="status">Upcoming</div>
+    <time class="date" datetime='{{ $dtstart | dateFormat "2006-01-02" }}'>{{ .Params.dtstart | dateFormat "2 Jan 2006" }}</time>
+    <div class="timeline">
+      <time datetime='{{ $dtstart_utc }}'>
+        {{ .Params.dtstart | dateFormat "15:04" }}</time>
+      -
+      <time datetime='{{ $dtend_utc }}'>
+        {{ $dtend | dateFormat "15:04" }}</time>
+    </div>
+    <div class="status-tag" data-toggle="future">{{ i18n "upcoming" }}</div>
+    <div class="status-tag" data-toggle="past">{{ i18n "past" }}</div>
   </header>
   <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
   {{ .Summary }}

@@ -48,8 +48,9 @@ partners: Partners
 linked_events: Linked events
 
 # Event
+upcoming: Upcoming
+past: Past
 date: When
-time: At
 location: Where
 registration: Registration
 tba: To be announced

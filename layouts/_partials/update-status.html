@@ -1,0 +1,15 @@
+<script>
+    function updateStatusTag() {
+        const now = new Date();
+      
+        document.querySelectorAll("article > header > .timeline").forEach(timeline => {
+          const article = timeline.parentElement.parentElement;
+          const endTime = timeline.querySelector("time:last-child");
+          const date = new Date(endTime.dateTime);
+          
+          if (isNaN(date)) return;
+          article.dataset.archived = date.getTime() < now.getTime();
+        });
+      }
+      updateStatusTag();
+</script>

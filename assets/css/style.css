@@ -587,12 +587,6 @@ svg.socials {
       gap: var(--medium-gap);
       align-items: center;
     }
-  
-    .status {
-      background-color: #B2B2B2;
-      padding: var(--separator-gap) 1.25rem;
-      border-radius: 2.5rem;
-    }
     .dates {
       flex: 1;
     }
@@ -842,6 +836,29 @@ svg.socials {
   img {
     aspect-ratio: 3/2;
     object-fit: cover;
+  }
+}
+
+[data-toggle] {
+  display: none;
+}
+
+[data-archived="false"] [data-toggle="future"],
+[data-archived="true"] [data-toggle="past"] {
+  display: inline;
+}
+
+.status-tag {
+
+  background-color: #B2B2B2;
+  padding: var(--separator-gap) 1.25rem;
+  border-radius: 2.5rem;
+  padding-inline: var(--separator-gap);
+  &[data-toggle="future"] {
+    color: white;
+  }
+  &[data-toggle="past"] {
+    color: #111;
   }
 }
   

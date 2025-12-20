@@ -48,8 +48,9 @@ partners: Partneři
 linked_events: Akce projektu
 
 # Event
+upcoming: Nadcházející
+past: Proběhlo
 date: Kdy
-time: O
 location: Kde
 registration: Registrace
 tba: Bude oznameno

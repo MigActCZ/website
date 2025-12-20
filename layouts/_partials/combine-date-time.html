@@ -1,0 +1,12 @@
+{{/* 
+  Partial: combine-date-time
+  Usage:
+    {{ partial "combine-date-time.html" (dict "date" .Params.date "time" .Params.timeonly) }}
+*/}}
+
+{{ $date := time .date }}
+{{ $time := time (printf "2000-01-01T%s" .time) }}
+
+{{ return (time (printf "%d-%02d-%02dT%02d:%02d:%02d"
+    $date.Year $date.Month $date.Day $time.Hour $time.Minute $time.Second
+)) }}
