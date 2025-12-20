@@ -4,7 +4,7 @@ featured: featured.webp
 date: 2025-10-01
 dtstart: 2025-10-23T17:30:00
 tend: 19:00:00
-location: Krenovka, Husitská 22, Prague 3
+location: Krenovka, Husitská 22, 130 00 Praha 3-Žižkov
 registration: https://forms.gle/6hr5bcXfJC544gUs5
 ---
 Zveme vás na večer plný setkávání v Krenovce! Seznamte se s aktivními sousedy a podělte se o příběhy a inspirace z občanského a komunitního života na Praze 3.

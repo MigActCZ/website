@@ -4,7 +4,7 @@ featured: featured.webp
 date: 2025-08-06
 dtstart: 2025-09-17T09:00:00
 tend: 11:00:00
-location: Přístav 7, V Přístavu 24, Prague 7
+location: KC Přístav 7, V Přístavu 24, 170 00 Praha 7-Holešovice
 registration: https://forms.gle/2MWR13Tu8sKqnCvu7
 ---
 Join us for a cozy breakfast to meet neighbors, exchange ideas, and explore how to make Prague 7 more open and inclusive. We’ll share what we’ve learned from our mapping on active citizenship among people with migration backgrounds in Prague 7—what’s working, what’s missing, and where we go from here.
