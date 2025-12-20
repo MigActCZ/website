@@ -1,3 +1,15 @@
+{{ define "scripts" }}
+<link rel="stylesheet" href="/photoswipe.css">
+<script type="module">
+  import PhotoSwipeLightbox from '/photoswipe-lightbox.esm.min.js';
+  const lightbox = new PhotoSwipeLightbox({
+    gallery: '#gallery',
+    children: 'a',
+    pswpModule: () => import('/photoswipe.esm.min.js')
+  });
+  lightbox.init();
+  </script>
+{{ end }}
 {{ define "main" }}
 <main id="project" class="{{ .Kind }}">
     <h1>{{ .Title }}</h1>
@@ -55,10 +67,14 @@
     {{ with .Params.images }}
       <section>
         <h2>Gallery</h2>
-        <div class="gallery">
+        <div id="gallery">
           {{ range . }}
           {{ $image := $.Resources.Get . }}
-          <img src="{{ $image.Permalink }}" alt="{{ . }}">
+          <a href="{{ $image.Permalink }}"
+          data-pswp-width="{{ $image.Width }}" 
+          data-pswp-height="{{ $image.Height }}">
+            <img src="{{ $image.Permalink }}" alt="{{ . }}">
+          </a>
           {{ end }}
         </div>
       </section>

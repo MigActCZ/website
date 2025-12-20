@@ -828,7 +828,7 @@ svg.socials {
 }
 /* || Dynamic pages */
 
-.gallery {
+#gallery {
   display: grid;
   gap: var(--separator-gap);
   grid-template-columns: repeat(6, 1fr);
