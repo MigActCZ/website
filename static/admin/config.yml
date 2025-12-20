@@ -90,11 +90,20 @@ collections:
     i18n: true
     fields:
       - { label: Title, name: title, widget: string, i18n: true }
-      - { label: Status, name: status, widget: select, options: [ongoing, finished], default: ongoing, i18n: duplicate }
       - { label: Starts, name: dtstart, widget: datetime, time_format: false, i18n: duplicate}
       - { label: Ends, name: dtend, widget: datetime, time_format: false, i18n: duplicate }
-      - label: Partners
-        name: partners
+      - label: Partner
+        name: partner
+        widget: relation
+        collection: partners
+        value_field: "{{slug}}"
+        display_fields: [title]
+        search_fields: [title]
+        required: false
+        multiple: false
+        i18n: duplicate
+      - label: Supporters
+        name: supporters
         widget: relation
         collection: partners
         value_field: "{{slug}}"

@@ -1,15 +1,32 @@
 {{ define "main" }}
-<main id="project">
+<main id="project" class="{{ .Kind }}">
     <h1>{{ .Title }}</h1>
     <dl class="attributes">
-      <div><dt>{{ i18n "status" }}</dt><dd>{{ i18n .Params.status }}</dd></div>
-      <div><dt>{{ i18n "timeline" }}</dt><dd>{{ .Params.dtstart | dateFormat "2 Jan 2006" }} - {{ .Params.dtend | dateFormat "2 Jan 2006" }}</dd></div>
-      {{ with .Params.partners }}
-      <div>
+      <div><dt>{{ i18n "status" }}</dt>
+        <dd>
+          <div class="status-tag" data-toggle="future">{{ i18n "ongoing" }}</div>
+          <div class="status-tag" data-toggle="past">{{ i18n "finished" }}</div>
+        </dd>
+      </div>
+      <div><dt>{{ i18n "timeline" }}</dt>
+        <dd>
+          <time datetime='{{ .Params.dtstart }}'>
+            {{ .Params.dtstart | dateFormat "2 Jan 2006" }}</time>
+          -
+          <time datetime='{{ .Params.dtend }}'>
+            {{ .Params.dtend | dateFormat "2 Jan 2006" }}</time>
+        </dd></div>
+      {{ with .Params.partner }}
       {{ $partnersPage := site.GetPage "partners" }}
+      <div>
         <dt>{{ i18n "partners" }}</dt>
         <div>
-          {{ range . }}
+          <dd class="partners">
+            {{ $partnerPage := $partnersPage.GetPage . }}
+            {{ $image := $partnerPage.Resources.GetMatch "logo.*" }}
+            <img class="partner-logo" src="{{ $image.Permalink }}" alt="Logo of {{ $partnerPage.Title }}">
+          </dd>
+          {{ range $.Params.supporters }}
           <dd class="partners">
             {{ $partnerPage := $partnersPage.GetPage . }}
             {{ $image := $partnerPage.Resources.GetMatch "logo.*" }}

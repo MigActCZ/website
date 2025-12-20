@@ -49,7 +49,7 @@ body {
   grid-template-rows: auto 1fr auto;
 
   & > header, & > footer,
-  & > main > .card-grid, & > main > .intro, #contacts {
+  & > main > .card-grid, & > main > .intro, .page { /* TODO: How to do the padding on standalone pages within main?*/
     padding-inline: var(--content-inline-padding);
   }
 

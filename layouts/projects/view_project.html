@@ -11,5 +11,7 @@
     </div>
   </header>
   <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
-  <footer>{{ delimit .Params.partners ", " }}</footer>
+  {{ $partnersPage := site.GetPage "partners" }}
+  {{ $partnerPage := $partnersPage.GetPage .Params.partner }}
+  <footer>{{ $partnerPage.Title }}</footer>
 </article>

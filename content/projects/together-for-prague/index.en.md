@@ -1,16 +1,14 @@
 ---
 title: Together for Prague - Supporting Civic Participation and Community Leaders
-status: finished
+dtstart: 2025-04-01
+dtend: 2025-10-31
+partner: prague-city-hall
 date: 2025-03-13
-dtstart: '2025-04-01'
-dtend: '2025-10-31'
-partners:
-  - prague-city-hall
 ---
 The aim of the project is to provide comprehensive support for residents with migration backgrounds in the area of civic and political participation in the capital city of Prague.
 
 Project Activities
-Educational Program for Community Leaders 
+Educational Program for Community Leaders
 An educational program for individuals who are already active in Prague – for example, those who initiate and lead community activities, are engaged in their neighborhoods, and are interested in developing their civic skills and leadership.
 Upon successful completion of the program, participants will receive mini-grants to organize integration activities on selected topics, aimed at connecting diverse residents of Prague.
 Community events
