@@ -391,7 +391,7 @@ ul.pagination{
 }
 
 
-.button, ul.buttons a {
+.button, :is(ul, menu).buttons a {
   display: block;
   width: fit-content;
   padding: var(--medium-gap) var(--big-gap);
@@ -651,18 +651,6 @@ ul.pagination{
   }
 }
 
-#events {
-
-  .card {
-    padding: var(--wide-gap);
-
-    header {
-      display: flex;
-      justify-content: space-between;
-    }
-  }
-}
-
 #project {
   & > h1 {
     font-size: 3.5rem;
@@ -693,6 +681,110 @@ ul.pagination{
 
   & > p {
     font-size: 1.125rem;
+  }
+}
+
+#events {
+  .card {
+    padding: var(--wide-gap);
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    footer {
+      margin-block: var(--medium-gap);
+
+      display: flex;
+      gap: var(--medium-gap);
+      
+      svg {
+      width: 1rem;
+      height: 1rem;
+      }
+
+      .location, .language {
+        display: flex;
+        align-items: center;
+        gap: var(--separator-gap);
+      }
+    }
+
+    menu {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+  }
+}
+
+#event {
+  padding-block: var(--big-gap);
+
+  display: flex;
+  flex-direction: row-reverse;
+  gap: var(--big-gap);
+}
+
+#info {
+  flex: 0 0 25%;
+  padding: var(--wide-gap) var(--big-gap);
+  height: fit-content;
+  
+  position: sticky;
+  top: var(--big-gap);
+  
+  display: flex;
+  flex-direction: column;
+  gap: var(--medium-gap);
+
+  border: 1px solid var(--color-teal);
+  border-radius: 1rem;
+  dt {
+    color: var(--color-text-light);
+  }
+  hr {
+    width: 100%;
+  }
+}
+
+/* Row oriented dl */
+#info, #join-donate {
+  --section-color: var(--color-teal);
+  dl {
+    display: flex;
+    flex-direction: column;
+    gap: var(--medium-gap);
+  }
+
+  .dl-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+    "icon term"
+    "icon def";
+    column-gap: var(--medium-gap);
+    align-items: start;
+
+    div.icon {
+      grid-area: icon;
+      color: var(--section-color);
+      background-color: color-mix(in srgb, var(--section-color) 10%, transparent);
+      border-radius: 50%;
+      padding: var(--medium-gap);
+
+      svg {
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+    dt {
+      grid-area: term;
+    }
+    dd {
+      grid-area: def;
+    }
   }
 }
 
@@ -845,41 +937,6 @@ ul.pagination{
 
   display: grid;
   grid-template-columns: 1fr 1fr;
-
-  dl {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .dl-item {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-areas:
-    "icon term"
-    "icon def";
-    column-gap: var(--medium-gap);
-    align-items: start;
-
-    div.icon {
-      grid-area: icon;
-      color: var(--section-color);
-      background-color: color-mix(in srgb, var(--section-color) 10%, transparent);
-      border-radius: 50%;
-      padding: var(--medium-gap);
-
-      svg {
-        width: 2rem;
-        height: 2rem;
-      }
-    }
-    dt {
-      grid-area: term;
-    }
-    dd {
-      grid-area: def;
-    }
-  }
 }
 
 /* ============================================     Tablet (768px+)     ============================================ */

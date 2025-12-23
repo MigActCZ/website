@@ -53,12 +53,11 @@ past: Past
 date: When
 location: Where
 languages: Languages
-registration: Registration
+project: Project
 tba: To be announced
-signup: Sign up here
-calendar: Calendar
-download: Download
+calendar: Add to calendar
 details: Details
+register: Register
 
 # Contact page
 phone: Phone

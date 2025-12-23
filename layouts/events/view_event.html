@@ -1,4 +1,4 @@
-{{ $dtend := partial "combine-date-time.html" (dict "date" .Params.dtstart "time" .Params.tend ) }}
+{{ $dtend := time (printf "%s%s" (substr .Params.dtstart 0 11 ) .Params.tend ) }}
 {{ $dtstart := time .Params.dtstart }}
 {{ $dtstart_utc := $dtstart | dateFormat "2006-01-02T15:04Z0700" }}
 {{ $dtend_utc := $dtend | dateFormat "2006-01-02T15:04Z0700" }}
@@ -16,13 +16,17 @@
     <div class="status-tag" data-toggle="past">{{ i18n "past" }}</div>
   </header>
   <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
-  {{ .Summary }}
-  <div class="logistics">
-    <div class="location">{{ replaceRE `^.*,\s*\d\d\d\s+\d\d\s+` "" (default "TBA" .Params.location) }}</div>
-    <div class="language">{{ default "EN" "" }}</div>
-  </div>
-  <footer>
-    <a>Details</a>
-    <a>Register</a>
+  <div>{{ .Summary }}</div>
+  <footer class="logistics">
+    <div class="location">
+      {{- partial "inline-svg" "icons/map-pin" -}}{{ replaceRE `^.*,\s*\d\d\d\s+\d\d\s+` "" (default "TBA" .Params.location) }}</div>
+    <div class="language">
+      {{- partial "inline-svg" "icons/globe" -}}{{ default "EN CZ" .Params.languages }}</div>
   </footer>
+  <menu class="buttons">
+    <li><a href="{{ .RelPermalink }}">{{ i18n "details" }}</a></li>
+    {{ with .Params.registration }}
+    <li><a href="{{ . }}">{{ i18n "register" }}</a></li>
+    {{ end }}
+  </menu>
 </article>

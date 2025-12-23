@@ -53,12 +53,11 @@ past: Proběhlo
 date: Kdy
 location: Kde
 languages: Languages
-registration: Registrace
+project: Project
 tba: Bude oznameno
-signup: Prihlaste se zde
-calendar: Kalendář
-download: Stáhnout
+calendar: Pridat do kalendáře
 details: Details
+register: Registrovat
 
 # Contact page
 phone: Telefon

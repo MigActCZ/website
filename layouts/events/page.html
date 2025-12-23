@@ -1,14 +1,68 @@
 {{ define "main" }}
-<main>
-  <dl class="attributes">
-    {{ with .Params.registration }}
-    <dt>📝 {{ i18n "registration" }}</dt><dd><a href="{{ . }}">{{ i18n "signup" }}</a></dd>
-    {{ end }}
-    {{ with .OutputFormats.Get "calendar" }}
-    <dt>📅 {{ i18n "calendar" }}</dt><dd><a href="{{ .RelPermalink }}" rel="alternate" type="text/calendar" download>{{ i18n "download" }}</a></dd>
-    {{ end }}
-  </dl>
+<main id="event" class="page">
+  <div id="info">
+    <dl class="attributes">
+      {{ $dtend := time (printf "%s%s" (substr .Params.dtstart 0 11 ) .Params.tend ) }}
+      {{ $dtstart := time .Params.dtstart }}
+      {{ $dtstart_utc := $dtstart | dateFormat "2006-01-02T15:04Z0700" }}
+      {{ $dtend_utc := $dtend | dateFormat "2006-01-02T15:04Z0700" }}
+
+      <div class="dl-item">
+        <div class="icon">
+            {{- partial "inline-svg" "icons/clock" -}}
+        </div>
+        <dt>{{ i18n "date" }}</dt>
+        <dd>
+          <time datetime='{{ $dtstart | dateFormat "2006-01-02" }}'>
+            {{ .Params.dtstart | dateFormat "2 Jan 2006" }}</time>, 
+            <time datetime='{{ $dtstart_utc }}'>
+              {{ .Params.dtstart | dateFormat "15:04" }}</time>
+            -
+            <time datetime='{{ $dtend_utc }}'>
+              {{ $dtend | dateFormat "15:04" }}</time>
+        </dd>
+      </div>
+      <div class="dl-item">
+        <div class="icon">
+            {{- partial "inline-svg" "icons/map-pin" -}}
+        </div>
+        <dt>{{ i18n "location" }}</dt>
+        <dd><address>{{ range (split .Params.location ", ") }}
+            {{ . }}<br/>
+          {{ end }}
+        </address></dd>
+      </div>
+      <div class="dl-item">
+        <div class="icon">
+            {{- partial "inline-svg" "icons/globe" -}}
+        </div>
+        <dt>{{ i18n "languages" }}</dt>
+        <dd>{{ .Params.languages }}</dd>
+      </div>
+      <div class="dl-item">
+        <div class="icon">
+            {{- partial "inline-svg" "icons/globe" -}}
+        </div>
+        <dt>{{ i18n "project" }}</dt>
+        {{ $project := (.Site.GetPage "projects").GetPage .Params.project }}
+        <dd><a href='{{ $project.RelPermalink }}'>{{ $project.Title }}</a></dd>
+      </div>
+    </dl>
+    <hr/>
+    <menu class="buttons">
+      {{ with .Params.registration }}
+      <li><a href="{{ . }}">{{ i18n "register" }}</a></li>
+      {{ end }}
+      {{ if and .Params.dtstart .Params.tend }}
+        {{ with .OutputFormats.Get "calendar" }}
+        <li><a href="{{ .RelPermalink }}" rel="alternate" type="text/calendar" download>
+          {{ i18n "calendar" }}</a></li>
+        {{ end }}
+      {{ end }}
+    </menu>
+  </div>
   <section>
+    <img src="{{ (.Resources.Get .Params.featured).RelPermalink }}"/>
     <h1>{{ .Title }}</h1>
     {{ .Content }}
   </section>
