@@ -87,6 +87,7 @@ collections:
     slug: "{{slug}}"
     media_folder: ''
     public_folder: ''
+    sortable_fields: ["dtstart"]
     i18n: true
     fields:
       - { label: Title, name: title, widget: string, i18n: true }
@@ -129,6 +130,7 @@ collections:
     slug: "{{slug}}"
     media_folder: ''
     public_folder: ''
+    sortable_fields: ["dtstart"]
     i18n: true
     fields:
       - { label: Title, name: title, widget: string, i18n: true }
@@ -156,6 +158,7 @@ collections:
     slug: "{{slug}}"
     media_folder: ''
     public_folder: ''
+    sortable_fields: ["commit_date"]
     i18n: true
     fields:
       - { label: Title, name: title, widget: string, i18n: true }
