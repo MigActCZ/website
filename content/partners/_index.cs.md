@@ -1,6 +1,5 @@
 ---
 title: Naši partneři a dárci
-slug: partneri
 build:
   render: always
 cascade:

@@ -40,9 +40,13 @@ languages:
         pozadím v Praze
     permalinks:
       page:
+        events: /akce/:slug/
         projects: /projekty/:slug/
       section:
+        events: /akce/
+        partners: /partneri/
         projects: /projekty/
+        team: /tym/
 outputFormats:
   calendar:
     baseName: invitation
