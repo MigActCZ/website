@@ -1,0 +1,5 @@
+{{ $donation_link := site.Params.donate }}
+{{ if eq .Language.Lang "en" }}
+  {{ $donation_link = printf "%s?locale=en" $donation_link }}
+{{ end }}
+{{ return $donation_link }}

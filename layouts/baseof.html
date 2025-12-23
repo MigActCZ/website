@@ -51,7 +51,14 @@
             <h4>{{ i18n "footer_actions" }}</h4>
             <menu>
                 {{ range site.Menus.footer }}
-                <li><a href="{{ .URL }}">
+                <li>
+                    {{ $url := .URL }}
+                    {{ if eq .Identifier "donate" }}
+                        {{ $url = partial "get-donate-link" $ }}
+                    {{ else if eq .Identifier "newsletter" }}
+                        {{ $url = site.Params.newsletter }}
+                    {{ end }}
+                    <a href="{{ $url }}">
                     {{- partial "inline-svg" .Pre -}}
                     {{ i18n .Identifier }}</a></li>
                 {{ end }}
