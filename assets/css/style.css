@@ -132,24 +132,19 @@ svg.socials {
   }
 }
 
-[data-toggle] {
-  display: none;
-}
-[data-archived="false"] [data-toggle="future"],
-[data-archived="true"] [data-toggle="past"] {
-  display: inline;
-}
-
 .status-tag {
   background-color: #B2B2B2;
   padding: var(--separator-gap) 1.25rem;
   border-radius: 2.5rem;
   padding-inline: var(--separator-gap);
-  &[data-toggle="future"] {
+  display: none;
+  &.active {
     color: white;
+    display: revert;
   }
-  &[data-toggle="past"] {
+  &.archived {
     color: #111;
+    display: revert;
   }
 }
   

@@ -12,8 +12,7 @@
       <time datetime='{{ $dtend_utc }}'>
         {{ $dtend | dateFormat "15:04" }}</time>
     </div>
-    <div class="status-tag" data-toggle="future">{{ i18n "upcoming" }}</div>
-    <div class="status-tag" data-toggle="past">{{ i18n "past" }}</div>
+    <div class="status-tag"></div>
   </header>
   <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
   <div>{{ .Summary }}</div>

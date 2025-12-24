@@ -1,3 +1,6 @@
+{{ define "scripts" }}
+<script src='{{ (resources.Get "utility.js").Permalink }}'>updateStatusTag();</script>
+{{ end }}
 {{ define "main" }}
 <main class="{{ .Kind }}">
     <h1 class="intro">{{ .Title }}</h1>
@@ -16,7 +19,21 @@
         e.target.closest('.card')?.classList.toggle('flipped');
     })
 </script>
-{{ else if or (eq .Section "projects") (eq .Section "events") }}
-    {{ partial "update-status" . }}
+{{ else if eq .Section "projects" }}
+    <script>
+        const vals = {
+            active: {{ i18n "ongoing" }},
+            archived: {{ i18n "finished" }}
+        };
+        window.updateGridStatusTag(vals);
+    </script>
+{{ else if eq .Section "events" }}
+    <script>
+        const vals = {
+            active: {{ i18n "upcoming" }},
+            archived: {{ i18n "past" }}
+        };
+        window.updateGridStatusTag(vals);
+    </script>
 {{ end }}
 {{ end }}
