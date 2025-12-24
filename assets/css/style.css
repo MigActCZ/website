@@ -798,7 +798,6 @@ ul.pagination{
       width: 100%;
       height: auto;
       object-fit: scale-down;
-      object-position: center;
     }
 
     a {
@@ -810,20 +809,69 @@ ul.pagination{
 #team {
   display: grid;
   grid-template-columns: 1fr;
-}
 
-.member {
-  text-align: center;
-}
+  .card {
+    position: relative;
+    height: calc(var(--content-width) / 2);
+    cursor: pointer;
 
-.member > img {
-  width: 150px;
-  height: 150px;
-  border-radius: 40%;
-  margin: 0 auto 1rem;
-  object-fit: cover;
-}
+    h1, h2 {
+      margin: unset;
+    }
 
+    .front, .back {
+      position: absolute;
+      backface-visibility: hidden;
+      transition: ease-in-out .4s;
+    }
+    .front {
+      inset: 0;
+    }
+    .back {
+      transform: rotateY(-180deg);
+      inset: var(--big-gap);
+
+      display: flex;
+      flex-direction: column;
+      h2 {
+        margin-block-end: auto;
+      }
+    }
+
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      margin: var(--big-gap); /* Using margin to see the image underneath */
+      color: var(--color-bg);
+    }
+
+    img {
+      object-fit: cover;
+      height: 100%;
+      border-radius: 2rem;
+    }
+
+    a {
+      display: flex;
+      gap: var(--separator-gap);
+      color: inherit;
+
+      svg {
+        width: 1rem;
+      }
+    }
+
+    &.flipped {
+      border: 1px solid var(--color-teal);
+      .front{
+        transform: rotateY(180deg);
+      }
+      .back {
+        transform: rotateY(0deg);
+      }
+    }
+  }
+}
 /* || JOIN US */
 #join-us {
   color: var(--color-text-light);
@@ -1022,7 +1070,7 @@ ul.pagination{
     }
   }
   
-  #partners.card-grid, #events.card-grid, #contacts > dl{
+  #team.card-grid, #partners.card-grid, #events.card-grid, #contacts > dl{
     grid-template-columns: repeat(3, 1fr);
   }
 

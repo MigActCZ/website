@@ -1,10 +1,17 @@
-<article class="member">
+<article class="card">
   {{ $photo := .Resources.GetMatch "photo.*" }}
-  {{ if $photo }}
+  <div class="front">
     <img src='{{ $photo.RelPermalink }}' alt="Portrait of {{ .Title }}"/>
-  {{ end }}
-  <h2>{{ .Title }}</h2>
-  <h6>{{ .Params.position }}</h6>
-  <a href="mailto:{{ .Params.contact }}">{{ .Params.contact }}</a>
-  {{ .Content }}
+    <div class="overlay">
+      <h1>{{ .Title }}</h1>
+      <h2>{{ .Params.position }}</h2>
+      <a>{{ i18n "bio" }} {{ partial "inline-svg" "icons/arrow-right" }}</a>
+    </div>
+  </div>
+  <div class="back">
+    <h1>{{ .Title }}</h1>
+    <h2>{{ .Params.position }}</h2>
+    {{ .Content }}
+    <a href="mailto:{{ .Params.contact }}">{{ partial "inline-svg" "icons/mail" }}{{ .Params.contact }}</a>
+  </div>
 </article>

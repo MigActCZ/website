@@ -10,5 +10,13 @@
 </main>
 {{ end }}
 {{ define "inline-scripts" }}
- {{ partial "update-status" . }}
+{{ if eq .Section "team"}}
+<script>
+    document.querySelector(".card-grid")?.addEventListener("click", (e) => {
+        e.target.closest('.card')?.classList.toggle('flipped');
+    })
+</script>
+{{ else if or (eq .Section "projects") (eq .Section "events") }}
+    {{ partial "update-status" . }}
+{{ end }}
 {{ end }}
