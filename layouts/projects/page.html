@@ -9,19 +9,17 @@
   });
   lightbox.init();
   </script>
+  <script src='{{ (resources.Get "utility.js").Permalink }}'></script>
 {{ end }}
 {{ define "main" }}
 <main id="project" class="{{ .Kind }}">
     <h1>{{ .Title }}</h1>
     <dl class="attributes">
       <div><dt>{{ i18n "status" }}</dt>
-        <dd>
-          <div class="status-tag" data-toggle="future">{{ i18n "ongoing" }}</div>
-          <div class="status-tag" data-toggle="past">{{ i18n "finished" }}</div>
-        </dd>
+        <dd class="status"></dd>
       </div>
       <div><dt>{{ i18n "timeline" }}</dt>
-        <dd>
+        <dd class="timeline">
           <time datetime='{{ .Params.dtstart }}'>
             {{ .Params.dtstart | dateFormat "2 Jan 2006" }}</time>
           -
@@ -80,4 +78,13 @@
       </section>
     {{ end }}
 </main>
+{{ end }}
+{{ define "inline-scripts" }}
+<script>
+    const vals = {
+        active: {{ i18n "ongoing" }},
+        archived: {{ i18n "finished" }}
+    };
+    window.updatePageStatusTag(vals);
+</script>
 {{ end }}

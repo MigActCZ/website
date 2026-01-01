@@ -136,7 +136,6 @@ svg.socials {
   background-color: #B2B2B2;
   padding: var(--separator-gap) 1.25rem;
   border-radius: 2.5rem;
-  padding-inline: var(--separator-gap);
   display: none;
   &.active {
     color: white;
