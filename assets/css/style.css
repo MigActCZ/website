@@ -678,7 +678,7 @@ ul.pagination{
   }
 }
 
-#events {
+#events, #join-events {
   .card {
     padding: var(--wide-gap);
     header {
@@ -1064,12 +1064,16 @@ ul.pagination{
     }
   }
   
-  #team.card-grid, #partners.card-grid, #events.card-grid, #contacts > dl{
-    grid-template-columns: repeat(3, 1fr);
-  }
-
   .card-grid {
     gap: var(--medium-gap) var(--big-gap);
+  }
+  
+  #team.card-grid,
+  #partners.card-grid,
+  #events.card-grid,
+  #join-events .card-grid,
+  #contacts > dl{
+    grid-template-columns: repeat(3, 1fr);
   }
 
   #projects.card-grid {

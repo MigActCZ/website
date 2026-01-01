@@ -17,10 +17,11 @@
         {{ with .Resources.Get "events.md" }}
             {{ .Content }}
         {{ end }}
-        {{ with (site.GetPage "events").RegularPages }}
+        {{ $events := (site.GetPage "events").RegularPages }}
+        {{ with where $events ".Params.dtstart" "ge" now }}
         <menu class="card-grid">
             {{ range first 3 . }}
-                <li>{{ .Render "view-event" }}{{ debug.Dump . }}</li>
+                <li>{{ .Render "view_event" }}</li>
             {{ end }}
         </menu>
         {{ end }}
