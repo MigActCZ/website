@@ -1,6 +1,6 @@
 ---
 title: InBaze
-website: https://inbaze.cz/
 image: logo.png
+website: https://inbaze.cz/
 ---
-The mission of InBáze is to help migrants and their families with life in the Czech Republic.
+Posláním InBáze je pomáhat migrantkám a migrantům a jejich rodinám ve životě v České republice.
