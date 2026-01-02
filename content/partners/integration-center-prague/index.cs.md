@@ -1,6 +1,6 @@
 ---
 title: Integration Center Prague
-website: https://icpraha.com/
 image: logo.webp
+website: https://icpraha.com/
 ---
-We are a non-profit organisation that strives to make Prague a city for everyone – a home to all those who have decided to live here regardless of their country of origin, and a place where the citizens respect and support one another, and team up.
+Jsme nezisková organizace, která usiluje o to, aby se Praha byla metropolí všech – domovem pro všechny, kdo se tu rozhodli žít bez ohledu na jejich zemi původu, a místem, kde se jednotliví  obyvatelé vzájemně respektují, podporují a spolupracují.

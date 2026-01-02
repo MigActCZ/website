@@ -1,6 +1,6 @@
 ---
 title: Matertera z.s
-website: https://matertera.cz/
 image: logo.webp
+website: https://matertera.cz/
 ---
-The purpose of Matertera is to help women with a migrant background overcome barriers and support each other in personal and professional growth. We are a community of women who have decided to fullfill their dreams together.
+Účelem Matertery je pomáhat ženám s migrantním původem překonávat bariéry a vzájemně se podporovat v osobním i profesním růstu. Jsme komunita žen, které se rozhodly společně plnit své sny.

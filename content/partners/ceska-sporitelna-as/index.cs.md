@@ -1,8 +1,8 @@
 ---
 title: Česká spořitelna a.s.
-website: https://dobreveci.substack.com/
 image: logo.avif
+website: https://dobreveci.substack.com/
 ---
 #### Dobro.dějky
 
-We tell stories about how #stronger neighborhoods are created and how good deeds is done. We call it Dobro.dějky.
+Vyprávíme příběhy o tom, jak se tvoří  #silnější sousedství a jak se dělá dobro. Říkáme tomu dobro.dějky.

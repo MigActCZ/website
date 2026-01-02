@@ -1,6 +1,6 @@
 ---
 title: Česko-Tchaj-wanská společnost z.s.
-website: https://cs.taiwanese.cz/
 image: logo.webp
+website: https://cs.taiwanese.cz/
 ---
-The Czech-Taiwanese Society is the first association of the Taiwanese community in the Czech Republic. We support the Taiwanese community living in the Czech Republic and strive to facilitate better cultural exchange between the two countries.
+Česko-Tchaj-wanská společnost je první asociace tchajwanské komunity v České republice. Podporujeme tchajwanskou komunitu žijící v České republice a snažíme se zajistit lepší kulturní výměnu mezi oběma zeměmi.
