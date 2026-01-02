@@ -19,5 +19,3 @@ A total of 5 events will be held. The topics and formats of these gatherings wil
 
 **Evaluation**
 This activity focuses on assessing the project’s impact on the target group.
-
-The project is implemented with financial support from the City of Prague.

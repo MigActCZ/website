@@ -19,5 +19,3 @@ V rámci aktivity proběhne celkem 5 akcí. Témata a formát setkání budou vy
 
 **Evaluace**
 Tato aktivita se zaměřuje na hodnocení dopadu projektu na cílovou skupinu.
-
-Projekt je realizován s finanční podporou hl. m. Prahy.
