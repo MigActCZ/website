@@ -1,5 +1,5 @@
 ---
-title: Společně na Praze 3
+title: 'Společně na Praze 3: Objevte občanský a komunitní život'
 featured: featured.webp
 dtstart: 2025-10-23T17:30:00
 tend: 19:00:00
@@ -15,7 +15,7 @@ Zveme vás na večer plný setkávání v Krenovce! Seznamte se s aktivními sou
 * Networking trochu jinak – setkání s místními i nově příchozími v přátelské atmosféře
 * Poznejte Sousedského průvodce Prahou 3 – zdroj informaci o komunitním a občanském zapojení
 
-Občerstvení zajištěno – stačí dorazit s dobrou náladou a otevřenou myslí!*
+Občerstvení zajištěno – stačí dorazit s dobrou náladou a otevřenou myslí!\*
 
 <!--more-->
 
