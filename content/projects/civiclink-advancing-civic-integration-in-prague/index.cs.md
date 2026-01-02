@@ -14,5 +14,3 @@ Druhé kolo programu pro komunitní organizátory – jaro 2026.
 Komunitní a networkingové akce.
 Podpora kapacit pro občanskou a komunitní participaci na místní úrovni ve vybraných pražských městských částech.
 Aktualizace strategického plánu pro období 2027–2028.
-
- Projekt je realizován s finanční podporou EPIM – Evropské filantropické iniciativy pro migraci.
