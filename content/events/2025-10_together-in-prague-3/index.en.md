@@ -1,5 +1,5 @@
 ---
-title: Together in Prague 3
+title: 'Together in Prague 3: Discover civic and community life'
 featured: featured.webp
 dtstart: 2025-10-23T17:30:00
 tend: 19:00:00
