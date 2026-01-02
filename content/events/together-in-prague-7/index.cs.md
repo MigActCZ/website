@@ -6,7 +6,7 @@ tend: 11:00:00
 location: KC Přístav 7, V Přístavu 24, 170 00 Praha 7-Holešovice
 languages: EN CZ
 registration: https://forms.gle/2MWR13Tu8sKqnCvu7
-project: together-for-prague
+project: pathways-to-civic-integration-of-residents-with-migrant-backgrounds
 date: 2025-08-06
 ---
 Přijďte na pohodovou snídani, kde se setkáte se sousedy, vyměníte si nápady a společně prozkoumáme, jak udělat Prahu 7 otevřenější a inkluzivnější. Podělíme se o poznatky z našeho mapování aktivního občanství lidí s migračním původem v Praze 7 – co funguje, co chybí a kam se můžeme posunout dál.

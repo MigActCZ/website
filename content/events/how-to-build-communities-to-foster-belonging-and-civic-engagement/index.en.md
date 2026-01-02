@@ -6,7 +6,7 @@ tend: 20:00:00
 location: Dům U Kamenného zvonu, Staroměstské nám. 605/13, 110 00 Staré Město
 languages: EN CZ
 registration: ''
-project: city-for-all
+project: together-for-prague
 date: 2025-09-04
 ---
 We warmly invite you to take part in an engaging afternoon of discussion and exchange. This event brings together local community organizers, migrant-led initiatives, and supporters of civic engagement in Prague.

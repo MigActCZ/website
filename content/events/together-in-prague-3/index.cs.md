@@ -1,5 +1,5 @@
 ---
-title: Společně na Praze 3
+title: 'Společně na Praze 3: Objevte občanský a komunitní život'
 featured: featured.webp
 dtstart: 2025-10-23T17:30:00
 tend: 19:00:00

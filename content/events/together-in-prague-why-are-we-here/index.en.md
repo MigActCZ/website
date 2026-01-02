@@ -9,8 +9,7 @@ registration: ''
 project: together-for-prague
 date: 2025-10-30
 ---
-Join us for an evening of connection, sharing, and reflection with others who call Prague home. This gathering is all about meeting each other — hearing our stories,
-finding common ground, and exploring the question: “Why are we here?”
+Join us for an evening of connection, sharing, and reflection with others who call Prague home. This gathering is all about meeting each other — hearing our stories, finding common ground, and exploring the question: “Why are we here?”
 
 Whether you came to Prague by choice, chance, or curiosity, we all share moments of belonging, barriers, opportunities, and lucky coincidences. Let’s talk about them together and see what unites us — and what we can create next.
 

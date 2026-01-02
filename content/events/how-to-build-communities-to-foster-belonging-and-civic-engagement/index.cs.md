@@ -6,7 +6,7 @@ tend: 20:00:00
 location: Dům U Kamenného zvonu, Staroměstské nám. 605/13, 110 00 Staré Město
 languages: EN CZ
 registration: ''
-project: city-for-all
+project: together-for-prague
 date: 2025-09-04
 ---
 Srdečně vás zveme k účasti na inspirativním odpoledni plném diskusí a sdílení zkušeností. Setkají se zde organizátoři místního komunitního života, iniciativy vedené migranty a příznivci aktivního občanství v Praze.
@@ -14,11 +14,13 @@ Srdečně vás zveme k účasti na inspirativním odpoledni plném diskusí a sd
 <!--more-->
 
 Budete mít příležitost
+
 * Seznámit se s organizátory komunitního života a dalšími účastníky
 * Poznat inspirativní pražské spolky vedené migranty
 * Zapojit se do dynamické panelové diskuse s našimi hosty
 
 Hosté:
+
 * Petr Štádler – vedoucí iniciativy Probuďme Nusle, manažer festivalu Zažít město jinak a zastupitel MČ Praha 4.
 * Justin Mainous – mindset kouč, komunitní hybatel a zakladatel iniciativy @Agora Network.
 * Andrea Studihradová – CSR manažerka (Silnější hybatelé, Dokážeme víc, Dobro.dějky Substack), Česká spořitelna
@@ -26,9 +28,10 @@ Hosté:
 Moderátor: Ben Curtis – člen správní rady, MigAct z. s.
 
 ### Program
+
 * 17:30 – 17:40 | Úvodní slovo
 * 17:40 – 19:00 | Panelová diskuse + Q&A: Jak budovat komunity posilující sounáležitost a aktivní občanství?
-* 19:00 – 19:15 | Přestávka na kávu 
+* 19:00 – 19:15 | Přestávka na kávu
 * 19:15 – 19:55 | Moderovaný networking
 * 19:55 – 20:00 | Shrnutí a závěrečné slovo
 
