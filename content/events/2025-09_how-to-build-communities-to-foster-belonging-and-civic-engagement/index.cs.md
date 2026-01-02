@@ -5,7 +5,7 @@ dtstart: 2025-09-29T17:30:00
 tend: 20:00:00
 location: Dům U Kamenného zvonu, Staroměstské náměstí 605/13, 11000 Praha 1
 registration: ''
-project: city-for-all
+project: together-for-prague
 ---
 Srdečně vás zveme k účasti na inspirativním odpoledni plném diskusí a sdílení zkušeností. Setkají se zde organizátoři místního komunitního života, iniciativy vedené migranty a příznivci aktivního občanství v Praze.
 
