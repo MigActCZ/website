@@ -1,5 +1,5 @@
 ---
-title: Supporting Civic Participation and Community Leaders
+title: Společně pro Prahu – Podpora občanské participace a komunitních lídrů
 status: ongoing
 dtstart: 2025-04-01
 dtend: 2025-12-31
