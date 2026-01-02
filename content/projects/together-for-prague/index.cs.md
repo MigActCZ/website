@@ -1,21 +1,20 @@
 ---
-title: Supporting Civic Participation and Community Leaders
+title: Společně pro Prahu – Podpora občanské participace a komunitních lídrů
 dtstart: 2025-04-01
 dtend: 2025-10-31
 partner: prague-city-hall
 date: 2025-03-13
 ---
-The aim of the project is to provide comprehensive support for residents with migration backgrounds in the area of civic and political participation in the capital city of Prague.
+Cílem projektu je komplexní podpora obyvatel s migračním původem v oblasti občanské a politické participace v hlavním městě Praze. Aktivity projektu
 
-Project Activities
-Educational Program for Community Leaders
-An educational program for individuals who are already active in Prague – for example, those who initiate and lead community activities, are engaged in their neighborhoods, and are interested in developing their civic skills and leadership.
-Upon successful completion of the program, participants will receive mini-grants to organize integration activities on selected topics, aimed at connecting diverse residents of Prague.
-Community events
-A total of 5 events will be held. The topics and formats of these gatherings will be tailored to the needs of the target group. These may include networking events, participatory meetings with local municipal districts, or awareness-raising workshops.
-Evaluation
-This activity focuses on assessing the project’s impact on the target group.
+Aktivity projektu
 
-Project Duration: April 1, 2025 – December 31, 2025
+**Vzdělávací program pro komunitní lídry z řad migrantů&#160;**
+Vzdělávací program pro jednotlivce, kteří již působí aktivně na území hl. města Prahy – například iniciují a vedou komunitní aktivity, jsou aktivní ve svém sousedství a mají zájem rozvíjet své občanské dovednosti a leadership.
+Po úspěšném absolvování programu získají účastníci mini-granty, diky kterým uspořádají integrační aktivitu na vybrané téma, zaměřenou na propojení různorodých obyvatel hlavního města Prahy.
 
-The project is implemented with financial support from the City of Prague.
+**Komunitní aktivity**
+V rámci aktivity proběhne celkem 5 akcí. Témata a formát setkání budou vycházet především z potřeb cílové skupiny, budou to například networkingová setkání, participativní setkání na MČ, nebo osvětové workshopy.
+
+**Evaluace**
+Tato aktivita se zaměřuje na hodnocení dopadu projektu na cílovou skupinu.

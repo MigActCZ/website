@@ -14,5 +14,3 @@ One of our key priorities for the coming years is to continue building a vibrant
 Commnity and networking events.
 Support for capacity for civic and community participation at the local level in selected Prague districts.
 Revision of our strategic plan for the next period of 2027-2028.
-
- The project is carried out with financial support from EPIM – European Philantropic Initiative for Migration.

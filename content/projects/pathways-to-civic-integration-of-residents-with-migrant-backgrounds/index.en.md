@@ -5,6 +5,7 @@ dtstart: 2025-04-01
 dtend: 2025-12-31
 partners:
   - mc-praha-7
+  - ministry-of-the-interior-of-the-czech-republic
 ---
 This project aims to identify good examples of how residents with migrant backgrounds can become involved in local civic life in Prague 7. It will begin with research, followed by community meetings where people can work together to find helpful ideas and tools.
 

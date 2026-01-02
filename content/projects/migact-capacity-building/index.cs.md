@@ -2,7 +2,7 @@
 title: Posílení kapacit MigAct
 dtstart: 2024-06-01
 dtend: 2025-03-31
-partner: mc-praha-7
+partner: epim
 supporters:
   - amiga-zs
   - friendship-prague
