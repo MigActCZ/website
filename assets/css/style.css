@@ -522,14 +522,59 @@ ul.pagination{
   }
 }
 
-#socials{
-  li {
-    padding: var(--big-gap);
-    border: 1.6px solid var(--card-color);
-    border-radius: 1rem;
-    background: var(--color-bg);
-  }
+.involvement-card, .socials-card {
+  padding: var(--big-gap);
+  border: 1.6px solid var(--color-bg-light);
+  border-radius: 1rem;
+  background: var(--color-bg);
+}
 
+#involvement {
+  #donate {
+    --card-color: var(--color-red);
+    text-align: center;
+    margin-block: var(--medium-gap);
+
+    a {
+      display: block;
+      color: var(--color-text);
+    }
+    iframe {
+      margin: var(--medium-gap);
+    }
+    svg {
+      margin-inline: auto;
+    }
+  }
+  svg {
+    color: var(--card-color);
+    background-color: color-mix(in srgb, var(--card-color) 10%, transparent);
+
+    height: var(--brand-dim);
+    width: var(--brand-dim);
+    padding: calc(2rem - var(--brand-dim) / 2);
+    border-radius: .75rem;
+  }
+  menu {
+    display: flex;
+    gap: var(--medium-gap);
+
+    li:nth-child(3n + 1) {
+      --card-color: var(--color-teal);
+    }
+    li:nth-child(3n + 2) {
+      --card-color: var(--color-blue);
+    }
+    li:nth-child(3n + 3) {
+      --card-color: var(--color-orange);
+    }
+  }
+}
+
+#socials{
+  .socials-card{
+    border-color: var(--card-color);
+  }
   h3 {
     color: var(--color-text);
     font-weight: normal;
@@ -573,6 +618,18 @@ ul.pagination{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+
+  #socials-newsletter {
+    border-color: var(--color-orange);
+    text-align: center;
+
+    a {
+      background-color: var(--color-orange);
+      color: var(--color-bg);
+      margin: var(--big-gap) auto;
+    }
+  }
 }
 
 /* || Contact */
