@@ -438,8 +438,8 @@ ul.pagination{
   
   background-image: url("/bg-top.svg");
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
 
   #featured {
     text-align: center;
@@ -727,6 +727,15 @@ ul.pagination{
       margin-block-end: var(--separator-gap);
     }
 
+    #partners {
+      grid-column: span 2;
+    }
+    #logos {
+      display: flex;
+      gap: var(--medium-gap);
+      align-items: center;
+      flex-wrap: wrap;
+    }
     .partner-logo {
       width: 10rem;
       height: auto;
@@ -828,11 +837,6 @@ ul.pagination{
       background-color: color-mix(in srgb, var(--section-color) 10%, transparent);
       border-radius: 50%;
       padding: var(--medium-gap);
-
-      svg {
-        width: 2rem;
-        height: 2rem;
-      }
     }
     dt {
       grid-area: term;
@@ -841,6 +845,14 @@ ul.pagination{
       grid-area: def;
     }
   }
+}
+
+/* Common SVG sizing for dl-item icons */
+#info .dl-item div.icon svg,
+#join-donate .dl-item div.icon svg,
+#join-partners .dl-item div.icon svg {
+  width: 2rem;
+  height: 2rem;
 }
 
 /* || PARTNERS PAGE */
@@ -1022,11 +1034,6 @@ ul.pagination{
       background-color: color-mix(in srgb, var(--section-color) 10%, transparent);
       border-radius: 50%;
       padding: var(--medium-gap);
-
-      svg {
-        width: 2rem;
-        height: 2rem;
-      }
     }
   }
 }

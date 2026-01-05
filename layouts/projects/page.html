@@ -28,18 +28,18 @@
         </dd></div>
       {{ with .Params.partner }}
       {{ $partnersPage := site.GetPage "partners" }}
-      <div>
+      <div id="partners">
         <dt>{{ i18n "partners" }}</dt>
-        <div>
-          <dd class="partners">
+        <div id="logos">
+          <dd>
             {{ $partnerPage := $partnersPage.GetPage . }}
-            {{ $image := $partnerPage.Resources.GetMatch "logo.*" }}
+            {{ $image := $partnerPage.Resources.Get $partnerPage.Params.image }}
             <img class="partner-logo" src="{{ $image.Permalink }}" alt="Logo of {{ $partnerPage.Title }}">
           </dd>
           {{ range $.Params.supporters }}
-          <dd class="partners">
+          <dd>
             {{ $partnerPage := $partnersPage.GetPage . }}
-            {{ $image := $partnerPage.Resources.GetMatch "logo.*" }}
+            {{ $image := $partnerPage.Resources.GetMatch $partnerPage.Params.image }}
             <img class="partner-logo" src="{{ $image.Permalink }}" alt="Logo of {{ $partnerPage.Title }}">
           </dd>
           {{ end }}

@@ -1,10 +1,9 @@
 ---
 title: MigAct local meetups
-status: finished
 dtstart: 2024-09-01
 dtend: 2025-06-30
-partners:
-  - nadace-osf
+partner: nadace-osf
+date: 2024-08-15
 ---
 As part of the project, we will prepare and implement a crowdfunding campaign focused on raising funds for the training and capacity building of local community leaders – individuals who are active in neighborhood/local activities within the city of Prague. We will primarily target active individuals with a migration background. The selected project participants will undergo training aimed at strengthening their civic competencies and will organize local meetings on selected topics in their areas.
 

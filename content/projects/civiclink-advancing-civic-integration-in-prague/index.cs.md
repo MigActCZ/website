@@ -1,10 +1,9 @@
 ---
 title: 'CivicLink: Podpora občanské integrace v Praze'
-status: ongoing
 dtstart: 2025-09-01
 dtend: 2027-08-31
-partners:
-  - epim
+partner: epim
+date: 2025-08-15
 ---
 V příštích letech se chceme zaměřit na budování otevřené a aktivní komunity, kde se lidé mohou setkávat, sdílet zkušenosti a navzájem se podporovat v občanské i politické angažovanosti. V rámci této spolupráce s EPIM bychom rádi rozšířili a posílili komunitu MigAct a zároveň poskytovali dlouhodobou podporu pro rozvoj občanské a politické participaci obyvatel Prahy s migračním původem.
 

@@ -18,7 +18,7 @@ Zveme vás na večer plný setkávání v Krenovce! Seznamte se s aktivními sou
 * Networking trochu jinak – setkání s místními i nově příchozími v přátelské atmosféře
 * Poznejte Sousedského průvodce Prahou 3 – zdroj informaci o komunitním a občanském zapojení
 
-Občerstvení zajištěno – stačí dorazit s dobrou náladou a otevřenou myslí!\*
+Občerstvení zajištěno – stačí dorazit s dobrou náladou a otevřenou myslí!
 
 <!--more-->
 

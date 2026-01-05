@@ -1,10 +1,9 @@
 ---
 title: Místní setkání MigAct
-status: finished
 dtstart: 2024-09-01
 dtend: 2025-06-30
-partners:
-  - nadace-osf
+partner: nadace-osf
+date: 2024-08-15
 ---
 V rámci projektu připravíme a zrealizujeme crowdfundingovou kampaň, která se zaměří na sběr prostředků na školení a posílení kapacit místních komunitních lídrů - lidí, kteří jsou aktivní v sousedských/místních aktivitách na území hl. města Prahy. Zaměříme se primárně na aktivní jednotlivce, kteří mají migrační původ. Vybraní účastníci projektu následně absolvují školení zaměřené na posílení jejích občanských kompetencí a uspořádají místní setkání na vybrané téma ve svých lokalitách.
 

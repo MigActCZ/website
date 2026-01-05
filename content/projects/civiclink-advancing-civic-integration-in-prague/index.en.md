@@ -1,10 +1,9 @@
 ---
 title: 'CivicLink: Advancing Civic Integration in Prague'
-status: ongoing
 dtstart: 2025-09-01
 dtend: 2027-08-31
-partners:
-  - epim
+partner: epim
+date: 2025-08-15
 ---
 One of our key priorities for the coming years is to continue building a vibrant and engaged community where people connect, share knowledge, and support one another in strengthening their civic and political presence within Czech society. In the framework of this cooperation with EPIM we would like to expand and strengthen the MigAct community while providing continuous support for the civic and political participation of Prague residents with migration backgrounds.
 

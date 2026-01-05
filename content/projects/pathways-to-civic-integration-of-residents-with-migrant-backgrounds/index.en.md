@@ -1,11 +1,11 @@
 ---
 title: Pathways to Civic Integration of Residents with Migrant Backgrounds
-status: finished
 dtstart: 2025-04-01
 dtend: 2025-12-31
-partners:
-  - mc-praha-7
+partner: mc-praha-7
+supporters:
   - ministry-of-the-interior-of-the-czech-republic
+date: 2025-03-15
 ---
 This project aims to identify good examples of how residents with migrant backgrounds can become involved in local civic life in Prague 7. It will begin with research, followed by community meetings where people can work together to find helpful ideas and tools.
 

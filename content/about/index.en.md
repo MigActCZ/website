@@ -23,6 +23,4 @@ MigAct’s work is made possible thanks to the support, trust, and collaboration
 
 We are deeply grateful to all individuals and organizations who stand with us — from long-term collaborators to those who contribute through expertise, resources, or volunteer time. Each partnership helps us take one step closer to a more inclusive and connected society. 
 
-{{< partners >}}
-
 Interested in joining our network? Learn how to [join us](join-us)
