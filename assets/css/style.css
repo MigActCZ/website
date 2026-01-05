@@ -120,6 +120,10 @@ svg.socials {
   background: var(--color-bg-light);
 }
 
+iframe {
+  border: none;
+}
+
 /* || Dynamic pages */
 #gallery {
   display: grid;
