@@ -19,7 +19,7 @@
         {{ end }}
         {{ $events := (site.GetPage "events").RegularPages }}
         {{ with where $events ".Params.dtstart" "ge" now }}
-        <menu class="card-panel">
+        <menu class="entity-list">
             {{ range first 3 . }}
                 <li>{{ .Render "view_event" }}</li>
             {{ end }}
@@ -31,7 +31,7 @@
         {{ .Content }}
     {{ end }}
     </section>
-    <section id="join-donate" class="card">
+    <section id="join-donate">
         <div class="content">
         {{ with .Resources.Get "donate.md" }}
             {{ .Content }}

@@ -24,7 +24,7 @@
       <h1>{{ i18n "how_to_get_involved" }}</h1>
       <p>{{ i18n "how_to_get_involved_text" }}</p>
     </header>
-    <div id="donate" class="involvement-card">
+    <div id="donate">
       {{- partial "inline-svg" "icons/heart" -}}
       <h2><a href='{{ partial "get-donate-link" . }}'>
         {{ i18n "donate" }}</a></h2>
@@ -32,19 +32,19 @@
       <iframe src="{{ site.Params.donate_widget }}" width="360" height="480"></iframe>
     </div>
     <menu>
-      <li class="involvement-card">
+      <li>
         {{- partial "inline-svg" "icons/mail" -}}
         <h2><a href='{{ .Site.Params.newsletter }}'>
         {{ i18n "newsletter" }}</a></h2>
         <p>{{ i18n "newsletter_text" }}</p>
       </li>
-      <li class="involvement-card">
+      <li>
         {{- partial "inline-svg" "icons/calendar" -}}
         <h2><a href='{{ .RelRef (dict "path" "events") }}'>
           {{ i18n "join_events" }}</a></h2>
         <p>{{ i18n "join_events_text" }}</p>
       </li>
-      <li class="involvement-card">
+      <li>
         {{- partial "inline-svg" "icons/message-circle" -}}
         <h2><a href='{{ .RelRef (dict "path" "contact") }}'>
           {{ i18n "contact_us" }}</a></h2>
@@ -58,11 +58,11 @@
       <p>{{ i18n "stay_connected_text" }}</p>
     </header>
     <menu id="socials" class="scroll-row">
-      <li class="socials-card">{{- partial "socials-card" "LinkedIn" -}}</li>
-      <li class="socials-card">{{- partial "socials-card" "Facebook" -}}</li>
-      <li class="socials-card">{{- partial "socials-card" "Instagram" -}}</li>
+      <li>{{- partial "socials-card" "LinkedIn" -}}</li>
+      <li>{{- partial "socials-card" "Facebook" -}}</li>
+      <li>{{- partial "socials-card" "Instagram" -}}</li>
     </menu>
-    <div id="socials-newsletter" class="socials-card">
+    <div id="socials-newsletter">
       <h3>{{ i18n "inv_newsletter_header" }}</h3>
       <p>{{ i18n "inv_newsletter_text" }}</p>
       <a class="button" href='{{ .Site.Params.newsletter }}'>{{ i18n "inv_newsletter_action" }}</a>

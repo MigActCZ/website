@@ -48,7 +48,7 @@ body {
   flex-direction: column;
 
   & > header, & > footer,
-  & > main > .card-panel,
+  & > main > .entity-list,
   & > main > .intro,
   & > main.page > section,
   address#contacts {
@@ -483,7 +483,7 @@ ul.pagination{
 
 #activities {
   padding-inline-start: var(--wide-gap);
-  .card {
+  .dl-item {
     position: relative;
     background: var(--color-bg);
     overflow: hidden;
@@ -531,7 +531,10 @@ ul.pagination{
   }
 }
 
-.involvement-card, .socials-card {
+#involvement > #donate,
+#involvement li,
+#socials > li,
+#socials-newsletter {
   padding: var(--big-gap);
   border: 1.6px solid var(--color-bg-light);
   border-radius: 1rem;
@@ -665,30 +668,26 @@ ul.pagination{
   }
 }
 
-/* || CARD GRID */
-.card-panel {
+/* || Section pages */
+.entity-list {
   display: grid;
   gap: var(--big-gap);
   grid-template-columns: 1fr;
-}
-
-.card {
-  /* Needed to stretch to entire row height */
-  box-sizing: border-box;
-  height: 100%;
-
-  border-radius: 2rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.25s ease-in, box-shadow 0.25s ease-in;
-  /* padding: 1rem;  TODO*/
-}
-
-.card-title {
-  color: var(--color-text);
+  
+  article {
+    /* Needed to stretch to entire row height */
+    box-sizing: border-box;
+    height: 100%;
+  
+    border-radius: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.25s ease-in, box-shadow 0.25s ease-in;
+    /* padding: 1rem;  TODO*/
+  }
 }
 
 #projects {
-  .card {
+  article {
     padding: 2.5rem;
 
     display: flex;
@@ -754,7 +753,7 @@ ul.pagination{
 }
 
 #events, #join-events {
-  .card {
+  article {
     padding: var(--wide-gap);
     header {
       display: flex;
@@ -862,7 +861,7 @@ ul.pagination{
 
 /* || PARTNERS PAGE */
 #partners {
-  .card {
+  article {
     padding: var(--wide-gap);
 
     img {
@@ -882,7 +881,7 @@ ul.pagination{
   display: grid;
   grid-template-columns: 1fr;
 
-  .card {
+  article {
     position: relative;
     height: calc(var(--content-width) / 2);
     cursor: pointer;
@@ -1137,31 +1136,31 @@ ul.pagination{
     }
   }
   
-  .card-panel {
+  .entity-list {
     gap: var(--medium-gap) var(--big-gap);
   }
   
-  #team.card-panel,
-  #partners.card-panel,
-  #events.card-panel,
-  #join-events .card-panel,
+  #team.entity-list,
+  #partners.entity-list,
+  #events.entity-list,
+  #join-events .entity-list,
   #contacts > dl{
     grid-template-columns: repeat(3, 1fr);
   }
 
-  #projects.card-panel {
+  #projects.entity-list {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 /* ============================================     Desktop (1024px+)     ============================================ */
 @media (min-width: 1024px) {
-  #activities .scroll-row {
+  #activities dl {
     gap: var(--medium-gap) var(--big-gap); 
     grid-auto-flow: unset;
     grid-template-columns: 1fr 1fr;
 
-    .card > img {
+    .dl-item > img {
       height: 15rem;
       width: 100%;
       object-fit: cover;

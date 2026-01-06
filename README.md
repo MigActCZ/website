@@ -31,16 +31,23 @@ I use semantic class names and brittle CSS intentionally.
 
 ## Header border
 The border is a rainbow image, which prevents me to add regular border beneath the header.
-The workaround is to add top header for the first sibling of header, which in main.
+The workaround is to add top header for the first sibling of header, which is main.
 
 ## Hamburger menu
 I used CSS only tricks to avoid javascript. I have a hidden checkbox, which keeps track of open/close menu.
 The menu appears using change in height, because visibility is not animatable.
 
 ## Classes
-.card-grid = grid for dynamic content (events, projects, partners...)
-.card = element of grid
-.dl-item = term with explanation
+.entity-list = grid for dynamic content (events, projects, partners...)
+.dl-item = term with explanation and icon
+.intro = common class for headings
+
+## Styling
+Entire site has following types of pages:
+- Home page - totally custom
+- Standalone page - custom layout page with complex header
+- Section page - heading and card container
+- Detail page - entity detail
 
 # SVG
 ## HTML
@@ -51,5 +58,5 @@ I also considered creating svg bundle of symbols, which would solve the requests
 So I opted for the easiest, most straightforward solution.
 
 ## CSS
-I don't use svg's in CSS, because it complicate things with styling.
+I don't use svg's in CSS, because it complicates things with styling.
 Maybe embedding it completely would work, but then I'd need template machinery for CSS.

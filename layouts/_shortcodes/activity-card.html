@@ -1,6 +1,6 @@
 {{ $image := .Page.Resources.Get (.Get "image") }}
 
-<div class="card">
+<div class="dl-item">
     <img src="{{ $image.RelPermalink }}"/>
     <div class="icon">
         {{- partial "inline-svg" (.Get "icon") -}}

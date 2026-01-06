@@ -1,4 +1,4 @@
-<article class="card">
+<article>
   {{ $photo := .Resources.GetMatch "photo.*" }}
   <div class="front">
     <img src='{{ $photo.RelPermalink }}' alt="Portrait of {{ .Title }}"/>
