@@ -1,9 +1,9 @@
 {{ define "main" }}
-<main id="join-us">
-    <section class="intro">
+<main id="join-us" class="page">
+    <header class="intro">
         <h1>{{ .Title }}</h1>
         {{ .Content }}
-    </section>
+    </header>
     <section id="join-volunteer">
         <img src='{{ (.Resources.Get "join.avif").RelPermalink }}'/>
         {{ with .Resources.Get "volunteers.md" }}
@@ -19,7 +19,7 @@
         {{ end }}
         {{ $events := (site.GetPage "events").RegularPages }}
         {{ with where $events ".Params.dtstart" "ge" now }}
-        <menu class="card-grid">
+        <menu class="card-panel">
             {{ range first 3 . }}
                 <li>{{ .Render "view_event" }}</li>
             {{ end }}

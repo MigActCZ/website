@@ -31,30 +31,35 @@
   --separator-gap: calc(var(--medium-gap) / 2);
 }
 
-/* colors {#548feb;#ffb33d;#f37c14;#229fa3;}*/
-
 /* || GENERAL */
 html {
   font-family: "Hanken Grotesk", sans-serif;
   /* font-size: clamp(1rem, 0.8rem + 0.8vw, 1.5rem); */
-  height: 100%;
+  height: 100%; /* Footer position */
 }
 
 body {
-  /* Fill entire page */
-  margin: 0;
-  min-width: 360px;
-  min-height: 100%;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+  margin: 0; /* Fill entire viewport */
+  min-width: 360px; /* Smallest supported screen */
+  height: 100%; /* Footer position */
+  
+  /* Footer position */
+  display: flex;
+  flex-direction: column;
 
   & > header, & > footer,
-  & > main > .card-grid, & > main > .intro, .page { /* TODO: How to do the padding on standalone pages within main?*/
+  & > main > .card-panel,
+  & > main > .intro,
+  & > main.page > section,
+  address#contacts {
     padding-inline: var(--content-inline-padding);
   }
 
-  /* Workaround because of rainbow image */
+  
   & > main {
+    flex: 1; /* Footer position */
+
+    /* Workaround because of rainbow border image */
     border-block-start: thin solid var(--color-teal);
   
     /* I need some space before footer, but some elements have background. So their box needs to stretch up to the footer.
@@ -62,9 +67,16 @@ body {
     & > section:last-child, &.section {
       padding-block-end: 8rem;
     }
-    
-    /* Headers of standalone pages*/
-    & > section.intro {
+
+    /* Headers */
+    & > .intro {
+      background: linear-gradient(.25turn, var(--color-orange), 30%, var(--color-bg-light), 60%, var(--color-blue));
+    }
+    & > h1.intro {
+      margin-block-start: 0;
+      padding-block: 10rem 5rem;
+    }
+    & > header.intro {
       padding-block: 15rem 2.5rem;
       text-align: center;
       
@@ -72,9 +84,6 @@ body {
         margin-block: 0;
         font-size: 3rem;
       }
-    }
-    & > .intro {
-      padding-block: 10rem 5rem;
     }
   }
 }
@@ -646,18 +655,18 @@ ul.pagination{
     padding: var(--medium-gap);
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-
-  svg {
-    width: 40px;
-    height: 40px;
-    margin-inline: auto;
-    margin-bottom: 0.5rem;
+  
+    svg {
+      width: 40px;
+      height: 40px;
+      margin-inline: auto;
+      margin-bottom: var(--separator-gap);
+    }
   }
 }
 
 /* || CARD GRID */
-.card-grid {
+.card-panel {
   display: grid;
   gap: var(--big-gap);
   grid-template-columns: 1fr;
@@ -676,10 +685,6 @@ ul.pagination{
 
 .card-title {
   color: var(--color-text);
-}
-
-#projects-title{
-  background: linear-gradient(.25turn, var(--color-orange), 30%, var(--color-bg-light), 60%, var(--color-blue))
 }
 
 #projects {
@@ -1132,19 +1137,19 @@ ul.pagination{
     }
   }
   
-  .card-grid {
+  .card-panel {
     gap: var(--medium-gap) var(--big-gap);
   }
   
-  #team.card-grid,
-  #partners.card-grid,
-  #events.card-grid,
-  #join-events .card-grid,
+  #team.card-panel,
+  #partners.card-panel,
+  #events.card-panel,
+  #join-events .card-panel,
   #contacts > dl{
     grid-template-columns: repeat(3, 1fr);
   }
 
-  #projects.card-grid {
+  #projects.card-panel {
     grid-template-columns: repeat(2, 1fr);
   }
 }

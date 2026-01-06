@@ -1,5 +1,5 @@
 {{ define "main" }}
-<main id="event" class="page">
+<main id="event" class="detail">
   <div id="info">
     <dl class="attributes">
       {{ $dtend := time (printf "%s%s" (substr .Params.dtstart 0 11 ) .Params.tend ) }}

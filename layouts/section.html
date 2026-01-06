@@ -2,9 +2,9 @@
 <script src='{{ (resources.Get "utility.js").Permalink }}'></script>
 {{ end }}
 {{ define "main" }}
-<main class="{{ .Kind }}">
+<main class="section">
     <h1 class="intro">{{ .Title }}</h1>
-    <menu id="{{ .Section }}" class="card-grid">
+    <menu id="{{ .Section }}" class="card-panel">
         {{ range (.Paginate .RegularPages).Pages }}
             <li>{{ .Render (printf "view_%s" (singularize .Section )) }}</li>
         {{ end }}
@@ -15,7 +15,7 @@
 {{ define "inline-scripts" }}
 {{ if eq .Section "team"}}
 <script>
-    document.querySelector(".card-grid")?.addEventListener("click", (e) => {
+    document.querySelector(".card-panel")?.addEventListener("click", (e) => {
         e.target.closest('.card')?.classList.toggle('flipped');
     })
 </script>
