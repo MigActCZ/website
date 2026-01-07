@@ -1,12 +1,12 @@
 ---
-title: Zveme vás na networkingový večírek!
+title: Networkingový večírek!
 featured: featured.webp
 dtstart: 2024-11-29T17:00:00
 tend: 20:00:00
 location: Prague City University, Biskupský dvůr 1147/6, 110 00 Petrská čtvrť
-languages: EN CZ
 registration: https://forms.gle/1L7pAaEQg7gDvrLg6
 project: city-for-all
+languages: EN CZ
 date: 2024-11-19
 ---
 🚀 MigAct propojuje jednotlivce, komunity a organizace, s cílem inspirovat spolupráci a občanské zapojení. Připojte se k nám na pohodový večer plný nových kontaktů, cukroví a zajímavých příležitostí!
