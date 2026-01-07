@@ -2,6 +2,8 @@
 title: Společně pro Prahu – Podpora občanské participace a komunitních lídrů
 dtstart: 2025-04-01
 dtend: 2025-10-31
+partners:
+  - prague-city-hall
 partner: prague-city-hall
 date: 2025-03-13
 ---
