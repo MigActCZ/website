@@ -2,6 +2,8 @@
 title: UNITES
 dtstart: 2021-01-01
 dtend: 2023-12-31
+partners:
+  - prague-city-hall
 partner: prague-city-hall
 date: 2020-12-13
 ---
