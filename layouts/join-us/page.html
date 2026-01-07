@@ -27,9 +27,14 @@
         {{ end }}
     </section>
     <section id="join-partners">
-    {{ with .Resources.Get "partners.md" }}
-        {{ .Content }}
-    {{ end }}
+        <section>
+        {{ with .Resources.Get "partners.md" }}
+            {{ .Content }}
+        {{ end }}
+        </section>
+        {{ with .Resources.Get "partner-options.md" }}
+            {{ .Content }}
+        {{ end }}
     </section>
     <section id="join-donate">
         <div class="content">

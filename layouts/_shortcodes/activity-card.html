@@ -1,12 +1,8 @@
-{{ $image := .Page.Resources.Get (.Get "image") }}
-
-<div class="dl-item">
-    <img src="{{ $image.RelPermalink }}"/>
-    <div class="icon">
-        {{- partial "inline-svg" (.Get "icon") -}}
-    </div>
-    <div class="content">
-        <dt>{{ .Get "title" }}</dt>
-        <dd>{{ .Inner }}</dd>
-    </div>
+{{ $image := .Page.Resources.Get (printf "%s.webp" (.Get 0)) }}
+<img src="{{ $image.RelPermalink }}"/>
+<div class="icon">
+    {{- partial "inline-svg" (printf "icons/%s" (.Get 1)) -}}
+</div>
+<div class="content">
+    {{ .Inner | .Page.RenderString }}
 </div>

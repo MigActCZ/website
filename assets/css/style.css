@@ -51,6 +51,7 @@ body {
   & > main > .entity-list,
   & > main > .intro,
   & > main.page > section,
+  & > main.detail,
   address#contacts {
     padding-inline: var(--content-inline-padding);
   }
@@ -94,7 +95,7 @@ nav a {
 }
 
 /* Special lists have special visuals */
-menu, ul.buttons, ul.pagination {
+menu, ul.buttons, ul.pagination, ul.funding, ul.activities, ul.options {
   list-style: none inside;
   margin-block: unset;
   padding-inline-start: unset;
@@ -483,7 +484,7 @@ ul.pagination{
 
 #activities {
   padding-inline-start: var(--wide-gap);
-  .dl-item {
+  & > ul.activities > li {
     position: relative;
     background: var(--color-bg);
     overflow: hidden;
@@ -492,9 +493,8 @@ ul.pagination{
       padding: var(--big-gap);
     }
 
-    dt {
+    h2 {
       margin-block-end: var(--medium-gap);
-      font-size: 1.5rem;
     }
 
     &:nth-child(1) > .icon {
@@ -820,41 +820,41 @@ ul.pagination{
 /* Row oriented dl */
 #info, #join-donate {
   --section-color: var(--color-teal);
-  dl {
+  
+  ul.funding, dl.attributes {
     display: flex;
     flex-direction: column;
     gap: var(--medium-gap);
-  }
-
-  .dl-item {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-areas:
-    "icon term"
-    "icon def";
-    column-gap: var(--medium-gap);
-    align-items: start;
-
-    div.icon {
-      grid-area: icon;
-      color: var(--section-color);
-      background-color: color-mix(in srgb, var(--section-color) 10%, transparent);
-      border-radius: 50%;
-      padding: var(--medium-gap);
-    }
-    dt {
-      grid-area: term;
-    }
-    dd {
-      grid-area: def;
+  
+    & > li, & > .dl-item {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      grid-template-areas:
+      "icon term"
+      "icon def";
+      column-gap: var(--medium-gap);
+      align-items: start;
+  
+      div.icon {
+        grid-area: icon;
+        color: var(--section-color);
+        background-color: color-mix(in srgb, var(--section-color) 10%, transparent);
+        border-radius: 50%;
+        padding: var(--medium-gap);
+      }
+      & > h4, & > dt {
+        grid-area: term;
+        margin-block: 0;
+      }
+      & > p, & > dd {
+        grid-area: def;
+      }
     }
   }
 }
 
-/* Common SVG sizing for dl-item icons */
-#info .dl-item div.icon svg,
-#join-donate .dl-item div.icon svg,
-#join-partners .dl-item div.icon svg {
+/* Common SVG sizing for icons */
+div.icon svg {
   width: 2rem;
   height: 2rem;
 }
@@ -997,16 +997,37 @@ ul.pagination{
 
 #join-partners {
   --section-color: var(--color-blue);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   gap: 3rem;
 
-  dl {
+  & > ul.options {
     margin-block: 0;
+    flex: 1 0 50%;
 
     display: grid;
     grid-template: 1fr 1fr / 1fr 1fr;
     gap: var(--wide-gap);
+    
+    & > li {
+      padding: var(--big-gap);
+      display: flex;
+      flex-direction: column;
+      gap: var(--separator-gap);
+      align-items: center;
+  
+      text-align: center;
+  
+      h3 {
+        color: var(--color-text);
+      }
+  
+      div.icon {
+        color: var(--section-color);
+        background-color: color-mix(in srgb, var(--section-color) 10%, transparent);
+        border-radius: 50%;
+        padding: var(--medium-gap);
+      }
+    }
   }
 
   .buttons {
@@ -1016,28 +1037,6 @@ ul.pagination{
     a {
       color: var(--color-bg);
       background-color: var(--section-color);
-    }
-  }
-
-  .dl-item {
-    padding: var(--big-gap);
-    display: flex;
-    flex-direction: column;
-    gap: var(--separator-gap);
-    align-items: center;
-
-    text-align: center;
-
-    dt {
-      font-size: 1.25rem;
-      color: var(--color-text);
-    }
-
-    div.icon { /*TODO remove icon class from svg and style purely with class*/
-      color: var(--section-color);
-      background-color: color-mix(in srgb, var(--section-color) 10%, transparent);
-      border-radius: 50%;
-      padding: var(--medium-gap);
     }
   }
 }
@@ -1155,12 +1154,12 @@ ul.pagination{
 
 /* ============================================     Desktop (1024px+)     ============================================ */
 @media (min-width: 1024px) {
-  #activities dl {
+  #activities > ul.activities {
     gap: var(--medium-gap) var(--big-gap); 
     grid-auto-flow: unset;
     grid-template-columns: 1fr 1fr;
 
-    .dl-item > img {
+    & > li > img {
       height: 15rem;
       width: 100%;
       object-fit: cover;

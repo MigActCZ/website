@@ -39,7 +39,6 @@ The menu appears using change in height, because visibility is not animatable.
 
 ## Classes
 .entity-list = grid for dynamic content (events, projects, partners...)
-.dl-item = term with explanation and icon
 .intro = common class for headings
 
 ## Styling
