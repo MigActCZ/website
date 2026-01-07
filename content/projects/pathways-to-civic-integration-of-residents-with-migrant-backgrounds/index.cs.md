@@ -1,11 +1,11 @@
 ---
 title: Cesty k občanské integraci obyvatel s migračním původem
+date: 2025-03-15
 dtstart: 2025-04-01
 dtend: 2025-12-31
 partner: mc-praha-7
 supporters:
   - ministry-of-the-interior-of-the-czech-republic
-date: 2025-03-15
 ---
 Tento projekt si klade za cíl zmapovat příklady dobré praxe občanské integrace obyvatel s migračním původem v rámci místní občanské společnosti na Praze 7, které mohou sloužit jako příklad a inspirace pro další iniciativy. Mapování bude probíhat participativním způsobem – nejprve formou rešerší, následně pak prostřednictvím společného hledání dobrých praxí a vhodných nástrojů během komunitních a participativních setkání.
 
