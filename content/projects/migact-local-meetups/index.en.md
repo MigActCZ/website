@@ -2,6 +2,8 @@
 title: MigAct local meetups
 dtstart: 2024-09-01
 dtend: 2025-06-30
+partners:
+  - nadace-osf
 partner: nadace-osf
 date: 2024-08-15
 ---
