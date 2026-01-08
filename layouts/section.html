@@ -4,7 +4,13 @@
 {{ define "main" }}
 <main class="section">
     <h1 class="intro">{{ .Title }}</h1>
+    {{ if eq .Section "projects" }}
+    <menu id="{{ .Section }}" class="entities" data-archived='{{ i18n "finished" }}' data-active='{{ i18n "ongoing" }}'>
+    {{ else if eq .Section "events" }}
+    <menu id="{{ .Section }}" class="entities" data-archived='{{ i18n "past" }}' data-active='{{ i18n "upcoming" }}'>
+    {{ else }}
     <menu id="{{ .Section }}" class="entities">
+    {{ end }}
         {{ range (.Paginate .RegularPages).Pages }}
             <li>{{ .Render (printf "view_%s" (singularize .Section )) }}</li>
         {{ end }}
@@ -19,21 +25,7 @@
         e.target.closest('article')?.classList.toggle('flipped');
     })
 </script>
-{{ else if eq .Section "projects" }}
-    <script>
-        const vals = {
-            active: {{ i18n "ongoing" }},
-            archived: {{ i18n "finished" }}
-        };
-        window.updateGridStatusTag(vals);
-    </script>
-{{ else if eq .Section "events" }}
-    <script>
-        const vals = {
-            active: {{ i18n "upcoming" }},
-            archived: {{ i18n "past" }}
-        };
-        window.updateGridStatusTag(vals);
-    </script>
+{{ else if or (eq .Section "projects") (eq .Section "events") }}
+<script>window.updateGridStatusTag();</script>
 {{ end }}
 {{ end }}

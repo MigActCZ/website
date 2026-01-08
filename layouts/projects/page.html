@@ -1,5 +1,5 @@
 {{ define "scripts" }}
-<link rel="stylesheet" href="/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe.css"/>
 <script type="module">
   import PhotoSwipeLightbox from '/photoswipe-lightbox.esm.min.js';
   const lightbox = new PhotoSwipeLightbox({
@@ -16,7 +16,7 @@
     <h1>{{ .Title }}</h1>
     <dl class="attributes">
       <div><dt>{{ i18n "status" }}</dt>
-        <dd class="status"></dd>
+        <dd class="status" data-archived='{{ i18n "finished" }}' data-active='{{ i18n "ongoing" }}'></dd>
       </div>
       <div><dt>{{ i18n "timeline" }}</dt>
         <dd class="timeline">
@@ -81,10 +81,6 @@
 {{ end }}
 {{ define "inline-scripts" }}
 <script>
-    const vals = {
-        active: {{ i18n "ongoing" }},
-        archived: {{ i18n "finished" }}
-    };
-    window.updatePageStatusTag(vals);
+    window.updatePageStatusTag();
 </script>
 {{ end }}
