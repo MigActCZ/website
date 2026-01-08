@@ -19,7 +19,7 @@
         {{ end }}
         {{ $events := (site.GetPage "events").RegularPages }}
         {{ with where $events ".Params.dtstart" "ge" now }}
-        <menu class="entity-list">
+        <menu class="entities">
             {{ range first 3 . }}
                 <li>{{ .Render "view_event" }}</li>
             {{ end }}

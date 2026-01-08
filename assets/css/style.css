@@ -15,9 +15,6 @@
   --color-blue-bg: color-mix(in srgb, var(--color-blue) 10%, transparent);
   
   --content-width: 80rem;
-  --icon-dim-small: 1rem;
-  --icon-dim-mid: 1.25rem;
-  --icon-dim-big: 1.75rem;
 
   --brand-dim: 1.875rem;
 
@@ -48,7 +45,7 @@ body {
   flex-direction: column;
 
   & > header, & > footer,
-  & > main > .entity-list,
+  & > main > .entities,
   & > main > .intro,
   & > main.page > section,
   & > main.detail,
@@ -96,7 +93,7 @@ nav a {
 
 /* Special lists have special visuals */
 menu, ul.buttons, ul.pagination, ul.funding, ul.activities, ul.options {
-  list-style: none inside;
+  list-style-type: none;
   margin-block: unset;
   padding-inline-start: unset;
 
@@ -120,14 +117,55 @@ address {
 dd {
   margin-inline-start: 0;
 }
- 
-svg.socials {
-  height: var(--brand-dim);
+
+/* || Icons */
+/* Rounded icon with background
+    has to be inside div, otherwise the padding with border cuts into image
+*/
+div.icon {
+  border-radius: 50%;
+  padding: var(--medium-gap);
+
+  svg {
+    background-color: revert;
+  }
+}
+
+/* Default icon size */
+div.icon > svg, svg.icon {
+  width: 1.25rem;
+}
+
+/* Color mixin */
+div.icon, svg.socials, #join-volunteer #tags > li,
+#involvement svg.icon,
+#footer-contacts svg {
+  color: var(--block-color);
+  background-color: color-mix(in srgb, var(--block-color) 10%, transparent);
+}
+
+/* Rounded square icon */
+svg.socials,
+#involvement svg.icon {
   width: var(--brand-dim);
+  height: var(--brand-dim);
   padding: calc(2rem - var(--brand-dim) / 2);
   border-radius: .75rem;
-  color: var(--color-text-light);
-  background: var(--color-bg-light);
+}
+
+menu#site-nav a > svg,
+#team article a > svg,
+:is(#events, #join-events) article > footer > svg
+:is(#footer-contacts, #socials) a > svg {
+  width: 1rem;
+}
+
+.options svg.icon {
+  width: 2rem;
+}
+
+.funding svg.icon {
+  width: 1.5rem;
 }
 
 iframe {
@@ -147,22 +185,26 @@ iframe {
 }
 
 .status-tag {
-  background-color: #B2B2B2;
   padding: var(--separator-gap) 1.25rem;
+  border: thin solid var(--color-teal);
   border-radius: 2.5rem;
   display: none;
   &.active {
-    color: white;
+    background-color: white;
     display: revert;
   }
   &.archived {
-    color: #111;
+    color: var(--color-bg);
+    background-color: var(--color-teal);
     display: revert;
   }
 }
   
 /* || Utility */
-.scroll-row {
+ul.activities,
+#involvement > menu,
+menu#socials,
+ul.options {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: 85%;
@@ -171,7 +213,7 @@ iframe {
   padding-block-end: var(--medium-gap);
   scroll-snap-type: x mandatory;
   
-  & > * {
+  & > li {
     min-width: 0;
     scroll-snap-align: start;
   }
@@ -219,14 +261,16 @@ ul.pagination{
       transform-origin: center;
     }
     /* Checked animation  */
-    & > input:checked ~ svg .top {
-      transform: rotate(45deg) translateY(10px);
-    }
-    & > input:checked ~ svg .mid {
-      opacity: 0;
-    }
-    & > input:checked ~ svg .bot {
-      transform: rotate(-45deg) translateY(-10px);
+    & > input:checked {
+      & ~ svg .top {
+        transform: rotate(45deg) translateY(10px);
+      }
+      & ~ svg .mid {
+        opacity: 0;
+      }
+      & ~ svg .bot {
+        transform: rotate(-45deg) translateY(-10px);
+      }
     }
     /* Stretch navpanel to entire screen */
     &:has(input:checked) ~ #nav-panel {
@@ -277,7 +321,7 @@ ul.pagination{
       padding: 0; /* For blending the border with selected language */
       width: fit-content;
       border-radius: var(--radius);
-      border: 1.6px solid var(--color-teal);
+      border: thin solid var(--color-teal);
       
       display: flex;
       justify-content: center;
@@ -322,6 +366,11 @@ ul.pagination{
   #footer-socials {
     display: flex;
     gap: var(--tight-gap);
+
+    svg.socials {
+      color: var(--color-text-light);
+      background: var(--color-bg-light);
+    }
   }
   
   #footer-links {
@@ -341,11 +390,6 @@ ul.pagination{
       justify-content: center;
       align-items: start;
       gap: var(--separator-gap);
-
-      svg {
-        height: var(--icon-dim-mid);
-        width: var(--icon-dim-mid);
-      }
     }
   }
 
@@ -356,14 +400,14 @@ ul.pagination{
       gap: var(--medium-gap)
     }
 
-    li:nth-child(3n + 1) svg {
-      --icon-color: var(--color-teal);
+    li:nth-child(3n + 1) {
+      --block-color: var(--color-teal);
     }
-    li:nth-child(3n + 2) svg {
-      --icon-color: var(--color-blue);
+    li:nth-child(3n + 2) {
+      --block-color: var(--color-blue);
     }
-    li:nth-child(3n + 3) svg {
-      --icon-color: var(--color-red);
+    li:nth-child(3n + 3) {
+      --block-color: var(--color-red);
     }
     
     a {
@@ -373,12 +417,8 @@ ul.pagination{
       gap: var(--tight-gap);
 
       svg {
-        height: var(--icon-dim-small);
-        width: var(--icon-dim-small);
         padding: var(--separator-gap);
         border-radius: 35%;
-        color: var(--icon-color);
-        background-color: color-mix(in srgb, var(--icon-color) 10%, transparent);
       }
     }
   }
@@ -392,12 +432,12 @@ ul.pagination{
   }
 }
 
-#cta {
-  border-color: var(--color-red);
-  background: linear-gradient(90deg, var(--color-red) 0%, rgba(255, 179, 61, 0.62) 100%);
-  color: var(--color-bg);
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--separator-gap);
 }
-
 
 .button, :is(ul, menu).buttons a {
   display: block;
@@ -405,7 +445,7 @@ ul.pagination{
   padding: var(--medium-gap) var(--big-gap);
   text-decoration: none;
   border-radius: 2rem;
-  border: 1.6px solid #E5E7EB;
+  border: thin solid #E5E7EB;
   color: var(--color-text);
 }
 
@@ -434,7 +474,7 @@ ul.pagination{
     margin-block: 0;
   }
 
-  h1, dt {
+  h1 {
     color: var(--color-text);
   }
 }
@@ -464,21 +504,10 @@ ul.pagination{
     border-radius: 1.25rem;
   }
 
-  menu {
-    display: flex;
-    justify-content: center;
-    gap: var(--separator-gap);
-
-    #cta {
-      display: flex;
-      align-items: center;
-      gap: var(--separator-gap);
-
-      svg {
-        width: var(--icon-dim-mid);
-        height: var(--icon-dim-mid);
-      }
-    }
+  .buttons > li:first-child > a {
+    border-color: var(--color-red);
+    background: linear-gradient(90deg, var(--color-red) 0%, rgba(255, 179, 61, 0.62) 100%);
+    color: var(--color-bg);
   }
 }
 
@@ -491,10 +520,22 @@ ul.pagination{
 
     .content {
       padding: var(--big-gap);
+      
+      h2 {
+        margin-block: 0 var(--medium-gap);
+        font-weight: normal;
+        color: var(--color-text);
+      }
     }
 
-    h2 {
-      margin-block-end: var(--medium-gap);
+
+    div.icon {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+  
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.10), 0 4px 6px -4px rgba(0, 0, 0, 0.10);
+      color: var(--color-bg);
     }
 
     &:nth-child(1) > .icon {
@@ -513,37 +554,28 @@ ul.pagination{
       background-color: var(--color-orange);
     }
   }
-
-  div.icon {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-
-    padding: var(--medium-gap);
-    border-radius: 50%;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.10), 0 4px 6px -4px rgba(0, 0, 0, 0.10);
-    color: var(--color-bg);
-
-    svg {
-      width: var(--icon-dim-mid);
-      height: var(--icon-dim-mid);
-    }
-  }
 }
 
 #involvement > #donate,
 #involvement li,
 #socials > li,
-#socials-newsletter {
+#socials-newsletter,
+#join-partners > ul.options > li,
+#join-donate {
   padding: var(--big-gap);
-  border: 1.6px solid var(--color-bg-light);
+  border: thin solid var(--color-bg-light);
   border-radius: 1rem;
   background: var(--color-bg);
 }
 
+#join-partners > ul.options > li,
+#join-donate {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 #involvement {
   #donate {
-    --card-color: var(--color-red);
+    --block-color: var(--color-red);
     text-align: center;
     margin-block: var(--medium-gap);
 
@@ -558,54 +590,36 @@ ul.pagination{
       margin-inline: auto;
     }
   }
-  svg {
-    color: var(--card-color);
-    background-color: color-mix(in srgb, var(--card-color) 10%, transparent);
-
-    height: var(--brand-dim);
-    width: var(--brand-dim);
-    padding: calc(2rem - var(--brand-dim) / 2);
-    border-radius: .75rem;
+  
+  li:nth-child(3n + 1) {
+    --block-color: var(--color-teal);
   }
-  menu {
-    display: flex;
-    gap: var(--medium-gap);
-
-    li:nth-child(3n + 1) {
-      --card-color: var(--color-teal);
-    }
-    li:nth-child(3n + 2) {
-      --card-color: var(--color-blue);
-    }
-    li:nth-child(3n + 3) {
-      --card-color: var(--color-orange);
-    }
+  li:nth-child(3n + 2) {
+    --block-color: var(--color-blue);
+  }
+  li:nth-child(3n + 3) {
+    --block-color: var(--color-orange);
   }
 }
 
-#socials{
-  .socials-card{
-    border-color: var(--card-color);
-  }
-  h3 {
-    color: var(--color-text);
-    font-weight: normal;
-    font-size: 1.25rem;
-    margin-block: var(--wide-gap) var(--separator-gap);
+#socials {
+  li {
+    border-color: var(--block-color);
+    & > h3 {
+      color: var(--color-text);
+      font-weight: normal;
+      font-size: 1.25rem;
+      margin-block: var(--wide-gap) var(--separator-gap);
+    }
   }
   li:nth-child(3n + 1) {
-    --card-color: var(--color-red);
+    --block-color: var(--color-red);
   }
   li:nth-child(3n + 2) {
-    --card-color: var(--color-teal);
+    --block-color: var(--color-teal);
   }
   li:nth-child(3n + 3) {
-    --card-color: var(--color-blue);
-  }
-  /* SVG class */
-  .socials {
-    color: var(--card-color);
-    background-color: color-mix(in srgb, var(--card-color) 10%, transparent);
+    --block-color: var(--color-blue);
   }
 
   p {
@@ -613,15 +627,10 @@ ul.pagination{
   }
 
   a {
-    color: var(--card-color);
+    color: var(--block-color);
     margin-block-start: var(--medium-gap);
     display: flex;
     align-items: center;
-
-    svg {
-      height: var(--icon-dim-small);
-      width: var(--icon-dim-small);
-    }
   }
 }
 
@@ -664,12 +673,26 @@ ul.pagination{
       height: 40px;
       margin-inline: auto;
       margin-bottom: var(--separator-gap);
+      color: var(--block-color);
+    }
+
+    &:nth-child(4n + 1) {
+      --block-color: var(--color-red);
+    }
+    &:nth-child(4n + 2) {
+      --block-color: var(--color-orange);
+    }
+    &:nth-child(4n + 3) {
+      --block-color: var(--color-blue);
+    }
+    &:nth-child(4n + 4) {
+      --block-color: var(--color-teal);
     }
   }
 }
 
 /* || Section pages */
-.entity-list {
+.entities {
   display: grid;
   gap: var(--big-gap);
   grid-template-columns: 1fr;
@@ -681,20 +704,17 @@ ul.pagination{
   
     border-radius: 2rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.25s ease-in, box-shadow 0.25s ease-in;
-    /* padding: 1rem;  TODO*/
   }
 }
 
 #projects {
   article {
+    border: thin solid var(--color-teal);
     padding: 2.5rem;
 
     display: flex;
     flex-direction: column;
     gap: var(--separator-gap);
-
-    background-color: #EAEAEA;
 
     header {
       display: flex;
@@ -766,11 +786,6 @@ ul.pagination{
 
       display: flex;
       gap: var(--medium-gap);
-      
-      svg {
-      width: 1rem;
-      height: 1rem;
-      }
 
       .location, .language {
         display: flex;
@@ -819,7 +834,7 @@ ul.pagination{
 
 /* Row oriented dl */
 #info, #join-donate {
-  --section-color: var(--color-teal);
+  --block-color: var(--color-teal);
   
   ul.funding, dl.attributes {
     display: flex;
@@ -837,26 +852,17 @@ ul.pagination{
   
       div.icon {
         grid-area: icon;
-        color: var(--section-color);
-        background-color: color-mix(in srgb, var(--section-color) 10%, transparent);
-        border-radius: 50%;
-        padding: var(--medium-gap);
       }
       & > h4, & > dt {
         grid-area: term;
         margin-block: 0;
+        font-weight: normal;
       }
       & > p, & > dd {
         grid-area: def;
       }
     }
   }
-}
-
-/* Common SVG sizing for icons */
-div.icon svg {
-  width: 2rem;
-  height: 2rem;
 }
 
 /* || PARTNERS PAGE */
@@ -926,10 +932,6 @@ div.icon svg {
       display: flex;
       gap: var(--separator-gap);
       color: inherit;
-
-      svg {
-        width: 1rem;
-      }
     }
 
     &.flipped {
@@ -945,16 +947,21 @@ div.icon svg {
 }
 /* || JOIN US */
 #join-us {
-  color: var(--color-text-light);
   h1 {
     color: var(--color-text);
   }
   p {
+    color: var(--color-text-light);
     font-size: 1.25rem;
   }
   
   & > section {
     padding-block: 6rem;
+  }
+
+  .button, ul.buttons a{
+    background-color: var(--block-color);
+    color: var(--color-bg);
   }
 }
 #join-events{
@@ -966,17 +973,12 @@ div.icon svg {
 }
 
 #join-volunteer {
-  --section-color: var(--color-teal);
+  --block-color: var(--color-teal);
   display: flex;
   gap: 3rem;
 
   img {
     width: 50%;
-  }
-
-  .button, ul.buttons a{
-    background-color: var(--section-color);
-    color: var(--color-bg);
   }
 
   #tags {
@@ -988,68 +990,53 @@ div.icon svg {
 
     li {
       padding: var(--separator-gap) var(--tight-gap);
-      color: var(--section-color);
-      background-color: color-mix(in srgb, var(--section-color) 10%, transparent);
       border-radius: 3rem;
     }
   }
 }
 
 #join-partners {
-  --section-color: var(--color-blue);
+  --block-color: var(--color-blue);
   display: flex;
   gap: 3rem;
 
   & > ul.options {
-    margin-block: 0;
     flex: 1 0 50%;
-
-    display: grid;
-    grid-template: 1fr 1fr / 1fr 1fr;
-    gap: var(--wide-gap);
     
     & > li {
-      padding: var(--big-gap);
       display: flex;
       flex-direction: column;
       gap: var(--separator-gap);
       align-items: center;
-  
+
       text-align: center;
   
       h3 {
         color: var(--color-text);
       }
-  
-      div.icon {
-        color: var(--section-color);
-        background-color: color-mix(in srgb, var(--section-color) 10%, transparent);
-        border-radius: 50%;
-        padding: var(--medium-gap);
+      h3, p {
+        margin-block: 0;
       }
-    }
-  }
-
-  .buttons {
-    display: flex;
-    gap: var(--big-gap);
-
-    a {
-      color: var(--color-bg);
-      background-color: var(--section-color);
     }
   }
 }
 
 #join-donate{
-  --section-color: var(--color-orange);
-  width: 80%;
-  margin: auto;
+  --block-color: var(--color-orange);
+  width: 60%;
+  margin: var(--big-gap) auto; /* Ak pride background som zas nahrany */
+  padding-inline: 6rem;
   font-size: 1.5em;
-  padding: 1.5em;
+
+  border-radius: 3.5rem;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
+
+  iframe {
+    width: 50%;
+    margin: auto;
+  }
 }
 
 /* ============================================     Tablet (768px+)     ============================================ */
@@ -1092,21 +1079,15 @@ div.icon svg {
       font-size: 2rem;
       line-height: initial;
     }
-
-    menu {
-      justify-content: start;
-      gap: var(--big-gap);
-
-      a {
-        padding: var(--medium-gap) var(--big-gap);
-      }
-    }
   }
 
-  #activities {
-    dt {
-      font-size: 2rem;
-    }
+  .activities .content > h2 {
+    font-size: 2rem;
+  }
+
+  .buttons {
+    justify-content: unset;
+    gap: var(--big-gap);
   }
 
   #site-footer {
@@ -1135,19 +1116,19 @@ div.icon svg {
     }
   }
   
-  .entity-list {
+  .entities {
     gap: var(--medium-gap) var(--big-gap);
   }
   
-  #team.entity-list,
-  #partners.entity-list,
-  #events.entity-list,
-  #join-events .entity-list,
+  #team.entities,
+  #partners.entities,
+  #events.entities,
+  #join-events .entities,
   #contacts > dl{
     grid-template-columns: repeat(3, 1fr);
   }
 
-  #projects.entity-list {
+  #projects.entities {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -1166,15 +1147,17 @@ div.icon svg {
     }
   }
 
-  #socials.scroll-row {
+  #involvement > menu,
+  menu#socials {
     grid-auto-flow: unset;
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  #join-partners .scroll-row {
+  #join-partners > ul.options {
     grid-auto-flow: unset;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    gap: var(--wide-gap);
   }
 
   #menu-toggle {
@@ -1211,9 +1194,7 @@ div.icon svg {
         }
   
         svg {
-          display: block;
-          height: var(--icon-dim-small);
-          width: var(--icon-dim-small);
+          display: revert;
         }
       }
       /* Top level menu item with submenu */

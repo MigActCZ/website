@@ -1,7 +1,7 @@
 window.updateGridStatusTag = function(status_values){
     const now = new Date();
   
-    document.querySelectorAll(".entity-list > article").forEach(article => {
+    document.querySelectorAll(".entities article").forEach(article => {
       const endTime = article.querySelector("header > .timeline > time:last-child");
       const date = new Date(endTime.dateTime);
       const tag = article.querySelector("header > .status-tag");

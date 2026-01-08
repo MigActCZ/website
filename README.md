@@ -38,7 +38,7 @@ I used CSS only tricks to avoid javascript. I have a hidden checkbox, which keep
 The menu appears using change in height, because visibility is not animatable.
 
 ## Classes
-.entity-list = grid for dynamic content (events, projects, partners...)
+.entities = grid for dynamic content (events, projects, partners...)
 .intro = common class for headings
 
 ## Styling

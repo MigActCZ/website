@@ -3,4 +3,4 @@
 {{- partial "inline-svg" (printf "logos/%s" $key) -}}
 <h3>{{ . }}</h3>
 <p>{{ i18n (printf "%s_text" $key) -}}</p>
-<a href="{{- index site.Params.socials $key -}}">Follow us {{- partial "inline-svg" "icons/chevron-right" -}}</a>
+<a href="{{- index site.Params.socials $key -}}">Follow us {{- partial "inline-svg" "icons/chevron-right" -}}</a>

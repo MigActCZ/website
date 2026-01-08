@@ -4,7 +4,7 @@
 {{ define "main" }}
 <main class="section">
     <h1 class="intro">{{ .Title }}</h1>
-    <menu id="{{ .Section }}" class="entity-list">
+    <menu id="{{ .Section }}" class="entities">
         {{ range (.Paginate .RegularPages).Pages }}
             <li>{{ .Render (printf "view_%s" (singularize .Section )) }}</li>
         {{ end }}
@@ -15,7 +15,7 @@
 {{ define "inline-scripts" }}
 {{ if eq .Section "team"}}
 <script>
-    document.querySelector(".entity-list")?.addEventListener("click", (e) => {
+    document.querySelector(".entities")?.addEventListener("click", (e) => {
         e.target.closest('article')?.classList.toggle('flipped');
     })
 </script>
