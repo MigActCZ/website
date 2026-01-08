@@ -2,22 +2,15 @@
 <main id="home">
   <section id="about">
       {{- .Content -}}
-      {{ with .Resources.Get "about.avif" }}
-        <img id="hero" src="{{ .RelPermalink }}"/>
-      {{ end }}
-      <menu>
-        <li><a id="cta" class="button" href='{{ .RelRef (dict "path" "join-us") }}'>{{ i18n "get_involved" }}
-          {{ partial "inline-svg" "icons/arrow-right" }}
-        </a></li>
-        <li><a class="button" href='{{ .RelRef (dict "path" "about") }}'>{{ i18n "learn" }}</a></li>
-      </menu>
   </section>
   <section id="activities">
+    {{ with .Page.GetPage "/home-sections" }}
     <header>
-      <h1>{{ i18n "what_we_do" }}</h1>
-      <p>{{ i18n "what_we_do_text" }}</p>
+      <h1>{{ .Title }}</h1>
+      <p>{{ .Description }}</p>
     </header>
-    {{ (.Page.GetPage "/home-sections").Content }}
+    {{ .Content }}
+    {{ end }}
   </section>
   <section id="involvement">
     <header>
@@ -57,7 +50,7 @@
       <h1>{{ i18n "stay_connected" }}</h1>
       <p>{{ i18n "stay_connected_text" }}</p>
     </header>
-    <menu id="socials" class="scroll-row">
+    <menu id="socials">
       <li>{{- partial "socials-card" "LinkedIn" -}}</li>
       <li>{{- partial "socials-card" "Facebook" -}}</li>
       <li>{{- partial "socials-card" "Instagram" -}}</li>

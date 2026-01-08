@@ -1,4 +1,6 @@
 ---
+title: Co děláme
+description: Discover our diverse programs designed to empower, connect, and support our community members.
 headless: true
 ---
 - {{<activity-card meetups users>}}
