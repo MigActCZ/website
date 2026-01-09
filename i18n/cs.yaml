@@ -13,25 +13,25 @@ copyright: Autorská práva vyhrazena %v %s
 
 # Homepage
 # Involvement section
-how_to_get_involved: How do I get involved
-how_to_get_involved_text: Whether you want to contribute your time, skills, or simply connect with others, there's a place for you in our community.
-donate: Donate
-donate_text: Support our mission
+how_to_get_involved: Jak se zapojit
+how_to_get_involved_text: Ať už chcete přispět svým časem, dovednostmi, nebo se jen spojit s ostatními, v naší komunitě pro vás máme místo.
+donate: Darujte
+donate_text: Podpořte naši misi
 newsletter: Newsletter
-newsletter_text: Stay updated with our latest news and events
-contact_us: Contact us
-contact_us_text: Get in touch for questions or collaboration
-join_events: Join events
-join_events_text: Participate in our upcoming workshops and meetups
+newsletter_text: Buďte v obraze díky našim nejnovějším zprávám a akcím
+contact_us: Kontaktujte nás
+contact_us_text: Ozvěte se nám s dotazy nebo ohledně spolupráce
+join_events: Připojte se k akcím
+join_events_text: Zúčastněte se našich nadcházejících workshopů a setkání
 # Stay connected section
-stay_connected: Stay connected
-stay_connected_text: Follow us on social media to stay updated on events, stories, and opportunities to engage with our community.
-linkedin_text: Connect professionally
-facebook_text: Join our community
-instagram_text: Follow our stories
-inv_newsletter_header: Get Updates Directly in Your Inbox
-inv_newsletter_text: Subscribe to our newsletter for the latest news, events, and opportunities to get involved.
-inv_newsletter_action: Subscribe
+stay_connected: Zůstaňte v kontaktu
+stay_connected_text: Sledujte nás na sociálních sítích a buďte informováni o akcích, příbězích a možnostech, jak se zapojit do naší komunity.
+linkedin_text: Navazujte profesní kontakty
+facebook_text: Připojte se k naší komunitě
+instagram_text: Sledujte naše příběhy
+inv_newsletter_header: Získejte novinky přímo do své e-mailové schránky
+inv_newsletter_text: Přihlaste se k odběru našeho newsletteru a dostávejte nejnovější zprávy, pozvánky na akce a příležitosti, jak se zapojit.
+inv_newsletter_action: Přihlásit se k odběru
 
 # Dynamic lists
 news: Zprávy
