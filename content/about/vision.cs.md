@@ -1,8 +1,9 @@
 ## Vize a poslání
-MigAct si představuje Prahu jako město, kde se lidé ze všech prostředí — včetně těch se zkušeností s migrací — mohou plně zapojit do občanského života a rozhodovacích procesů, a přispívat tak k vytváření společnosti, v níž jsou slyšet všechny hlasy.
+Vizí MigAct je Praha, ve které se lidé ze všech prostředí – včetně lidí s migrační zkušeností – mohou plně účastnit občanského života a rozhodovacích procesů, a spoluvytvářet tak společnost, v níž jsou slyšet všechny hlasy.
 
-MigAct podporuje jednotlivce i organizace v zapojování se do občanského života v Praze tím, že poskytuje zdroje, rozvíjí kapacity a vytváří sítě propojující lidi a instituce. Více si můžete přečíst zde:
+MigAct podporuje jednotlivce i organizace v zapojení do občanského života v Praze tím, že poskytuje zdroje, rozvíjí kapacity a vytváří sítě propojující lidi a instituce. Více se dočtete zde: 
 
 [Co děláme](projects)
 {.button}
+
 
