@@ -1,6 +1,6 @@
 ---
 title: Jak přenést komunitní organizování do českého kontextu
-featured: /media/img_20241001_172922371.webp
+featured: img_20241001_172922371.webp
 dtstart: 2025-04-25T17:30:00
 tend: 19:30:00
 location: Horse Hug, Prokopova 572/14, 130 00 Praha 3-Žižkov
