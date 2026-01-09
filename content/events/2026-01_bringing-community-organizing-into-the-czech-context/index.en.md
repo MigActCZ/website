@@ -3,7 +3,7 @@ title: Bringing Community Organizing into the Czech Context
 featured: /media/img_20241001_172922371.webp
 dtstart: 2025-04-25T17:30:00
 tend: 19:30:00
-location: Horse Hug, Prokopová 14
+location: Horse Hug, Prokopova 572/14, 130 00 Praha 3-Žižkov
 registration: https://forms.gle/GqhswLgVJCrp6z747
 project: UNITES
 ---
@@ -11,6 +11,6 @@ Community organizing is a powerful tool for making positive changes in our socie
 
 Bring your friends
 Bring your ideas
-Join the conversation! 
+Join the conversation!
 
 Language: We decide which language we speak at the beginning of the event (Czech or English)
