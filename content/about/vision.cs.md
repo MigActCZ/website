@@ -3,5 +3,6 @@ MigAct si představuje Prahu jako město, kde se lidé ze všech prostředí —
 
 MigAct podporuje jednotlivce i organizace v zapojování se do občanského života v Praze tím, že poskytuje zdroje, rozvíjí kapacity a vytváří sítě propojující lidi a instituce. Více si můžete přečíst zde:
 
-- [Co děláme](projects)
-{.buttons}
+[Co děláme](projects)
+{.button}
+
