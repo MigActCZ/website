@@ -1,18 +1,18 @@
 ---
 ---
 - {{<icon handshake>}}
-  ### Collaboration
-  Co-create projects together
+  ### Spolupráce
+  Společně vytvářejte projekty
 
 - {{<icon heart>}}
-  ### Sponsorship
-  Support our mission
+  ### Sponzorství
+  Podpořte naši misi
 
 - {{<icon award>}}
-  ### Resources
-  Share knowledge & tools
-  
+  ### Zdroje
+  Sdílejte znalosti a nástroje
+
 - {{<icon building-2>}}
   ### Networking
-  Connect with others
+  Propojte se s ostatními 
 {.options}
