@@ -10,7 +10,9 @@
     </div>
   </header>
   <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
-  {{ $partnersPage := site.GetPage "partners" }}
-  {{ $partnerPage := $partnersPage.GetPage .Params.partner }}
-  <footer>{{ $partnerPage.Title }}</footer>
+  {{ with .Params.partner }}
+    {{ $partnersPage := site.GetPage "partners" }}
+    {{ $partnerPage := $partnersPage.GetPage . }}
+    <footer>{{ $partnerPage.Title }}</footer>
+  {{ end }}
 </article>

@@ -1,5 +1,5 @@
 <article>
-  {{ $photo := .Resources.GetMatch "photo.*" }}
+  {{ $photo := .Resources.Get .Params.image }}
   <div class="front">
     <img src='{{ $photo.RelPermalink }}' alt="Portrait of {{ .Title }}"/>
     <div class="overlay">

@@ -33,7 +33,7 @@ collections:
     fields:
       - {label: Title, name: title, widget: string, i18n: duplicate }
       - {label: Logo, name: image, widget: image, choose_url: false, i18n: duplicate }
-      - {label: Link, name: website, widget: string, i18n: duplicate }
+      - {label: Link, name: website, widget: string, i18n: true }
       - {label: Body, name: body, widget: markdown, i18n: true }
       - name: build
         label: Build options
@@ -148,6 +148,7 @@ collections:
         display_fields: [title]
         search_fields: [title]
         i18n: duplicate
+        required: false
       - { label: Body, name: body, widget: markdown, i18n: true }
 
   - name: news
@@ -168,7 +169,7 @@ collections:
         widget: file
         choose_url: false
         required: false
-        i18n: duplicate
+        i18n: true
         multiple: true
 
 i18n:

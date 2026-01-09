@@ -39,14 +39,16 @@
         <dt>{{ i18n "languages" }}</dt>
         <dd>{{ .Params.languages }}</dd>
       </div>
+      {{ with .Params.project }}
       <div class="dl-item">
         <div class="icon">
             {{- partial "inline-svg" "icons/globe" -}}
         </div>
         <dt>{{ i18n "project" }}</dt>
-        {{ $project := (.Site.GetPage "projects").GetPage .Params.project }}
+        {{ $project := (site.GetPage "projects").GetPage . }}
         <dd><a href='{{ $project.RelPermalink }}'>{{ $project.Title }}</a></dd>
       </div>
+      {{ end }}
     </dl>
     <hr/>
     <menu class="buttons">
