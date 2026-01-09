@@ -1,18 +1,13 @@
 :root {
   --color-bg: white;
   --color-bg-light: #F5F5F5;
+  --color-border: #E7E7E7;
   --color-red: #F37C14;
   --color-orange: #FFB33D;
   --color-teal: #229FA3;
   --color-blue: #548FEB;
   --color-text: #1A1A1A;
-  --color-text-light: #6B6B6B;
-
-
-  --color-red-bg: color-mix(in srgb, var(--color-red) 10%, transparent);
-  --color-orange-bg: color-mix(in srgb, var(--color-orange) 10%, transparent);
-  --color-teal-bg: color-mix(in srgb, var(--color-teal) 10%, transparent);
-  --color-blue-bg: color-mix(in srgb, var(--color-blue) 10%, transparent);
+  --color-text-light: #333;
   
   --content-width: 80rem;
 
@@ -43,16 +38,6 @@ body {
   /* Footer position */
   display: flex;
   flex-direction: column;
-
-  & > header, & > footer,
-  & > main > .entities,
-  & > main > .intro,
-  & > main.page > section,
-  & > main.detail,
-  address#contacts {
-    padding-inline: var(--content-inline-padding);
-  }
-
   
   & > main {
     flex: 1; /* Footer position */
@@ -75,7 +60,7 @@ body {
       padding-block: 10rem 5rem;
     }
     & > header.intro {
-      padding-block: 15rem 2.5rem;
+      padding-block: 8rem;
       text-align: center;
       
       h1 {
@@ -85,6 +70,20 @@ body {
     }
   }
 }
+
+/* Headings */
+h3 {
+  font-size: 1.25em;
+}
+/* Layout */
+#site-header, #site-footer,
+.entities,
+main > .intro,
+main.page > section,
+main.detail,
+address#contacts {
+  padding-inline: var(--content-inline-padding);
+}
   
 /* Links in navs don't need underline */
 nav a {
@@ -92,7 +91,10 @@ nav a {
 }
 
 /* Special lists have special visuals */
-menu, ul.buttons, ul.pagination, ul.funding, ul.activities, ul.options {
+menu, ul.buttons,
+ul.pagination, ul.introduction,
+ul.funding, ul.activities,
+ul.options, ul.values {
   list-style-type: none;
   margin-block: unset;
   padding-inline-start: unset;
@@ -139,14 +141,16 @@ div.icon > svg, svg.icon {
 /* Color mixin */
 div.icon, svg.socials, #join-volunteer #tags > li,
 #involvement svg.icon,
-#footer-contacts svg {
+#footer-contacts svg,
+.values svg.icon  {
   color: var(--block-color);
   background-color: color-mix(in srgb, var(--block-color) 10%, transparent);
 }
 
 /* Rounded square icon */
 svg.socials,
-#involvement svg.icon {
+#involvement svg.icon,
+.values svg.icon {
   width: var(--brand-dim);
   height: var(--brand-dim);
   padding: calc(2rem - var(--brand-dim) / 2);
@@ -201,6 +205,25 @@ iframe {
 }
   
 /* || Utility */
+/* Buttons */
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--separator-gap);
+}
+
+a.button, :is(ul, menu).buttons a, p.button > a {
+  display: block;
+  width: fit-content;
+  padding: var(--medium-gap) var(--big-gap);
+  text-decoration: none;
+  border-radius: 999px;
+  border: 2px solid var(--color-border);
+  color: var(--color-text);
+}
+
+/* Scroll row */
 ul.activities,
 #involvement > menu,
 menu#socials,
@@ -224,6 +247,17 @@ ul.pagination{
   gap: var(--big-gap);
   padding: var(--big-gap);
 }
+
+/* 2 column split */
+.split {
+  display: flex;
+  gap: 3rem;
+
+  .split-support {
+    width: 50%;
+  }
+}
+
 /* Rainbow top border */
 #site-header, #site-footer {
   border-top: 6px solid;
@@ -432,23 +466,6 @@ ul.pagination{
   }
 }
 
-.buttons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: var(--separator-gap);
-}
-
-.button, :is(ul, menu).buttons a {
-  display: block;
-  width: fit-content;
-  padding: var(--medium-gap) var(--big-gap);
-  text-decoration: none;
-  border-radius: 2rem;
-  border: thin solid #E5E7EB;
-  color: var(--color-text);
-}
-
 /* || HOME PAGE */
 #home {
   line-height: 1.625;
@@ -503,19 +520,14 @@ ul.pagination{
     object-fit: cover;
     border-radius: 1.25rem;
   }
-
-  .buttons > li:first-child > a {
-    border-color: var(--color-red);
-    background: linear-gradient(90deg, var(--color-red) 0%, rgba(255, 179, 61, 0.62) 100%);
-    color: var(--color-bg);
-  }
 }
 
 #activities {
   padding-inline-start: var(--wide-gap);
   & > ul.activities > li {
     position: relative;
-    background: var(--color-bg);
+    padding: unset;
+    border-radius: 2rem;
     overflow: hidden;
 
     .content {
@@ -556,18 +568,22 @@ ul.pagination{
   }
 }
 
+/* Card mixin */
+ul.activities > li,
 #involvement > #donate,
 #involvement li,
 #socials > li,
 #socials-newsletter,
 #join-partners > ul.options > li,
-#join-donate {
+#join-donate, ul.introduction > li,
+.values > li {
   padding: var(--big-gap);
-  border: thin solid var(--color-bg-light);
+  border: thin solid var(--color-border);
   border-radius: 1rem;
   background: var(--color-bg);
 }
 
+ul.activities > li,
 #join-partners > ul.options > li,
 #join-donate {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -811,6 +827,8 @@ ul.pagination{
 }
 
 #info {
+  --block-color: var(--color-teal);
+  
   flex: 0 0 25%;
   padding: var(--wide-gap) var(--big-gap);
   height: fit-content;
@@ -833,9 +851,7 @@ ul.pagination{
 }
 
 /* Row oriented dl */
-#info, #join-donate {
-  --block-color: var(--color-teal);
-  
+#info, #join-donate {  
   ul.funding, dl.attributes {
     display: flex;
     flex-direction: column;
@@ -945,41 +961,48 @@ ul.pagination{
     }
   }
 }
-/* || JOIN US */
-#join-us {
+/* || Pages  #join-us #about-us */
+.page {
   h1 {
     color: var(--color-text);
+  }
+  h2 {
+    margin-block-start: 0;
+    font-size: 3em;
   }
   p {
     color: var(--color-text-light);
     font-size: 1.25rem;
   }
-  
-  & > section {
-    padding-block: 6rem;
-  }
 
-  .button, ul.buttons a{
-    background-color: var(--block-color);
-    color: var(--color-bg);
+  & > section {
+    padding-block: 4rem;
   }
 }
-#join-events{
+
+:is(#about, #vision) ul.buttons > li:first-child > a {
+  --gradient-color: linear-gradient(90deg, var(--color-orange) 0%, var(--color-red) 100%);
+  border: var(--gradient-color);
+  background: var(--gradient-color);
+  color: var(--color-bg);
+}
+
+p.button > a,
+#join-partners ul.buttons a {
+  --gradient-target: color-mix(in srgb, var(--block-color) 80%, black);
+  --gradient-color: linear-gradient(90deg, var(--block-color) 0%, var(--gradient-target) 100%);
+
+  border: var(--gradient-color);
+  background: var(--gradient-color);
+  color: var(--color-bg);
+}
+
+#join-events, #story {
   text-align: center;
-  p {
-    margin: auto;
-    width: 60%;
-  }
 }
 
 #join-volunteer {
   --block-color: var(--color-teal);
-  display: flex;
-  gap: 3rem;
-
-  img {
-    width: 50%;
-  }
 
   #tags {
     display: flex;
@@ -1023,9 +1046,9 @@ ul.pagination{
 
 #join-donate{
   --block-color: var(--color-orange);
-  width: 60%;
+  width: 40%;
   margin: var(--big-gap) auto; /* Ak pride background som zas nahrany */
-  padding-inline: 6rem;
+  padding-inline-start: 6rem;
   font-size: 1.5em;
 
   border-radius: 3.5rem;
@@ -1034,8 +1057,56 @@ ul.pagination{
   grid-template-columns: 1fr 1fr;
 
   iframe {
-    width: 50%;
+    min-width: fit-content;
+    width: 80%;
     margin: auto;
+    border: thin solid var(--block-color);
+    border-radius: 1rem;
+  }
+}
+
+ul.values {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: var(--medium-gap);
+
+  & > li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:nth-child(3n + 1){
+      --block-color: var(--color-red);
+    }
+    &:nth-child(3n + 2){
+      --block-color: var(--color-teal);
+    }
+    &:nth-child(3n + 3){
+      --block-color: var(--color-blue);
+    }
+  }
+}
+
+#vision {
+  --block-color: var(--color-orange);
+}
+
+#introduction > h2 {
+  text-align: center;
+}
+
+ul.introduction {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--big-gap);
+
+  & > li {
+    &:first-child {  
+      --block-color: var(--color-teal);
+    }
+    &:last-child {
+      --block-color: var(--color-blue);
+    }
   }
 }
 
@@ -1052,6 +1123,10 @@ ul.pagination{
     & > section:nth-child(even){
       padding-inline: max(var(--min-inline-padding), var(--content-inline-padding) - 2rem);
     }
+  }
+
+  #join-events, #story, header.intro {
+    padding-inline: calc(var(--content-inline-padding) * 1.2);
   }
 
   #about {

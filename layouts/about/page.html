@@ -2,9 +2,35 @@
 <main id="about-us" class="page">
     <header class="intro">
         <h1>{{ .Title }}</h1>
-    </header>
-    <section>
         {{ .Content }}
+    </header>
+    <section id="vision" class="split">
+        <section class="split-content">
+            {{ with .Resources.Get "vision.md" }}
+                {{ .Content }}
+            {{ end }}
+        </section>
+        <img class="split-support" src='{{ (.Resources.Get "about.avif").RelPermalink }}'/>
+    </section>
+    <section id="theory">
+        {{ with .Resources.Get "theory.md" }}
+            {{ .Content }}
+        {{ end }}
+    </section>
+    <section id="story">
+        {{ with .Resources.Get "story.md" }}
+            {{ .Content }}
+        {{ end }}
+    </section>
+    <section id="statutes">
+        {{ with .Resources.Get "statutes.md" }}
+            {{ .Content }}
+        {{ end }}
+    </section>
+    <section id="introduction">
+        {{ with .Resources.Get "introduction.md" }}
+            {{ .Content }}
+        {{ end }}
     </section>
 </main>
 {{ end }}

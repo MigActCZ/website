@@ -1,3 +1,7 @@
-<div class="icon">
+{{- if (.Get 1) -}}
 {{- partial "inline-svg" (printf "icons/%s" (.Get 0)) -}}
+{{- else -}}
+<div class="icon">
+    {{- partial "inline-svg" (printf "icons/%s" (.Get 0)) -}}
 </div>
+{{- end -}}

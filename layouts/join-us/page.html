@@ -4,13 +4,12 @@
         <h1>{{ .Title }}</h1>
         {{ .Content }}
     </header>
-    <section id="join-volunteer">
-        <img src='{{ (.Resources.Get "join.avif").RelPermalink }}'/>
+    <section id="join-volunteer" class="split">
+        <img class="split-support" src='{{ (.Resources.Get "join.avif").RelPermalink }}'/>
         {{ with .Resources.Get "volunteers.md" }}
-        <div class="content">{{ .Content }}
-            <a class="button" href='{{ .Ref (dict "path" "contact") }}'>
-                {{ i18n "contact" }}</a>
-        </div>
+        <section class="split-content">
+            {{ .Content }}
+        </section>
         {{ end }}
     </section>
     <section id="join-events">
