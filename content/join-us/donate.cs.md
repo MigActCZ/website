@@ -10,6 +10,6 @@ Váš příspěvek nám pomůže zajistit kontinuitu našich programů, rozvíje
   Pomozte nám oslovit více členů komunity po celé Praze
 
 - {{<icon shield-check>}}
-  ###Zajistěte udržitelnost
-  Vytvořte dlouhodobou stabilitu pro naši organizaci {.funding}
+  ### Zajistěte udržitelnost
+  Vytvořte dlouhodobou stabilitu pro naši organizaci
 {.funding}
