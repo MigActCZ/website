@@ -47,7 +47,7 @@ body {
   
     /* I need some space before footer, but some elements have background. So their box needs to stretch up to the footer.
       TODO: Maybe specify specific elements later? */
-    & > section:last-child, &.section {
+    & > section:last-child, &.section, &.details, address#contacts {
       padding-block-end: 8rem;
     }
 
@@ -74,15 +74,6 @@ body {
 /* Headings */
 h3 {
   font-size: 1.25em;
-}
-/* Layout */
-#site-header, #site-footer,
-.entities,
-main > .intro,
-main.page > section,
-main.detail,
-address#contacts {
-  padding-inline: var(--content-inline-padding);
 }
   
 /* Links in navs don't need underline */
@@ -478,7 +469,7 @@ ul.pagination{
 
     & > header{
       text-align: center;
-      margin-block: 3rem;
+      margin-block-end: 3rem;
       padding-inline-end: 1.5rem;
       h1 {
         margin-block: 0;
@@ -523,6 +514,10 @@ ul.pagination{
 }
 
 #activities {
+  background:
+    radial-gradient(ellipse at bottom right,
+      color-mix(in srgb, var(--color-blue) 5%, transparent), transparent);
+
   padding-inline-start: var(--wide-gap);
   & > ul.activities > li {
     position: relative;
@@ -590,6 +585,10 @@ ul.activities > li,
 }
 
 #involvement {
+  background:
+    radial-gradient(ellipse at top right,
+      color-mix(in srgb, var(--color-blue) 5%, transparent), transparent);
+
   #donate {
     --block-color: var(--color-red);
     text-align: center;
@@ -604,6 +603,12 @@ ul.activities > li,
     }
     svg {
       margin-inline: auto;
+    }
+  }
+
+  #donate, li {
+    & > h2 {
+      margin-block: var(--medium-gap) 0;
     }
   }
   
@@ -624,8 +629,7 @@ ul.activities > li,
     & > h3 {
       color: var(--color-text);
       font-weight: normal;
-      font-size: 1.25rem;
-      margin-block: var(--wide-gap) var(--separator-gap);
+      margin-block-end: 0;
     }
   }
   li:nth-child(3n + 1) {
@@ -644,7 +648,6 @@ ul.activities > li,
 
   a {
     color: var(--block-color);
-    margin-block-start: var(--medium-gap);
     display: flex;
     align-items: center;
   }
@@ -661,10 +664,14 @@ ul.activities > li,
     border-color: var(--color-orange);
     text-align: center;
 
+    h3 {
+      margin-block: 0;
+    }
+
     a {
       background-color: var(--color-orange);
       color: var(--color-bg);
-      margin: var(--big-gap) auto;
+      margin: var(--medium-gap) auto 0;
     }
   }
 }
@@ -1112,16 +1119,37 @@ ul.introduction {
 
 /* ============================================     Tablet (768px+)     ============================================ */
 @media (min-width: 768px) {
+  /* Layout */
+  #site-header, #site-footer,
+  .entities,
+  #home > section,
+  main > .intro,
+  main.page > section,
+  main.detail,
+  address#contacts {
+    padding-inline: var(--content-inline-padding);
+  }
   #home {
     line-height: 2;
     padding-inline: 0;
 
-    & > section:nth-child(odd){
-      padding-inline: var(--content-inline-padding);
+    > section {
+      padding-block: 3rem;
+    }
+    /* TODO: maybe unite it with other pages */
+    > section:last-child {
+      padding-block-end: 8rem;
+    }
+    section > header {
+      padding-inline: unset;
     }
     
-    & > section:nth-child(even){
-      padding-inline: max(var(--min-inline-padding), var(--content-inline-padding) - 2rem);
+    #stay-connected {
+      padding-inline: calc(var(--content-inline-padding) * 1.4);
+    }
+
+    #involvement{
+      padding-inline: calc(var(--content-inline-padding) * 1.3);
     }
   }
 
@@ -1154,6 +1182,10 @@ ul.introduction {
       font-size: 2rem;
       line-height: initial;
     }
+  }
+
+  #socials li {
+    line-height: 1.6;
   }
 
   .activities .content > h2 {
@@ -1204,7 +1236,7 @@ ul.introduction {
   }
 
   #projects.entities {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
   }
 }
 
