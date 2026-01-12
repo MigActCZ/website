@@ -56,6 +56,8 @@ I could use svg/use, but that markup was ugly, the viewbox didn't work on the ou
 I also considered creating svg bundle of symbols, which would solve the requests and caching, but that would complicate the build step.
 So I opted for the easiest, most straightforward solution.
 
-## CSS
-I don't use svg's in CSS, because it complicates things with styling.
-Maybe embedding it completely would work, but then I'd need template machinery for CSS.
+# Layouts
+## Splits
+Main idea is to have 2 sections 50-50. The issue is, when the content is not separated from the image in mobile version.
+I cannot make it future proof and aligned properly.
+The homepage is the only one with this. So it's using a hack.

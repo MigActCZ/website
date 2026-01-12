@@ -5,9 +5,9 @@
         {{ .Content }}
     </header>
     <section id="join-volunteer" class="split">
-        <img class="split-support" src='{{ (.Resources.Get "join.avif").RelPermalink }}'/>
+        <img src='{{ (.Resources.Get "join.avif").RelPermalink }}'/>
         {{ with .Resources.Get "volunteers.md" }}
-        <section class="split-content">
+        <section>
             {{ .Content }}
         </section>
         {{ end }}
@@ -25,7 +25,7 @@
         </menu>
         {{ end }}
     </section>
-    <section id="join-partners">
+    <section id="join-partners" class="split">
         <section>
         {{ with .Resources.Get "partners.md" }}
             {{ .Content }}
@@ -35,7 +35,7 @@
             {{ .Content }}
         {{ end }}
     </section>
-    <section id="join-donate">
+    <section id="join-donate" class="split">
         <div class="content">
         {{ with .Resources.Get "donate.md" }}
             {{ .Content }}

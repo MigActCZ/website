@@ -241,11 +241,13 @@ ul.pagination{
 
 /* 2 column split */
 .split {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 3rem;
+  align-items: center;
 
-  .split-support {
-    width: 50%;
+  & > img {
+    object-fit: cover;
   }
 }
 
@@ -921,6 +923,7 @@ ul#attachments {
       }
       & > p, & > dd {
         grid-area: def;
+        margin: 0;
       }
     }
   }
@@ -1024,7 +1027,8 @@ ul#attachments {
   }
 }
 
-:is(#about, #vision) ul.buttons > li:first-child > a {
+#about ul.buttons > li:first-child > a,
+#vision p.button > a {
   --gradient-color: linear-gradient(90deg, var(--color-orange) 0%, var(--color-red) 100%);
   border: var(--gradient-color);
   background: var(--gradient-color);
@@ -1064,12 +1068,8 @@ p.button > a,
 
 #join-partners {
   --block-color: var(--color-blue);
-  display: flex;
-  gap: 3rem;
 
   & > ul.options {
-    flex: 1 0 50%;
-    
     & > li {
       display: flex;
       flex-direction: column;
@@ -1088,18 +1088,17 @@ p.button > a,
   }
 }
 
-#join-donate{
+#join-donate {
   --block-color: var(--color-orange);
   width: 40%;
   margin: var(--big-gap) auto; /* Ak pride background som zas nahrany */
   padding-inline-start: 6rem;
   font-size: 1.5em;
-
   border-radius: 3.5rem;
 
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-
+  ul.funding {
+    margin-block: revert;
+  }
   iframe {
     min-width: fit-content;
     width: 80%;
@@ -1129,10 +1128,6 @@ ul.values {
       --block-color: var(--color-blue);
     }
   }
-}
-
-#vision {
-  --block-color: var(--color-orange);
 }
 
 #introduction > h2 {
