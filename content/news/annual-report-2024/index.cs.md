@@ -1,5 +1,6 @@
 ---
 title: Výroční zpráva 2024
+category: report
 resources:
   - migact-annual-report-2024.pdf
 ---

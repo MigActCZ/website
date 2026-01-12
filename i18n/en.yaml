@@ -2,6 +2,7 @@
 about: About us
 our_team: Our Team
 our_partners: Our partners and donors
+news: News, Reports and Resources
 events: Events
 projects: Projects
 join_us: Join us
@@ -34,9 +35,9 @@ inv_newsletter_text: Subscribe to our newsletter for the latest news, events, an
 inv_newsletter_action: Subscribe
 
 # Dynamic lists
-news: News
 home: Home
 bio: Read more
+attachments: Attachments
 
 # Project
 status: Status

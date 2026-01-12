@@ -82,7 +82,7 @@ nav a {
 }
 
 /* Special lists have special visuals */
-menu, ul.buttons,
+menu, ul.buttons, ul#attachments,
 ul.pagination, ul.introduction,
 ul.funding, ul.activities,
 ul.options, ul.values {
@@ -569,6 +569,7 @@ ul.activities > li,
 #involvement li,
 #socials > li,
 #socials-newsletter,
+#attachments > li,
 #join-partners > ul.options > li,
 #join-donate, ul.introduction > li,
 .values > li {
@@ -724,6 +725,8 @@ ul.activities > li,
     /* Needed to stretch to entire row height */
     box-sizing: border-box;
     height: 100%;
+
+    padding: var(--wide-gap);
   
     border-radius: 2rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -733,7 +736,6 @@ ul.activities > li,
 #projects {
   article {
     border: thin solid var(--color-teal);
-    padding: 2.5rem;
 
     display: flex;
     flex-direction: column;
@@ -794,10 +796,46 @@ ul.activities > li,
     font-size: 1.125rem;
   }
 }
+#news header {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--medium-gap);
+}
+
+.news {
+  background-color: color-mix(in srgb, var(--block-color) 10%, transparent);
+}
+.news-resource {
+  --block-color: var(--color-orange);
+}
+.news-news {
+  --block-color: var(--color-blue);
+}
+.news-report {
+  --block-color: var(--color-red);
+}
+
+ul#attachments {
+  display: flex;
+  flex-wrap: wrap;
+
+  a {
+    padding: var(--wide-gap);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--separator-gap);
+
+    svg {
+      width: 4rem;
+    }
+  }
+}
 
 #events, #join-events {
   article {
-    padding: var(--wide-gap);
     header {
       display: flex;
       justify-content: space-between;
@@ -891,8 +929,6 @@ ul.activities > li,
 /* || PARTNERS PAGE */
 #partners {
   article {
-    padding: var(--wide-gap);
-
     img {
       aspect-ratio: 1 / 1;
       width: 100%;
@@ -914,6 +950,7 @@ ul.activities > li,
     position: relative;
     height: calc(var(--content-width) / 2);
     cursor: pointer;
+    padding: unset;
 
     h1, h2 {
       margin: unset;

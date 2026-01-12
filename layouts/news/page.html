@@ -1,6 +1,25 @@
 {{ define "main" }}
-<main>
+<main id="newsitem" class="detail">
   <h1>{{ .Title }}</h1>
-  {{ .Content }}
+  {{ with .Params.project }}
+  {{ $project := (site.GetPage "projects").GetPage . }}
+  <h2><a href='{{ $project.RelPermalink }}'>{{ $project.Title }}</a></h2>
+  {{ end }}
+  <time datetime='{{ .Date | dateFormat "2006-01-02" }}'>{{ .Date | dateFormat "2006-01-02" }}</time>
+  <section>
+    {{ .Content }}
+  </section>
+  {{ with .Params.resources }}
+  <section>
+    <h2>{{ i18n "attachments" }}</h2>
+    <ul id="attachments">
+      {{ range . }}
+      <li>
+        <a href="{{ . }}">
+          {{ partial "inline-svg" "icons/file-text" }}{{ . }}</a></li>
+      {{ end }}
+    </ul>
+  </section>
+  {{ end }}
 </main>
 {{ end }}

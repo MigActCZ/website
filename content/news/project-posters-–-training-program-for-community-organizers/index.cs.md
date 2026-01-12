@@ -1,5 +1,6 @@
 ---
 title: Plakáty projektů – Vzdělávací program pro komunitní lídři
+category: resource
 resources:
   - participant-posters-26.03.25-event_v2.pdf
 ---

@@ -42,9 +42,11 @@ languages:
     permalinks:
       page:
         events: /akce/:slug/
+        news: /zpravy/:slug/
         projects: /projekty/:slug/
       section:
         events: /akce/
+        news: /zpravy/
         partners: /partneri/
         projects: /projekty/
         team: /tym/

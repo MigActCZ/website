@@ -1,5 +1,6 @@
 ---
 title: Open Call Training Program
+category: news
 resources:
   - open-call-migact-10-pages.pdf
 ---

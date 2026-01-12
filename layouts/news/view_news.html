@@ -1,6 +1,17 @@
-<article>
-  <a href="{{ .RelPermalink }}">   
-    <h2>{{ .Title }}</h2>
-  </a>
+<article class='news news-{{ .Params.category }}'>
+  <header>
+    <time datetime='{{ .Date | dateFormat "2006-01-02" }}'>{{ .Date | dateFormat "2006-01-02" }}</time>
+    {{ with .Params.project }}
+    <div>
+    {{ $project := (site.GetPage "projects").GetPage . }}
+    {{ partial "inline-svg" "icons/briefcase" }}
+      <a href='{{ $project.RelPermalink }}'>{{ $project.Title }}</a>
+    </div>
+    {{ end }}
+    {{ if .Params.resources }}
+      {{ partial "inline-svg" "icons/paperclip" }}
+    {{ end }}
+  </header>
+  <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
   {{ .Summary }}
 </article>

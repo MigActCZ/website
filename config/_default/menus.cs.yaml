@@ -5,11 +5,15 @@ main:
   - identifier: our_team
     parent: about
     pageRef: /team
-    weight: 20
+    weight: 12
   - identifier: our_partners
     parent: about
     pageRef: /partners
-    weight: 25
+    weight: 14
+  - identifier: news
+    parent: about
+    pageRef: /news
+    weight: 16
   - identifier: events
     pageRef: /events
     weight: 30

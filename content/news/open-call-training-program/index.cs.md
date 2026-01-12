@@ -1,5 +1,6 @@
 ---
 title: CZ Open Call
+category: news
 resources:
   - open-call-migact-10-pages.pdf
 ---
