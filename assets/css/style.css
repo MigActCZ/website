@@ -93,7 +93,7 @@ menu {
 
 /* Special lists have special visuals */
 menu,
-#involvement > ul, #stay-connected > ul,
+#involvement > ul, #stay-connected > ul, #linked-events > ul,
 ul.entities,
 ul.buttons, ul#attachments,
 ul.pagination, ul.introduction,
@@ -231,6 +231,11 @@ ul.buttons a, p.button > a {
   color: var(--color-text);
 }
 
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: var(--medium-gap);
+}
 /* Scroll row */
 ul.activities,
 #involvement > ul,
@@ -584,7 +589,8 @@ ul.activities > li,
 #attachments > li,
 #join-partners > ul.options > li,
 #join-donate, ul.introduction > li,
-.values > li {
+.values > li,
+#linked-events li {
   padding: var(--big-gap);
   border: thin solid var(--color-border);
   border-radius: 1rem;
@@ -765,7 +771,11 @@ ul.entities {
 
 #project {
   & > h1 {
-    font-size: 3.5rem;
+    font-size: 3.5em;
+  }
+
+  h2 {
+    font-size: 2.5em;
   }
 
   & > .attributes {
@@ -797,6 +807,20 @@ ul.entities {
       height: auto;
       background-color: var(--color-bg);
     }
+  }
+
+  #linked-events li {
+    time {
+      display: flex;
+      gap: var(--separator-gap);
+      align-items: center;
+      color: var(--color-teal);
+    }
+    a {
+      color: var(--color-text);
+    }
+    
+    padding: var(--medium-gap);
   }
 
   & > p {

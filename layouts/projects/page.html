@@ -52,14 +52,17 @@
     {{ $key := path.Base $.Path }}
     {{ $related := where $events.RegularPages "Params.project" $key }}
     {{ with $related }}
-      <section>
+      <section id="linked-events">
       <h2>{{ i18n "linked_events" }}</h2>
+      <ul class="column">
         {{ range . }}
-          <article>
-            <div>{{ .Params.dtstart | dateFormat "2 Jan 2006" }}</div>
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
-          </article>
+          <li><article>
+            <time datetime="{{ .Params.dtstart }}">
+              {{ partial "inline-svg" "icons/calendar" }}{{ .Params.dtstart | dateFormat "2 Jan 2006" }}</time>
+            <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+          </article></li>
         {{ end }}
+      </ul>
       </section>
     {{ end }}
     {{ with .Params.images }}

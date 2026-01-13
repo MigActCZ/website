@@ -4,10 +4,10 @@
 {{ $dtend_utc := $dtend | dateFormat "2006-01-02T15:04Z0700" }}
 <article>
   <header>
-    <time class="date" datetime='{{ $dtstart | dateFormat "2006-01-02" }}'>{{ .Params.dtstart | dateFormat "2 Jan 2006" }}</time>
+    <time class="date" datetime='{{ $dtstart | dateFormat "2006-01-02" }}'>{{ $dtstart | dateFormat "2 Jan 2006" }}</time>
     <div class="timeline">
       <time datetime='{{ $dtstart_utc }}'>
-        {{ .Params.dtstart | dateFormat "15:04" }}</time>
+        {{ $dtstart | dateFormat "15:04" }}</time>
       -
       <time datetime='{{ $dtend_utc }}'>
         {{ $dtend | dateFormat "15:04" }}</time>
