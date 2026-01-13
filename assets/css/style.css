@@ -819,7 +819,7 @@ ul.entities {
     a {
       color: var(--color-text);
     }
-    
+
     padding: var(--medium-gap);
   }
 
@@ -981,6 +981,9 @@ ul#attachments {
     cursor: pointer;
     padding: unset;
 
+    h2 {
+      font-size: 2.25em;
+    }
     h2, h3 {
       margin: unset;
     }
