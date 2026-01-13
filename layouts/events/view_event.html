@@ -22,10 +22,10 @@
     <div class="language">
       {{- partial "inline-svg" "icons/globe" -}}{{ default "EN CZ" .Params.languages }}</div>
   </footer>
-  <menu class="buttons">
+  <ul class="buttons">
     <li><a href="{{ .RelPermalink }}">{{ i18n "details" }}</a></li>
     {{ with .Params.registration }}
     <li><a href="{{ . }}">{{ i18n "register" }}</a></li>
     {{ end }}
-  </menu>
+  </ul>
 </article>

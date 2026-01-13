@@ -24,7 +24,7 @@
       <p>{{ i18n "donate_text" }}</p>
       <iframe src="{{ site.Params.donate_widget }}" width="360" height="480"></iframe>
     </div>
-    <menu>
+    <ul>
       <li>
         {{- partial "inline-svg" "icons/mail" -}}
         <h3><a href='{{ .Site.Params.newsletter }}'>
@@ -43,22 +43,22 @@
           {{ i18n "contact_us" }}</a></h3>
         <p>{{ i18n "contact_us_text" }}</p>
       </li>
-    </menu>
+    </ul>
   </section>
   <section id="stay-connected">
     <header>
       <h2>{{ i18n "stay_connected" }}</h2>
       <p>{{ i18n "stay_connected_text" }}</p>
     </header>
-    <menu id="socials">
+    <ul>
       <li>{{- partial "socials-card" "LinkedIn" -}}</li>
       <li>{{- partial "socials-card" "Facebook" -}}</li>
       <li>{{- partial "socials-card" "Instagram" -}}</li>
-    </menu>
+    </ul>
     <div id="socials-newsletter">
       <h3>{{ i18n "inv_newsletter_header" }}</h3>
       <p>{{ i18n "inv_newsletter_text" }}</p>
-      <a class="button" href='{{ .Site.Params.newsletter }}'>{{ i18n "inv_newsletter_action" }}</a>
+      <p class="button"><a href='{{ .Site.Params.newsletter }}'>{{ i18n "inv_newsletter_action" }}</a></p>
     </div>
   </section>
 </main>

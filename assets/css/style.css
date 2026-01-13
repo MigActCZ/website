@@ -83,17 +83,19 @@ h3 {
 }
   
 /* Links in navs don't need underline */
-nav {
-  menu {
-    margin-block: unset;
-    a {
-      text-decoration: none;
-    }
+menu {
+  margin-block: unset;
+  a {
+    display: block;
+    text-decoration: none;
   }
 }
 
 /* Special lists have special visuals */
-menu, ul.buttons, ul#attachments,
+menu,
+#involvement > ul, #stay-connected > ul,
+ul.entities,
+ul.buttons, ul#attachments,
 ul.pagination, ul.introduction,
 ul.funding, ul.activities,
 ul.options, ul.values {
@@ -101,12 +103,15 @@ ul.options, ul.values {
   padding-inline-start: unset;
 }
 
-menu, ul#attachments,
-ul.pagination {
+menu, ul#attachments, ul.pagination {
   a {
-    display: block;
     color: var(--color-text);
   }
+}
+
+a:has(svg) {
+  display: flex;
+  align-items: center;
 }
 
 img,
@@ -164,7 +169,7 @@ svg.socials,
 menu#site-nav a > svg,
 #team article a > svg,
 :is(#events, #join-events) article > footer > svg
-:is(#footer-contacts, #socials) a > svg {
+:is(#footer-contacts, #stay-connected) a > svg {
   width: 1rem;
 }
 
@@ -210,14 +215,13 @@ iframe {
   
 /* || Utility */
 /* Buttons */
-.buttons {
+ul.buttons {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   gap: var(--separator-gap);
 }
 
-a.button, :is(ul, menu).buttons a, p.button > a {
+ul.buttons a, p.button > a {
   display: block;
   width: fit-content;
   padding: var(--medium-gap) var(--big-gap);
@@ -229,8 +233,8 @@ a.button, :is(ul, menu).buttons a, p.button > a {
 
 /* Scroll row */
 ul.activities,
-#involvement > menu,
-menu#socials,
+#involvement > ul,
+#stay-connected > ul,
 ul.options {
   display: grid;
   grid-auto-flow: column;
@@ -474,7 +478,11 @@ ul.pagination{
 /* || HOME PAGE */
 #home {
   line-height: 1.625;
-  color: var(--color-text-light);
+
+  p {
+    margin-block: 0;
+    color: var(--color-text-light);
+  }
   
   /* Padding on homepage is specific because of overflowing cards*/
   padding-inline: 0; /* reset site-wide setting */
@@ -487,13 +495,8 @@ ul.pagination{
       padding-inline-end: 1.5rem;
       h2 {
         margin-block: 0;
-        color: var(--color-text);
       }
     }
-  }
-
-  p {
-    margin-block: 0;
   }
 }
 
@@ -576,7 +579,7 @@ ul.pagination{
 ul.activities > li,
 #involvement > #donate,
 #involvement li,
-#socials > li,
+#stay-connected li,
 #socials-newsletter,
 #attachments > li,
 #join-partners > ul.options > li,
@@ -634,35 +637,6 @@ ul.activities > li,
   }
 }
 
-menu#socials {
-  li {
-    border-color: var(--block-color);
-    & > h3 {
-      color: var(--color-text);
-      margin-block-end: 0;
-    }
-  }
-  li:nth-child(3n + 1) {
-    --block-color: var(--color-red);
-  }
-  li:nth-child(3n + 2) {
-    --block-color: var(--color-teal);
-  }
-  li:nth-child(3n + 3) {
-    --block-color: var(--color-blue);
-  }
-
-  p {
-    color: var(--color-text-light);
-  }
-
-  a {
-    color: var(--block-color);
-    display: flex;
-    align-items: center;
-  }
-}
-
 #stay-connected {
   background-image: url("/bg-bot.svg");
   background-size: cover;
@@ -683,6 +657,27 @@ menu#socials {
       color: var(--color-bg);
       margin: var(--medium-gap) auto 0;
     }
+  }
+
+  li {
+    border-color: var(--block-color);
+    & > h3 {
+      color: var(--color-text);
+      margin-block-end: 0;
+    }
+  }
+  li:nth-child(3n + 1) {
+    --block-color: var(--color-red);
+  }
+  li:nth-child(3n + 2) {
+    --block-color: var(--color-teal);
+  }
+  li:nth-child(3n + 3) {
+    --block-color: var(--color-blue);
+  }
+
+  a {
+    color: var(--block-color);
   }
 }
 
@@ -725,7 +720,7 @@ menu#socials {
 }
 
 /* || Section pages */
-.entities {
+ul.entities {
   display: grid;
   gap: var(--big-gap);
   grid-template-columns: 1fr;
@@ -739,6 +734,10 @@ menu#socials {
   
     border-radius: 2rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    h2 > a {
+      color: var(--color-text);
+    }
   }
 }
 
@@ -863,9 +862,7 @@ ul#attachments {
       }
     }
 
-    menu {
-      display: flex;
-      flex-direction: row;
+    ul.buttons {
       justify-content: flex-end;
     }
   }
@@ -1159,6 +1156,10 @@ ul.introduction {
     &:last-child {
       --block-color: var(--color-blue);
     }
+
+    p {
+      font-size: 1.25em;
+    }
   }
 }
 
@@ -1166,7 +1167,7 @@ ul.introduction {
 @media (min-width: 768px) {
   /* Layout */
   #site-header, #site-footer,
-  .entities,
+  ul.entities,
   #home > section,
   main > .intro,
   main.page > section,
@@ -1198,7 +1199,7 @@ ul.introduction {
     padding-inline: calc(var(--content-inline-padding) * 1.2);
   }
 
-  #about {
+  section#about {
     padding-block: 7.5rem;
     gap: var(--tight-gap) 5rem;
     grid-template-rows: auto auto 1fr;
@@ -1225,7 +1226,7 @@ ul.introduction {
     }
   }
 
-  #socials li {
+  #stay-connected li {
     line-height: 1.6;
   }
 
@@ -1233,7 +1234,7 @@ ul.introduction {
     font-size: 2rem;
   }
 
-  .buttons {
+  ul.buttons {
     justify-content: unset;
     gap: var(--big-gap);
   }
@@ -1264,7 +1265,7 @@ ul.introduction {
     }
   }
   
-  .entities {
+  ul.entities {
     gap: var(--medium-gap) var(--big-gap);
   }
   
@@ -1295,8 +1296,8 @@ ul.introduction {
     }
   }
 
-  #involvement > menu,
-  menu#socials {
+  #involvement > ul,
+  #stay-connected > ul {
     grid-auto-flow: unset;
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -1335,12 +1336,6 @@ ul.introduction {
   
       a {
         border: revert; /* I need to revert the bottom border of mobile menu */
-        /* Parent menuitem has svg indicator of submenu */
-        &:has(svg) {
-          display: flex;
-          align-items: center;
-        }
-  
         svg {
           display: revert;
         }

@@ -18,11 +18,11 @@
         {{ end }}
         {{ $events := (site.GetPage "events").RegularPages }}
         {{ with where $events "Params.dtstart" "ge" (now | dateFormat "2006-01-02") }}
-        <menu class="entities">
+        <ul class="entities">
             {{ range first 3 . }}
                 <li>{{ .Render "view_event" }}</li>
             {{ end }}
-        </menu>
+        </ul>
         {{ end }}
     </section>
     <section id="join-partners" class="split">

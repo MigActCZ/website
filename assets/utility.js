@@ -1,7 +1,7 @@
 window.updateGridStatusTag = function(){
     const now = new Date();
 
-    const entities = document.querySelector("menu.entities");
+    const entities = document.querySelector("ul.entities");
   
     entities.querySelectorAll(":scope article").forEach(article => {
       const endTime = article.querySelector(":scope > header > .timeline > time:last-child");

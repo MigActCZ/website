@@ -51,7 +51,7 @@
       {{ end }}
     </dl>
     <hr/>
-    <menu class="buttons">
+    <ul class="buttons">
       {{ with .Params.registration }}
       <li><a href="{{ . }}">{{ i18n "register" }}</a></li>
       {{ end }}
@@ -61,7 +61,7 @@
           {{ i18n "calendar" }}</a></li>
         {{ end }}
       {{ end }}
-    </menu>
+    </ul>
   </div>
   <section>
     <img src="{{ (.Resources.Get .Params.featured).RelPermalink }}"/>
