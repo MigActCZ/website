@@ -1,2 +1,2 @@
-# Come to Our Events
+## Come to Our Events
 Our community gatherings, workshops, and informal meet-ups are open to everyone — whether you’ve just arrived in Prague or have lived here your whole life. Come meet people, share stories, and find out how you can get involved.

@@ -72,13 +72,24 @@ body {
 }
 
 /* Headings */
+section > header > h2 {
+  font-size: 2em;
+}
+h1, h2, h3, h4 {
+  font-weight: normal;
+}
 h3 {
   font-size: 1.25em;
 }
   
 /* Links in navs don't need underline */
-nav a {
-  text-decoration: none;
+nav {
+  menu {
+    margin-block: unset;
+    a {
+      text-decoration: none;
+    }
+  }
 }
 
 /* Special lists have special visuals */
@@ -87,9 +98,11 @@ ul.pagination, ul.introduction,
 ul.funding, ul.activities,
 ul.options, ul.values {
   list-style-type: none;
-  margin-block: unset;
   padding-inline-start: unset;
+}
 
+menu, ul#attachments,
+ul.pagination {
   a {
     display: block;
     color: var(--color-text);
@@ -224,7 +237,6 @@ ul.options {
   grid-auto-columns: 85%;
   gap: var(--medium-gap);
   overflow-x: auto;
-  padding-block-end: var(--medium-gap);
   scroll-snap-type: x mandatory;
   
   & > li {
@@ -473,19 +485,15 @@ ul.pagination{
       text-align: center;
       margin-block-end: 3rem;
       padding-inline-end: 1.5rem;
-      h1 {
+      h2 {
         margin-block: 0;
-        font-weight: normal;
+        color: var(--color-text);
       }
     }
   }
 
   p {
     margin-block: 0;
-  }
-
-  h1 {
-    color: var(--color-text);
   }
 }
 
@@ -530,9 +538,8 @@ ul.pagination{
     .content {
       padding: var(--big-gap);
       
-      h2 {
+      h3 {
         margin-block: 0 var(--medium-gap);
-        font-weight: normal;
         color: var(--color-text);
       }
     }
@@ -597,10 +604,6 @@ ul.activities > li,
     text-align: center;
     margin-block: var(--medium-gap);
 
-    a {
-      display: block;
-      color: var(--color-text);
-    }
     iframe {
       margin: var(--medium-gap);
     }
@@ -610,8 +613,13 @@ ul.activities > li,
   }
 
   #donate, li {
-    & > h2 {
+    & > h3 {
       margin-block: var(--medium-gap) 0;
+      font-size: 1.5em;
+      
+      & > a {
+        color: var(--color-text);
+      }
     }
   }
   
@@ -626,12 +634,11 @@ ul.activities > li,
   }
 }
 
-#socials {
+menu#socials {
   li {
     border-color: var(--block-color);
     & > h3 {
       color: var(--color-text);
-      font-weight: normal;
       margin-block-end: 0;
     }
   }
@@ -751,7 +758,7 @@ ul.activities > li,
     .dates {
       flex: 1;
     }
-    h1 {
+    h2 {
       flex: 1;
     }
   }
@@ -760,7 +767,6 @@ ul.activities > li,
 #project {
   & > h1 {
     font-size: 3.5rem;
-    font-weight: normal;
   }
 
   & > .attributes {
@@ -916,10 +922,9 @@ ul#attachments {
       div.icon {
         grid-area: icon;
       }
-      & > h4, & > dt {
+      & > h3, & > dt {
         grid-area: term;
         margin-block: 0;
-        font-weight: normal;
       }
       & > p, & > dd {
         grid-area: def;
@@ -955,7 +960,7 @@ ul#attachments {
     cursor: pointer;
     padding: unset;
 
-    h1, h2 {
+    h2, h3 {
       margin: unset;
     }
 
@@ -973,7 +978,7 @@ ul#attachments {
 
       display: flex;
       flex-direction: column;
-      h2 {
+      h3 {
         margin-block-end: auto;
       }
     }
@@ -1010,21 +1015,27 @@ ul#attachments {
 }
 /* || Pages  #join-us #about-us */
 .page {
-  h1 {
-    color: var(--color-text);
-  }
-  h2 {
-    margin-block-start: 0;
-    font-size: 3em;
+  & > header {
+    font-size: 1.5em;
   }
   p {
     color: var(--color-text-light);
-    font-size: 1.25rem;
   }
-
+  h2 {
+    font-size: 3em;
+  }
+  section {
+    & > p {
+      font-size: 1.25rem;
+    }
+  }
   & > section {
     padding-block: 4rem;
   }
+}
+
+#about-us h3 {
+    font-size: 2em;
 }
 
 #about ul.buttons > li:first-child > a,
@@ -1092,9 +1103,11 @@ p.button > a,
   --block-color: var(--color-orange);
   width: 40%;
   margin: var(--big-gap) auto; /* Ak pride background som zas nahrany */
-  padding-inline-start: 6rem;
-  font-size: 1.5em;
   border-radius: 3.5rem;
+  
+  .content {
+    padding: 4rem;
+  }
 
   ul.funding {
     margin-block: revert;
@@ -1175,12 +1188,8 @@ ul.introduction {
     section > header {
       padding-inline: unset;
     }
-    
-    #stay-connected {
-      padding-inline: calc(var(--content-inline-padding) * 1.4);
-    }
 
-    #involvement{
+    #involvement, #stay-connected {
       padding-inline: calc(var(--content-inline-padding) * 1.3);
     }
   }
@@ -1220,7 +1229,7 @@ ul.introduction {
     line-height: 1.6;
   }
 
-  .activities .content > h2 {
+  .activities .content > h3 {
     font-size: 2rem;
   }
 

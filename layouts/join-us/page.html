@@ -36,11 +36,11 @@
         {{ end }}
     </section>
     <section id="join-donate" class="split">
-        <div class="content">
+        <section class="content">
         {{ with .Resources.Get "donate.md" }}
             {{ .Content }}
         {{ end }}
-        </div>
+        </section>
         <iframe src="{{ site.Params.donate_widget }}" width="360" height="480"></iframe>
     </section>
 </main>

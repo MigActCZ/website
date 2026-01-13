@@ -9,7 +9,7 @@
         {{ .Params.dtend | dateFormat "2 Jan 2006" }}</time>
     </div>
   </header>
-  <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+  <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
   {{ with .Params.partner }}
     {{ $partnersPage := site.GetPage "partners" }}
     {{ $partnerPage := $partnersPage.GetPage . }}

@@ -6,7 +6,7 @@
   <section id="activities">
     {{ with .Page.GetPage "/home-sections" }}
     <header>
-      <h1>{{ .Title }}</h1>
+      <h2>{{ .Title }}</h2>
       <p>{{ .Description }}</p>
     </header>
     {{ .Content }}
@@ -14,40 +14,40 @@
   </section>
   <section id="involvement">
     <header>
-      <h1>{{ i18n "how_to_get_involved" }}</h1>
+      <h2>{{ i18n "how_to_get_involved" }}</h2>
       <p>{{ i18n "how_to_get_involved_text" }}</p>
     </header>
     <div id="donate">
       {{- partial "inline-svg" "icons/heart" -}}
-      <h2><a href='{{ partial "get-donate-link" . }}'>
-        {{ i18n "donate" }}</a></h2>
+      <h3><a href='{{ partial "get-donate-link" . }}'>
+        {{ i18n "donate" }}</a></h3>
       <p>{{ i18n "donate_text" }}</p>
       <iframe src="{{ site.Params.donate_widget }}" width="360" height="480"></iframe>
     </div>
     <menu>
       <li>
         {{- partial "inline-svg" "icons/mail" -}}
-        <h2><a href='{{ .Site.Params.newsletter }}'>
-        {{ i18n "newsletter" }}</a></h2>
+        <h3><a href='{{ .Site.Params.newsletter }}'>
+        {{ i18n "newsletter" }}</a></h3>
         <p>{{ i18n "newsletter_text" }}</p>
       </li>
       <li>
         {{- partial "inline-svg" "icons/calendar" -}}
-        <h2><a href='{{ .RelRef (dict "path" "events") }}'>
-          {{ i18n "join_events" }}</a></h2>
+        <h3><a href='{{ .RelRef (dict "path" "events") }}'>
+          {{ i18n "join_events" }}</a></h3>
         <p>{{ i18n "join_events_text" }}</p>
       </li>
       <li>
         {{- partial "inline-svg" "icons/message-circle" -}}
-        <h2><a href='{{ .RelRef (dict "path" "contact") }}'>
-          {{ i18n "contact_us" }}</a></h2>
+        <h3><a href='{{ .RelRef (dict "path" "contact") }}'>
+          {{ i18n "contact_us" }}</a></h3>
         <p>{{ i18n "contact_us_text" }}</p>
       </li>
     </menu>
   </section>
   <section id="stay-connected">
     <header>
-      <h1>{{ i18n "stay_connected" }}</h1>
+      <h2>{{ i18n "stay_connected" }}</h2>
       <p>{{ i18n "stay_connected_text" }}</p>
     </header>
     <menu id="socials">

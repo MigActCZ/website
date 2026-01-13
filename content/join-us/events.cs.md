@@ -1,2 +1,2 @@
-# Přijďte na naše akce
+## Přijďte na naše akce
 Naše komunitní setkání, workshopy a neformální posezení jsou otevřená všem – ať už jste do Prahy právě přijeli, nebo zde žijete celý život. Přijďte poznat nové lidi, sdílet příběhy a zjistit, jak se můžete zapojit.
