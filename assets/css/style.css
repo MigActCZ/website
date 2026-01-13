@@ -1044,7 +1044,7 @@ ul#attachments {
 }
 
 p.button > a,
-#join-partners ul.buttons a {
+:is(#join-partners, #documents) ul.buttons a {
   --gradient-target: color-mix(in srgb, var(--block-color) 80%, black);
   --gradient-color: linear-gradient(90deg, var(--block-color) 0%, var(--gradient-target) 100%);
 
@@ -1160,6 +1160,18 @@ ul.introduction {
     p {
       font-size: 1.25em;
     }
+  }
+}
+#documents {
+
+  li:nth-child(3n + 1){
+    --block-color: var(--color-red);
+  }
+  li:nth-child(3n + 2){
+    --block-color: var(--color-teal);
+  }
+  li:nth-child(3n + 3){
+    --block-color: var(--color-blue);
   }
 }
 

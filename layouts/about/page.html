@@ -12,23 +12,24 @@
         </section>
         <img src='{{ (.Resources.Get "about.avif").RelPermalink }}'/>
     </section>
-    <section id="theory">
-        {{ with .Resources.Get "theory.md" }}
-            {{ .Content }}
-        {{ end }}
-    </section>
     <section id="story">
         {{ with .Resources.Get "story.md" }}
             {{ .Content }}
         {{ end }}
     </section>
-    <section id="statutes">
-        {{ with .Resources.Get "statutes.md" }}
+    <section id="introduction">
+        {{ with .Resources.Get "introduction.md" }}
             {{ .Content }}
         {{ end }}
     </section>
-    <section id="introduction">
-        {{ with .Resources.Get "introduction.md" }}
+    <section id="theory">
+        {{ with .Resources.Get "theory.md" }}
+            {{ .Content }}
+        {{ end }}
+        <img src='{{ .Resources.Get "theory-of-change.webp" }}' alt='{{ i18n "theory" }}'/>
+    </section>
+    <section id="documents">
+        {{ with .Resources.Get "documents.md" }}
             {{ .Content }}
         {{ end }}
     </section>

@@ -34,6 +34,9 @@ inv_newsletter_header: Get Updates Directly in Your Inbox
 inv_newsletter_text: Subscribe to our newsletter for the latest news, events, and opportunities to get involved.
 inv_newsletter_action: Subscribe
 
+#About us
+theory: Theory of change
+
 # Dynamic lists
 home: Home
 bio: Read more
