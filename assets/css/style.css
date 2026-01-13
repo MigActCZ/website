@@ -174,7 +174,7 @@ menu#site-nav a > svg,
   width: 2rem;
 }
 
-#funding svg.icon {
+:is(#attachments, #funding) svg.icon {
   width: 1.5rem;
 }
 
@@ -835,17 +835,11 @@ ul#attachments {
   flex-wrap: wrap;
 
   a {
-    padding: var(--wide-gap);
     border-radius: 1rem;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: var(--separator-gap);
-
-    svg {
-      width: 4rem;
-    }
   }
 }
 
