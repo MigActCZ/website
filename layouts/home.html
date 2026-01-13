@@ -24,7 +24,7 @@
       <p>{{ i18n "donate_text" }}</p>
       <iframe src="{{ site.Params.donate_widget }}" width="360" height="480"></iframe>
     </div>
-    <ul class="cards scroll-row">
+    <ul class="cards">
       <li>
         {{- partial "inline-svg" "icons/mail" -}}
         <h3><a href='{{ .Site.Params.newsletter }}'>
@@ -50,7 +50,7 @@
       <h2>{{ i18n "stay_connected" }}</h2>
       <p>{{ i18n "stay_connected_text" }}</p>
     </header>
-    <ul class="cards scroll-row">
+    <ul class="cards">
       <li>{{- partial "socials-card" "LinkedIn" -}}</li>
       <li>{{- partial "socials-card" "Facebook" -}}</li>
       <li>{{- partial "socials-card" "Instagram" -}}</li>

@@ -8,13 +8,10 @@
   --color-blue: #548FEB;
   --color-text: #1A1A1A;
   --color-text-light: #333;
-  
-  --content-width: 80rem;
 
   --brand-dim: 1.875rem;
 
-  --min-inline-padding: 1.5rem;
-  --content-inline-padding: max(var(--min-inline-padding), calc(50% - var(--content-width) / 2));
+  --content-inline-padding: max(1.5rem, calc(50% - 40rem));
 
   --medium-gap: 1rem;
   --wide-gap: calc(var(--medium-gap) * 3 / 2);
@@ -44,13 +41,6 @@ body {
 
     /* Workaround because of rainbow border image */
     border-block-start: thin solid var(--color-teal);
-  
-    /* I need some space before footer, but some elements have background. So their box needs to stretch up to the footer.
-      TODO: Maybe specify specific elements later? */
-    & > section:last-child, &.section, &.details, address#contacts {
-      padding-block-end: 8rem;
-    }
-
     /* Headers */
     & > .intro {
       background: linear-gradient(.25turn, var(--color-orange), 30%, var(--color-bg-light), 60%, var(--color-blue));
@@ -71,16 +61,6 @@ body {
   }
 }
 
-/* Headings */
-section > header > h2 {
-  font-size: 2em;
-}
-h1, h2, h3, h4 {
-  font-weight: normal;
-}
-h3 {
-  font-size: 1.25em;
-}
   
 /* Links in navs don't need underline */
 menu {
@@ -119,6 +99,25 @@ address {
 
 dd {
   margin-inline-start: 0;
+}
+
+iframe {
+  max-width: 100%;
+  border: none;
+}
+
+/* Headings */
+section > header > h2 {
+  font-size: 2em;
+}
+h1, h2, h3, h4 {
+  font-weight: normal;
+  a {
+    color: var(--color-text);
+  }
+}
+h3 {
+  font-size: 1.25em;
 }
 
 /* || Icons */
@@ -171,10 +170,6 @@ menu#site-nav a > svg,
 
 :is(#attachments, #funding) svg.icon {
   width: 1.5rem;
-}
-
-iframe {
-  border: none;
 }
 
 /* || Dynamic pages */
@@ -261,6 +256,33 @@ ul.pagination{
   }
 }
 
+.buttons a:has(svg), a:has(svg){
+  display: flex;
+  gap: var(--separator-gap);
+  align-items: center;
+}
+
+a > svg {
+  flex: 0 0 auto;
+}
+
+/* Hide button on mobile to save space */
+.buttons a svg {
+  display: none;
+}
+
+
+/* Layout */
+#site-header, #site-footer,
+ul.entities,
+#home > section,
+main > .intro,
+main.page > section,
+main.detail,
+address#contacts {
+  padding-inline: var(--content-inline-padding);
+}
+
 /* Rainbow top border */
 #site-header, #site-footer {
   border-top: 6px solid;
@@ -276,7 +298,7 @@ ul.pagination{
 /* || HEADER + NAVIGATION */
 #site-header {
   position: relative; /* Nav panel anchor */
-  padding-block: 1.25rem;
+  padding: 1.25rem;
   
   display: flex;
   justify-content: space-between;
@@ -479,14 +501,17 @@ ul.pagination{
   }
   
   /* Padding on homepage is specific because of overflowing cards*/
-  padding-inline: 0; /* reset site-wide setting */
   & > section {
-    padding-inline-start: var(--wide-gap);
-
-    & > header{
+    padding-block: var(--big-gap);
+    &:has(.scroll-row) {
+      padding-inline: var(--wide-gap) 0;
+      & > header {
+        padding-inline-end: 1.5rem;
+      }
+    }
+    & > header {
       text-align: center;
       margin-block-end: 3rem;
-      padding-inline-end: 1.5rem;
       h2 {
         margin-block: 0;
       }
@@ -495,8 +520,7 @@ ul.pagination{
 }
 
 #about {
-  padding-block: 4rem;
-  padding-inline: var(--wide-gap);
+  padding: 4rem var(--separator-gap);
 
   display: grid;
   gap: var(--wide-gap);
@@ -525,46 +549,47 @@ ul.pagination{
     radial-gradient(ellipse at bottom right,
       color-mix(in srgb, var(--color-blue) 5%, transparent), transparent);
 
-  padding-inline-start: var(--wide-gap);
-  & > ul#activitylist > li {
-    position: relative;
-    padding: unset;
-    border-radius: 2rem;
-    overflow: hidden;
+  ul#activitylist {
+    & > li {
+      position: relative;
+      padding: unset;
+      border-radius: 2rem;
+      overflow: hidden;
 
-    .content {
-      padding: var(--big-gap);
-      
-      h3 {
-        margin-block: 0 var(--medium-gap);
-        color: var(--color-text);
+      .content {
+        padding: var(--big-gap);
+        
+        h3 {
+          margin-block: 0 var(--medium-gap);
+          color: var(--color-text);
+        }
       }
-    }
 
 
-    div.icon {
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
-  
-      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.10), 0 4px 6px -4px rgba(0, 0, 0, 0.10);
-      color: var(--color-bg);
-    }
+      div.icon {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.10), 0 4px 6px -4px rgba(0, 0, 0, 0.10);
+        color: var(--color-bg);
+      }
 
-    &:nth-child(1) > .icon {
-      background-color: var(--color-red);
-    }
+      &:nth-child(1) > .icon {
+        background-color: var(--color-red);
+      }
 
-    &:nth-child(2) > .icon {
-      background-color: var(--color-teal);
-    }
+      &:nth-child(2) > .icon {
+        background-color: var(--color-teal);
+      }
 
-    &:nth-child(3) > .icon {
-      background-color: var(--color-blue);
-    }
+      &:nth-child(3) > .icon {
+        background-color: var(--color-blue);
+      }
 
-    &:nth-child(4) > .icon {
-      background-color: var(--color-orange);
+      &:nth-child(4) > .icon {
+        background-color: var(--color-orange);
+      }
     }
   }
 }
@@ -590,24 +615,19 @@ ul.elevated-cards > li,
   #donate {
     --block-color: var(--color-red);
     text-align: center;
-    margin-block: var(--medium-gap);
+    padding: var(--medium-gap);
 
     iframe {
-      margin: var(--medium-gap);
+      margin-block: var(--medium-gap);
     }
     svg {
       margin-inline: auto;
     }
   }
 
-  #donate, li {
+  .card, ul.cards > li {
     & > h3 {
-      margin-block: var(--medium-gap) 0;
       font-size: 1.5em;
-      
-      & > a {
-        color: var(--color-text);
-      }
     }
   }
   
@@ -646,10 +666,6 @@ ul.elevated-cards > li,
 
   li {
     border-color: var(--block-color);
-    & > h3 {
-      color: var(--color-text);
-      margin-block-end: 0;
-    }
   }
   li:nth-child(3n + 1) {
     --block-color: var(--color-red);
@@ -663,6 +679,38 @@ ul.elevated-cards > li,
 
   a {
     color: var(--block-color);
+  }
+}
+
+#home :is(#involvement, #stay-connected) > ul.cards {
+  display: grid;
+  grid-auto-flow: row;
+  gap: var(--medium-gap);
+
+  & > li {
+    padding: var(--medium-gap);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+    "icon term"
+    "icon def"
+    "icon link";
+    column-gap: var(--medium-gap);
+    align-items: center;
+
+    svg {
+      grid-area: icon;
+    }
+    h3 {
+      margin-block: 0;
+      grid-area: term;
+    }
+    p {
+      grid-area: def;
+    }
+    a {
+      grid-area: link;
+    }
   }
 }
 
@@ -937,10 +985,6 @@ ul#attachments {
       height: auto;
       object-fit: scale-down;
     }
-
-    a {
-      font-size: 1.5rem;
-    }
   }
 }
 /* || TEAM PAGE */
@@ -950,7 +994,7 @@ ul#attachments {
 
   article {
     position: relative;
-    height: calc(var(--content-width) / 2);
+    height: 640px;
     cursor: pointer;
     padding: unset;
 
@@ -1174,41 +1218,41 @@ ul#introductionlist {
   }
 }
 
-.buttons a:has(svg), a:has(svg){
-  display: flex;
-  gap: var(--separator-gap);
-  align-items: center;
-}
-
 /* ============================================     Tablet (768px+)     ============================================ */
 @media (min-width: 768px) {
-  /* Layout */
-  #site-header, #site-footer,
-  ul.entities,
-  #home > section,
-  main > .intro,
-  main.page > section,
-  main.detail,
-  address#contacts {
-    padding-inline: var(--content-inline-padding);
+  /* This is for background */
+  main > section:last-child, main.section, main.details, address#contacts {
+    padding-block-end: 8rem;
   }
+
   #home {
     line-height: 2;
-    padding-inline: 0;
 
-    > section {
-      padding-block: 3rem;
-    }
-    /* TODO: maybe unite it with other pages */
-    > section:last-child {
-      padding-block-end: 8rem;
-    }
-    section > header {
+    & > section > header {
       padding-inline: unset;
+    }
+
+    #activities {
+      padding-inline: var(--content-inline-padding);
     }
 
     #involvement, #stay-connected {
       padding-inline: calc(var(--content-inline-padding) * 1.3);
+
+      & > ul.cards {
+        grid-auto-flow: column;
+
+        & > li {
+          display: list-item;
+          padding: var(--big-gap);
+        }
+      }
+      
+      ul.cards > li, .card {
+        h3 {
+          margin-block: var(--medium-gap) 0;
+        }
+      }
     }
   }
 
@@ -1254,11 +1298,15 @@ ul#introductionlist {
   ul.buttons {
     justify-content: unset;
     gap: var(--big-gap);
+
+    a > svg {
+      display: block;
+    }
   }
 
   #site-footer {
     display: grid;
-    gap: var(--wide-gap) 8rem;
+    gap: var(--wide-gap) 6rem;
     grid-template-columns: auto 1fr 1fr;
     grid-template-rows: auto auto;
     grid-template-areas:
@@ -1312,12 +1360,6 @@ ul#introductionlist {
       width: 100%;
       object-fit: cover;
     }
-  }
-
-  #involvement > ul,
-  #stay-connected > ul {
-    grid-auto-flow: unset;
-    grid-template-columns: 1fr 1fr 1fr;
   }
 
   ul#options {
