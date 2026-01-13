@@ -19,4 +19,4 @@ headless: true
   ### Civic Incubators
   We bring residents—including those with migration backgrounds—together with local institutions and community groups to transform grassroots ideas into initiatives that bring improvements to everyday life in the neighborhood.
   {{</activity-card>}}
-{.activities}
+{#activitylist, .cards, .elevated-cards, .scroll-row}

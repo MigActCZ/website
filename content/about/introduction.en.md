@@ -11,4 +11,4 @@
 
   [View our supporters](partners)
   {.button}
-{.introduction}
+{#introductionlist, .cards}

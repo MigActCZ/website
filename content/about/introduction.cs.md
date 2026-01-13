@@ -11,4 +11,4 @@
 
   [Prohlédněte si naše podporovatele](partners)
   {.button}
-{.introduction}
+{#introductionlist, .cards}

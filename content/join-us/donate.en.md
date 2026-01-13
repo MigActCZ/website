@@ -12,4 +12,4 @@ Your contribution helps us keep our programs running, develop new activities, an
 - {{<icon shield-check>}}
   ### Ensure Sustainability
   Create long-term stability for our organization
-{.funding}
+{#funding}

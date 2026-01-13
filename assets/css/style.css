@@ -92,13 +92,10 @@ menu {
 }
 
 /* Special lists have special visuals */
-menu,
-#involvement > ul, #stay-connected > ul, #linked-events > ul,
+menu, .cards, .buttons,
 ul.entities,
-ul.buttons, ul#attachments,
-ul.pagination, ul.introduction,
-ul.funding, ul.activities,
-ul.options, ul.values {
+ul.pagination,
+ul#funding {
   list-style-type: none;
   padding-inline-start: unset;
 }
@@ -151,7 +148,7 @@ div.icon > svg, svg.icon {
 div.icon, svg.socials, #join-volunteer #tags > li,
 #involvement svg.icon,
 #footer-contacts svg,
-.values svg.icon  {
+#values svg.icon  {
   color: var(--block-color);
   background-color: color-mix(in srgb, var(--block-color) 10%, transparent);
 }
@@ -159,7 +156,7 @@ div.icon, svg.socials, #join-volunteer #tags > li,
 /* Rounded square icon */
 svg.socials,
 #involvement svg.icon,
-.values svg.icon {
+#values svg.icon {
   width: var(--brand-dim);
   height: var(--brand-dim);
   padding: calc(2rem - var(--brand-dim) / 2);
@@ -173,11 +170,11 @@ menu#site-nav a > svg,
   width: 1rem;
 }
 
-.options svg.icon {
+#options svg.icon {
   width: 2rem;
 }
 
-.funding svg.icon {
+#funding svg.icon {
   width: 1.5rem;
 }
 
@@ -237,10 +234,7 @@ ul.buttons a, p.button > a {
   gap: var(--medium-gap);
 }
 /* Scroll row */
-ul.activities,
-#involvement > ul,
-#stay-connected > ul,
-ul.options {
+.scroll-row {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: 85%;
@@ -537,7 +531,7 @@ ul.pagination{
       color-mix(in srgb, var(--color-blue) 5%, transparent), transparent);
 
   padding-inline-start: var(--wide-gap);
-  & > ul.activities > li {
+  & > ul#activitylist > li {
     position: relative;
     padding: unset;
     border-radius: 2rem;
@@ -581,24 +575,14 @@ ul.pagination{
 }
 
 /* Card mixin */
-ul.activities > li,
-#involvement > #donate,
-#involvement li,
-#stay-connected li,
-#socials-newsletter,
-#attachments > li,
-#join-partners > ul.options > li,
-#join-donate, ul.introduction > li,
-.values > li,
-#linked-events li {
+.cards > li, .card {
   padding: var(--big-gap);
   border: thin solid var(--color-border);
   border-radius: 1rem;
   background: var(--color-bg);
 }
 
-ul.activities > li,
-#join-partners > ul.options > li,
+ul.elevated-cards > li,
 #join-donate {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -926,7 +910,7 @@ ul#attachments {
 
 /* Row oriented dl */
 #info, #join-donate {  
-  ul.funding, dl.attributes {
+  ul#funding, dl.attributes {
     display: flex;
     flex-direction: column;
     gap: var(--medium-gap);
@@ -1104,21 +1088,19 @@ p.button > a,
 #join-partners {
   --block-color: var(--color-blue);
 
-  & > ul.options {
-    & > li {
-      display: flex;
-      flex-direction: column;
-      gap: var(--separator-gap);
-      align-items: center;
+  & > ul#options > li {
+    display: flex;
+    flex-direction: column;
+    gap: var(--separator-gap);
+    align-items: center;
 
-      text-align: center;
-  
-      h3 {
-        color: var(--color-text);
-      }
-      h3, p {
-        margin-block: 0;
-      }
+    text-align: center;
+
+    h3 {
+      color: var(--color-text);
+    }
+    h3, p {
+      margin-block: 0;
     }
   }
 }
@@ -1127,13 +1109,14 @@ p.button > a,
   --block-color: var(--color-orange);
   width: 40%;
   margin: var(--big-gap) auto; /* Ak pride background som zas nahrany */
+  padding: 1rem;
   border-radius: 3.5rem;
   
   .content {
     padding: 4rem;
   }
 
-  ul.funding {
+  ul#funding {
     margin-block: revert;
   }
   iframe {
@@ -1145,7 +1128,7 @@ p.button > a,
   }
 }
 
-ul.values {
+ul#values {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: var(--medium-gap);
@@ -1171,7 +1154,7 @@ ul.values {
   text-align: center;
 }
 
-ul.introduction {
+ul#introductionlist {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--big-gap);
@@ -1269,7 +1252,7 @@ ul.introduction {
     line-height: 1.6;
   }
 
-  .activities .content > h3 {
+  #activitylist .content > h3 {
     font-size: 2rem;
   }
 
@@ -1323,7 +1306,7 @@ ul.introduction {
 
 /* ============================================     Desktop (1024px+)     ============================================ */
 @media (min-width: 1024px) {
-  #activities > ul.activities {
+  ul#activitylist {
     gap: var(--medium-gap) var(--big-gap); 
     grid-auto-flow: unset;
     grid-template-columns: 1fr 1fr;
@@ -1341,7 +1324,7 @@ ul.introduction {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  #join-partners > ul.options {
+  ul#options {
     grid-auto-flow: unset;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;

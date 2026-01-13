@@ -12,4 +12,4 @@ Váš příspěvek nám pomůže zajistit kontinuitu našich programů, rozvíje
 - {{<icon shield-check>}}
   ### Zajistěte udržitelnost
   Vytvořte dlouhodobou stabilitu pro naši organizaci
-{.funding}
+{#funding}

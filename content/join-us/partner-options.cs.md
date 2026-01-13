@@ -14,5 +14,5 @@
 
 - {{<icon building-2>}}
   ### Networking
-  Propojte se s ostatními 
-{.options}
+  Propojte se s ostatními
+{#options, .cards, .elevated-cards, .scroll-row}

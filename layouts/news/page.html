@@ -12,7 +12,7 @@
   {{ with .Params.resources }}
   <section>
     <h2>{{ i18n "attachments" }}</h2>
-    <ul id="attachments">
+    <ul id="attachments" class="cards">
       {{ range . }}
       <li>
         <a href="{{ . }}">

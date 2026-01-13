@@ -54,7 +54,7 @@
     {{ with $related }}
       <section id="linked-events">
       <h2>{{ i18n "linked_events" }}</h2>
-      <ul class="column">
+      <ul class="column cards">
         {{ range . }}
           <li><article>
             <time datetime="{{ .Params.dtstart }}">

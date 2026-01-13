@@ -7,4 +7,4 @@ MigAct vzešel z dlouholeté práce organizace InBáze s migranty v Praze. Ofici
   ### Rovnost  
 - {{<icon users rounded>}}
   ### Odpovědnost
-{.values}
+{#values, .cards}

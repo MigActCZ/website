@@ -19,4 +19,4 @@ headless: true
   ### Občanské inkubátory
   Spojujeme obyvatele – včetně těch s migračním původem – s místními institucemi a komunitními skupinami, abychom proměnili nápady jednotlivců v konkrétní iniciativy, které přinášejí zlepšení každodenního života v dané lokalitě.
   {{</activity-card>}}
-{.activities}
+{#activitylist, .cards, .elevated-cards, .scroll-row}

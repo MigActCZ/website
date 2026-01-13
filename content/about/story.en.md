@@ -7,4 +7,4 @@ Born out of InBáze’s long-standing work with migrants in Prague, MigAct offic
   ### Equity  
 - {{<icon users rounded>}}
   ### Responsibility
-{.values}
+{#values, .cards}

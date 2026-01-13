@@ -17,14 +17,14 @@
       <h2>{{ i18n "how_to_get_involved" }}</h2>
       <p>{{ i18n "how_to_get_involved_text" }}</p>
     </header>
-    <div id="donate">
+    <div id="donate" class="card">
       {{- partial "inline-svg" "icons/heart" -}}
       <h3><a href='{{ partial "get-donate-link" . }}'>
         {{ i18n "donate" }}</a></h3>
       <p>{{ i18n "donate_text" }}</p>
       <iframe src="{{ site.Params.donate_widget }}" width="360" height="480"></iframe>
     </div>
-    <ul>
+    <ul class="cards scroll-row">
       <li>
         {{- partial "inline-svg" "icons/mail" -}}
         <h3><a href='{{ .Site.Params.newsletter }}'>
@@ -50,12 +50,12 @@
       <h2>{{ i18n "stay_connected" }}</h2>
       <p>{{ i18n "stay_connected_text" }}</p>
     </header>
-    <ul>
+    <ul class="cards scroll-row">
       <li>{{- partial "socials-card" "LinkedIn" -}}</li>
       <li>{{- partial "socials-card" "Facebook" -}}</li>
       <li>{{- partial "socials-card" "Instagram" -}}</li>
     </ul>
-    <div id="socials-newsletter">
+    <div id="socials-newsletter" class="card">
       <h3>{{ i18n "inv_newsletter_header" }}</h3>
       <p>{{ i18n "inv_newsletter_text" }}</p>
       <p class="button"><a href='{{ .Site.Params.newsletter }}'>{{ i18n "inv_newsletter_action" }}</a></p>
