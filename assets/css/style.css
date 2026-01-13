@@ -1212,7 +1212,7 @@ ul#introductionlist {
     }
   }
 
-  #join-events, #story, header.intro {
+  #join-events, #story, header.intro, #site-footer {
     padding-inline: calc(var(--content-inline-padding) * 1.2);
   }
 
@@ -1258,11 +1258,12 @@ ul#introductionlist {
 
   #site-footer {
     display: grid;
-    grid-template-columns: var(--big-gap) 1fr 1fr 1fr var(--big-gap);
+    gap: var(--wide-gap) 8rem;
+    grid-template-columns: auto 1fr 1fr;
     grid-template-rows: auto auto;
     grid-template-areas:
-      ". logo links contact ."
-      ". copyright copyright copyright .";
+      "logo links contact"
+      "copyright copyright copyright";
 
     #footer-content{
       grid-area: logo;
@@ -1283,7 +1284,7 @@ ul#introductionlist {
   }
   
   ul.entities {
-    gap: var(--medium-gap) var(--big-gap);
+    gap: var(--big-gap);
   }
   
   #team.entities,
@@ -1302,7 +1303,7 @@ ul#introductionlist {
 /* ============================================     Desktop (1024px+)     ============================================ */
 @media (min-width: 1024px) {
   ul#activitylist {
-    gap: var(--medium-gap) var(--big-gap); 
+    gap: var(--big-gap); 
     grid-auto-flow: unset;
     grid-template-columns: 1fr 1fr;
 
@@ -1369,16 +1370,5 @@ ul#introductionlist {
         }
       }
     }
-  }
-
-  #special.card { /*TODO zisti kedy a replace special */
-    /* For hover effect to have space to float.*/
-    margin-block: var(--separator-gap);
-
-    &:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
-    }
-  /* Hover effect and space to hover. Grids have smaller gaps to accomodate. */
   }
 }
