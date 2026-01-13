@@ -9,6 +9,6 @@ We offer educational programs, build collaborative spaces, and provide practical
 ![Hero image](home.avif)
 {#hero}
 
-- [Get Involved ➜](join-us)
+- {{<link-with-icon "Get Involved" "join-us" "icons/arrow-right" "after">}}
 - [Learn more](about)
 {.buttons}

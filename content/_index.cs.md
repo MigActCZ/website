@@ -9,6 +9,6 @@ Nabízíme vzdělávací programy, budujeme prostory pro spolupráci a poskytuje
 ![Hero image](home.avif)
 {#hero}
 
-- [Zapojte se ➜](join-us)
+- {{<link-with-icon "Zapojte se" "join-us" "icons/arrow-right" "after">}}
 - [Více informací](about)
 {.buttons}

@@ -1,0 +1,10 @@
+{{ $pos := .Get 3 | default "before" }}
+<a href="{{ .Get 1 }}">
+    {{ if eq $pos "before" }}
+    {{ partial "inline-svg" (.Get 2) }}
+    {{ .Get 0 }}
+    {{ else if eq $pos "after" }}
+    {{ .Get 0 }}
+    {{ partial "inline-svg" (.Get 2) }}
+    {{ end }}
+</a>

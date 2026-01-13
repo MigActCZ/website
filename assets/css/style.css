@@ -106,11 +106,6 @@ menu, ul#attachments, ul.pagination {
   }
 }
 
-a:has(svg) {
-  display: flex;
-  align-items: center;
-}
-
 img,
 picture,
 video, svg {
@@ -1177,6 +1172,12 @@ ul#introductionlist {
   li:nth-child(3n + 3){
     --block-color: var(--color-blue);
   }
+}
+
+.buttons a:has(svg), a:has(svg){
+  display: flex;
+  gap: var(--separator-gap);
+  align-items: center;
 }
 
 /* ============================================     Tablet (768px+)     ============================================ */
