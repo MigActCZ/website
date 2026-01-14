@@ -3,7 +3,7 @@ title: Together in Prague 7 – Community Meet-up
 featured: img_2276.webp
 dtstart: 2025-06-23T17:30:00
 tend: 20:00:00
-location: Přístav 7, V Přístavu 1639/24, Prague 7
+location: Přístav 7, V Přístavu 24, 170 00 Praha 7-Holešovice
 languages: ''
 registration: https://forms.gle/6EvRWNJUqQCJLMep8
 project: pathways-to-civic-integration-of-residents-with-migrant-backgrounds
