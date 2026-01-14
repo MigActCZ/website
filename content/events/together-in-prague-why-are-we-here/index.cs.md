@@ -11,6 +11,8 @@ date: 2025-10-30
 ---
 Přijďte na večer propojení, sdílení a zamyšlení s dalšími, kteří nazývají Prahu svým domovem. Setkání je o poznávání sebe navzájem – o našich příbězích, o tom, co nás spojuje, a o otázce: „Proč jsme tady?“
 
+<!--more→
+
 Ať už jste do Prahy přišli z vlastní volby, náhody nebo zvědavosti, všichni máme společné zkušenosti – okamžiky přijetí, překážky, příležitosti i šťastné náhody. Pojďme o nich mluvit a zjistit, co nás spojuje – a co můžeme společně vytvořit dál.
 
 Všichni jsou vítáni, bez ohledu na původ nebo dobu, po kterou v Praze žijete.
