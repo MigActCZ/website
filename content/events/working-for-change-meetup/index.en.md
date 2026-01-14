@@ -4,12 +4,14 @@ featured: featured.webp
 dtstart: 2025-03-21T17:30:00
 tend: 19:30:00
 location: ''
+languages: EN CZ
 registration: https://forms.gle/SQukpSYoYXuBxFkw9
 project: civic-integration-migrant-residents
-languages: EN CZ
 date: 2025-03-14
 ---
 Join the first event of a new series of informal meetings. In a storytelling format we will engage in discussions, activities, community coaching, and networking on topics related to civic participation and experiences of foreigners living in Prague.
+
+<!--more→
 
 **Bring your friends**
 **Bring your ideas**

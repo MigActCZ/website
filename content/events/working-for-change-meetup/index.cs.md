@@ -4,12 +4,14 @@ featured: featured.webp
 dtstart: 2025-03-21T17:30:00
 tend: 19:30:00
 location: ''
+languages: EN CZ
 registration: https://forms.gle/SQukpSYoYXuBxFkw9
 project: civic-integration-migrant-residents
-languages: EN CZ
 date: 2025-03-14
 ---
 Připojte se k první akci nové série neformálních setkání. Ve formátu vyprávění příběhů se zapojíme do diskusí, aktivit, komunitního koučování a networkingu na témata související s občanskou participací a zkušenostmi cizinců žijících v Praze.
+
+<!--more→
 
 **Přiveďte své přátele**
 **Přiveďte své nápady**
