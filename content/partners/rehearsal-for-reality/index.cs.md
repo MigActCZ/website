@@ -1,6 +1,8 @@
 ---
 title: Rehearsal for Reality
-website: https://www.rehearsal-for-reality.org/
 image: logo.webp
+website: https://www.rehearsal-for-reality.org/
+build:
+  list: always
 ---
-RfR is a people's theatre for community dialogue and social change. The aim is to help diverse people live better together, encourage deeper engagement in civil society, and promote personal, social and political processes of change.
+RfR je participativní divadelní sdružení a kulturní iniciativa, která usiluje o posílení občanské angažovanosti, dodržování lidských práv, podporu sociální soudržnosti a podporu globálního vzdělávání a míru. Dělá to tak, že vytváří prostor pro skupiny zažívající nespravedlnost a jejich spojence, aby mohli využít svou sílu k podpoře nových způsobů osobní a kolektivní změny prostřednictvím divadelních metod, které podněcují dialog a vyjádření.
