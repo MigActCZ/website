@@ -15,4 +15,4 @@
 - {{<icon building-2>}}
   ### Networking
   Connect with others
-{#options, .cards, .elevated-cards, .scroll-row}
+{#options, .cards, .elevated-cards}

@@ -5,12 +5,12 @@
         {{ .Content }}
     </header>
     <section id="vision" class="split">
-        <section>
+        <div>
             {{ with .Resources.Get "vision.md" }}
                 {{ .Content }}
             {{ end }}
-        </section>
-        <img src='{{ (.Resources.Get "about.avif").RelPermalink }}'/>
+        </div>
+        <img class="split-support" src='{{ (.Resources.Get "about.avif").RelPermalink }}'/>
     </section>
     <section id="story">
         {{ with .Resources.Get "story.md" }}

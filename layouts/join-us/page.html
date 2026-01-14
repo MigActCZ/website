@@ -5,11 +5,11 @@
         {{ .Content }}
     </header>
     <section id="join-volunteer" class="split">
-        <img src='{{ (.Resources.Get "join.avif").RelPermalink }}'/>
+        <img class="split-support" src='{{ (.Resources.Get "join.avif").RelPermalink }}'/>
         {{ with .Resources.Get "volunteers.md" }}
-        <section>
+        <div>
             {{ .Content }}
-        </section>
+        </div>
         {{ end }}
     </section>
     <section id="join-events">
@@ -26,22 +26,24 @@
         {{ end }}
     </section>
     <section id="join-partners" class="split">
-        <section>
+        <div>
         {{ with .Resources.Get "partners.md" }}
             {{ .Content }}
         {{ end }}
-        </section>
+        </div>
         {{ with .Resources.Get "partner-options.md" }}
             {{ .Content }}
         {{ end }}
     </section>
-    <section id="join-donate" class="split card">
-        <section class="content">
-        {{ with .Resources.Get "donate.md" }}
-            {{ .Content }}
-        {{ end }}
-        </section>
-        <iframe src="{{ site.Params.donate_widget }}" width="360" height="480"></iframe>
+    <section id="join-donate">
+        <div class="split card">
+            <div>
+            {{ with .Resources.Get "donate.md" }}
+                {{ .Content }}
+            {{ end }}
+            </div>
+            <iframe src="{{ site.Params.donate_widget }}" width="360" height="480"></iframe>
+        </div>
     </section>
 </main>
 {{ end }}

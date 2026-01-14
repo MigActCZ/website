@@ -176,7 +176,7 @@ menu#site-nav a > svg,
 #gallery {
   display: grid;
   gap: var(--separator-gap);
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 
   img {
     aspect-ratio: 3/2;
@@ -207,6 +207,8 @@ ul.buttons {
   justify-content: center;
   gap: var(--separator-gap);
 }
+/* Center CTA button */
+section > p.button > a { margin: auto; }
 
 ul.buttons a, p.button > a {
   display: block;
@@ -244,16 +246,9 @@ ul.pagination{
   padding: var(--big-gap);
 }
 
-/* 2 column split */
-.split {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  align-items: center;
-
-  & > img {
-    object-fit: cover;
-  }
+/* Hide split image in mobile version */
+img.split-support {
+  display: none;
 }
 
 .buttons a:has(svg), a:has(svg){
@@ -283,6 +278,14 @@ address#contacts {
   padding-inline: var(--content-inline-padding);
 }
 
+:where(#home, .page) > section {
+  padding-block: var(--big-gap);
+}
+/* This is for background */
+main > section:last-child {
+  padding-block-end: 3rem;
+}
+
 /* Rainbow top border */
 #site-header, #site-footer {
   border-top: 6px solid;
@@ -298,7 +301,7 @@ address#contacts {
 /* || HEADER + NAVIGATION */
 #site-header {
   position: relative; /* Nav panel anchor */
-  padding: 1.25rem;
+  padding-block: 1.25rem;
   
   display: flex;
   justify-content: space-between;
@@ -502,7 +505,6 @@ address#contacts {
   
   /* Padding on homepage is specific because of overflowing cards*/
   & > section {
-    padding-block: var(--big-gap);
     &:has(.scroll-row) {
       padding-inline: var(--wide-gap) 0;
       & > header {
@@ -531,7 +533,6 @@ address#contacts {
   background-repeat: no-repeat;
 
   #featured {
-    text-align: center;
     color: var(--color-text);
     font-size: 1.375rem;
   }
@@ -596,10 +597,14 @@ address#contacts {
 
 /* Card mixin */
 .cards > li, .card {
-  padding: var(--big-gap);
+  padding: var(--medium-gap);
   border: thin solid var(--color-border);
   border-radius: 1rem;
   background: var(--color-bg);
+
+  h3 {
+    margin: 0;
+  }
 }
 
 ul.elevated-cards > li,
@@ -614,7 +619,6 @@ ul.elevated-cards > li,
 
   #donate {
     --block-color: var(--color-red);
-    text-align: center;
     padding: var(--medium-gap);
 
     iframe {
@@ -651,11 +655,6 @@ ul.elevated-cards > li,
 
   #socials-newsletter {
     border-color: var(--color-orange);
-    text-align: center;
-
-    h3 {
-      margin-block: 0;
-    }
 
     a {
       background-color: var(--color-orange);
@@ -688,7 +687,6 @@ ul.elevated-cards > li,
   gap: var(--medium-gap);
 
   & > li {
-    padding: var(--medium-gap);
     display: grid;
     grid-template-columns: auto 1fr;
     grid-template-areas:
@@ -702,7 +700,6 @@ ul.elevated-cards > li,
       grid-area: icon;
     }
     h3 {
-      margin-block: 0;
       grid-area: term;
     }
     p {
@@ -719,7 +716,6 @@ ul.elevated-cards > li,
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: var(--medium-gap);
-  margin: 0;
   padding: 0;
 
   & > .dl-item {
@@ -771,6 +767,11 @@ ul.entities {
     h2 > a {
       color: var(--color-text);
     }
+
+    .timeline {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
 
@@ -811,27 +812,26 @@ ul.entities {
     background: linear-gradient(135deg, rgba(34, 159, 163, 0.08) 0%, rgba(84, 143, 235, 0.08) 100%);
 
     display: grid;
-    grid-template: min-content 1fr / 1fr 1fr;
-    gap: var(--big-gap);
+    gap: var(--medium-gap);
 
     dt {
       font-weight: 500;
       text-transform: uppercase;
       margin-block-end: var(--separator-gap);
     }
-
-    #partners {
-      grid-column: span 2;
-    }
     #logos {
       display: flex;
-      gap: var(--medium-gap);
-      align-items: center;
       flex-wrap: wrap;
+      gap: var(--separator-gap);
+
+      dd {
+        &:first-child {flex-basis: 100%;}
+        flex-basis: calc(50% - var(--separator-gap)/2);
+      }
     }
-    .partner-logo {
-      width: 10rem;
-      height: auto;
+    img.partner-logo {
+      aspect-ratio: 1 / 1;
+      object-fit: scale-down;
       background-color: var(--color-bg);
     }
   }
@@ -915,21 +915,13 @@ ul#attachments {
 
 #event {
   padding-block: var(--big-gap);
-
-  display: flex;
-  flex-direction: row-reverse;
-  gap: var(--big-gap);
 }
 
 #info {
   --block-color: var(--color-teal);
   
-  flex: 0 0 25%;
   padding: var(--wide-gap) var(--big-gap);
   height: fit-content;
-  
-  position: sticky;
-  top: var(--big-gap);
   
   display: flex;
   flex-direction: column;
@@ -942,6 +934,13 @@ ul#attachments {
   }
   hr {
     width: 100%;
+  }
+  ul.buttons {
+    flex-direction: column;
+    a {
+      box-sizing: border-box;
+      width: 100%;
+    }
   }
 }
 
@@ -1056,23 +1055,10 @@ ul#attachments {
 }
 /* || Pages  #join-us #about-us */
 .page {
-  & > header {
-    font-size: 1.5em;
-  }
-  p {
-    color: var(--color-text-light);
-  }
-  h2 {
-    font-size: 3em;
-  }
-  section {
-    & > p {
-      font-size: 1.25rem;
-    }
-  }
-  & > section {
-    padding-block: 4rem;
-  }
+  h2 {font-size: 3em;}
+  p {color: var(--color-text-light);}
+  & > header {font-size: 1.5em;}
+  section p {font-size: 1.25em;}
 }
 
 #about-us h3 {
@@ -1097,7 +1083,7 @@ p.button > a,
   color: var(--color-bg);
 }
 
-#join-events, #story {
+#join-events, #story, #introduction > h2, #donate, #socials-newsletter, #featured {
   text-align: center;
 }
 
@@ -1121,54 +1107,55 @@ p.button > a,
 #join-partners {
   --block-color: var(--color-blue);
 
-  & > ul#options > li {
-    display: flex;
+  ul.buttons {
     flex-direction: column;
-    gap: var(--separator-gap);
-    align-items: center;
+  }
 
-    text-align: center;
+  & > ul#options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: clamp(var(--tight-gap), calc(100vw * 3 / 128 - 6px), var(--wide-gap));
 
-    h3 {
-      color: var(--color-text);
-    }
-    h3, p {
-      margin-block: 0;
+    & > li {
+      display: flex;
+      flex-direction: column;
+      gap: var(--separator-gap);
+      align-items: center;
+      p {
+        margin-block: 0;
+        text-align: center;
+        font-size: initial;
+      }
     }
   }
 }
 
 #join-donate {
   --block-color: var(--color-orange);
-  width: 40%;
-  margin: var(--big-gap) auto; /* Ak pride background som zas nahrany */
-  padding: 1rem;
-  border-radius: 3.5rem;
-  
-  .content {
-    padding: 4rem;
-  }
 
-  ul#funding {
-    margin-block: revert;
-  }
-  iframe {
-    min-width: fit-content;
-    width: 80%;
-    margin: auto;
-    border: thin solid var(--block-color);
-    border-radius: 1rem;
+  & > div.card {
+    border-radius: 3.5rem;
+    h2 {text-align: center;}
+
+    ul#funding {
+      margin-block: revert;
+    }
+    iframe {
+      margin: var(--big-gap) auto;
+      border: thin solid var(--block-color);
+      border-radius: 1rem;
+    }
   }
 }
 
 ul#values {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   gap: var(--medium-gap);
 
   & > li {
     display: flex;
-    flex-direction: column;
+    gap: var(--medium-gap);
     align-items: center;
 
     &:nth-child(3n + 1){
@@ -1183,13 +1170,8 @@ ul#values {
   }
 }
 
-#introduction > h2 {
-  text-align: center;
-}
-
 ul#introductionlist {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   gap: var(--big-gap);
 
   & > li {
@@ -1220,9 +1202,30 @@ ul#introductionlist {
 
 /* ============================================     Tablet (768px+)     ============================================ */
 @media (min-width: 768px) {
+  :where(#home, .page) > section {
+    padding-block: 4rem;
+  }
   /* This is for background */
-  main > section:last-child, main.section, main.details, address#contacts {
+  main > section:last-child {
     padding-block-end: 8rem;
+  }
+
+  .cards > li, .card {
+    padding: var(--big-gap);
+  }
+
+  .split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+  
+    & > img {
+      object-fit: cover;
+    }
+  }
+  img.split-support {
+    display: block;
   }
 
   #home {
@@ -1244,7 +1247,6 @@ ul#introductionlist {
 
         & > li {
           display: list-item;
-          padding: var(--big-gap);
         }
       }
       
@@ -1256,7 +1258,7 @@ ul#introductionlist {
     }
   }
 
-  #join-events, #story, header.intro, #site-footer {
+  #join-events, #story, header.intro, #site-footer, #join-donate {
     padding-inline: calc(var(--content-inline-padding) * 1.2);
   }
 
@@ -1304,9 +1306,55 @@ ul#introductionlist {
     }
   }
 
+  ul#values {
+    grid-auto-flow: column;
+    & > li {
+      flex-direction: column;
+    }
+  }
+  ul#introductionlist {
+    grid-auto-flow: column;
+  }
+
+  #join-partners {
+    ul.buttons { flex-direction: unset;}
+  }
+
+  #join-donate {
+    & > div.card {
+      padding: 4rem;
+      h2 {text-align: initial;}
+    }
+    iframe {width: 80%;}
+  }
+
+  #project > .attributes {
+    grid-template: min-content 1fr / 1fr 1fr;
+    gap: var(--big-gap);
+    #partners {grid-column: span 2;}
+    #logos :is(dd, dd:first-child) {flex-basis: 10rem;}
+  }
+
+  #gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  #event {
+    display: flex;
+    flex-direction: row;
+    gap: var(--big-gap);
+
+    #info {
+      flex: 0 0 25%;
+  
+      position: sticky;
+      top: var(--big-gap);
+    }
+  }
+
   #site-footer {
     display: grid;
-    gap: var(--wide-gap) 6rem;
+    gap: var(--wide-gap) clamp(2rem, calc((100vw / 8) - 64px), 6rem);
     grid-template-columns: auto 1fr 1fr;
     grid-template-rows: auto auto;
     grid-template-areas:
@@ -1333,6 +1381,14 @@ ul#introductionlist {
   
   ul.entities {
     gap: var(--big-gap);
+    article .timeline {
+      flex-direction: row;
+
+      time + time::before {
+        content: "-";
+        margin-inline: var(--separator-gap);
+      }
+    }
   }
   
   #team.entities,
@@ -1344,7 +1400,7 @@ ul#introductionlist {
   }
 
   #projects.entities {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -1360,13 +1416,6 @@ ul#introductionlist {
       width: 100%;
       object-fit: cover;
     }
-  }
-
-  ul#options {
-    grid-auto-flow: unset;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: var(--wide-gap);
   }
 
   #menu-toggle {
