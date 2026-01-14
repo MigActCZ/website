@@ -4,6 +4,7 @@ featured: img_2276.webp
 dtstart: 2025-06-23T17:30:00
 tend: 20:00:00
 location: Přístav 7, V Přístavu 1639/24, Prague 7
+languages: ''
 registration: https://forms.gle/6EvRWNJUqQCJLMep8
 project: pathways-to-civic-integration-of-residents-with-migrant-backgrounds
 ---
@@ -11,6 +12,8 @@ project: pathways-to-civic-integration-of-residents-with-migrant-backgrounds
 Meet Your Neighbours from Prague 7 and Around the World!
 
 Join us for an evening of light snacks, fun, and meaningful connections at Přístav 7! Meet socially engaged neighbors and share stories and inspirations from civic and community life in Prague 7.
+
+<!--more→
 
 🎲 What’s in store?
 
