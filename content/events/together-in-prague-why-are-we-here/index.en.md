@@ -3,7 +3,7 @@ title: 'Together in Prague: Why are we here?'
 featured: featured.webp
 dtstart: 2025-11-13T17:30:00
 tend: 19:30:00
-location: Centrum a Kavárna Člověka v tísni, Vodičkova 707/37, 110 00 Prague 1
+location: Centrum a Kavárna Člověka v tísni, Vodičkova 707/37, Nové Město, 110 00 Praha 1
 languages: EN CZ
 registration: ''
 project: ''
