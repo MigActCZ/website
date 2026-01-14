@@ -7,9 +7,11 @@ location: Podnikatelské inovační centrum. Charvátová 6, Praha 1. Škodův p
 registration: https://forms.gle/EssRD2YstV9z53K66
 project: migact-capacity-building
 ---
-Join us for a networking session and a panel discussion on the topic: **Civic participation of foreigners: Why it matters?**
+Join us for a networking session and a panel discussion on the topic: Civic participation of foreigners: Why it matters?
 
-You’ll also have the chance to **connect with community organizers, discover migrant-led projects in Prague, and learn about MigAct’s upcoming plans and activities.**
+You’ll also have the chance to connect with community organizers, discover migrant-led projects in Prague, and learn about MigAct’s upcoming plans and activities.
+
+<!--more→
 
 **Agenda:**
 

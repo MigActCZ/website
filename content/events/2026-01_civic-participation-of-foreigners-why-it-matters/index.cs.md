@@ -4,12 +4,15 @@ featured: migact-invitation-unformal-horizontal-26.03.25-en-1.webp
 dtstart: 2025-03-26T14:00:00
 tend: 16:30:00
 location: Podnikatelské inovační centrum. Charvátová 6, Praha 1. Škodův palác.
+languages: ''
 registration: https://forms.gle/EssRD2YstV9z53K66
 project: migact-capacity-building
 ---
-Zveme vás na networking a panelovou diskuzi na téma: **Aktivní občanství lidí s migračním původem – proč je to důležité?**
+Zveme vás na networking a panelovou diskuzi na téma: Aktivní občanství lidí s migračním původem – proč je to důležité?
 
-Budete mít také příležitost **objevit zajímavé projekty vedené lidmi s migračním původem v Praze a dozvědět se více o plánech a aktivitách MigActu na tento rok.**
+Budete mít také příležitost objevit zajímavé projekty vedené lidmi s migračním původem v Praze a dozvědět se více o plánech a aktivitách MigActu na tento rok.
+
+<!--more→
 
 **Program:**
 
