@@ -3,8 +3,8 @@ title: 'Aktivní občanství lidí s migračním původem: Proč je to důležit
 featured: migact-invitation-unformal-horizontal-26.03.25-en-1.webp
 dtstart: 2025-03-26T14:00:00
 tend: 16:30:00
-location: Podnikatelské inovační centrum. Charvátová 6, Praha 1. Škodův palác.
-languages: ''
+location: Podnikatelské inovační centrum, Škodův palác, Charvátová 6, 110 00 Praha 1-Nové Město
+languages: EN CZ
 registration: https://forms.gle/EssRD2YstV9z53K66
 project: migact-capacity-building
 ---
