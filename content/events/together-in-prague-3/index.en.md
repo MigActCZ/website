@@ -11,6 +11,8 @@ date: 2025-10-01
 ---
 Join us for an evening of meaningful connections at Krenovka! Meet socially engaged neighbors and share stories and inspirations from civic and community life in Prague 3.
 
+<!--more→
+
 What’s in store?
 
 * Interactive Mapping – playful ways to explore our shared spaces and experiences

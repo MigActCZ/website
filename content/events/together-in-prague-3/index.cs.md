@@ -11,6 +11,8 @@ date: 2025-10-01
 ---
 Zveme vás na večer plný setkávání v Krenovce! Seznamte se s aktivními sousedy a podělte se o příběhy a inspirace z občanského a komunitního života na Praze 3.
 
+<!--more→
+
  Na co se můžete těšit?
 
 * Interaktivní mapování – hravou formou prozkoumáme naše sdílené zkušenosti
