@@ -22,6 +22,4 @@ What’s in store?
 
 We’ll provide light refreshments and snacks — no need to bring anything but yourself and your curiosity!
 
-<!--more-->
-
 This event is funded by the Prague City Council and organized in cooperation with Prague 3 City Hall.

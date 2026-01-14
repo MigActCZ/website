@@ -22,6 +22,4 @@ Zveme vás na večer plný setkávání v Krenovce! Seznamte se s aktivními sou
 
 Občerstvení zajištěno – stačí dorazit s dobrou náladou a otevřenou myslí!
 
-<!--more-->
-
 Akce je financována z grantu MHMP a realizována ve spolupráci s MČ Praha 3.
