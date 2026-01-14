@@ -6,7 +6,7 @@ tend: 19:30:00
 location: Centrum a Kavárna Člověka v tísni, Vodičkova 707/37, 110 00 Prague 1
 languages: EN CZ
 registration: ''
-project: together-for-prague
+project: ''
 date: 2025-10-30
 ---
 Join us for an evening of connection, sharing, and reflection with others who call Prague home. This gathering is all about meeting each other — hearing our stories, finding common ground, and exploring the question: “Why are we here?”
