@@ -16,5 +16,3 @@ Join our FREE workshop and discover how to:
 - Volunteer & join local activities
 - Get practical tips to navigate life in Prague
 - Meet new people & build your network
-
-Language: English
