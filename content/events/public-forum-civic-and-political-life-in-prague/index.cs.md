@@ -1,13 +1,13 @@
 ---
 title: Veřejné forum - občanský a politický život v Praze
 featured: featured.webp
-date: 2024-09-10
 dtstart: 2024-09-12T17:30:00
 tend: 19:30:00
-location: Škodův palác - room n. 201, Jungmannova 35, 110 00 Nové Město
+location: Škodův palác - room n. 201, Jungmannova 35, 110 00 Praha 1-Nové Město
 languages: EN CZ
 registration: https://forms.gle/ypc2Ksn3xB7TVTvv8
 project: city-for-all
+date: 2024-09-10
 ---
 S cílem podpořit zapojení obyvatel do dění v Praze pořádá MigAct veřejné fórum, které klade otázku:
 Jako obyvatel Prahy, co potřebujete k tomu, abyste se aktivněji zapojili do občanského a politického života města a aby váš hlas byl slyšet?
