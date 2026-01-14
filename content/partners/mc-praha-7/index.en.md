@@ -1,7 +1,9 @@
 ---
 title: MČ Praha 7
-website: https://www.praha7.cz/
 image: logo.svg
+website: https://www.praha7.cz/
+build:
+  list: always
 ---
 Department of Social Inclusion
 
