@@ -1,6 +1,8 @@
 ---
 title: Nadace OSF
 image: logo.webp
-website: https://osf.cz/o-nas/
+website: https://osf.cz/en/about-us/
+build:
+  list: always
 ---
-Open Society Fund Prague is a Czech foundation with a 30-year history. Our mission is to nurture democracy in the Czech Republic.
+Our mission is to nurture democracy in the Czech Republic. We support and educate civil society and encourage the state to develop into a place where everyone has equal chances and participates in various activities in their surroundings. We open up sensitive and neglected topics and together with donors we seek trailblazers who will carry them forward.
