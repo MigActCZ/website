@@ -3,7 +3,7 @@ title: How to build communities to foster belonging and civic engagement?
 featured: featured.webp
 dtstart: 2025-09-29T17:30:00
 tend: 20:00:00
-location: Dům U Kamenného zvonu, Staroměstské nám. 605/13, 110 00 Staré Město
+location: Dům U Kamenného zvonu, Staroměstské nám. 605/13, 110 00 Praha 1-Staré Město
 languages: EN CZ
 registration: ''
 project: together-for-prague
