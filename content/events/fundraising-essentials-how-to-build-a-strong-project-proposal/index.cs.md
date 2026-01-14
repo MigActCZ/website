@@ -3,7 +3,7 @@ title: Fundraising Essentials - How to Build a Strong Project Proposal
 featured: featured.webp
 dtstart: 2024-10-01T17:00:00
 tend: 19:30:00
-location: Prague City Hall, Charvátova 6, 110 00 Nové Město
+location: Prague City Hall, Charvátova 6, 110 00 Praha 1-Nové Město
 languages: EN CZ
 registration: https://forms.gle/c2YwspDvQhNjtyLo9
 project: city-for-all
