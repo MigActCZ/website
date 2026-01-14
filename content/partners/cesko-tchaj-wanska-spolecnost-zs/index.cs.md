@@ -2,5 +2,7 @@
 title: Česko-Tchaj-wanská společnost z.s.
 image: logo.webp
 website: https://cs.taiwanese.cz/
+build:
+  list: always
 ---
-Česko-Tchaj-wanská společnost je první asociace tchajwanské komunity v České republice. Podporujeme tchajwanskou komunitu žijící v České republice a snažíme se zajistit lepší kulturní výměnu mezi oběma zeměmi.
+Společnost je neziskovou organizací, jejíž hlavním úkolem je podporovat vzájemnou pomoc a spolupráci mezi obyvateli Tchaj-wanu a jeho krajany sídlící v České Republice. Dále podporovat společný konsenzus a solidaritu mezi Tchaj-wanci. Budovat za pomoci efektivního využití vládních zdrojů první školu mandarínštiny v České Republice a posílit kulturní identitu Tchaj-wanu.
