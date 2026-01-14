@@ -3,7 +3,8 @@ title: MigAct Kafe!☕Káva, sušenky a setkání
 featured: poster.kafecz.webp
 dtstart: 2025-02-25T09:00:00
 tend: 11:00:00
-location: MigAct Office, Revoluční 13, 4th Floor, Room 414
+location: MigAct Office, 4th Floor, Room 414, Revoluční 762/13, 110 00 Praha 1-Staré Město
+languages: ''
 registration: https://forms.gle/xobNK9FF1MAcF4Zp8
 project: migact-capacity-building
 ---
