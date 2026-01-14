@@ -3,7 +3,7 @@ title: 'Your City, Your Voice: A Workshop on Cooperation with Prague City Hall v
 featured: migact-logo-2.webp
 dtstart: 2023-11-29T17:30:00
 tend: 20:00:00
-location: Dům U Kamenného zvonu (City Gallery Prague), Staroměstské náměstí 605/13, Praha 1
+location: Dům U Kamenného zvonu (City Gallery Prague), Staroměstské nám. 605/13, 110 00 Praha 1-Staré Město
 languages: EN CZ
 registration: https://forms.gle/ATJDgZEyhP2azh2J7
 project: UNITES
