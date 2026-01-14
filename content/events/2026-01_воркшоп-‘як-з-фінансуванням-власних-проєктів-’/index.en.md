@@ -3,7 +3,7 @@ title: Воркшоп ‘Як з фінансуванням власних пр�
 featured: img_20241207_165141043_hdr.webp
 dtstart: 2024-12-07T15:00:00
 tend: 17:00:00
-location: InBaze, Legerova, 50, Praha 2
+location: InBáze, Legerova 357/50, 120 00 Praha 2-Vinohrady
 languages: UKR CZ
 registration: https://forms.gle/CqxKb68Sndv6opmb7
 project: city-for-all
