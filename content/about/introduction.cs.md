@@ -1,4 +1,4 @@
-## poznejte nás
+## Poznejte nás
 
 - ### Náš tým
   Naše práce by nebyla možná bez týmu oddaných a zapálených lidí.
@@ -12,3 +12,4 @@
   [Prohlédněte si naše podporovatele](partners)
   {.button}
 {#introductionlist, .cards}
+
