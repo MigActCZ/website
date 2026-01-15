@@ -8,8 +8,8 @@ Your contribution helps us keep our programs running, develop new activities, an
 - {{<icon hotel>}}
   ### Expand Our Reach
   Help us serve more community members across Prague
-  
+
 - {{<icon shield-check>}}
   ### Ensure Sustainability
   Create long-term stability for our organization
-{#funding}
+{#funding, .column}

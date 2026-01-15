@@ -211,6 +211,9 @@ p.button > a {
   flex-direction: column;
   gap: var(--medium-gap);
 }
+.column > :where(p, h1, h2, h3, h4, h5, h6, ul, ol, header, footer) {
+  margin: 0;
+}
 /* Scroll row */
 .scroll-row {
   display: grid;
@@ -380,19 +383,13 @@ main > section:last-child {
   flex-direction: column;
   gap: var(--wide-gap);
   color: var(--color-text);
-  h4 {
-    margin: 0;
-    font-weight: 600;
+  h2 {
+    font-size: 1rem;
+    margin-block: 0 var(--wide-gap);
+    font-weight: bold;
   }
   .logo {
     height: 4rem;
-  }
-  #footer-content,
-  #footer-links,
-  #footer-contacts {
-    display: flex;
-    flex-direction: column;
-    gap: var(--wide-gap);
   }
   #footer-socials {
     display: flex;
@@ -413,19 +410,12 @@ main > section:last-child {
       background-color: var(--color-bg-light);
       padding: var(--medium-gap);
       border-radius: 1rem;
-      display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: start;
-      gap: var(--separator-gap);
     }
   }
   #footer-contacts {
-    menu {
-      display: flex;
-      flex-direction: column;
-      gap: var(--medium-gap);
-    }
     li:nth-child(3n + 1) {
       --block-color: var(--color-teal);
     }
@@ -437,8 +427,6 @@ main > section:last-child {
     }
     a {
       color: var(--color-text-light);
-      display: flex;
-      align-items: center;
       gap: var(--tight-gap);
       svg {
         padding: var(--separator-gap);
@@ -689,16 +677,10 @@ ul.entities {
 #projects {
   article {
     border: thin solid var(--color-teal);
-    display: flex;
-    flex-direction: column;
-    gap: var(--separator-gap);
     header {
       display: flex;
       gap: var(--medium-gap);
       align-items: center;
-    }
-    .dates {
-      flex: 1;
     }
     h2 {
       flex: 1;
@@ -828,9 +810,6 @@ ul#attachments {
   --block-color: var(--color-teal);
   padding: var(--wide-gap) var(--big-gap);
   height: fit-content;
-  display: flex;
-  flex-direction: column;
-  gap: var(--medium-gap);
   border: 1px solid var(--color-teal);
   border-radius: 1rem;
   dt {
@@ -847,37 +826,26 @@ ul#attachments {
     }
   }
 }
-/* Row oriented dl */
-#info,
-#join-donate {
-  ul#funding,
-  dl.attributes {
-    display: flex;
-    flex-direction: column;
-    gap: var(--medium-gap);
-    & > li,
-    & > .dl-item {
-      display: grid;
-      grid-template-columns: auto 1fr;
-      grid-template-areas:
-        "icon term"
-        "icon def";
-      column-gap: var(--medium-gap);
-      align-items: start;
-      div.icon {
-        grid-area: icon;
-      }
-      & > h3,
-      & > dt {
-        grid-area: term;
-        margin-block: 0;
-      }
-      & > p,
-      & > dd {
-        grid-area: def;
-        margin: 0;
-      }
-    }
+#join-donate #funding > li,
+#info > .attributes > .dl-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-areas:
+    "icon term"
+    "icon def";
+  column-gap: var(--medium-gap);
+  align-items: start;
+  div.icon {
+    grid-area: icon;
+  }
+  & > h3,
+  & > dt {
+    grid-area: term;
+  }
+  & > p,
+  & > dd {
+    grid-area: def;
+    margin-block: 0;
   }
 }
 /* || PARTNERS PAGE */

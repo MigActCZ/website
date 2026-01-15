@@ -5,8 +5,8 @@
     <h1>{{ .Title }}</h1>
     {{ .Content }}
   </section>
-  <div id="info">
-    <dl class="attributes">
+  <div id="info" class="column">
+    <dl class="attributes column">
       {{ $dtend := time (printf "%s%s" (substr .Params.dtstart 0 11 ) .Params.tend ) }}
       {{ $dtstart := time .Params.dtstart }}
       {{ $dtstart_utc := $dtstart | dateFormat "2006-01-02T15:04Z0700" }}

@@ -36,9 +36,9 @@
     {{ block "main" . }}{{ end }}
     <footer id="site-footer">
         <nav id="footer-content">
-            <a href="{{ $.Site.Home.RelPermalink }}" alt='{{ i18n "home" }}'>
+            <h2><a href="{{ $.Site.Home.RelPermalink }}" alt='{{ i18n "home" }}'>
                 {{- partial "inline-svg" "logos/migact" -}}
-            </a>
+            </a></h2>
             <menu id="footer-socials">
                 <li><a href="{{ .Site.Params.socials.linkedin}}">
                     {{- partial "inline-svg" "logos/linkedin" -}}</a></li>
@@ -49,7 +49,7 @@
               </menu>
         </nav>
         <nav id="footer-links">
-            <h4>{{ i18n "footer_actions" }}</h4>
+            <h2>{{ i18n "footer_actions" }}</h2>
             <menu>
                 {{ range site.Menus.footer }}
                 <li>
@@ -66,8 +66,8 @@
             </menu>
         </nav>
         <address id="footer-contacts">
-            <h4>{{ i18n "contact_us" }}</h4>
-            <menu>
+            <h2>{{ i18n "contact_us" }}</h2>
+            <menu class="column">
                 <li><a>{{- partial "inline-svg" "icons/map-pin" -}}
                     {{- .Site.Params.contact.address.office -}}</a></li>
                 <li>{{ $val := .Site.Params.contact.email }}
