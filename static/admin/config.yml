@@ -91,7 +91,7 @@ collections:
     i18n: true
     fields:
       - { label: Title, name: title, widget: string, i18n: true }
-      - { label: CreationDate, name: date, widget: hidden, default: "{{datetime}}", i18n: duplicate}
+      - { label: CreationDate, name: date, widget: datetime, time_format: false, default: "{{datetime}}", i18n: duplicate}
       - { label: Starts, name: dtstart, widget: datetime, time_format: false, i18n: duplicate}
       - { label: Ends, name: dtend, widget: datetime, time_format: false, i18n: duplicate }
       - label: Partner
@@ -136,7 +136,7 @@ collections:
     fields:
       - { label: Title, name: title, widget: string, i18n: true }
       - { label: Featured Image, name: featured, widget: image, choose_url: false, i18n: true }
-      - { label: CreationDate, name: date, widget: hidden, default: "{{datetime}}", i18n: duplicate}
+      - { label: CreationDate, name: date, widget: datetime, time_format: false, default: "{{datetime}}", i18n: duplicate}
       - { label: Starts, name: dtstart, widget: datetime, i18n: duplicate }
       - { label: Ends, name: tend, widget: datetime, date_format: false, i18n: duplicate }
       - { label: Location, name: location, widget: string, i18n: duplicate, required: false }
@@ -167,7 +167,7 @@ collections:
       - { label: Title, name: title, widget: string, i18n: true }
       - { label: Body, name: body, widget: markdown, i18n: true }
       - { label: Category, name: category, widget: select, options: ["news", "report", "resource"], i18n: duplicate}
-      - { label: CreationDate, name: date, widget: hidden, default: "{{datetime}}", i18n: duplicate}
+      - { label: CreationDate, name: date, widget: datetime, time_format: false, default: "{{datetime}}", i18n: duplicate}
       - label: Project
         name: project
         widget: relation
