@@ -840,14 +840,20 @@ ul.entities {
   }
 }
 #news header {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  align-items: center;
   gap: var(--medium-gap);
+
+  .news-tag {
+    background-color: var(--block-color);
+    padding: var(--separator-gap) 1.25rem;
+    border-radius: 2.5rem;
+  }
+  a {color: var(--color-text);}
 }
 
-.news {
-  background-color: color-mix(in srgb, var(--block-color) 10%, transparent);
-}
+.news {border: thin solid var(--block-color);}
 .news-resource {
   --block-color: var(--color-orange);
 }

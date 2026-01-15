@@ -3,9 +3,9 @@
   <h1>{{ .Title }}</h1>
   {{ with .Params.project }}
   {{ $project := (site.GetPage "projects").GetPage . }}
-  <h2><a href='{{ $project.RelPermalink }}'>{{ $project.Title }}</a></h2>
+  <h2>{{ i18n "project" }}: <a href='{{ $project.RelPermalink }}'>{{ $project.Title }}</a></h2>
   {{ end }}
-  <time datetime='{{ .Date | dateFormat "2006-01-02" }}'>{{ .Date | dateFormat "2006-01-02" }}</time>
+  <time datetime='{{ .Date | dateFormat "2006-01-02" }}'>{{ .Date | dateFormat "2 Jan 2006" }}</time>
   <section>
     {{ .Content }}
   </section>

@@ -1,12 +1,11 @@
 <article class='news news-{{ .Params.category }}'>
   <header>
-    <time datetime='{{ .Date | dateFormat "2006-01-02" }}'>{{ .Date | dateFormat "2006-01-02" }}</time>
+    <div class="news-tag">{{ .Params.category | strings.FirstUpper }}</div>
+    <time datetime='{{ .Date | dateFormat "2006-01-02" }}'>{{ .Date | dateFormat "2 Jan 2006" }}</time>
     {{ with .Params.project }}
-    <div>
     {{ $project := (site.GetPage "projects").GetPage . }}
-    {{ partial "inline-svg" "icons/briefcase" }}
-      <a href='{{ $project.RelPermalink }}'>{{ $project.Title }}</a>
-    </div>
+      <a href='{{ $project.RelPermalink }}'>
+        {{ partial "inline-svg" "icons/briefcase" }}{{ $project.Title }}</a>
     {{ end }}
     {{ if .Params.resources }}
       {{ partial "inline-svg" "icons/paperclip" }}
