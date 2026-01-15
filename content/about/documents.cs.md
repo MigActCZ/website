@@ -1,5 +1,5 @@
-## Dokumenty
-
-- [Stanovy](stanovy.pdf)
-- [Zprávy](news)
+---
+---
+- [Stanovy MigAct z.s.](stanovy.pdf)
+- [Zprávy a materiály](news)
 {.buttons}

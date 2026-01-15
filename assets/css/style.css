@@ -1179,7 +1179,9 @@ ul#introductionlist {
   }
 }
 #documents {
-
+  .buttons a {
+    font-size: 1.75rem;
+  }
   li:nth-child(3n + 1){
     --block-color: var(--color-red);
   }
