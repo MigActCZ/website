@@ -10,7 +10,7 @@ project: UNITES
 ---
 Komunitní organizování je silný nástroj pro pozitivní změny v společnosti kde žijeme. Ale jak ho přizpůsobit českému kontextu? Jak mohou Češi a lidi s migračním původem spolupracovat, zapojit místní komunity a vytvářet smysluplné vazby? Pojďme diskutovat o praktických strategiích, výzvách i úspěšných příkladech, aby komunitní organizování fungovalo pro všechny v Praze.
 
-<!--more→
+<!--more-->
 
 Přiveďte své přátele
 Přineste své nápady
