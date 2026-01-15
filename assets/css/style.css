@@ -43,20 +43,18 @@ body {
     border-block-start: thin solid var(--color-teal);
     /* Headers */
     & > .intro {
-      background: linear-gradient(.25turn, var(--color-orange), 30%, var(--color-bg-light), 60%, var(--color-blue));
+      background-image: url("/bg-top.svg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding-block: 3rem;
     }
     & > h1.intro {
       margin-block-start: 0;
-      padding-block: 10rem 5rem;
+      font-size: 3em;
     }
     & > header.intro {
-      padding-block: 8rem;
-      text-align: center;
-      
-      h1 {
-        margin-block: 0;
-        font-size: 3rem;
-      }
+      font-size: 1.5em;
     }
   }
 }
@@ -1057,7 +1055,6 @@ ul#attachments {
 .page {
   h2 {font-size: 3em;}
   p {color: var(--color-text-light);}
-  & > header {font-size: 1.5em;}
   section p {font-size: 1.25em;}
 }
 
@@ -1083,7 +1080,7 @@ p.button > a,
   color: var(--color-bg);
 }
 
-#join-events, #story, #introduction > h2, #donate, #socials-newsletter, #featured {
+.intro, #join-events, #story, #introduction > h2, #donate, #socials-newsletter, #featured {
   text-align: center;
 }
 
