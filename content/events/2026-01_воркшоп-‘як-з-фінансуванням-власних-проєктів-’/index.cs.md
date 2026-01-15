@@ -12,7 +12,7 @@ project: city-for-all
 
 Tento workshop je ideální pro aktivní jednotlivce, neziskové organizace a iniciativy, které hledají informace o možnostech financování a státní podpory dostupné národnostním menšinám v České republice. Je určen především aktivním Ukrajincům, kteří mají nápady, ale nevědí, kde najít podporu a financování.
 
-<!--more→
+<!--more-->
 
 Co Vás čeká?
 
