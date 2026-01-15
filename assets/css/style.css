@@ -1246,9 +1246,6 @@ main > .intro {
 
 /* ============================================     Tablet (768px+)     ============================================ */
 @media (min-width: 768px) {
-  :where(#home, .page) > section {
-    padding-block: 4rem;
-  }
   /* This is for background */
   main > section:last-child {
     padding-block-end: 8rem;
