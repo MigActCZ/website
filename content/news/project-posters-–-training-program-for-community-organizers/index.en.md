@@ -1,10 +1,13 @@
 ---
 title: Project Posters – Training Program for Community Organizers
-category: resource
+category: news
+project: migact-local-meetups
 resources:
   - participant-posters-26.03.25-event_v2.pdf
 ---
 Our training program is in full swing! On 26 March 8 project participants joined our event ‘Panel discussion and Networking: Civic participation of foreigners: Why it matters?’, presented their projects. Here are their posters.
+
+<!--more→
 
 You can read more about the program [here](http://migact.net/en/wp-content/uploads/2025/02/Open-Call.pdf).
 
