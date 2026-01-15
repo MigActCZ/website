@@ -9,6 +9,11 @@
   --color-text: #1A1A1A;
   --color-text-light: #333;
 
+  --color-bg-red: color-mix(in oklab, var(--color-red) 10%, transparent);
+  --color-bg-orange: color-mix(in oklab, var(--color-orange) 10%, transparent);
+  --color-bg-teal: color-mix(in oklab, var(--color-teal) 10%, transparent);
+  --color-bg-blue: color-mix(in oklab, var(--color-blue) 10%, transparent);
+
   --brand-dim: 1.875rem;
 
   --content-inline-padding: max(1.5rem, calc(50% - 40rem));
@@ -43,10 +48,6 @@ body {
     border-block-start: thin solid var(--color-teal);
     /* Headers */
     & > .intro {
-      background-image: url("/bg-top.svg");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
       padding-block: 3rem;
     }
     & > h1.intro {
@@ -524,11 +525,6 @@ main > section:last-child {
 
   display: grid;
   gap: var(--wide-gap);
-  
-  background-image: url("/bg-top.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 
   #featured {
     color: var(--color-text);
@@ -544,10 +540,6 @@ main > section:last-child {
 }
 
 #activities {
-  background:
-    radial-gradient(ellipse at bottom right,
-      color-mix(in srgb, var(--color-blue) 5%, transparent), transparent);
-
   ul#activitylist {
     & > li {
       position: relative;
@@ -611,16 +603,13 @@ ul.elevated-cards > li,
 }
 
 #involvement {
-  background:
-    radial-gradient(ellipse at top right,
-      color-mix(in srgb, var(--color-blue) 5%, transparent), transparent);
-
   #donate {
     --block-color: var(--color-red);
-    padding: var(--medium-gap);
 
     iframe {
       margin-block: var(--medium-gap);
+      border: thin solid var(--block-color);
+      border-radius: 1rem;
     }
     svg {
       margin-inline: auto;
@@ -633,6 +622,10 @@ ul.elevated-cards > li,
     }
   }
   
+  li {
+    background: radial-gradient(circle at top right,
+    color-mix(in srgb, var(--block-color) 10%, var(--color-bg)) 0 25%, var(--color-bg) 5.1%);
+  }
   li:nth-child(3n + 1) {
     --block-color: var(--color-teal);
   }
@@ -645,12 +638,6 @@ ul.elevated-cards > li,
 }
 
 #stay-connected {
-  background-image: url("/bg-bot.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-
   #socials-newsletter {
     border-color: var(--color-orange);
 
@@ -717,7 +704,7 @@ ul.elevated-cards > li,
   padding: 0;
 
   & > .dl-item {
-    background: #f8f8f8;
+    background: var(--color-bg-light);
     border-radius: 0.75rem;
     padding: var(--medium-gap);
     text-align: center;
@@ -885,6 +872,7 @@ ul#attachments {
 }
 
 #events, #join-events {
+  --block-color: var(--color-teal);
   article {
     header {
       display: flex;
@@ -1085,7 +1073,7 @@ p.button > a,
 }
 
 #join-volunteer {
-  --block-color: var(--color-teal);
+  --block-color: var(--color-red);
 
   #tags {
     display: flex;
@@ -1197,6 +1185,57 @@ ul#introductionlist {
   }
 }
 
+/* Backgrounds */
+main > .intro {
+  background-image: url("/bg-top.svg");
+  background-size: 100%;
+  background-position: center;
+}
+#home {
+  #about {
+    background-image: url("/bg-top.svg");
+    background-size: 100% 100%;
+  }
+  #activities {
+    background:
+    radial-gradient(ellipse closest-side at 90% 30%,
+    var(--color-bg-red), transparent),
+    radial-gradient(ellipse 100% 50% at bottom left,
+      color-mix(in srgb, var(--color-blue) 15%, transparent), transparent);
+  }
+  #involvement {
+    background:
+      radial-gradient(ellipse closest-side at 80% 30%,
+      var(--color-bg-orange), transparent),
+      radial-gradient(ellipse farthest-side at top left,
+        color-mix(in srgb, var(--color-blue) 15%, transparent), transparent);
+  }
+  #stay-connected {
+    background-image: url("/bg-bot.svg");
+    background-size: 100% 100%;
+  }
+}
+#about-us {
+  #vision{background: linear-gradient(var(--color-bg) 30%, var(--color-bg-red));}
+  #story{background: linear-gradient(var(--color-bg-red), var(--color-bg-orange));}
+  #introduction{background: linear-gradient(var(--color-bg-orange), var(--color-bg-teal));}
+  #theory{background: linear-gradient(var(--color-bg-teal), var(--color-bg-blue));}
+  #documents{background: var(--color-bg-blue);}
+}
+#join-us{
+  #join-volunteer{background:
+    radial-gradient(farthest-side at bottom right, var(--color-bg-red), transparent);}
+  #join-events{background:
+    radial-gradient(farthest-side at top right, var(--color-bg-red), transparent),
+    radial-gradient(farthest-side at bottom left, var(--color-bg-teal), transparent);}
+  #join-partners{background:
+    radial-gradient(farthest-side at top left, var(--color-bg-teal), transparent),
+    radial-gradient(farthest-side at bottom right, var(--color-bg-blue), transparent);}
+  #join-donate{background:
+    radial-gradient(farthest-side at top right, var(--color-bg-blue), transparent),
+    radial-gradient(farthest-side at bottom left, var(--color-bg-orange), transparent);}
+}
+
 /* ============================================     Tablet (768px+)     ============================================ */
 @media (min-width: 768px) {
   :where(#home, .page) > section {
@@ -1285,6 +1324,8 @@ ul#introductionlist {
       line-height: initial;
     }
   }
+
+  #donate, #socials-newsletter {background-image: url("/pattern-side.svg");}
 
   #stay-connected li {
     line-height: 1.6;

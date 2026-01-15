@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   id="svg5"
+   xml:space="preserve"
+   width="523.19"
+   height="167"
+   viewBox="0 0 523.19001 167"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <style
+   id="style1">.colored { stroke: #ffb33d; fill: #ffb33d; }
+.opaque { fill: #ffd99e;    stroke: #ffd99e; }
+</style>
+  
+  <defs
+   id="defs5"><symbol
+   id="circle"
+   viewbox="-5 -5 10 10"><circle
+     cx="0"
+     cy="0"
+     r="5"
+     id="circle1" /></symbol><symbol
+   id="square"
+   viewbox="-5 -5 10 10"><rect
+     x="-4"
+     y="-4"
+     width="8"
+     height="8"
+     id="rect1" /></symbol><symbol
+   id="diamond"
+   viewbox="-5 -5 10 10"><polygon
+     points="0,5 -5,0 0,-5 5,0 "
+     id="polygon1" /></symbol><symbol
+   id="triangle_up"
+   viewbox="-5 -5 10 10"><polygon
+     points="0,4.33 -5,-4.33 5,-4.33 "
+     id="polygon2" /></symbol><symbol
+   id="triangle_down"
+   viewbox="-5 -5 10 10"><polygon
+     points="0,-4.33 -5,4.33 5,4.33 "
+     id="polygon3" /></symbol><symbol
+   id="wave-m"><path
+     d="m 2.3411522,51.29492 13.9999998,-14 c 5,-4.75 12.25,-4.75 17.25,0 l 8,8 c 4,3 8,3 12,0 l 8,-8 c 5,-4.75 12.25,-4.75 17.25,0 l 15,14.5"
+     stroke-width="6"
+     fill="none"
+     id="path3" /></symbol><symbol
+   id="wave-a"><path
+     d="m 2.5,22 14,-14 c 5,-4.75 12.25,-4.75 17.25,0 l 14,14"
+     stroke-width="6"
+     fill="none"
+     id="path4" /></symbol>
+         </defs>
+  
+  
+  
+  <use
+   xlink:href="#square"
+   id="use1-9"
+   transform="translate(24.8,19)"
+   class="colored"
+   style="" /><use
+   xlink:href="#circle"
+   id="use1-3"
+   transform="translate(69.982,19)"
+   class="colored"
+   style="" /><use
+   xlink:href="#triangle_down"
+   id="use1-2"
+   transform="translate(112.02803,19)"
+   class="opaque"
+   style="" /><use
+   xlink:href="#circle"
+   id="use1-9-9"
+   transform="translate(153.6,19)"
+   class="colored"
+   style="" /><use
+   xlink:href="#diamond"
+   id="use1-3-3"
+   transform="translate(198.182,19)"
+   class="colored"
+   style="" /><use
+   xlink:href="#triangle_up"
+   id="use1-2-9"
+   transform="translate(240.84632,19)"
+   class="opaque"
+   style="" /><use
+   xlink:href="#circle"
+   id="use1-9-1"
+   transform="translate(282.4,19)"
+   class="colored"
+   style="" /><use
+   xlink:href="#square"
+   id="use1-3-8"
+   transform="translate(327.582,19)"
+   class="colored"
+   style="" /><use
+   xlink:href="#triangle_down"
+   id="use1-2-4"
+   transform="translate(369.64132,19)"
+   class="opaque"
+   style="" /><use
+   xlink:href="#square"
+   id="use1-9-1-7"
+   transform="translate(411.2,19.000107)"
+   class="colored"
+   style="" /><use
+   xlink:href="#triangle_down"
+   id="use1-3-8-5"
+   transform="translate(456.382,19.000107)"
+   class="colored"
+   style="" /><use
+   xlink:href="#circle"
+   id="use1-2-4-3"
+   transform="translate(498.44132,19.000107)"
+   class="opaque"
+   style="" /><use
+   xlink:href="#triangle_down"
+   id="use1-78"
+   transform="translate(24.8,73.33)"
+   class="colored"
+   style="" /><use
+   xlink:href="#circle"
+   id="use1-5"
+   transform="translate(69.982,73.33)"
+   class="colored"
+   style="" /><use
+   xlink:href="#diamond"
+   id="use1-4"
+   transform="translate(112.02803,73.33)"
+   class="opaque"
+   style="" /><use
+   xlink:href="#triangle_up"
+   id="use1-78-0"
+   transform="translate(153.6,73.33)"
+   class="colored"
+   style="" /><use
+   xlink:href="#square"
+   id="use1-5-8"
+   transform="translate(198.182,73.33)"
+   class="colored"
+   style="" /><use
+   xlink:href="#circle"
+   id="use1-4-6"
+   transform="translate(240.84632,73.33)"
+   class="opaque"
+   style="" /><use
+   xlink:href="#triangle_down"
+   id="use1-78-03"
+   transform="translate(282.4,73.33)"
+   class="colored"
+   style="" /><use
+   xlink:href="#circle"
+   id="use1-5-0"
+   transform="translate(327.582,73.33)"
+   class="colored"
+   style="" /><use
+   xlink:href="#circle"
+   id="use1-4-7"
+   transform="translate(369.64132,73.33)"
+   class="opaque"
+   style="" /><use
+   xlink:href="#triangle_up"
+   id="use1-78-03-5"
+   transform="translate(411.2,73.330107)"
+   class="colored"
+   style="" /><use
+   xlink:href="#circle"
+   id="use1-5-0-6"
+   transform="translate(456.382,73.330107)"
+   class="colored"
+   style="" /><use
+   xlink:href="#square"
+   id="use1-4-7-2"
+   transform="translate(498.44132,73.330107)"
+   class="opaque"
+   style="" /><use
+   xlink:href="#circle"
+   id="use1-61"
+   transform="translate(24.8,129)"
+   class="colored"
+   style="" /><use
+   xlink:href="#square"
+   id="use1-54"
+   transform="translate(68.942911,129)"
+   class="colored"
+   style="" /><use
+   xlink:href="#triangle_down"
+   id="use1-43"
+   transform="translate(112.02803,129)"
+   class="opaque"
+   style="" /><use
+   xlink:href="#circle"
+   id="use1-61-5"
+   transform="translate(153.6,129)"
+   class="colored"
+   style="" /><use
+   xlink:href="#diamond"
+   id="use1-54-3"
+   transform="translate(198.182,129)"
+   class="colored"
+   style="" /><use
+   xlink:href="#triangle_up"
+   id="use1-43-8"
+   transform="translate(240.84632,129)"
+   class="opaque"
+   style="" /><use
+   xlink:href="#circle"
+   id="use1-61-4"
+   transform="translate(282.4,129)"
+   class="colored"
+   style="" /><use
+   xlink:href="#square"
+   id="use1-54-6"
+   transform="translate(327.582,129)"
+   class="colored"
+   style="" /><use
+   xlink:href="#triangle_up"
+   id="use1-43-3"
+   transform="translate(369.64132,129)"
+   class="opaque"
+   style="" /><use
+   xlink:href="#square"
+   id="use1-61-4-9"
+   transform="translate(411.2,129.0001)"
+   class="colored"
+   style="" /><use
+   xlink:href="#circle"
+   id="use1-54-6-1"
+   transform="translate(456.382,129.0001)"
+   class="colored"
+   style="" /><use
+   xlink:href="#circle"
+   id="use1-43-3-2"
+   transform="translate(498.44132,129.0001)"
+   class="opaque"
+   style="" />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <use
+   xlink:href="#wave-a"
+   id="use1-98-7"
+   transform="translate(473.31632,30.019636)"
+   class="opaque"
+   style="" /><use
+   xlink:href="#wave-m"
+   id="use1-8-4-0"
+   transform="translate(386.18017,0.19071558)"
+   class="colored"
+   style="" /><use
+   xlink:href="#wave-a"
+   id="use1-98"
+   transform="translate(344.51632,30.019529)"
+   class="opaque"
+   style="" />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+<use
+   xlink:href="#wave-m"
+   id="use1-8-4"
+   transform="translate(257.38017,0.190609)"
+   class="colored"
+   style="" /><use
+   xlink:href="#wave-a"
+   id="use1-12"
+   transform="translate(215.72132,30.019529)"
+   class="opaque"
+   style="" /><use
+   xlink:href="#wave-m"
+   id="use1-8-8"
+   transform="translate(128.58017,0.190609)"
+   class="colored"
+   style="" /><use
+   xlink:href="#wave-a"
+   id="use1"
+   transform="translate(86.90303,30.019329)"
+   class="opaque"
+   style="" /><use
+   xlink:href="#wave-m"
+   id="use1-8"
+   transform="translate(-0.21983184,0.190609)"
+   class="colored"
+   style="" /><use
+   xlink:href="#wave-a"
+   id="use1-32-4"
+   transform="translate(344.51632,84.753351)"
+   class="opaque"
+   style="" /><use
+   xlink:href="#wave-a"
+   id="use1-32-0"
+   transform="translate(215.72132,84.753351)"
+   class="opaque"
+   style="" /><use
+   xlink:href="#wave-m"
+   id="use1-7-1"
+   transform="translate(257.38017,55.190609)"
+   class="colored"
+   style="" /><use
+   xlink:href="#wave-a"
+   id="use1-32"
+   transform="translate(86.90303,84.753351)"
+   class="opaque"
+   style="" /><use
+   xlink:href="#wave-m"
+   id="use1-7-4"
+   transform="translate(128.58017,55.190609)"
+   class="colored"
+   style="" /><use
+   xlink:href="#wave-m"
+   id="use1-7"
+   transform="translate(-0.21983184,55.190609)"
+   class="colored"
+   style="" /><use
+   xlink:href="#wave-a"
+   id="use1-1-4-6"
+   transform="translate(473.31632,139.75345)"
+   class="opaque"
+   style="" /><use
+   xlink:href="#wave-m"
+   id="use1-6-5-0"
+   transform="translate(386.18017,110.19071)"
+   class="colored"
+   style="" /><use
+   xlink:href="#wave-a"
+   id="use1-1-4"
+   transform="translate(344.51632,139.75335)"
+   class="opaque"
+   style="" /><use
+   xlink:href="#wave-m"
+   id="use1-6-5"
+   transform="translate(257.38017,110.19061)"
+   class="colored"
+   style="" /><use
+   xlink:href="#wave-a"
+   id="use1-32-4-9"
+   transform="translate(473.31632,84.753458)"
+   class="opaque"
+   style="" /><use
+   xlink:href="#wave-m"
+   id="use1-7-1-3"
+   transform="translate(386.18017,55.190716)"
+   class="colored "
+   style="" /><use
+   xlink:href="#wave-a"
+   id="use1-1-9"
+   transform="translate(215.72132,139.75335)"
+   class="opaque"
+   style="" /><use
+   xlink:href="#wave-m"
+   id="use1-6-8"
+   transform="translate(128.58017,110.19061)"
+   class="colored"
+   style="" /><use
+   xlink:href="#wave-a"
+   id="use1-1"
+   transform="translate(86.90303,139.75335)"
+   class="opaque"
+   style="" /><use
+   xlink:href="#wave-m"
+   id="use1-6"
+   transform="translate(-0.21983184,110.19061)"
+   class="colored"
+   style="" /></svg>

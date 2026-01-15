@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1000 164">
+  <style>.colored { stroke: #ffb33d; fill: #ffb33d; }
+.opaque { fill: #ffd99e;    stroke: #ffd99e; }
+</style>
+  <defs>
+    <symbol id="circle">
+      <circle cx="5" cy="5" r="5" stroke="none"/>
+    </symbol>
+    <symbol id="square">
+      <rect x="0" y="0" width="10" height="10" stroke="none"/>
+    </symbol>
+    <symbol id="diamond">
+      <polygon points="5,10 0,5 5,0 10,5" stroke="none"/>
+    </symbol>
+    <symbol id="triangle_up">
+      <polygon points="0,0 5,8.66 10,0" stroke="none"/>
+    </symbol>
+    <symbol id="triangle_down">
+      <polygon points="0,8.66 5,0 10,8.66 " stroke="none"/>
+    </symbol>
+    <symbol id="wave-m">
+      <path d="m 2.3411522,51.29492 13.9999998,-14 c 5,-4.75 12.25,-4.75 17.25,0 l 8,8 c 4,3 8,3 12,0 l 8,-8 c 5,-4.75 12.25,-4.75 17.25,0 l 15,14.5" stroke-width="6" fill="none"/>
+    </symbol>
+    <symbol id="wave-a">
+      <path d="m 2.5,22 14,-14 c 5,-4.75 12.25,-4.75 17.25,0 l 14,14" stroke-width="6" fill="none"/>
+    </symbol>
+  </defs>
+  <use href="#square" transform="translate(19.746,14.006978)" class="colored"/>
+  <use href="#circle" transform="translate(64.996,14.006978)" class="colored"/>
+  <use href="#triangle_down" transform="translate(107.02803,14.006978)" class="opaque"/>
+  <use href="#square" transform="translate(882.945,13.800085)" class="colored"/>
+  <use href="#triangle_down" transform="translate(928.195,13.800085)" class="colored"/>
+  <use href="#circle" transform="translate(970.23991,13.800085)" class="opaque"/>
+  <use href="#triangle_down" transform="translate(19.746,68.329978)" class="colored"/>
+  <use href="#circle" transform="translate(64.996,68.329978)" class="colored"/>
+  <use href="#diamond" transform="translate(107.02803,68.329978)" class="opaque"/>
+  <use href="#triangle_up" transform="translate(882.94504,68.123085)" class="colored"/>
+  <use href="#circle" transform="translate(928.19504,68.123085)" class="colored"/>
+  <use href="#square" transform="translate(970.23995,68.123085)" class="opaque"/>
+  <use href="#circle" transform="translate(19.746,122.65998)" class="colored"/>
+  <use href="#square" transform="translate(64.996,122.65998)" class="colored"/>
+  <use href="#triangle_down" transform="translate(107.02803,122.65998)" class="opaque"/>
+  <use href="#square" transform="translate(882.945,122.45308)" class="colored"/>
+  <use href="#circle" transform="translate(928.195,122.45308)" class="colored"/>
+  <use href="#circle" transform="translate(970.23991,122.45308)" class="opaque"/>
+  <use href="#wave-a" transform="translate(950.11491,29.812636)" class="opaque"/>
+  <use href="#wave-m" transform="translate(862.97876,-0.01628447)" class="colored"/>
+  <use href="#wave-a" transform="translate(86.90303,30.019329)" class="opaque"/>
+  <use href="#wave-m" transform="translate(-0.21983184,0.190609)" class="colored"/>
+  <use href="#wave-a" transform="translate(86.90303,84.753351)" class="opaque"/>
+  <use href="#wave-m" transform="translate(-0.21983184,55.190609)" class="colored"/>
+  <use href="#wave-a" transform="translate(950.11491,138.20656)" class="opaque"/>
+  <use href="#wave-m" transform="translate(862.97876,108.64382)" class="colored"/>
+  <use href="#wave-a" transform="translate(950.11491,84.546458)" class="opaque"/>
+  <use href="#wave-m" transform="translate(862.97876,54.983716)" class="colored "/>
+  <use href="#wave-a" transform="translate(86.90303,138.41346)" class="opaque"/>
+  <use href="#wave-m" transform="translate(-0.21983184,108.85072)" class="colored"/>
+</svg>
