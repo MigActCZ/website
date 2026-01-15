@@ -806,8 +806,10 @@ ul#attachments {
       justify-content: space-between;
       align-items: center;
     }
+    & > div {
+      flex: 1;
+    }
     footer {
-      margin-block: var(--medium-gap);
       display: flex;
       gap: var(--medium-gap);
       .location,
@@ -816,9 +818,6 @@ ul#attachments {
         align-items: center;
         gap: var(--separator-gap);
       }
-    }
-    ul.buttons {
-      justify-content: flex-end;
     }
   }
 }

@@ -2,7 +2,7 @@
 {{ $dtstart := time .Params.dtstart }}
 {{ $dtstart_utc := $dtstart | dateFormat "2006-01-02T15:04Z0700" }}
 {{ $dtend_utc := $dtend | dateFormat "2006-01-02T15:04Z0700" }}
-<article>
+<article class="column">
   <header>
     <time class="date" datetime='{{ $dtstart | dateFormat "2006-01-02" }}'>{{ $dtstart | dateFormat "2 Jan 2006" }}</time>
     <div class="timeline">
@@ -21,10 +21,9 @@
     <div class="language">
       {{- partial "inline-svg" "icons/globe" -}}{{ default "EN CZ" .Params.languages }}</div>
   </footer>
-  <ul class="buttons">
-    <li><a href="{{ .RelPermalink }}">{{ i18n "details" }}</a></li>
-    {{ with .Params.registration }}
-    <li><a href="{{ . }}">{{ i18n "register" }}</a></li>
-    {{ end }}
-  </ul>
+  {{ with .Params.registration }}
+  <p class="button">
+    <a href="{{ . }}">{{ i18n "register" }}</a>
+  </p>
+  {{ end }}
 </article>
