@@ -13,7 +13,7 @@ Meet Your Neighbours from Prague 7 and Around the World!
 
 Join us for an evening of light snacks, fun, and meaningful connections at Přístav 7! Meet socially engaged neighbors and share stories and inspirations from civic and community life in Prague 7.
 
-<!--more→
+<!--more-->
 
 🎲 What’s in store?
 

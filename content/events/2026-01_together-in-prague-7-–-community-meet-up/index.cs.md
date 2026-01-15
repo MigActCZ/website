@@ -13,7 +13,7 @@ Seznamte se se sousedy z Prahy 7 i z celého světa!
 
 Přijďte na večer plný jídla, zábavy a setkávání v Přístavu 7! Seznamte se s aktivními sousedy a podělte se o příběhy a inspirace z občanského a komunitního života na Praze 7.
 
-<!--more→
+<!--more-->
 
 🎲 Na co se můžete těšit?
 
