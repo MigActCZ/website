@@ -1,19 +1,19 @@
 ---
 title: 'Společně na Praze 3: Objevte občanský a komunitní život'
 featured: featured.webp
+date: 2025-10-01
 dtstart: 2025-10-23T17:30:00
 tend: 19:00:00
 location: Krenovka, Husitská 22, 130 00 Praha 3-Žižkov
 languages: EN CZ
 registration: https://forms.gle/6hr5bcXfJC544gUs5
 project: together-for-prague
-date: 2025-10-01
 ---
 Zveme vás na večer plný setkávání v Krenovce! Seznamte se s aktivními sousedy a podělte se o příběhy a inspirace z občanského a komunitního života na Praze 3.
 
-<!--more→
+<!--more-->
 
- Na co se můžete těšit?
+Na co se můžete těšit?
 
 * Interaktivní mapování – hravou formou prozkoumáme naše sdílené zkušenosti
 * Inspirativní diskuze – podělte se o své nápady, otázky a podněty
