@@ -7,7 +7,7 @@ resources:
 ---
 Our training program is in full swing! On 26 March 8 project participants joined our event ‘Panel discussion and Networking: Civic participation of foreigners: Why it matters?’, presented their projects. Here are their posters.
 
-<!--more→
+<!--more-->
 
 You can read more about the program [here](http://migact.net/en/wp-content/uploads/2025/02/Open-Call.pdf).
 

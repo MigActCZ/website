@@ -7,7 +7,7 @@ resources:
 ---
 Náš vzdělávací program je v plném proudu! Dne 26. března se 8 účastníků projektu zúčastnilo naší akce ‘Panelová diskuse a Networking: Aktivní občanství lidí s migračním původem: Proč je to důležité?’, kde představili své projekty. Zde jsou jejich plakáty.
 
-<!--more→
+<!--more-->
 
 Více informací o programu si můžete přečíst [zde](http://migact.net/en/wp-content/uploads/2025/02/Open-Call.pdf).
 
