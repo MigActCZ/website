@@ -12,6 +12,8 @@ Are you an individual or small organization with a big idea, but no money to mak
 
 At this event, Prague City Hall representatives will tell you all about the available grants for the integration of foreigners in the City of Prague, explain the eligibility criteria, and walk you step-by-step through the application process. This is a great opportunity to hear from insiders, ask questions, and make friends with the funding world.
 
+<!--more-->
+
 The meeting will be held in the English and Czech language.
 
 The event is organized by MigAct z.s. and Prague City Hall as a part of the UNITES project.

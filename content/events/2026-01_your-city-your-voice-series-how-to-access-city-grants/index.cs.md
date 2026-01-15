@@ -12,6 +12,8 @@ Jste jednotlivec nebo malá organizace s velkým nápadem, ale nemáte peníze n
 
 Na této akci vám zástupci Hlavního města Prahy řeknou vše o dostupných dotacích v Praze na integraci cizinců, vysvětlí kritéria a proces žádostí. Toto je vzácná příležitost klást přímé otázky donorům a seznámit se s možností veřejné financování.
 
+<!--more-->
+
 Setkání proběhne v anglickém a českém jazyce.
 
 Akci pořádá MigAct z.s. a Magistrát hlavního města Prahy v rámci projektu UNITES.
