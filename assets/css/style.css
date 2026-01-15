@@ -1016,7 +1016,7 @@ ul#attachments {
 
       display: flex;
       flex-direction: column;
-      h3 {
+      p {
         margin-block-end: auto;
       }
     }
