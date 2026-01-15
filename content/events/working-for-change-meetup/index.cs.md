@@ -1,17 +1,17 @@
 ---
 title: Jak se angažovat v důležitých tématech ve své zemi původu a zároveň se zapojit do témat v zemi, kde žiješ
 featured: featured.webp
+date: 2025-03-14
 dtstart: 2025-03-21T17:30:00
 tend: 19:30:00
 location: Horse Hug, Prokopova 21, 130 00 Praha 3-Žižkov
 languages: EN CZ
 registration: https://forms.gle/SQukpSYoYXuBxFkw9
 project: civic-integration-migrant-residents
-date: 2025-03-14
 ---
 Připojte se k první akci nové série neformálních setkání. Ve formátu vyprávění příběhů se zapojíme do diskusí, aktivit, komunitního koučování a networkingu na témata související s občanskou participací a zkušenostmi cizinců žijících v Praze.
 
-<!--more→
+<!--more-->
 
 **Přiveďte své přátele**
 **Přiveďte své nápady**
