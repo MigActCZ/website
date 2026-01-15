@@ -12,7 +12,7 @@ Join us for a series of participatory meetings aimed at fostering cooperation wi
 
 This time we will discuss the city’s integration portal [metropolevsech.eu](https://metropolevsech.eu/en/) (Prague for all). Your feedback will directly influence the website’s contents and design!
 
-<!--more→
+<!--more-->
 
 We’ll look into the city’s website aimed at its diverse population and discuss the following topics:
 
