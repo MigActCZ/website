@@ -1,6 +1,7 @@
 ---
 title: 'Otevřená výzva: Tréninkový program'
 category: news
+date: 2025-02-06
 project: migact-local-meetups
 resources:
   - open-call-migact-10-pages.pdf
