@@ -56,10 +56,27 @@
       <h2>{{ i18n "linked_events" }}</h2>
       <ul class="column cards">
         {{ range . }}
-          <li><article>
+          <li><article class="column">
             <time datetime="{{ .Params.dtstart }}">
               {{ partial "inline-svg" "icons/calendar" }}{{ .Params.dtstart | dateFormat "2 Jan 2006" }}</time>
-            <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          </article></li>
+        {{ end }}
+      </ul>
+      </section>
+    {{ end }}
+    {{ $news := site.GetPage "news" }}
+    {{ $key := path.Base $.Path }}
+    {{ $related := where $news.RegularPages "Params.project" $key }}
+    {{ with $related }}
+      <section id="linked-news">
+      <h2>{{ i18n "linked_news" }}</h2>
+      <ul class="column cards">
+        {{ range . }}
+          <li><article class="column">
+            <time datetime='{{ .Date | dateFormat "2006-01-02" }}'>
+              {{ partial "inline-svg" "icons/notebook-pen" }}{{ .Date | dateFormat "2 Jan 2006" }}</time>
+            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
           </article></li>
         {{ end }}
       </ul>
@@ -71,10 +88,10 @@
         <div id="gallery">
           {{ range . }}
           {{ $image := $.Resources.Get . }}
-          <a href="{{ $image.Permalink }}"
-          data-pswp-width="{{ $image.Width }}" 
+          <a href="{{ $image.RelPermalink }}"
+          data-pswp-width="{{ $image.Width }}"
           data-pswp-height="{{ $image.Height }}">
-            <img src="{{ $image.Permalink }}" alt="{{ . }}">
+            <img src="{{ $image.RelPermalink }}" alt="{{ . }}">
           </a>
           {{ end }}
         </div>

@@ -716,17 +716,26 @@ ul.entities {
       background-color: var(--color-bg);
     }
   }
-  #linked-events li {
+  #linked-events {
+    --block-color: var(--color-teal);
+  }
+  #linked-news {
+    --block-color: var(--color-blue);
+  }
+  .cards li {
+    padding: var(--medium-gap);
+    article {
+      gap: var(--tight-gap);
+    }
     time {
       display: flex;
       gap: var(--separator-gap);
       align-items: center;
-      color: var(--color-teal);
+      color: var(--block-color);
     }
     a {
       color: var(--color-text);
     }
-    padding: var(--medium-gap);
   }
   & > p {
     font-size: 1.125rem;
