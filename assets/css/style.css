@@ -176,7 +176,7 @@ menu#site-nav a > svg,
   border-radius: 2.5rem;
   display: none;
   &.active {
-    background-color: white;
+    background-color: var(--color-bg);
     display: revert;
   }
   &.archived {
@@ -204,6 +204,7 @@ p.button > a {
   text-decoration: none;
   border-radius: 999px;
   border: 2px solid var(--color-border);
+  background: var(--color-bg);
   color: var(--color-text);
 }
 .column {
@@ -570,14 +571,12 @@ ul.elevated-cards > li,
 }
 #stay-connected {
   #socials-newsletter {
-    border-color: var(--color-orange);
+    --block-color: var(--color-orange);
     a {
-      background-color: var(--color-orange);
-      color: var(--color-bg);
       margin: var(--medium-gap) auto 0;
     }
   }
-  li {
+  li, .card {
     border-color: var(--block-color);
   }
   li:nth-child(3n + 1) {
@@ -942,19 +941,20 @@ ul#attachments {
     var(--color-orange) 0%,
     var(--color-red) 100%
   );
-  border: var(--gradient-color);
   background: var(--gradient-color);
   color: var(--color-bg);
 }
-p.button > a,
-:is(#join-partners, #documents) ul.buttons a {
+:is(#join-volunteer, #events, #documents, #socials-newsletter) :is(ul.buttons, p.button) a {
+  background-color: var(--block-color);
+  color: var(--color-bg);
+}
+:is(#join-partners, #introduction) :is(ul.buttons, p.button) a {
   --gradient-target: color-mix(in srgb, var(--block-color) 80%, black);
   --gradient-color: linear-gradient(
     90deg,
-    var(--block-color) 0%,
-    var(--gradient-target) 100%
+    var(--block-color),
+    var(--gradient-target)
   );
-  border: var(--gradient-color);
   background: var(--gradient-color);
   color: var(--color-bg);
 }
@@ -968,7 +968,7 @@ p.button > a,
   text-align: center;
 }
 #join-volunteer {
-  --block-color: var(--color-red);
+  --block-color: var(--color-orange);
   #tags {
     display: flex;
     flex-wrap: wrap;
@@ -1005,7 +1005,7 @@ p.button > a,
   }
 }
 #join-donate {
-  --block-color: var(--color-orange);
+  --block-color: var(--color-red);
   & > div.card {
     border-radius: 3.5rem;
     h2 {
@@ -1129,14 +1129,14 @@ main > .intro {
   #join-volunteer {
     background: radial-gradient(
       farthest-side at bottom right,
-      var(--color-bg-red),
+      var(--color-bg-orange),
       transparent
     );
   }
   #join-events {
     background: radial-gradient(
         farthest-side at top right,
-        var(--color-bg-red),
+        var(--color-bg-orange),
         transparent
       ),
       radial-gradient(
@@ -1165,7 +1165,7 @@ main > .intro {
       ),
       radial-gradient(
         farthest-side at bottom left,
-        var(--color-bg-orange),
+        var(--color-bg-red),
         transparent
       );
   }
@@ -1191,6 +1191,7 @@ main > .intro {
   }
   img.split-support {
     display: block;
+    height: 100%;
   }
   #home {
     line-height: 2;
