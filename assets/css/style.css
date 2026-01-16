@@ -588,7 +588,7 @@ ul.elevated-cards > li,
   li:nth-child(3n + 3) {
     --block-color: var(--color-blue);
   }
-  a {
+  li a {
     color: var(--block-color);
   }
 }
@@ -819,10 +819,16 @@ ul#attachments {
   }
   ul.buttons {
     flex-direction: column;
-    a {
+    gap: var(--separator-gap);
+  }
+  :is(ul.buttons, p.button) a {
       box-sizing: border-box;
       width: 100%;
-    }
+      justify-content: center;
+      text-align: center;
+  }
+  :is(ul.buttons, p.button).hidden {
+    display: none;
   }
 }
 #join-donate #funding > li,
@@ -944,7 +950,9 @@ ul#attachments {
   background: var(--gradient-color);
   color: var(--color-bg);
 }
-:is(#join-volunteer, #events, #documents, #socials-newsletter) :is(ul.buttons, p.button) a {
+#documents ul.buttons a,
+p.button.emphasized > a,
+ul.buttons a.emphasized {
   background-color: var(--block-color);
   color: var(--color-bg);
 }

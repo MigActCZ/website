@@ -12,4 +12,4 @@ Váš čas a dovednosti mohou mít skutečný dopad – a navíc potkáte skvěl
 {#tags}
 
 [Spojte se s námi](contact)
-{.button}
+{.button, .emphasized}

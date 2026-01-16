@@ -59,8 +59,9 @@ languages: Jazyky
 project: Projekt
 tba: Bude oznameno
 calendar: Pridat do kalendáře
-details: Details
 register: Registrovat
+explore_events: Vyhledat nadcházející akce
+
 
 # Contact page
 phone: Telefon

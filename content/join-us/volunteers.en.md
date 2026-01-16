@@ -12,4 +12,4 @@ Your time and skills can make a real difference — and you’ll meet great peop
 {#tags}
 
 [Get in touch](contact)
-{.button}
+{.button, .emphasized}

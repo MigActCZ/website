@@ -22,7 +22,7 @@
       {{- partial "inline-svg" "icons/globe" -}}{{ default "EN CZ" .Params.languages }}</div>
   </footer>
   {{ with .Params.registration }}
-  <p class="button">
+  <p class="button emphasized">
     <a href="{{ . }}">{{ i18n "register" }}</a>
   </p>
   {{ end }}

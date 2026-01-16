@@ -1,3 +1,6 @@
+{{ define "scripts" }}
+  <script src='{{ (resources.Get "utility.js").Permalink }}'></script>
+{{ end }}
 {{ define "main" }}
 <main id="event" class="detail">
   <section>
@@ -17,7 +20,7 @@
             {{- partial "inline-svg" "icons/clock" -}}
         </div>
         <dt>{{ i18n "date" }}</dt>
-        <dd>
+        <dd class="timeline">
           <time datetime='{{ $dtstart | dateFormat "2006-01-02" }}'>
             {{ .Params.dtstart | dateFormat "2 Jan 2006" }}</time>, 
             <time datetime='{{ $dtstart_utc }}'>
@@ -47,7 +50,7 @@
       {{ with .Params.project }}
       <div class="dl-item">
         <div class="icon">
-            {{- partial "inline-svg" "icons/globe" -}}
+            {{- partial "inline-svg" "icons/briefcase" -}}
         </div>
         <dt>{{ i18n "project" }}</dt>
         {{ $project := (site.GetPage "projects").GetPage . }}
@@ -58,15 +61,22 @@
     <hr/>
     <ul class="buttons">
       {{ with .Params.registration }}
-      <li><a href="{{ . }}">{{ i18n "register" }}</a></li>
+      <li><a class="emphasized" href="{{ . }}">{{ i18n "register" }}</a></li>
       {{ end }}
       {{ if and .Params.dtstart .Params.tend }}
         {{ with .OutputFormats.Get "calendar" }}
         <li><a href="{{ .RelPermalink }}" rel="alternate" type="text/calendar" download>
+          {{ partial "inline-svg" "icons/calendar" }}
           {{ i18n "calendar" }}</a></li>
         {{ end }}
       {{ end }}
     </ul>
+    <p class="button emphasized hidden"><a href='{{.RelRef (dict "path" "events")}}'>{{ i18n "explore_events" }}</a></p>
   </div>
 </main>
+{{ end }}
+{{ define "inline-scripts" }}
+<script>
+    window.updateEventActions();
+</script>
 {{ end }}
