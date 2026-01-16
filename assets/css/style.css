@@ -1098,13 +1098,18 @@ ul#introductionlist {
 /* Backgrounds */
 main > .intro {
   background-image: url("/bg-top.svg");
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+}
+#home > :is(#about, #stay-connected) {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 #home {
   #about {
     background-image: url("/bg-top.svg");
-    background-size: 100% 100%;
   }
   #activities {
     background: radial-gradient(
@@ -1132,7 +1137,6 @@ main > .intro {
   }
   #stay-connected {
     background-image: url("/bg-bot.svg");
-    background-size: 100% 100%;
   }
 }
 #about-us {
@@ -1438,5 +1442,11 @@ main > .intro {
         }
       }
     }
+  }
+  main > .intro {
+    background-size: 100%;
+  }
+  #home > :is(#about, #stay-connected) {
+    background-size: 100% 100%;
   }
 }
