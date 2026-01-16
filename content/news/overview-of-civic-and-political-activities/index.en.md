@@ -1,7 +1,7 @@
 ---
 title: Overview of civic and political activities
 category: resource
-date: 2026-01-15T16:07:00.000Z
+date: 2021-12-31
 project: ''
 resources:
   - vstupni-analyza-existujicich-forem-obcanske-a-politicke-participace-obyvatel-hmp-z-rad-migrantu.pdf
