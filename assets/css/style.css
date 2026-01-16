@@ -238,7 +238,7 @@ ul.pagination {
 img.split-support {
   display: none;
 }
-.buttons a:has(svg),
+:is(ul.buttons, p.button) a:has(svg),
 a:has(svg) {
   display: flex;
   gap: var(--separator-gap);
@@ -663,6 +663,7 @@ ul.entities {
     height: 100%;
     padding: var(--wide-gap);
     border-radius: 2rem;
+    background-color: var(--color-bg);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     h2 > a {
       color: var(--color-text);
@@ -801,6 +802,9 @@ ul#attachments {
       }
     }
   }
+}
+#join-events > ul.entities :is(p, h2) {
+  font-size: revert;
 }
 #event {
   padding-block: var(--big-gap);
@@ -1227,7 +1231,6 @@ main > .intro {
       }
     }
   }
-  #join-events,
   #story,
   header.intro,
   #site-footer,

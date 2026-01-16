@@ -1,3 +1,6 @@
+{{ define "scripts" }}
+<script src='{{ (resources.Get "utility.js").Permalink }}'></script>
+{{ end }}
 {{ define "main" }}
 <main id="join-us" class="page">
     <header class="intro">
@@ -16,14 +19,14 @@
         {{ with .Resources.Get "events.md" }}
             {{ .Content }}
         {{ end }}
-        {{ $events := (site.GetPage "events").RegularPages }}
-        {{ with where $events "Params.dtstart" "ge" (now | dateFormat "2006-01-02") }}
-        <ul class="entities">
+        {{ with (site.GetPage "events").RegularPages }}
+        <ul class="entities" data-archived='{{ i18n "past" }}' data-active='{{ i18n "upcoming" }}'>
             {{ range first 3 . }}
                 <li>{{ .Render "view_event" }}</li>
             {{ end }}
         </ul>
         {{ end }}
+        <p class="button emphasized"><a href='{{.RelRef (dict "path" "events")}}'>{{ i18n "explore_events" }}{{ partial "inline-svg" "icons/arrow-right" }}</a></p>
     </section>
     <section id="join-partners" class="split">
         <div>
@@ -46,4 +49,7 @@
         </div>
     </section>
 </main>
+{{ end }}
+{{ define "inline-scripts" }}
+<script>window.updateGridStatusTag();</script>
 {{ end }}
