@@ -1,6 +1,7 @@
 ---
 title: Společně na Praze 7 – komunitní setkání
 featured: img_2276.webp
+date: 2025-05-13
 dtstart: 2025-06-23T17:30:00
 tend: 20:00:00
 location: Přístav 7, V Přístavu 24, 170 00 Praha 7-Holešovice
