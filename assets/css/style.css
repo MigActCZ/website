@@ -143,17 +143,6 @@ svg.socials,
   padding: calc(2rem - var(--brand-dim) / 2);
   border-radius: 0.75rem;
 }
-menu#site-nav a > svg,
-#team article a > svg,
-:is(#events, #join-events)
-  article
-  > footer
-  > svg
-  :is(#footer-contacts, #stay-connected)
-  a
-  > svg {
-  width: 1rem;
-}
 #options svg.icon {
   width: 2rem;
 }
