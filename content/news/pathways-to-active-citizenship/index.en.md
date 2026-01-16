@@ -1,7 +1,7 @@
 ---
 title: Pathways to active citizenship
 category: report
-date: 2026-01-15T16:01:00.000Z
+date: 2023-12-31
 project: ''
 ---
 **Download our recent study:**
