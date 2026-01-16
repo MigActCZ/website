@@ -1,6 +1,7 @@
 ---
 title: MigAct Kafe!☕Coffee, Cookies & Conversations
 featured: poster.kafecz.webp
+date: 2025-02-10
 dtstart: 2025-02-25T09:00:00
 tend: 11:00:00
 location: MigAct Office, 4th Floor, Room 414, Revoluční 762/13, 110 00 Praha 1-Staré Město
