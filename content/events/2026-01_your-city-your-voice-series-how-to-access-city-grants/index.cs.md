@@ -1,6 +1,7 @@
 ---
 title: 'Your City, Your Voice series: Jak získat přístup k městským grantům'
 featured: migact.logo.webp
+date: 2024-08-13
 dtstart: 2024-08-27T17:30:00
 tend: 19:30:00
 location: Expat Center Prague. Charvátova 6, 110 00 Praha 1-Nové Město
