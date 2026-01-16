@@ -11,11 +11,22 @@
     {{ else }}
     <ul id="{{ .Section }}" class="entities">
     {{ end }}
+
+    {{ if or (eq .Section "events") (eq .Section "partners")}}
         {{ range (.Paginate .RegularPages).Pages }}
             <li>{{ .Render (printf "view_%s" (singularize .Section )) }}</li>
         {{ end }}
     </ul>
     {{ partial "pagination.html" . }}
+    {{ else }}
+        {{ range .RegularPages }}
+            <li>{{ .Render (printf "view_%s" (singularize .Section )) }}</li>
+        {{ end }}
+    </ul>
+    {{ end }}
+    {{ if eq .Section "team"}}
+        <div class="content column">{{ .Content }}</div>
+    {{ end }}
 </main>
 {{ end }}
 {{ define "inline-scripts" }}

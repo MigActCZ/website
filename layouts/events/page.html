@@ -59,9 +59,9 @@
       {{ end }}
     </dl>
     <hr/>
-    <ul class="buttons">
+    <ul class="buttons emphasized">
       {{ with .Params.registration }}
-      <li><a class="emphasized" href="{{ . }}">{{ i18n "register" }}</a></li>
+      <li><a href="{{ . }}">{{ i18n "register" }}</a></li>
       {{ end }}
       {{ if and .Params.dtstart .Params.tend }}
         {{ with .OutputFormats.Get "calendar" }}

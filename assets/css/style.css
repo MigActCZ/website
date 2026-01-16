@@ -248,6 +248,7 @@ ul.entities,
 main > .intro,
 main.page > section,
 main.detail,
+main.section > div.content,
 address#contacts {
   padding-inline: var(--content-inline-padding);
 }
@@ -918,6 +919,18 @@ ul#attachments {
     }
   }
 }
+/* Content after the grid */
+main.section > div.content {
+  --block-color: var(--color-teal);
+  align-items: center;
+  margin-block: 4rem;
+  font-size: 1.5rem;
+  text-align: center;
+  gap: var(--wide-gap);
+  p {
+    color: var(--color-text-light);
+  }
+}
 /* || Pages  #join-us #about-us */
 .page {
   h2 {
@@ -945,9 +958,13 @@ ul#attachments {
 }
 #documents ul.buttons a,
 p.button.emphasized > a,
-ul.buttons a.emphasized {
+ul.buttons.emphasized li:first-child:not(:only-child) > a {
   background-color: var(--block-color);
   color: var(--color-bg);
+}
+ul.buttons.emphasized li:nth-child(2) > a {
+  border-color: var(--block-color);
+  color: var(--block-color);
 }
 :is(#join-partners, #introduction) :is(ul.buttons, p.button) a {
   --gradient-target: color-mix(in srgb, var(--block-color) 80%, black);
@@ -1222,6 +1239,7 @@ main > .intro {
   }
   #story,
   header.intro,
+  main.section > div.content,
   #site-footer,
   #join-donate {
     padding-inline: calc(var(--content-inline-padding) * 1.2);
