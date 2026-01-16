@@ -1,6 +1,7 @@
 ---
 title: Annual Report 2024
 category: report
+date: 2025-07-02
 resources:
   - migact-annual-report-2024.pdf
 ---
