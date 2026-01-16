@@ -10,5 +10,5 @@ We offer educational programs, build collaborative spaces, and provide practical
 {#hero}
 
 - {{<link-with-icon "Get Involved" "join-us" "icons/arrow-right" "after">}}
-- [Learn more](about)
+- [Learn more about us](about)
 {.buttons}

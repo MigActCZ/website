@@ -178,8 +178,10 @@ svg.socials,
 /* Buttons */
 ul.buttons {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   gap: var(--separator-gap);
+  align-items: center;
 }
 /* Center CTA button */
 section > p.button > a {
@@ -235,10 +237,6 @@ a:has(svg) {
 }
 a > svg {
   flex: 0 0 auto;
-}
-/* Hide button on mobile to save space */
-.buttons a svg {
-  display: none;
 }
 /* Layout */
 #site-header,
@@ -820,9 +818,13 @@ ul#attachments {
   hr {
     width: 100%;
   }
+  /* This stays column also for desktop */
   ul.buttons {
     flex-direction: column;
     gap: var(--separator-gap);
+    &>li {
+      width: 100%;
+    }
   }
   :is(ul.buttons, p.button) a {
       box-sizing: border-box;
@@ -1010,9 +1012,6 @@ ul.buttons.emphasized li:nth-child(2) > a {
 }
 #join-partners {
   --block-color: var(--color-blue);
-  ul.buttons {
-    flex-direction: column;
-  }
   & > ul#options {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1291,11 +1290,9 @@ main > .intro {
     font-size: 2rem;
   }
   ul.buttons {
+    flex-direction: row;
     justify-content: unset;
     gap: var(--big-gap);
-    a > svg {
-      display: block;
-    }
   }
   ul#values {
     grid-auto-flow: unset;
@@ -1307,11 +1304,6 @@ main > .intro {
   ul#introductionlist {
     grid-auto-flow: unset;
     grid-template-columns: repeat(2, 1fr);
-  }
-  #join-partners {
-    ul.buttons {
-      flex-direction: unset;
-    }
   }
   #join-donate {
     & > div.card {

@@ -10,5 +10,5 @@ Nabízíme vzdělávací programy, budujeme prostory pro spolupráci a poskytuje
 {#hero}
 
 - {{<link-with-icon "Zapojte se" "join-us" "icons/arrow-right" "after">}}
-- [Více informací](about)
+- [Více informací o nás](about)
 {.buttons}
