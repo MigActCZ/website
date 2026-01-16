@@ -1,3 +1,16 @@
+{{ define "scripts" }}
+<link rel="stylesheet" href="/photoswipe.css"/>
+<script type="module">
+  import PhotoSwipeLightbox from '/photoswipe-lightbox.esm.min.js';
+  const lightbox = new PhotoSwipeLightbox({
+    gallery: '#theory',
+    children: 'a',
+    pswpModule: () => import('/photoswipe.esm.min.js')
+  });
+  lightbox.init();
+  </script>
+  <script src='{{ (resources.Get "utility.js").Permalink }}'></script>
+{{ end }}
 {{ define "main" }}
 <main id="about-us" class="page">
     <header class="intro">
@@ -26,7 +39,12 @@
         {{ with .Resources.Get "theory.md" }}
             {{ .Content }}
         {{ end }}
-        <img src='{{ .Resources.Get "theory-of-change.webp" }}' alt='{{ i18n "theory" }}'/>
+        {{ $image := .Resources.Get "theory-of-change.webp" }}
+        <a href="{{ $image.Permalink }}"
+        data-pswp-width="{{ $image.Width }}"
+        data-pswp-height="{{ $image.Height }}">
+          <img src="{{ $image.Permalink }}" alt='{{ i18n "theory" }}'>
+        </a>
     </section>
     <section id="documents">
         {{ with .Resources.Get "documents.md" }}
