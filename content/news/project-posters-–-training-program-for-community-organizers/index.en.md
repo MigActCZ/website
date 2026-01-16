@@ -1,6 +1,7 @@
 ---
 title: Project Posters – Training Program for Community Organizers
 category: news
+date: 2025-04-07
 project: migact-local-meetups
 resources:
   - participant-posters-26.03.25-event_v2.pdf
