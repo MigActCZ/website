@@ -1,7 +1,7 @@
 ---
 title: Průvodce komunitním a občanským životem
 featured: 19.6.2025-1.webp
-date: 2025-06-15
+date: 2025-05-12
 dtstart: 2025-06-19T17:30:00
 tend: 20:00:00
 location: Přístav 7, V Přístavu 24, 170 00 Praha 7-Holešovice
