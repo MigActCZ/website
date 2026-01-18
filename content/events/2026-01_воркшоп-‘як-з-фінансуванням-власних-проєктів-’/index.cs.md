@@ -1,7 +1,7 @@
 ---
 title: workshop ‘Jak na financování vlastních projektů’
 featured: img_20241207_165141043_hdr.webp
-date: 2024-11-19
+date: 2024-11-20
 dtstart: 2024-12-07T15:00:00
 tend: 17:00:00
 location: InBáze, Legerova 357/50, 120 00 Praha 2-Vinohrady
