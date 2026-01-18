@@ -10,10 +10,10 @@ Our training program is in full swing! On 26 March 8 project participants joined
 
 <!--more-->
 
-You can read more about the program [here](http://migact.net/en/wp-content/uploads/2025/02/Open-Call.pdf).
+You can read more about the program [here](news/open-call-training-program/).
 
 - **Marharyta Golobrodska** – Odborně zaměřené workshopy pro ženy uprchlice z Ukrajiny s dětmi do a vč. 12 let.
-- **Suzanne Verhaar** – [Pohlednice od cizích Čechů / Postcards from Foreign Czechs](https://www.suzanneverhaar.eu/postcards-from-foreign-czechs?fbclid=IwY2xjawJXT1xleHRuA2FlbQIxMAABHaVRFH6kgxzoCWQNbAQ__vXiQ342S5k5-y62Ue1B076DDvr0Y-Of3ruujw_aem_CU7WbKtQVe8zkzZeD1Beuw)
+- **Suzanne Verhaar** – Pohlednice od cizích Čechů / Postcards from Foreign Czechs
 - **Raquel Falcao** –  Building Community Connections in Nusle through a Buddy Program.
 - **Juryj Laurencjev** – Zapojení nově naturalizovaných českých občanů do aktivní účasti ve volbách. [www.volbyprovsechny.cz](http://www.volbyprovsechny.cz/)
 - **Dinara Zukhritdinova** – Supporting Women in Their Postpartum Journey.
