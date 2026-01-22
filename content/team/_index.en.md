@@ -1,5 +1,5 @@
 ---
-title: Meet the dedicated individuals behind MigAct
+title: Our Team
 build:
   render: always
 cascade:
