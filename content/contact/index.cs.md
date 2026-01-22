@@ -1,4 +1,4 @@
 ---
-title: Spojte se s týmem MigAct
+title: Kontaktujte nás
 slug: kontakt
 ---
