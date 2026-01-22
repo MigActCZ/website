@@ -3,11 +3,11 @@ VERSION:2.0
 PRODID:-//MigAct//gohugo.io//EN
 BEGIN:VEVENT
 UID:{{- .File.UniqueID -}}@migact.net
-DTSTAMP:{{- .Lastmod.UTC.Format "20060102T150405Z" -}}{{- $start := time.AsTime .Params.dtstart -}}
+DTSTAMP:{{- .Lastmod.UTC.Format "20060102T150405Z" -}}{{ $start := time.AsTime .Params.dtstart }}
 DTSTART:{{- $start.UTC.Format "20060102T150405Z" -}}{{- if .Params.tend -}}
-{{- $dtend := time (printf "%s%s" (substr .Params.dtstart 0 11 ) .Params.tend ) -}}
-DTEND:{{- $dtend.UTC.Format "20060102T150405Z" -}}{{- end -}}
-SUMMARY:{{- replaceRE "([,;])" "\\$1" .Title -}}{{- with .Params.location -}}
-LOCATION:{{- replaceRE "([,;])" "\\$1" . -}}{{- end -}}
+{{ $dtend := time (printf "%s%s" (substr .Params.dtstart 0 11 ) .Params.tend ) }}
+DTEND:{{- $dtend.UTC.Format "20060102T150405Z" -}}{{ end }}
+SUMMARY:{{- replaceRE "([,;])" "\\$1" .Title -}}{{ with .Params.location }}
+LOCATION:{{- replaceRE "([,;])" "\\$1" . -}}{{ end }}
 END:VEVENT
 END:VCALENDAR
