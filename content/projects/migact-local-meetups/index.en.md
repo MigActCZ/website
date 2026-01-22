@@ -13,3 +13,4 @@ As part of the project, we will prepare and implement a crowdfunding campaign f
 The project was supported by the OSF Foundation through the Stronger Roots program, which is funded by the European Union under the Citizens, Equality, Rights and Values (CERV) program. The Stronger Roots program strengthens the resilience and stability of nonprofit organizations and enhances their connection with the public.
 
 The opinions and positions expressed, however, are solely those of the author(s) and do not necessarily reflect the views of the European Union or the OSF Foundation. Neither the European Union nor the OSF Foundation bears any responsibility for them.
+![](stronger_roots_paticka_some_20244_cb.webp)
