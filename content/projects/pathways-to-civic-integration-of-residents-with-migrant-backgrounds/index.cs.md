@@ -5,8 +5,15 @@ dtstart: 2025-04-01
 dtend: 2025-12-31
 partner: mc-praha-7
 supporters:
+  - nadacni-centrum-agora-7
   - ministry-of-the-interior-of-the-czech-republic
+images:
+  - img_20250917_100544288.webp
+  - img_20250917_100329665.webp
+  - img_20250917_100549264.webp
+  - img_9008.webp
 ---
+
 Tento projekt si klade za cíl zmapovat příklady dobré praxe občanské integrace obyvatel s migračním původem v rámci místní občanské společnosti na Praze 7, které mohou sloužit jako příklad a inspirace pro další iniciativy. Mapování bude probíhat participativním způsobem – nejprve formou rešerší, následně pak prostřednictvím společného hledání dobrých praxí a vhodných nástrojů během komunitních a participativních setkání.
 
 Dalším cílem projektu je dlouhodobě podporovat přirozenou integraci obyvatel s migračním původem do občanské společnosti a rozhodovacích procesů. Tento proces bude zahájen sérií participativních a komunitních setkání, která vytvoří prostor pro otevřený dialog, sdílení zkušeností a společné hledání konkrétních řešení.
