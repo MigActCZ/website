@@ -1,5 +1,5 @@
 ---
-title: Poznejte oddané jednotlivce stojící za MigActem
+title: Náš tým 
 build:
   render: always
 cascade:
