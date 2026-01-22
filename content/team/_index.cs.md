@@ -10,7 +10,7 @@ cascade:
 ---
 ## Přidejte se k nám
 
-Whether you want to contribute your time, skills, or simply connect with others, there's a place for you in our community.
+Ať už chcete přispět svým časem, dovednostmi, nebo se jen spojit s ostatními, v naší komunitě pro vás najdeme místo.
 
 - {{<link-with-icon "Přidejte se k nám" "join-us" "icons/arrow-right" "after">}}
 - [Kontaktujte nás](contact)
