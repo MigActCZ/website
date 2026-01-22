@@ -6,7 +6,8 @@ dtstart: 2026-03-31T17:00:00
 tend: 21:00:00
 location: tbd
 languages: EN
-registration: will be added later
+registration: ''
 project: ''
 ---
+
 test event in Czech
