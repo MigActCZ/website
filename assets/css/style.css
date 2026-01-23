@@ -140,7 +140,7 @@ svg.socials,
 #values svg.icon {
   width: var(--brand-dim);
   height: var(--brand-dim);
-  padding: calc(2rem - var(--brand-dim) / 2);
+  padding: calc(var(--big-gap) - var(--brand-dim) / 2);
   border-radius: 0.75rem;
 }
 #options svg.icon {
@@ -1270,9 +1270,6 @@ main > .intro {
   #site-footer,
   #join-donate {
     padding-inline: calc(var(--content-inline-padding) * 1.2);
-  }
-  #contacts {
-    padding-inline: calc(var(--content-inline-padding) * 1.4);
   }
   section#about {
     padding-block: 7.5rem;
