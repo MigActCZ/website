@@ -625,14 +625,14 @@ ul.elevated-cards > li,
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: var(--wide-gap);
   padding: 0;
-margin-block-end: var(--big-gap);
+  margin-block-end: var(--big-gap);
   & > .dl-item {
     border: thin solid var(--block-color);
     border-radius: 2em;
     padding: 5rem;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-font-size: 1.5em;
+    font-size: 1.5em;
 
     dd, a {
       color: var(--block-color);
@@ -811,9 +811,9 @@ ul#attachments {
 }
 #join-events > ul.entities {
   padding-inline: 0;
-:is(p, h2) {
-  font-size: revert;
-}
+  :is(p, h2) {
+    font-size: revert;
+  }
 }
 main.detail {
   padding-block: var(--big-gap);
@@ -1386,7 +1386,7 @@ main > .intro {
   #join-events .entities {
     grid-template-columns: repeat(3, 1fr);
   }
-#contacts > dl {
+  #contacts > dl {
     grid-template-columns: repeat(2, 1fr);
   }
   #projects.entities {
