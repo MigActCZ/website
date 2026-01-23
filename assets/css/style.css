@@ -818,8 +818,11 @@ ul#attachments {
     }
   }
 }
-#join-events > ul.entities :is(p, h2) {
+#join-events > ul.entities {
+  padding-inline: 0;
+:is(p, h2) {
   font-size: revert;
+}
 }
 #event {
   padding-block: var(--big-gap);
@@ -1003,7 +1006,6 @@ ul.buttons.emphasized li:nth-child(2) > a {
   color: var(--color-bg);
 }
 .intro,
-#join-events,
 #story,
 #introduction > h2,
 #donate,
@@ -1329,6 +1331,12 @@ main > .intro {
     }
     iframe {
       width: 80%;
+    }
+  }
+  #join-events, #theory {
+    text-align: center;
+    & > p {
+      padding-inline: 20%;
     }
   }
   #project > .attributes {
