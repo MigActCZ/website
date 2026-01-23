@@ -128,7 +128,6 @@ svg.icon {
 /* Color mixin */
 div.icon,
 svg.socials,
-#join-volunteer #tags > li,
 #involvement svg.icon,
 #footer-contacts svg,
 #values svg.icon {
@@ -1021,6 +1020,8 @@ ul.buttons.emphasized li:nth-child(2) > a {
     li {
       padding: var(--separator-gap) var(--tight-gap);
       border-radius: 3rem;
+      border: thin solid var(--block-color);
+      color: var(--block-color);
     }
   }
 }
