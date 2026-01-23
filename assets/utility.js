@@ -7,7 +7,11 @@ window.updateGridStatusTag = function(){
       const endTime = article.querySelector(":scope > header > .timeline > time:last-child");
       const date = new Date(endTime.dateTime);
       const tag = article.querySelector("header > .status-tag");
-      const key = date.getTime() < now.getTime() ? "archived" : "active";
+      let key = "active";
+      if (date.getTime() < now.getTime()) {
+        key = "archived";
+        article.querySelectorAll(".button, .buttons").forEach(el => el.classList.toggle("hidden"));
+      }
       tag.textContent = entities.dataset[key];
       tag.classList.add(key);
     });
