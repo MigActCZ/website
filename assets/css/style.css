@@ -227,7 +227,7 @@ ul.pagination {
   display: flex;
   justify-content: center;
   gap: var(--big-gap);
-  padding: var(--big-gap);
+  margin: var(--big-gap);
 }
 /* Hide split image in mobile version */
 img.split-support {
@@ -649,6 +649,7 @@ ul.entities {
   display: grid;
   gap: var(--big-gap);
   grid-template-columns: 1fr;
+  margin-block-end: var(--big-gap);
   article {
     /* Needed to stretch to entire row height */
     box-sizing: border-box;
