@@ -65,7 +65,8 @@ menu,
 .buttons,
 ul.entities,
 ul.pagination,
-ul#funding {
+ul#funding,
+ul#logos {
   list-style-type: none;
   padding-inline-start: unset;
 }
@@ -694,36 +695,26 @@ ul.entities {
   }
 }
 #project {
-  & > h1 {
-    font-size: 3.5em;
+  section.timeline {
+    font-size: 1.25em;
   }
-  h2 {
-    font-size: 2.5em;
-  }
-  & > .attributes {
-    padding: 2.5rem;
+  section#project-partners {
+    padding: var(--wide-gap) var(--big-gap);
+    margin-block: var(--medium-gap);
+    height: fit-content;
+    border: thin solid var(--color-teal);
     border-radius: 1rem;
-    background: linear-gradient(
-      135deg,
-      rgba(34, 159, 163, 0.08) 0%,
-      rgba(84, 143, 235, 0.08) 100%
-    );
-    display: grid;
-    gap: var(--medium-gap);
-    dt {
-      font-weight: 500;
-      text-transform: uppercase;
-      margin-block-end: var(--separator-gap);
+    h2 {
+      font-weight: normal;
+      margin-block: 0;
+      color: var(--color-text-light);
     }
     #logos {
       display: flex;
       flex-wrap: wrap;
       gap: var(--separator-gap);
-      dd {
-        &:first-child {
-          flex-basis: 100%;
-        }
-        flex-basis: calc(50% - var(--separator-gap) / 2);
+      & > li {
+        flex: 1 1 calc(50% - var(--separator-gap));
       }
     }
     img.partner-logo {
@@ -824,12 +815,13 @@ ul#attachments {
   font-size: revert;
 }
 }
-#event {
+main.detail {
   padding-block: var(--big-gap);
 }
 #info {
   --block-color: var(--color-teal);
   padding: var(--wide-gap) var(--big-gap);
+  margin-block: var(--medium-gap);
   height: fit-content;
   border: 1px solid var(--color-teal);
   border-radius: 1rem;
@@ -1339,27 +1331,21 @@ main > .intro {
       padding-inline: 20%;
     }
   }
-  #project > .attributes {
-    grid-template: min-content 1fr / 1fr 1fr;
-    gap: var(--big-gap);
-    #partners {
-      grid-column: span 2;
-    }
-    #logos :is(dd, dd:first-child) {
-      flex-basis: 10rem;
-    }
-  }
   #gallery {
     grid-template-columns: repeat(6, 1fr);
   }
-  #event {
+  main.detail {
     display: flex;
-    flex-direction: row;
     gap: var(--big-gap);
-    #info {
-      flex: 0 0 25%;
+    #info, #project-partners {
       position: sticky;
       top: var(--big-gap);
+    }
+    #info {
+      flex: 0 0 25%;
+    }
+    #project-partners {
+      flex: 0 0 15%;
     }
   }
   #site-footer {

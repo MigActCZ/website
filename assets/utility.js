@@ -20,9 +20,9 @@ window.updateGridStatusTag = function(){
   window.updatePageStatusTag = function(){
     const now = new Date();
 
-    const attributes = document.querySelector("#project .attributes");
-    const statusTag = attributes.querySelector(".status");
-    const date = new Date(attributes.querySelector(".timeline time:last-child").dateTime);
+    const timeline = document.querySelector("#project .timeline");
+    const statusTag = timeline.querySelector(".status");
+    const date = new Date(timeline.querySelector("time:last-of-type").dateTime);
     const key = date.getTime() < now.getTime() ? "archived" : "active";
     statusTag.textContent = statusTag.dataset[key];
     statusTag.classList.add(key);

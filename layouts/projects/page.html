@@ -13,40 +13,17 @@
 {{ end }}
 {{ define "main" }}
 <main id="project" class="detail">
+  <section>
     <h1>{{ .Title }}</h1>
-    <dl class="attributes">
-      <div><dt>{{ i18n "status" }}</dt>
-        <dd class="status" data-archived='{{ i18n "finished" }}' data-active='{{ i18n "ongoing" }}'></dd>
-      </div>
-      <div><dt>{{ i18n "timeline" }}</dt>
-        <dd class="timeline">
-          <time datetime='{{ .Params.dtstart }}'>
-            {{ .Params.dtstart | dateFormat "2 Jan 2006" }}</time>
-          -
-          <time datetime='{{ .Params.dtend }}'>
-            {{ .Params.dtend | dateFormat "2 Jan 2006" }}</time>
-        </dd></div>
-      {{ with .Params.partner }}
-      {{ $partnersPage := site.GetPage "partners" }}
-      <div id="partners">
-        <dt>{{ i18n "partners" }}</dt>
-        <div id="logos">
-          <dd>
-            {{ $partnerPage := $partnersPage.GetPage . }}
-            {{ $image := $partnerPage.Resources.Get $partnerPage.Params.image }}
-            <img class="partner-logo" src="{{ $image.Permalink }}" alt="Logo of {{ $partnerPage.Title }}">
-          </dd>
-          {{ range $.Params.supporters }}
-          <dd>
-            {{ $partnerPage := $partnersPage.GetPage . }}
-            {{ $image := $partnerPage.Resources.GetMatch $partnerPage.Params.image }}
-            <img class="partner-logo" src="{{ $image.Permalink }}" alt="Logo of {{ $partnerPage.Title }}">
-          </dd>
-          {{ end }}
-        </div>
-      </div>
-      {{ end }}
-    </dl>
+    <section class="timeline">
+      <time datetime='{{ .Params.dtstart }}'>
+        {{ .Params.dtstart | dateFormat "2 Jan 2006" }}</time>
+      -
+      <time datetime='{{ .Params.dtend }}'>
+        {{ .Params.dtend | dateFormat "2 Jan 2006" }}</time>
+      ·
+      <span class="status" data-archived='{{ i18n "finished" }}' data-active='{{ i18n "ongoing" }}'></span>
+    </section>
     {{ .Content }}
     {{ $events := site.GetPage "events" }}
     {{ $key := path.Base $.Path }}
@@ -97,6 +74,25 @@
         </div>
       </section>
     {{ end }}
+  </section>
+  <section id="project-partners">
+    <h2>{{ i18n "partners" }}</h2>
+    {{ $partnersPage := site.GetPage "partners" }}
+    {{ with .Params.partner }}
+      {{ $partnerPage := $partnersPage.GetPage . }}
+      {{ $image := $partnerPage.Resources.Get $partnerPage.Params.image }}
+    <img class="partner-logo" src="{{ $image.Permalink }}" alt="Logo of {{ $partnerPage.Title }}">
+    {{ end }}
+    {{ with .Params.supporters }}
+    <ul id="logos">
+      {{ range . }}
+        {{ $partnerPage := $partnersPage.GetPage . }}
+        {{ $image := $partnerPage.Resources.GetMatch $partnerPage.Params.image }}
+        <li><img class="partner-logo" src="{{ $image.Permalink }}" alt="Logo of {{ $partnerPage.Title }}"></li>
+      {{ end }}
+    </ul>
+    {{ end }}
+  </section>
 </main>
 {{ end }}
 {{ define "inline-scripts" }}
