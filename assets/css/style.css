@@ -615,17 +615,23 @@ ul.elevated-cards > li,
 #contacts > dl {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: var(--medium-gap);
+  gap: var(--wide-gap);
   padding: 0;
+margin-block-end: var(--big-gap);
   & > .dl-item {
-    background: var(--color-bg-light);
-    border-radius: 0.75rem;
-    padding: var(--medium-gap);
+    border: thin solid var(--block-color);
+    border-radius: 2em;
+    padding: 5rem;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+font-size: 1.5em;
+
+    dd, a {
+      color: var(--block-color);
+    }
     svg {
-      width: 40px;
-      height: 40px;
+      width: 2.5em;
+      height: 2.5em;
       margin-inline: auto;
       margin-bottom: var(--separator-gap);
       color: var(--block-color);
@@ -1261,6 +1267,9 @@ main > .intro {
   #join-donate {
     padding-inline: calc(var(--content-inline-padding) * 1.2);
   }
+  #contacts {
+    padding-inline: calc(var(--content-inline-padding) * 1.4);
+  }
   section#about {
     padding-block: 7.5rem;
     gap: var(--tight-gap) 5rem;
@@ -1379,9 +1388,11 @@ main > .intro {
   #team.entities,
   #partners.entities,
   #events.entities,
-  #join-events .entities,
-  #contacts > dl {
+  #join-events .entities {
     grid-template-columns: repeat(3, 1fr);
+  }
+#contacts > dl {
+    grid-template-columns: repeat(2, 1fr);
   }
   #projects.entities {
     grid-template-columns: 1fr 1fr;
