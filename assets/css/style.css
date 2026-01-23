@@ -176,6 +176,10 @@ svg.socials,
 }
 /* || Utility */
 /* Buttons */
+#site-header > #nav-panel a.active {
+  text-decoration: underline;
+  color: var(--color-teal);
+}
 ul.buttons {
   display: flex;
   flex-direction: column;
