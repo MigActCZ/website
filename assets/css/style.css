@@ -750,7 +750,7 @@ ul.entities {
 }
 #news header {
   display: grid;
-  grid-template-columns: auto 1fr auto auto;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
   gap: var(--medium-gap);
   .news-tag {
