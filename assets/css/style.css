@@ -1334,10 +1334,10 @@ main > .intro {
   #gallery {
     grid-template-columns: repeat(6, 1fr);
   }
-  main.detail {
+  main.detail:has(.side-panel) {
     display: flex;
     gap: var(--big-gap);
-    #info, #project-partners {
+    .side-panel {
       position: sticky;
       top: var(--big-gap);
     }
