@@ -149,6 +149,9 @@ svg.socials,
 :is(#attachments, #funding) svg.icon {
   width: 1.5rem;
 }
+#hero, img.rounded {
+  border-radius: 1.25rem;
+}
 /* || Dynamic pages */
 #gallery {
   display: grid;
@@ -476,7 +479,6 @@ main > section:last-child {
     grid-row: 2;
     height: 25rem;
     object-fit: cover;
-    border-radius: 1.25rem;
   }
 }
 #activities {

@@ -23,7 +23,7 @@
                 {{ .Content }}
             {{ end }}
         </div>
-        <img class="split-support" src='{{ (.Resources.Get "about.avif").RelPermalink }}'/>
+        <img class="split-support rounded" src='{{ (.Resources.Get "about.avif").RelPermalink }}'/>
     </section>
     <section id="story">
         {{ with .Resources.Get "story.md" }}
@@ -43,7 +43,7 @@
         <a href="{{ $image.Permalink }}"
         data-pswp-width="{{ $image.Width }}"
         data-pswp-height="{{ $image.Height }}">
-          <img src="{{ $image.Permalink }}" alt='{{ i18n "theory" }}'>
+          <img class="rounded" src="{{ $image.Permalink }}" alt='{{ i18n "theory" }}'>
         </a>
     </section>
     <section id="documents">

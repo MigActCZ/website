@@ -8,7 +8,7 @@
         {{ .Content }}
     </header>
     <section id="join-volunteer" class="split">
-        <img class="split-support" src='{{ (.Resources.Get "join.avif").RelPermalink }}'/>
+        <img class="split-support rounded" src='{{ (.Resources.Get "join.avif").RelPermalink }}'/>
         {{ with .Resources.Get "volunteers.md" }}
         <div>
             {{ .Content }}
