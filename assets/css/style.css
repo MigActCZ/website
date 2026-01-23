@@ -219,6 +219,8 @@ p.button > a {
   gap: var(--medium-gap);
   overflow-x: auto;
   scroll-snap-type: x mandatory;
+  padding-inline: var(--content-inline-padding);
+  scroll-padding-inline: var(--content-inline-padding);
   & > li {
     min-width: 0;
     scroll-snap-align: start;
@@ -446,9 +448,9 @@ main > section:last-child {
   /* Padding on homepage is specific because of overflowing cards*/
   & > section {
     &:has(.scroll-row) {
-      padding-inline: var(--wide-gap) 0;
+      padding-inline: 0;
       & > header {
-        padding-inline-end: 1.5rem;
+        padding-inline: var(--content-inline-padding);
       }
     }
     & > header {
@@ -1241,12 +1243,6 @@ main > .intro {
   }
   #home {
     line-height: 2;
-    & > section > header {
-      padding-inline: unset;
-    }
-    #activities {
-      padding-inline: var(--content-inline-padding);
-    }
     #involvement,
     #stay-connected {
       padding-inline: calc(var(--content-inline-padding) * 1.3);
