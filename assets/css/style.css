@@ -1015,6 +1015,9 @@ main.section > div.content {
 #about-us h3 {
   font-size: 2em;
 }
+#join-us p.button {
+  font-size: revert;
+}
 #about ul.buttons > li:first-child > a,
 #vision p.button > a {
   --gradient-color: linear-gradient(
