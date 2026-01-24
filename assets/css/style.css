@@ -30,7 +30,7 @@ html {
 body {
   margin: 0; /* Fill entire viewport */
   min-width: 360px; /* Smallest supported screen */
-  height: 100%; /* Footer position */
+  min-height: 100%; /* Footer position */
   /* Footer position */
   display: flex;
   flex-direction: column;
@@ -335,7 +335,10 @@ main > section:last-child {
 }
 /* || HEADER + NAVIGATION */
 #site-header {
-  position: relative; /* Nav panel anchor */
+  position: sticky; /* Nav panel anchor */
+  top: 0;
+  background: var(--color-bg);
+  z-index: 10;
   padding-block: 1.25rem;
   display: flex;
   justify-content: space-between;
