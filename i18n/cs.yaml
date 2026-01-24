@@ -42,6 +42,11 @@ home: Domov
 bio: Cti vic
 attachments: Prilohy
 
+# Error pages
+error_404_title: Stránka nebyla nalezena
+error_404_text: Požadovanou stránku se nepodařilo najít.
+error_404_action: Zpět na úvod
+
 # Project
 status: Status
 finished: Ukončen

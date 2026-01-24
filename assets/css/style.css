@@ -154,6 +154,45 @@ svg.socials,
   border-radius: 1.25rem;
 }
 /* || Dynamic pages */
+#error {
+  --block-color: var(--color-red);
+  padding-inline: var(--content-inline-padding);
+  padding-block: clamp(3rem, 6vw, 6rem);
+  display: grid;
+  place-items: center;
+  text-align: center;
+
+  & > .card {
+    width: fit-content;
+    padding: clamp(1.5rem, 5vw, 3.5rem);
+    border-radius: 2rem;
+    border-color: var(--block-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+
+  .code {
+    margin: 0;
+    letter-spacing: 0.06em;
+    font-size: clamp(3.25rem, 12vw, 6rem);
+    font-weight: 700;
+    color: var(--block-color);
+  }
+
+  h1 {
+    margin: var(--medium-gap) 0 0;
+    font-size: clamp(1.75rem, 4vw, 2.75rem);
+  }
+
+  .message {
+    font-size: 1.25rem;
+    color: var(--color-text-light);
+  }
+
+  p.button {
+    margin: var(--big-gap) 0 0;
+  }
+}
+
 #gallery {
   display: grid;
   gap: var(--separator-gap);

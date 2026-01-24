@@ -42,6 +42,11 @@ home: Home
 bio: Read more
 attachments: Attachments
 
+# Error pages
+error_404_title: Page not found
+error_404_text: We couldn’t find the page you were looking for.
+error_404_action: Go to homepage
+
 # Project
 status: Status
 finished: Finished

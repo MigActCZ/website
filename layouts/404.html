@@ -1,6 +1,12 @@
 {{ define "main" }}
-    <main>
-        <p>We're sorry, but the page you were trying to view does not exist.</p>
-        <p><a href="{{ "/" | relLangURL }}">Go to homepage</a></p>
-    </main>
+<main id="error">
+    <section class="card">
+        <p class="code" aria-hidden="true">404</p>
+        <h1>{{ i18n "error_404_title" }}</h1>
+        <p class="message">{{ i18n "error_404_text" }}</p>
+        <p class="button emphasized">
+            <a href="{{ "/" | relLangURL }}">{{ i18n "error_404_action" }}</a>
+        </p>
+    </section>
+</main>
 {{ end }}
