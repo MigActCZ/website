@@ -7,6 +7,7 @@ Templates which work with menus check for .Identifier = donate and use partial t
 ## Donation link
 I wasn't able to find a cleaner way to avoid duplication of base URL.
 Instead of direct accessing the site.Param, I use partial template to append locale query.
+I could use language specific param, but then users would have to update the link on two places, which risks inconsistency.
 
 # Team, partners
 All of them are separate pages. If they were resources, there was a problem while building, because accessing resources (images) of resources caused ordering problems when building.
@@ -17,7 +18,8 @@ The CMS handles duplication of front matter for multiple languages.
 
 # Content
 Entire site uses page bundles. Therefore images are local to their content.
-Metadata - date is taken from gitinfo. Only old imported content uses frontmatter. Default Hugo [ordering](https://gohugo.io/configuration/front-matter/) should work. 
+Date is provided by CMS. Default Hugo [ordering](https://gohugo.io/configuration/front-matter/) should work.
+Also considered using :gitinfo as fallback for Date. But figured it'll be easier for users when visible.
 
 # Internationalization
 Most of the content is localized using file names. There shouldn't be difference in content. Everything should be available in both languages.
@@ -27,7 +29,6 @@ The UI labels are localized in i18n directory.
 Decided to use Sveltia, looks and feels better than DecapCMS. Mainly it allows smoother gallery functionality, supports image transformations.
 
 # CSS
-I use semantic class names and brittle CSS intentionally.
 
 ## Header border
 The border is a rainbow image, which prevents me to add regular border beneath the header.
@@ -43,10 +44,11 @@ The menu appears using change in height, because visibility is not animatable.
 
 ## Styling
 Entire site has following types of pages:
-- Home page - totally custom
-- Standalone page - custom layout page with complex header
-- Section page - heading and card container
-- Detail page - entity detail
+- Home page - #home - totally custom
+- Standalone page - main.page - custom layout page with complex header
+- Section page - main.section or ul.entities - heading and card container
+- Detail page - main.detail - entity detail
+- Contacts page - #contacts - custom
 
 # SVG
 ## HTML
