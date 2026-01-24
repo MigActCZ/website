@@ -184,6 +184,104 @@ collections:
         i18n: true
         multiple: true
 
+  - name: about_pages
+    label: About
+    i18n: true
+    files:
+      - name: about_index
+        label: About (main)
+        file: content/about/index.{{locale}}.md
+        i18n: true
+        fields:
+          - { label: Title, name: title, widget: string, i18n: true }
+          - { label: Body, name: body, widget: markdown, i18n: true }
+      - name: about_vision
+        label: About – Vision & Mission
+        file: content/about/vision.{{locale}}.md
+        i18n: true
+        fields:
+          - { label: Body, name: body, widget: markdown, i18n: true }
+      - name: about_story
+        label: About – Story & Values
+        file: content/about/story.{{locale}}.md
+        i18n: true
+        fields:
+          - { label: Body, name: body, widget: markdown, i18n: true }
+      - name: about_introduction
+        label: About – Get to Know Us
+        file: content/about/introduction.{{locale}}.md
+        i18n: true
+        fields:
+          - { label: Body, name: body, widget: markdown, i18n: true }
+      - name: about_theory
+        label: About – Theory of Change
+        file: content/about/theory.{{locale}}.md
+        i18n: true
+        fields:
+          - { label: Body, name: body, widget: markdown, i18n: true }
+      - name: about_documents
+        label: About – Documents
+        file: content/about/documents.{{locale}}.md
+        i18n: true
+        fields:
+          - { label: Body, name: body, widget: markdown, i18n: true }
+
+  - name: home_sections
+    label: Home sections
+    i18n: true
+    files:
+      - name: home_activities
+        label: Home – Activities ("What we do")
+        file: content/home-sections/index.{{locale}}.md
+        i18n: true
+        fields:
+          - { label: Title, name: title, widget: string, i18n: true }
+          - { label: Description, name: description, widget: text, i18n: true }
+          - { label: Headless, name: headless, widget: hidden, default: true, i18n: duplicate }
+          - { label: Body, name: body, widget: markdown, i18n: true }
+
+  - name: join_us_pages
+    label: Join us
+    i18n: true
+    files:
+      - name: join_us_index
+        label: Join us (main)
+        file: content/join-us/index.{{locale}}.md
+        i18n: true
+        fields:
+          - { label: Title, name: title, widget: string, i18n: true }
+          - { label: Body, name: body, widget: markdown, i18n: true }
+      - name: join_us_volunteers
+        label: Join us – Volunteers
+        file: content/join-us/volunteers.{{locale}}.md
+        i18n: true
+        fields:
+          - { label: Body, name: body, widget: markdown, i18n: true }
+      - name: join_us_events
+        label: Join us – Events
+        file: content/join-us/events.{{locale}}.md
+        i18n: true
+        fields:
+          - { label: Body, name: body, widget: markdown, i18n: true }
+      - name: join_us_partners
+        label: Join us – Partners
+        file: content/join-us/partners.{{locale}}.md
+        i18n: true
+        fields:
+          - { label: Body, name: body, widget: markdown, i18n: true }
+      - name: join_us_partner_options
+        label: Join us – Partner options
+        file: content/join-us/partner-options.{{locale}}.md
+        i18n: true
+        fields:
+          - { label: Body, name: body, widget: markdown, i18n: true }
+      - name: join_us_donate
+        label: Join us – Donate
+        file: content/join-us/donate.{{locale}}.md
+        i18n: true
+        fields:
+          - { label: Body, name: body, widget: markdown, i18n: true }
+
 i18n:
   structure: multiple_files
   locales: [en, cs]

@@ -1,4 +1,5 @@
 ---
+title: Partner options
 ---
 - {{<icon handshake>}}
   ### Collaboration
