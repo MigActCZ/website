@@ -26,7 +26,7 @@
             {{ end }}
         </ul>
         {{ end }}
-        <p class="button emphasized"><a href='{{.RelRef (dict "path" "events")}}'>{{ i18n "explore_events" }}{{ partial "inline-svg" "icons/arrow-right" }}</a></p>
+        <p class="button emphasized"><a href='{{ "events" | relLangURL }}'>{{ i18n "explore_events" }}{{ partial "inline-svg" "icons/arrow-right" }}</a></p>
     </section>
     <section id="join-partners" class="split">
         <div>

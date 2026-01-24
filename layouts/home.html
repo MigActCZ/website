@@ -33,13 +33,13 @@
       </li>
       <li>
         {{- partial "inline-svg" "icons/calendar" -}}
-        <h3><a href='{{ .RelRef (dict "path" "events") }}'>
+        <h3><a href='{{ "events" | relLangURL }}'>
           {{ i18n "join_events" }}</a></h3>
         <p>{{ i18n "join_events_text" }}</p>
       </li>
       <li>
         {{- partial "inline-svg" "icons/message-circle" -}}
-        <h3><a href='{{ .RelRef (dict "path" "contact") }}'>
+        <h3><a href='{{ "contact" | relLangURL }}'>
           {{ i18n "contact_us" }}</a></h3>
         <p>{{ i18n "contact_us_text" }}</p>
       </li>
