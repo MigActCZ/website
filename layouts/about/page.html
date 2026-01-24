@@ -1,11 +1,11 @@
 {{ define "scripts" }}
-<link rel="stylesheet" href="/photoswipe.css"/>
+<link rel="stylesheet" href="/dependencies/photoswipe/photoswipe.css"/>
 <script type="module">
-  import PhotoSwipeLightbox from '/photoswipe-lightbox.esm.min.js';
+  import PhotoSwipeLightbox from '/dependencies/photoswipe/photoswipe-lightbox.esm.min.js';
   const lightbox = new PhotoSwipeLightbox({
     gallery: '#theory',
     children: 'a',
-    pswpModule: () => import('/photoswipe.esm.min.js')
+    pswpModule: () => import('/dependencies/photoswipe/photoswipe.esm.min.js')
   });
   lightbox.init();
   </script>
