@@ -787,22 +787,22 @@ ul.entities {
     font-size: 1.125rem;
   }
 }
-#news header {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  align-items: center;
-  gap: var(--medium-gap);
-  .news-tag {
-    background-color: var(--block-color);
-    padding: var(--separator-gap) 1.25rem;
-    border-radius: 2.5rem;
-  }
-  a {
-    color: var(--color-text);
-  }
-}
 .news {
   border: thin solid var(--block-color);
+  & > header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: var(--medium-gap);
+    .news-tag {
+      background-color: var(--block-color);
+      padding: var(--separator-gap) 1.25rem;
+      border-radius: 2.5rem;
+    }
+  }
+  & > section a {
+    color: var(--block-color);
+  }
 }
 .news-resource {
   --block-color: var(--color-orange);
