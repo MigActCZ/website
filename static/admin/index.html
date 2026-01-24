@@ -7,7 +7,15 @@
     <title>Content Manager</title>
   </head>
   <body>
-    <!-- Include the script that builds the page and powers Decap CMS -->
-    <script src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js"></script>
+    <script type="module">
+      import CMS from '/dependencies/sveltia-cms/sveltia-cms.js';
+      import initCms from './cms-init.js';
+
+      // Optional: expose for debugging / legacy integrations.
+      window.CMS = CMS;
+
+      // Register customizations, then initialize (loads /admin/config.yml by default).
+      initCms(CMS);
+    </script>
   </body>
 </html>
