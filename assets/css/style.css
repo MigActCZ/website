@@ -1087,7 +1087,7 @@ ul.buttons.emphasized li:nth-child(2) > a {
       p {
         margin-block: 0;
         text-align: center;
-        font-size: initial;
+        font-size: revert;
       }
     }
   }
@@ -1369,7 +1369,7 @@ main > .intro {
     & > div.card {
       padding: 4rem;
       h2 {
-        text-align: initial;
+        text-align: revert;
       }
     }
     iframe {
