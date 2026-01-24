@@ -40,11 +40,11 @@
                 {{- partial "inline-svg" "logos/migact" -}}
             </a></h2>
             <menu id="footer-socials">
-                <li><a href="{{ .Site.Params.socials.linkedin}}">
+                <li><a href="{{ .Site.Params.socials.linkedin}}" target="_blank">
                     {{- partial "inline-svg" "logos/linkedin" -}}</a></li>
-                <li><a href="{{ .Site.Params.socials.facebook}}">
+                <li><a href="{{ .Site.Params.socials.facebook}}" target="_blank">
                     {{- partial "inline-svg" "logos/facebook" -}}</a></li>
-                <li><a href="{{ .Site.Params.socials.instagram}}">
+                <li><a href="{{ .Site.Params.socials.instagram}}" target="_blank">
                     {{- partial "inline-svg" "logos/instagram" -}}</a></li>
               </menu>
         </nav>
@@ -54,14 +54,18 @@
                 {{ range site.Menus.footer }}
                 <li>
                     {{ $url := .URL }}
+                    {{ $isCustomUrl := false }}
                     {{ if eq .Identifier "donate" }}
                         {{ $url = partial "get-donate-link" $ }}
+                        {{ $isCustomUrl = true }}
                     {{ else if eq .Identifier "newsletter" }}
                         {{ $url = site.Params.newsletter }}
+                        {{ $isCustomUrl = true }}
                     {{ end }}
-                    <a href="{{ $url }}">
+                    <a href="{{ $url }}"{{ if $isCustomUrl }} target="_blank"{{ end }}>
                     {{- partial "inline-svg" .Pre -}}
-                    {{ i18n .Identifier }}</a></li>
+                    {{ i18n .Identifier }}</a>
+                </li>
                 {{ end }}
             </menu>
         </nav>

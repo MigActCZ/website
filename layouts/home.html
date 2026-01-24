@@ -19,7 +19,7 @@
     </header>
     <div id="donate" class="card">
       {{- partial "inline-svg" "icons/heart" -}}
-      <h3><a href='{{ partial "get-donate-link" . }}'>
+      <h3><a href='{{ partial "get-donate-link" . }}' target="_blank">
         {{ i18n "donate" }}</a></h3>
       <p>{{ i18n "donate_text" }}</p>
       <iframe src="{{ site.Params.donate_widget }}" width="360" height="480"></iframe>
@@ -27,7 +27,7 @@
     <ul class="cards">
       <li>
         {{- partial "inline-svg" "icons/mail" -}}
-        <h3><a href='{{ .Site.Params.newsletter }}'>
+        <h3><a href='{{ .Site.Params.newsletter }}' target="_blank">
         {{ i18n "newsletter" }}</a></h3>
         <p>{{ i18n "newsletter_text" }}</p>
       </li>
@@ -58,7 +58,7 @@
     <div id="socials-newsletter" class="card">
       <h3>{{ i18n "inv_newsletter_header" }}</h3>
       <p>{{ i18n "inv_newsletter_text" }}</p>
-      <p class="button emphasized"><a href='{{ .Site.Params.newsletter }}'>{{ i18n "inv_newsletter_action" }}</a></p>
+      <p class="button emphasized"><a href='{{ .Site.Params.newsletter }}' target="_blank">{{ i18n "inv_newsletter_action" }}</a></p>
     </div>
   </section>
 </main>

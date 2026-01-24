@@ -61,7 +61,7 @@
     <hr/>
     <ul class="buttons emphasized">
       {{ with .Params.registration }}
-      <li><a href="{{ . }}">{{ i18n "register" }}</a></li>
+      <li><a href="{{ . }}" target="_blank">{{ i18n "register" }}</a></li>
       {{ end }}
       {{ if and .Params.dtstart .Params.tend }}
         {{ with .OutputFormats.Get "calendar" }}
