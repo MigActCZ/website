@@ -1,5 +1,3 @@
-<article>
-    <img src="{{ (.Resources.Get .Params.image).RelPermalink }}"/>
-    <h2><a href="{{ .Params.website }}" target="_blank">{{ .Title }}</a></h2>
-    {{ .Content }}
+<article><a href="{{ .Params.website }}" target="_blank">
+    <img src="{{ (.Resources.Get .Params.image).RelPermalink }}" alt="{{ .Title }}"/></a>
 </article>

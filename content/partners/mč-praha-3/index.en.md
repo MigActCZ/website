@@ -5,4 +5,3 @@ website: https://www.praha3.cz/
 build:
   list: always
 ---
-Prague 3 City District

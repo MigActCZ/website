@@ -909,13 +909,11 @@ main.detail {
 }
 /* || PARTNERS PAGE */
 #partners {
-  article {
-    img {
-      aspect-ratio: 1 / 1;
-      width: 100%;
-      height: auto;
-      object-fit: scale-down;
-    }
+  img {
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    height: auto;
+    object-fit: scale-down;
   }
 }
 /* || TEAM PAGE */
@@ -1419,8 +1417,10 @@ main > .intro {
       }
     }
   }
+  #partners.entities {
+    grid-template-columns: repeat(4, 1fr);
+  }
   #team.entities,
-  #partners.entities,
   #events.entities,
   #join-events .entities {
     grid-template-columns: repeat(3, 1fr);

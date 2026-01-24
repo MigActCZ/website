@@ -1,8 +1,7 @@
 ---
 title: Ministry of the Interior of the Czech Republic
-image: logo_cmyk_mvcr.webp
+image: logo.svg
 website: https://mv.gov.cz/
 build:
   list: always
 ---
-Department
