@@ -244,6 +244,17 @@ p.button > a {
   border: 2px solid var(--color-border);
   background: var(--color-bg);
   color: var(--color-text);
+  transition: transform 140ms ease, box-shadow 140ms ease;
+}
+@media (hover: hover) and (pointer: fine) {
+  :is(ul.buttons, p.button, #footer-socials, #footer-links) a:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  }
+  :is(ul.buttons, p.button, #footer-socials, #footer-links) a:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
 }
 :is(ul.buttons, p.button).hidden {
   display: none;
