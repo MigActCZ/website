@@ -16,6 +16,6 @@ MigAct has been a part of the UNITES project from its beginning. In collaboratio
 
 The International conference [Empowering Civic Engagement in a Diverse Society](https://youtu.be/0XqstWapS5M), which took place on 21.09.2023 in Prague was co-financed within the UNITES project. It included a panel discussion  – Engaging migrants in local communities and in co-designing integration strategies – perspectives of European partners in the UNITES project.
 
-![](euro-cities-logo-150x150.webp)
+![](euro-cities-logo-150x150.webp "Euro Cities")
 
-![](integrating-cities-unites-logo-150x150.webp)
+![](integrating-cities-unites-logo-150x150.webp "UNITES")
