@@ -1,5 +1,5 @@
 ## Our Story and Values
-Born out of InBáze’s long-standing work with migrants in Prague, MigAct officially launched in November 2022. Since then, we’ve grown into a vibrant, community-driven association working toward an inclusive, accessible civil society for all. You can read more in our Annual Reports.
+MigAct builds on the long-standing work of the organization InBáze with migrants in Prague. As an independent association, it was officially established in October 2023.
 
 - {{<icon handshake rounded>}}
   ### Cooperation
