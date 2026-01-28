@@ -1,12 +1,13 @@
 ---
 title: Společně pro Prahu – Podpora občanské participace a komunitních lídrů
+date: 2025-03-13
 dtstart: 2025-04-01
 dtend: 2025-10-31
+partner: prague-city-hall
 partners:
   - prague-city-hall
-partner: prague-city-hall
-date: 2025-03-13
 ---
+
 Cílem projektu je komplexní podpora obyvatel s migračním původem v oblasti občanské a politické participace v hlavním městě Praze. Aktivity projektu
 
 Aktivity projektu
@@ -20,3 +21,5 @@ V rámci aktivity proběhne celkem 5 akcí. Témata a formát setkání budou vy
 
 **Evaluace**
 Tato aktivita se zaměřuje na hodnocení dopadu projektu na cílovou skupinu.
+
+Projekt je realizován s finanční podporou hl. m. Prahy.

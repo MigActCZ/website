@@ -1,12 +1,13 @@
 ---
 title: Together for Prague - Supporting Civic Participation and Community Leaders
+date: 2025-03-13
 dtstart: 2025-04-01
 dtend: 2025-10-31
+partner: prague-city-hall
 partners:
   - prague-city-hall
-partner: prague-city-hall
-date: 2025-03-13
 ---
+
 The aim of the project is to provide comprehensive support for residents with migration backgrounds in the area of civic and political participation in the capital city of Prague.
 
 Project Activities
@@ -20,3 +21,5 @@ A total of 5 events will be held. The topics and formats of these gatherings wil
 
 **Evaluation**
 This activity focuses on assessing the project’s impact on the target group.
+
+The project is implemented with financial support from the City of Prague.
