@@ -20,7 +20,7 @@ donate: Donate
 donate_text: Support our mission
 newsletter: Newsletter
 newsletter_text: Stay updated with our latest news and events
-contact_us: Contact us
+contact_us: Contact us
 contact_us_text: Get in touch for questions or collaboration
 join_events: Join events
 join_events_text: Participate in our upcoming workshops and meetups
@@ -30,6 +30,7 @@ stay_connected_text: Follow us on social media to stay updated on events, storie
 linkedin_text: Connect professionally
 facebook_text: Join our community
 instagram_text: Follow our stories
+socials_link_text: Follow us 
 inv_newsletter_header: Get Updates Directly in Your Inbox
 inv_newsletter_text: Subscribe to our newsletter for the latest news, events, and opportunities to get involved.
 inv_newsletter_action: Subscribe
