@@ -18,3 +18,5 @@ images:
 Tento projekt si klade za cíl zmapovat příklady dobré praxe občanské integrace obyvatel s migračním původem v rámci místní občanské společnosti na Praze 7, které mohou sloužit jako příklad a inspirace pro další iniciativy. Mapování bude probíhat participativním způsobem – nejprve formou rešerší, následně pak prostřednictvím společného hledání dobrých praxí a vhodných nástrojů během komunitních a participativních setkání.
 
 Dalším cílem projektu je dlouhodobě podporovat přirozenou integraci obyvatel s migračním původem do občanské společnosti a rozhodovacích procesů. Tento proces bude zahájen sérií participativních a komunitních setkání, která vytvoří prostor pro otevřený dialog, sdílení zkušeností a společné hledání konkrétních řešení.
+
+Projekt je realizován s finanční podporou MV ČR, UNHCR a MČ Prahy 7.
