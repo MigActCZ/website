@@ -82,7 +82,10 @@
                         {{ $val }}</a></li>
             </menu>
         </address>
-        <p id="footer-copyright">{{ printf (i18n "copyright") now.Year .Site.Title }}</p>
+        <section id="footer-copyright">
+            <p>{{ printf (i18n "copyright") now.Year .Site.Title }}</p>
+            <p>{{ .Site.Params.attribution | markdownify }}</p>
+        </section>
     </footer>
     {{ block "inline-scripts" . }}{{ end }}
 </body>

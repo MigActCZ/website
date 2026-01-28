@@ -22,6 +22,7 @@ params:
     facebook: https://www.facebook.com/migactinitiative
     instagram: https://www.instagram.com/mig.act/
     linkedin: https://www.linkedin.com/company/migact-initiative/
+  attribution: Made by Michal Tarina, designed by [Daniel Mevit](https://danielmevit.com) and led by Suzanne Verhaar.
 languages:
   en:
     languageName: English
