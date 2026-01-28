@@ -14,4 +14,7 @@ images:
   - 2024-10-01_fundraising-essentials-how-to-build-a-strong-project-proposal_01.webp
   - 2024-10-01_fundraising-essentials-how-to-build-a-strong-project-proposal_02.webp
 ---
+
 Společensky angažovaní jednotlivci s migračním původem a občanské iniciativy vedené migranty čelí mnoha překážkám na své cestě k občanské participaci. Mezi tyto překážky patří jazyková bariéra, nedostatek informací a neznalost kontextu, zkušenosti s odmítnutím, předsudky nebo xenofobií. Tento projekt má za cíl některé z těchto překážek zmírnit za pomoci šíření osvěty, poskytování poradenství a informací, a posílení občanských kompetencí cílové skupiny.
+
+Tento projekt je realizován ve spolupráci s Magistrátem hl. města Prahy.
