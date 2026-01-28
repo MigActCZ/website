@@ -1,12 +1,13 @@
 ---
 title: UNITES
-dtstart: 2021-01-01
-dtend: 2023-12-31
+date: 2020-12-13
+dtstart: 2022-01-01
+dtend: 2024-12-31
+partner: prague-city-hall
 partners:
   - prague-city-hall
-partner: prague-city-hall
-date: 2020-12-13
 ---
+
 Pod vedením [Eurocities](https://eurocities.eu/latest/cities-rally-for-integration/), projekt UNITES (UrbaN InTEgration Strategies through co-design) školí a provází orgány místní samosprávy při spoluvytváření strategií integrace s ostatními zainteresovanými aktéry, včetně migrantů.
 
 MigAct je součástí projektu UNITES od jeho počátku. Ve spolupráci s pražským magistrátem jsme připravily a uskutečnily sérii participativních workshopů, každý zaměřený na posílení spolupráce mezi pražským magistrátem a obyvateli s migračním původem.
