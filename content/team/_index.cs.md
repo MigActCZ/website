@@ -1,5 +1,5 @@
 ---
-title: Náš tým 
+title: Náš tým
 build:
   render: always
 cascade:
@@ -12,6 +12,6 @@ cascade:
 
 Ať už chcete přispět svým časem, dovednostmi, nebo se jen spojit s ostatními, v naší komunitě pro vás najdeme místo.
 
-- {{<link-with-icon "Přidejte se k nám" "join-us" "icons/arrow-right" "after">}}
-- [Kontaktujte nás](contact)
+- {{<link-with-icon "Přidejte se k nám" "/join-us" "icons/arrow-right" "after">}}
+- [Kontaktujte nás](/contact)
 {.buttons, .emphasized}

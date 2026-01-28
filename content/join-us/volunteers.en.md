@@ -9,5 +9,5 @@ Become part of our growing network of active residents helping to make Prague mo
 - Expert input
 {#tags}
 
-[Get in touch](contact)
+[Get in touch](/contact)
 {.button, .emphasized}

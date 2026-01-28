@@ -9,5 +9,5 @@ Staňte se součástí naší stále rostoucí sítě aktivních obyvatel, kteř
 - Odborné konzultace
 {#tags}
 
-[Spojte se s námi](contact)
+[Spojte se s námi](/contact)
 {.button, .emphasized}

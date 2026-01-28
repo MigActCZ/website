@@ -9,6 +9,6 @@ Pořádáme vzdělávací programy, propojujeme lidi a organizace a nabízíme v
 ![Hero image](home.avif)
 {#hero}
 
-- {{<link-with-icon "Zapojte se" "join-us" "icons/arrow-right" "after">}}
-- [Více informací o nás](about)
+- {{<link-with-icon "Zapojte se" "/join-us" "icons/arrow-right" "after">}}
+- [Více informací o nás](/about)
 {.buttons}

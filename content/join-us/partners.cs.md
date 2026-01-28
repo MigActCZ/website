@@ -1,6 +1,6 @@
 ## Staňte se naším partnerem a tvořte spolu s námi
 Spolupracujeme s místními institucemi, nevládními organizacemi, komunitními centry a grassrootovými iniciativami s cílem budovat pevnější a soudržnější sousedství. Ať už zastupujete organizaci, nebo jste jednotlivec se zájmem o spolupráci, sponzorství či spoluvytváření projektů, rádi se o vás dozvíme. Společně můžeme navrhovat aktivity, sdílet zdroje a posilovat občanskou participaci napříč komunitami. Ozvěte se nám a zjistíme, jaké možnosti se nabízejí.
 
-- [Naši současní partneři](partners)
-- [Spojte se s námi](contact)
+- [Naši současní partneři](/partners)
+- [Spojte se s námi](/contact)
 {.buttons}
