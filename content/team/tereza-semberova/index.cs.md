@@ -7,4 +7,5 @@ weight: 12
 build:
   list: always
 ---
-Tereza serves as the financial manager for MigAct, overseeing the organization's financial operations and ensuring proper fiscal management. Her role is crucial in maintaining the financial health and transparency of the organization, supporting MigAct's mission to advance civil society development and enable meaningful participation for marginalized communities.
+
+Tereza působí jako finanční manažerka organizace MigAct, kde dohlíží na finanční řízení a zajišťuje řádnou správu financí. Její role je klíčová pro udržení finanční stability a transparentnosti organizace a podporuje poslání MigAct rozvíjet občanskou společnost a umožňovat smysluplnou participaci marginalizovaných komunit.
