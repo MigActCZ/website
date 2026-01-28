@@ -3,6 +3,7 @@ title: What we do
 description: Discover our diverse programs designed to empower, connect, and support our community members.
 headless: true
 ---
+
 - {{<activity-card meetups users>}}
   ### MigAct Networking
   Connect with locals, civic initiatives, NGOs, and government institutions. Take the time to listen, reflect, and gain inspiration. Strengthen your network, exchange knowledge and ideas, and support one another.
