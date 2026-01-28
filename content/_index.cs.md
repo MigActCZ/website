@@ -4,7 +4,7 @@ title: MigAct - Support of Civic Engagement
 **MigAct je komunitní organizace, jejímž cílem je vytvářet inkluzivní prostředí, ve kterém se může každý plně zapojit do občanského života.**
 {#featured}
 
-Nabízíme vzdělávací programy, budujeme prostory pro spolupráci a poskytujeme praktické vícejazyčné zdroje, které pomáhají naplňovat potřeby jednotlivců i organizací. Kromě poskytování služeb posilujeme kapacity nevládních organizací a komunitních lídrů, aby mohli lépe podporovat rozmanité komunity. Naše práce se řídí hodnotami spolupráce, rovnosti a aktivní účasti, věříme ve společné nacházení řešení spolu s naší komunitou a partnery.
+Pořádáme vzdělávací programy, propojujeme lidi a organizace a nabízíme vícejazyčné praktické zdroje. Posilujeme kapacity nevládních organizací a komunitních lídrů, aby mohli lépe podporovat rozmanité komunity. Naše práce je založena na hodnotách spolupráce, rovnosti a aktivní účasti, programy a aktivity tvoříme společně s komunitou a partnery.
 
 ![Hero image](home.avif)
 {#hero}
