@@ -153,7 +153,7 @@ svg.socials,
 :is(#attachments, #funding) svg.icon {
   width: 1.5rem;
 }
-#hero, img.rounded {
+img.rounded {
   border-radius: 1.25rem;
 }
 /* || Dynamic pages */
@@ -874,6 +874,10 @@ ul#attachments {
 }
 main.detail {
   padding-block: var(--big-gap);
+}
+#event #hero {
+  aspect-ratio: 16 / 10;
+  object-fit: contain;
 }
 #info {
   --block-color: var(--color-teal);

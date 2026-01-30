@@ -4,7 +4,7 @@
 {{ define "main" }}
 <main id="event" class="detail">
   <section>
-    <img src="{{ (.Resources.Get .Params.featured).RelPermalink }}"/>
+    <img id="hero" src="{{ (.Resources.Get .Params.featured).RelPermalink }}" alt="" fetchpriority="high"/>
     <h1>{{ .Title }}</h1>
     {{ .Content }}
   </section>
