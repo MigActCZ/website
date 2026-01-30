@@ -7,7 +7,7 @@ tend: 19:30:00
 location: Horse Hug, Prokopova 21, 130 00 Praha 3-Žižkov
 languages: EN CZ
 registration: https://forms.gle/SQukpSYoYXuBxFkw9
-project: civic-integration-migrant-residents
+project: pathways-to-civic-integration-of-residents-with-migrant-backgrounds
 ---
 Připojte se k první akci nové série neformálních setkání. Ve formátu vyprávění příběhů se zapojíme do diskusí, aktivit, komunitního koučování a networkingu na témata související s občanskou participací a zkušenostmi cizinců žijících v Praze.
 
