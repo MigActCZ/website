@@ -4,7 +4,7 @@ featured: migact.logo.webp
 date: 2024-08-13
 dtstart: 2024-08-27T17:30:00
 tend: 19:30:00
-location: Expat Center Prague. Charvátova 6, 110 00 Praha 1-Nové Město
+location: Expat Center Prague, Charvátova 6, 110 00 Praha 1-Nové Město
 languages: EN CZ
 registration: https://forms.gle/aKiwX8Ada29uV77T7
 project: UNITES
