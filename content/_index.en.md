@@ -6,9 +6,6 @@ title: MigAct - Support of Civic Engagement
 
 We offer educational programs, build collaborative spaces, and provide practical multilingual resources that support the needs of both individuals and organizations. Beyond offering services, we strengthen the capacity of NGOs and community leaders so they can better support diverse communities. Our work is guided by the values of cooperation, equity, and active participation, and we believe in co-creating solutions together with our community and partners.
 
-![Hero image](home.avif)
-{#hero}
-
 - {{<link-with-icon "Get Involved" "/join-us" "icons/arrow-right" "after">}}
 - [Learn more about us](/about)
 {.buttons}
