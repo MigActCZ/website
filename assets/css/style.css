@@ -89,6 +89,9 @@ address {
 }
 dd {
   margin-inline-start: 0;
+  a {
+    color: var(--color-text);
+  }
 }
 iframe {
   max-width: 100%;
@@ -1053,8 +1056,6 @@ ul.buttons.emphasized li:nth-child(2) > a {
   color: var(--color-bg);
 }
 .intro,
-#story,
-#introduction > h2,
 #donate,
 #socials-newsletter,
 #featured {
@@ -1381,7 +1382,10 @@ main > .intro {
       width: 80%;
     }
   }
-  #join-events, #theory {
+  #story,
+  #introduction > h2,
+  #join-events,
+  #theory {
     text-align: center;
     & > p {
       padding-inline: 20%;
