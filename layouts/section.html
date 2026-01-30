@@ -12,7 +12,7 @@
     <ul id="{{ .Section }}" class="entities">
     {{ end }}
 
-    {{ if or (eq .Section "events") (eq .Section "partners")}}
+    {{ if eq .Section "events"}}
         {{ range (.Paginate .RegularPages).Pages }}
             <li>{{ .Render (printf "view_%s" (singularize .Section )) }}</li>
         {{ end }}
