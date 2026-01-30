@@ -20,7 +20,7 @@
 </head>
 <body>
     <header id="site-header">
-        <a href="{{ $.Site.Home.RelPermalink }}" alt='{{ i18n "home" }}'>
+        <a href="{{ $.Site.Home.RelPermalink }}" title='{{ i18n "home" }}'>
             {{- partial "inline-svg" "logos/migact" -}}
         </a>
         <label id='menu-toggle'>
@@ -36,15 +36,15 @@
     {{ block "main" . }}{{ end }}
     <footer id="site-footer">
         <nav id="footer-content">
-            <h2><a href="{{ $.Site.Home.RelPermalink }}" alt='{{ i18n "home" }}'>
+            <h2><a href="{{ $.Site.Home.RelPermalink }}" title='{{ i18n "home" }}'>
                 {{- partial "inline-svg" "logos/migact" -}}
             </a></h2>
             <menu id="footer-socials">
-                <li><a href="{{ .Site.Params.socials.linkedin}}" target="_blank">
+                <li><a href="{{ .Site.Params.socials.linkedin}}" target="_blank" title="linkedin">
                     {{- partial "inline-svg" "logos/linkedin" -}}</a></li>
-                <li><a href="{{ .Site.Params.socials.facebook}}" target="_blank">
+                <li><a href="{{ .Site.Params.socials.facebook}}" target="_blank" title="facebook">
                     {{- partial "inline-svg" "logos/facebook" -}}</a></li>
-                <li><a href="{{ .Site.Params.socials.instagram}}" target="_blank">
+                <li><a href="{{ .Site.Params.socials.instagram}}" target="_blank" title="instagram">
                     {{- partial "inline-svg" "logos/instagram" -}}</a></li>
               </menu>
         </nav>

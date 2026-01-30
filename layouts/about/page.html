@@ -23,7 +23,7 @@
                 {{ .Content }}
             {{ end }}
         </div>
-        <img class="split-support rounded" src='{{ (.Resources.Get "about.avif").RelPermalink }}'/>
+        <img class="split-support rounded" src='{{ (.Resources.Get "about.avif").RelPermalink }}' alt=""/>
     </section>
     <section id="story">
         {{ with .Resources.Get "story.md" }}

@@ -8,7 +8,7 @@
         {{ .Content }}
     </header>
     <section id="join-volunteer" class="split">
-        <img class="split-support rounded" src='{{ (.Resources.Get "join.avif").RelPermalink }}'/>
+        <img class="split-support rounded" src='{{ (.Resources.Get "join.avif").RelPermalink }}' alt=""/>
         {{ with .Resources.Get "volunteers.md" }}
         <div>
             {{ .Content }}
@@ -45,7 +45,7 @@
                 {{ .Content }}
             {{ end }}
             </div>
-            <iframe src="{{ site.Params.donate_widget }}" width="360" height="480"></iframe>
+            <iframe src="{{ site.Params.donate_widget }}" width="360" height="480" title="Darujme widget"></iframe>
         </div>
     </section>
 </main>

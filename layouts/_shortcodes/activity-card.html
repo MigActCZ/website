@@ -1,5 +1,5 @@
 {{ $image := .Page.Resources.Get (printf "%s.webp" (.Get 0)) }}
-<img src="{{ $image.RelPermalink }}"/>
+<img src="{{ $image.RelPermalink }}" alt=""/>
 <div class="icon">
     {{- partial "inline-svg" (printf "icons/%s" (.Get 1)) -}}
 </div>
