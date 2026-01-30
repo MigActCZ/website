@@ -1,6 +1,6 @@
 ---
 title: AMIGA z.s.
-image: logo.avif
+image: logo.webp
 website: https://www.amiga-migrant.cz/
 build:
   list: always

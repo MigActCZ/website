@@ -1,6 +1,6 @@
 ---
 title: La Casa Venezolana
-image: logo.avif
+image: logo.webp
 website: https://linktr.ee/lacasavenezolanacz
 build:
   list: never
