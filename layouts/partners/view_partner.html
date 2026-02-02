@@ -1,3 +1,9 @@
-<article><a href="{{ .Params.website }}" target="_blank">
-    <img src="{{ (.Resources.Get .Params.image).RelPermalink }}" alt="{{ .Title }}"/></a>
+<article><a href="{{ .Params.website }}" target="_blank" title="{{ .Title }}">
+    {{ with .Resources.Get .Params.image }}
+    {{ $img := . }}
+    {{ if and (ne .MediaType.SubType "svg") (gt .Width 300) (gt .Height 300) }}
+    {{ $img = .Fit "300x300 center" }}
+    {{ end }}
+    <img src="{{ $img.RelPermalink }}" alt=""/></a>
+    {{ end }}
 </article>

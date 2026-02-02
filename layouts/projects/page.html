@@ -68,7 +68,9 @@
           <a href="{{ $image.RelPermalink }}"
           data-pswp-width="{{ $image.Width }}"
           data-pswp-height="{{ $image.Height }}">
-            <img src="{{ $image.RelPermalink }}" alt="{{ . }}">
+            {{ with $image.Fit "200x150 center lanczos" }}
+            <img src="{{ .RelPermalink }}" alt="{{ . }}">
+            {{ end }}
           </a>
           {{ end }}
         </div>
@@ -80,15 +82,21 @@
     {{ $partnersPage := site.GetPage "partners" }}
     {{ with .Params.partner }}
       {{ $partnerPage := $partnersPage.GetPage . }}
-      {{ $image := $partnerPage.Resources.Get $partnerPage.Params.image }}
-    <img class="partner-logo" src="{{ $image.Permalink }}" alt="Logo of {{ $partnerPage.Title }}">
+      {{ $img := $partnerPage.Resources.Get $partnerPage.Params.image }}
+      {{ if and (ne $img.MediaType.SubType "svg") (gt $img.Width 300) (gt $img.Height 300) }}
+      {{ $img = $img.Fit "300x300 center" }}
+      {{ end }}
+    <img class="partner-logo" src="{{ $img.Permalink }}" alt="Logo of {{ $partnerPage.Title }}">
     {{ end }}
     {{ with .Params.supporters }}
     <ul id="logos">
       {{ range . }}
         {{ $partnerPage := $partnersPage.GetPage . }}
-        {{ $image := $partnerPage.Resources.GetMatch $partnerPage.Params.image }}
-        <li><img class="partner-logo" src="{{ $image.Permalink }}" alt="Logo of {{ $partnerPage.Title }}"></li>
+        {{ $img := $partnerPage.Resources.GetMatch $partnerPage.Params.image }}
+        {{ if and (ne $img.MediaType.SubType "svg") (gt $img.Width 300) (gt $img.Height 300) }}
+        {{ $img = $img.Fit "300x300 center" }}
+        {{ end }}
+        <li><img class="partner-logo" src="{{ $img.Permalink }}" alt="Logo of {{ $partnerPage.Title }}"></li>
       {{ end }}
     </ul>
     {{ end }}

@@ -1,7 +1,9 @@
 <article>
   {{ $photo := .Resources.Get .Params.image }}
   <div class="front">
-    <img src='{{ $photo.RelPermalink }}' alt="Portrait of {{ .Title }}"/>
+    {{ with $photo.Fill "520x640 center lanczos" }}
+      <img src='{{ .RelPermalink }}' alt="Portrait of {{ .Title }}"/>
+    {{ end }}
     <div class="overlay">
       <h2>{{ .Title }}</h2>
       <h3>{{ .Params.position }}</h3>
