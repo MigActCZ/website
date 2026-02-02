@@ -2,7 +2,7 @@
 <main id="home">
   <section id="about">
       {{- .Content -}}
-      {{ with .Resources.Get "home.avif" }}
+      {{ with .Resources.Get "home.webp" }}
           <img id="hero" class="rounded" src='{{ .RelPermalink }}' alt="" fetchpriority="high"/>
       {{ end }}
   </section>

@@ -23,7 +23,7 @@
                 {{ .Content }}
             {{ end }}
         </div>
-        {{ with .Resources.Get "about.avif" }}
+        {{ with .Resources.Get "about.webp" }}
             <img class="split-support rounded"
                 src='{{ .RelPermalink }}' alt="" loading="lazy"/>
         {{ end }}
