@@ -1,16 +1,18 @@
 ---
-title: 'Otevřená výzva: Školení facilitátorů v metodice Democracy Dialogues — DEMOS'
+title: 'Otevřená výzva: Školení pro facilitátory k Democracy Dialogues — metodika DEMOS'
 category: news
 date: 2026-02-06
 project: practising-dialogue
 ---
 
-V době rostoucí polarizace nám mnoho rozhovorů zanechává pocit, že nejsme vyslyšeni, že jsme odpojeni nebo rozděleni. Mluvíme, abychom se hádali, přesvědčovali nebo řešili problémy, ale příliš zřídka, abychom si skutečně naslouchali a navázali kontakt. Smysluplný dialog vytváří něco jiného: prostor pro rozšiřování naší empatie, důvěry a spojení s ostatními i sami se sebou, kde lze demokracii praktikovat, a ne jen o ní diskutovat.
+V době rostoucí polarizace v nás mnoho rozhovorů zanechává pocit, že nejsme vyslyšeni, že jsme od sebe odpojeni nebo rozděleni. Mluvíme, abychom argumentovali, přesvědčovali nebo řešili problémy — ale příliš zřídka proto, abychom skutečně naslouchali a navázali spojení. Smysluplný dialog ale vytváří něco jiného: prostor pro rozšiřování naší empatie, prohloubení důvěry a propojení s ostatními i se sebou samými — prostor, kde lze demokracii praktikovat, ne jen o ní mluvit.
 
-MigAct zve facilitátory, školitele, občanské pedagogy a komunitní organizátory k účasti na dvoudenním praktickém školení o smysluplném demokratickém dialogu. Prostřednictvím praktických cvičení s metodikou [Democracy Dialogues — DEMOS](https://democracydialogues.eu), vyvinutou chorvatskou organizací [HERMES](https://hermes.hr), si účastníci osvojí dovednosti potřebné k podpoře inkluzivních, respektujících a transformativních rozhovorů.
+MigAct zve facilitátory, školitele, lektoři a lektorky občanského vzdělávání a komunitní organizátory na dvoudenní prezenční praktické školení zaměřené na smysluplný demokratický dialog. Prostřednictvím praktického nácviku metodiky [Democracy Dialogues ](https://democracydialogues.eu)— DEMOS, kterou vyvinula chorvatská organizace [HERMES](https://hermes.hr), si účastníci osvojí dovednosti pro podporu inkluzivních, respektujících a transformativních rozhovorů.
 
-Toto školení je určeno pro ty, kteří pracují s komunitami a chtějí posílit svou schopnost sbližovat lidi, překlenovat rozdíly a vytvářet prostory, kde může být vyslyšen každý hlas.
+Školení je určeno pro všechny, kteří pracují s komunitami a chtějí posílit svou schopnost propojovat lidi, překlenovat rozdíly a vytvářet bezpečný prostor, kde může zaznít každý hlas.
 
-Více informací: [zde](open-call-facilitator-training-on-democracy-dialogues-demos-methodology.pdf)
+Školení proběhne v angličtině.
+
+Více informací: [zde](Open-Call-facilitator-training-on-Democracy-Dialogues-DEMOS-methodology.pdf)
 
 ##### Přihlaste se zde: [https://forms.gle/XVxeNivEssdZogRW9](https://forms.gle/XVxeNivEssdZogRW9)
