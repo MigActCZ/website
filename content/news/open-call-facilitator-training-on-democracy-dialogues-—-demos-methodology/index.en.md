@@ -13,6 +13,6 @@ MigAct invites facilitators, trainers, civic educators, and community organizers
 
 This training is for those who work with communities and want to strengthen their ability to bring people together, bridge differences, and create spaces where every voice can be heard.
 
-More info: [here](Open-Call-facilitator-training-on-Democracy-Dialogues-DEMOS-methodology.pdf)
+More info: [Open Call - facilitator training on Democracy Dialogues - DEMOS methodology](https://migact.net/news/open-call-facilitator-training-on-democracy-dialogues--demos-methodology/open-call-facilitator-training-on-democracy-dialogues-demos-methodology-1.pdf)
 
-##### Apply here: [https://forms.gle/XVxeNivEssdZogRW9](https://forms.gle/XVxeNivEssdZogRW9)
+## Apply here: [https://forms.gle/XVxeNivEssdZogRW9](https://forms.gle/XVxeNivEssdZogRW9)
