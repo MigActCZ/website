@@ -3,8 +3,6 @@ title: 'Otevřená výzva: Školení facilitátorů v metodice Democracy Dialogu
 category: news
 date: 2026-02-06
 project: practising-dialogue
-resources:
-  - open-call-facilitator-training-on-democracy-dialogues-demos-methodology.pdf
 ---
 
 V době rostoucí polarizace nám mnoho rozhovorů zanechává pocit, že nejsme vyslyšeni, že jsme odpojeni nebo rozděleni. Mluvíme, abychom se hádali, přesvědčovali nebo řešili problémy, ale příliš zřídka, abychom si skutečně naslouchali a navázali kontakt. Smysluplný dialog vytváří něco jiného: prostor pro rozšiřování naší empatie, důvěry a spojení s ostatními i sami se sebou, kde lze demokracii praktikovat, a ne jen o ní diskutovat.
@@ -13,6 +11,6 @@ MigAct zve facilitátory, školitele, občanské pedagogy a komunitní organizá
 
 Toto školení je určeno pro ty, kteří pracují s komunitami a chtějí posílit svou schopnost sbližovat lidi, překlenovat rozdíly a vytvářet prostory, kde může být vyslyšen každý hlas.
 
-Více informací: zde
+Více informací: [zde](open-call-facilitator-training-on-democracy-dialogues-demos-methodology.pdf)
 
-Přihlaste se zde: [https://forms.gle/XVxeNivEssdZogRW9](https://forms.gle/XVxeNivEssdZogRW9)
+##### Přihlaste se zde: [https://forms.gle/XVxeNivEssdZogRW9](https://forms.gle/XVxeNivEssdZogRW9)
