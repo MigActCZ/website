@@ -23,6 +23,6 @@ Praktický vzdělávací program vybaví různorodou skupinu místních facilit�
 
 Vyškolení facilitátoři budou organizovat setkání zaměřená na posilování dialogu na témata důležitá pro místní komunity. Setkání propojí obyvatele z různých prostředí, umožní sdílení různých pohledů, pojmenování společných výzev a společné hledání řešení.
 
-Partnerská organizace: [ HERMES](https://hermes.hr/), Chorvatsko
+Partnerská organizace: [HERMES](https://hermes.hr/), Chorvatsko
 
 Projekt „Practising Dialogue: Civic Innovation in Diverse Urban Communities“ je financován z fondu [Civic Innovation Fund](https://thecivics.eu/projects/civic-innovation-fund/) (CIF), jedinečného evropského společného fondu iniciativy THE CIVICS Innovation Hub. Civic Innovation Fund je podporován nadací Robert Bosch Stiftung.
