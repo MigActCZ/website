@@ -3,8 +3,6 @@ title: Pathways to active citizenship
 category: report
 date: 2023-12-31
 project: ''
-resources:
-  - inbaze_migact_pilot-study_eng.pdf
 ---
 
 **Download our recent study:**
