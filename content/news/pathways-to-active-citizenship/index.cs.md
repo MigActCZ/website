@@ -3,7 +3,10 @@ title: Cesta k aktivnímu občanství
 category: report
 date: 2023-12-31
 project: ''
+resources:
+  - inbaze_migact_pilot-study_eng.pdf
 ---
+
 **Stáhnete naší novou studii**
 Allen, Natallia, Klára Slepičková. 2023. [Cesta k aktivnímu občanství obyvatel hl. města Prahy s migračním původem.](inbaze_migact_vysledky-vyskumu_cz.pdf)
 

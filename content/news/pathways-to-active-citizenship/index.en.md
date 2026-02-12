@@ -4,6 +4,7 @@ category: report
 date: 2023-12-31
 project: ''
 ---
+
 **Download our recent study:**
 Allen, Natallia, Klára Slepičková. 2023. [Pathways to active citizenship of residents with a migrant background in the city of Prague.](migact_pilot-study_eng.pdf)
 
