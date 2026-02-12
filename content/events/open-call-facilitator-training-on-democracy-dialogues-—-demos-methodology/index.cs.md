@@ -1,5 +1,5 @@
 ---
-title: 'Otevřená výzva: Školení pro facilitátory k Democracy Dialogues — metodika DEMOS'
+title: 'Open Call: Školení pro facilitátory k Democracy Dialogues — metodika DEMOS'
 featured: img_2276.webp
 date: 2026-02-12
 dtstart: 2026-03-02T12:00:00
