@@ -3,7 +3,7 @@ title: Oleksandra Fadieieva
 contact: alex@migact.net
 image: photo.webp
 position: Board member
-weight: 11
+weight: 5
 build:
   list: always
 ---
