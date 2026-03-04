@@ -1,3 +1,3 @@
 ---
-title: News
+title: News, Reports and Resources
 ---
