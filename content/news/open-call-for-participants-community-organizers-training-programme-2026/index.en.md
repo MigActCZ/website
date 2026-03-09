@@ -13,7 +13,7 @@ Are you passionate about civic life in Prague? Whether you are mobilizing neighb
 
 Join our **Community Organizers Training**—a 40-hour capacity-building journey designed for those ready to deepen their practice and amplify their impact.
 
-Read more and apply via [Open Call ](OC-ORGANIZERS-EN.pdf).
+Read more and apply via [Open Call](OC-ORGANIZERS-EN.pdf)
 
 <!--more-->
 
