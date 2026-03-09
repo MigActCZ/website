@@ -1,5 +1,5 @@
 ---
-title: Open Call for Participants Community Organizers Training Programme 2026
+title: 'Open Call for Participants: Community Organizers Training Programme 2026'
 category: news
 date: 2026-03-09
 project: civiclink-advancing-civic-integration-in-prague
