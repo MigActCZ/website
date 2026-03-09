@@ -15,6 +15,8 @@ Join our **Community Organizers Training**—a 40-hour capacity-building journey
 
 Read more and apply via [Open Call ](OC-ORGANIZERS-EN.pdf).
 
+<!--more-->
+
 ## **Workshops Overview**
 
 ### **Community Organizing**
@@ -53,10 +55,6 @@ In this session, participants gain basic knowledge and skills in stage presence 
 
 This session builds on participants’ work and focuses on practical fundraising skills. It begins with an overview of fundraising possibilities and continues with developing a clear case for seeking support from potential donors. Participants present their first pitch and receive feedback from the group. They also work on shaping fundraising arguments for different communication channels and leave with a clearer understanding of how to approach donors and articulate their case for support.
 
-![](migact.logo.webp)
-
-![](epim-logo.webp)
-
-![](ceska-sporitelna-nove-od-roku-2023-seeklogo.webp)
+---
 
 This Project has been supported by the European Philanthropic Initiative for Migration (EPIM), a collaborative initiative of the Network of European Foundations (NEF). The mini grants are supported by Česka spořitelna a.s.
