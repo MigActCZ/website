@@ -4,7 +4,7 @@ category: news
 date: 2026-03-09
 project: civiclink-advancing-civic-integration-in-prague
 resources:
-  - oc-organizatori-cz.pdf
+  - oc-organizatori-cz-1.pdf
 ---
 
 **Praha | duben – říjen 2026**
