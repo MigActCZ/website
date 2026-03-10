@@ -13,7 +13,7 @@ Jste aktivní v občanských nebo veřejně prospěšných iniciativách v Praze
 
 Pokud chcete posílit dopad svých aktivit, rozvinout své dovednosti a propojit se s dalšími aktivními lidmi v Praze, tento program je přesně pro vás. Zveme vás do našeho vzdělávacího programu — 40hodinového tréninku pro všechny, kteří chtějí prohloubit svou praxi jako komunitní organizátoři.
 
-Přečtěte si více a přihlaste se přes [Open Call](OC-ORGANIZATORI-CZ.pdf)
+Přečtěte si více a přihlaste se přes [Open Call](OC-ORGANIZATORI-CZ-1.pdf)
 
 <!--more-->
 
