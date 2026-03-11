@@ -1,5 +1,5 @@
 ---
-title: 'Open Call: Vzdělávací program pro komunitní hybatele 2026'
+title: 'Open Call: Vzdělávací program pro komunitní organizátory 2026'
 category: news
 date: 2026-03-09
 project: civiclink-advancing-civic-integration-in-prague
