@@ -11,7 +11,6 @@ main:
     pageRef: /partners
     weight: 14
   - identifier: news
-    parent: about
     pageRef: /news
     weight: 16
   - identifier: events
