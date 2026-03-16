@@ -18,6 +18,8 @@ Join our **Community Organizers Training**—a 40-hour capacity-building journe
 
 Read more and apply via [Open Call](https://migact.net/news/open-call-for-participants-community-organizers-training-programme-2026/oc-organizers-en.pdf)
 
+<!--more-->
+
 ## **Workshops Overview**
 
 ### **Community Organizing**

@@ -18,6 +18,8 @@ Pokud chcete posílit dopad svých aktivit, rozvinout své dovednosti a propojit
 
 Přečtěte si více a přihlaste se přes [Open Call](https://migact.net/news/open-call-for-participants-community-organizers-training-programme-2026/oc-organizatori-cz-1.pdf)
 
+<!--more-->
+
 ## Přehled workshopů
 
 ### Komunitní organizování
