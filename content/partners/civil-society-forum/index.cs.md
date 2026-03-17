@@ -1,6 +1,6 @@
 ---
 title: Civil Society Forum
-image: csf-logo.svg
+image: civilsocietyforum.webp
 website: https://csf-ev.org/
 build:
   list: always
