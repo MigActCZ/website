@@ -1,6 +1,6 @@
 ---
 title: 'Open Call: Školení pro facilitátory k Democracy Dialogues — metodika DEMOS'
-category: news
+category: brief
 date: 2026-02-06
 project: practising-dialogue
 ---

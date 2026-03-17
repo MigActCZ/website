@@ -1,6 +1,6 @@
 ---
 title: Thank you! Děkujeme! Crowdfunding Success!
-category: news
+category: brief
 date: 2025-02-06
 project: migact-local-meetups
 ---

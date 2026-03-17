@@ -69,6 +69,11 @@ calendar: Add to calendar
 register: Register
 explore_events: Explore upcoming events
 
+# News
+resource: Resource
+brief: News
+report: Report
+
 # Contact page
 phone: Phone
 email: Email

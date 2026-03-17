@@ -1,6 +1,6 @@
 ---
 title: Open Call Training Program 2025
-category: news
+category: brief
 date: 2025-02-06
 project: migact-local-meetups
 resources:

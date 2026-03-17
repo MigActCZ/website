@@ -165,7 +165,7 @@ collections:
     fields:
       - { label: Title, name: title, widget: string, i18n: true }
       - { label: Body, name: body, widget: markdown, i18n: true }
-      - { label: Category, name: category, widget: select, options: ["news", "report", "resource"], i18n: duplicate}
+      - { label: Category, name: category, widget: select, options: ["brief", "report", "resource"], i18n: duplicate}
       - { label: CreationDate, name: date, widget: datetime, time_format: false, default: "{{datetime}}", i18n: duplicate}
       - label: Project
         name: project

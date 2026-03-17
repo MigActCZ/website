@@ -1,6 +1,6 @@
 <article class='news news-{{ .Params.category }}'>
   <header>
-    <div class="news-tag">{{ .Params.category | strings.FirstUpper }}</div>
+    <div class="news-tag">{{ i18n .Params.category }}</div>
     <time datetime='{{ .Date | dateFormat "2006-01-02" }}'>{{ .Date | dateFormat "2 Jan 2006" }}</time>
     {{ if .Params.resources }}
       {{ partial "inline-svg" "icons/paperclip" }}

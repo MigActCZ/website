@@ -825,7 +825,7 @@ ul.entities {
 .news-resource {
   --block-color: var(--color-orange);
 }
-.news-news {
+.news-brief {
   --block-color: var(--color-blue);
 }
 .news-report {

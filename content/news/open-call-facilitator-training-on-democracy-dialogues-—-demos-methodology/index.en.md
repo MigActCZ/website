@@ -1,6 +1,6 @@
 ---
 title: 'Open call: Facilitator training on Democracy Dialogues — DEMOS methodology'
-category: news
+category: brief
 date: 2026-02-06
 project: practising-dialogue
 resources:

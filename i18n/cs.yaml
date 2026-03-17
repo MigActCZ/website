@@ -69,6 +69,10 @@ calendar: Pridat do kalendáře
 register: Registrovat
 explore_events: Vyhledat nadcházející akce
 
+# News
+resource: Zdroj
+brief: Zpráva
+report: Report
 
 # Contact page
 phone: Telefon

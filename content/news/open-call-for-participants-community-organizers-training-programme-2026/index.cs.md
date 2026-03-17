@@ -1,6 +1,6 @@
 ---
 title: 'Open Call: Vzdělávací program pro komunitní organizátory 2026'
-category: news
+category: brief
 date: 2026-03-09
 project: civiclink-advancing-civic-integration-in-prague
 resources:
