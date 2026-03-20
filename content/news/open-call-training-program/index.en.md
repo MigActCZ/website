@@ -1,11 +1,12 @@
 ---
-title: Open Call Training Program
+title: Open Call Training Program 2025
 category: news
 date: 2025-02-06
 project: migact-local-meetups
 resources:
   - open-call-migact-10-pages.pdf
 ---
+
 In March, April and May 2025 MigAct is organizing its inaugural Training Program for Community Organizers. [Our program](Open Call-MigAct-10-pages.pdf) is designed to train and support local community organizers living in Prague who have ideas that promote intercultural openness, connect communities, and support active citizenship or socially beneficial goals (e.g., environmental protection, support of vulnerable groups, etc.).
 
 <!--more-->

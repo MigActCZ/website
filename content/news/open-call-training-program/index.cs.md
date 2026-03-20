@@ -1,11 +1,12 @@
 ---
-title: 'Otevřená výzva: Tréninkový program'
+title: 'Otevřená výzva: Tréninkový program 2025'
 category: news
 date: 2025-02-06
 project: migact-local-meetups
 resources:
   - open-call-migact-10-pages.pdf
 ---
+
 V březnu, dubnu a květnu 2025 pořádá MigAct svůj vůbec první Tréninkový program pro komunitní organizátory. Náš program je navržen tak, aby vzdělával a podporoval místní komunitní organizátory žijící v Praze, kteří mají nápady podporující mezikulturní otevřenost, propojování komunit a aktivní občanství či jiné společensky prospěšné cíle (např. ochranu životního prostředí, podporu zranitelných skupin apod.).
 
 <!--more-->
