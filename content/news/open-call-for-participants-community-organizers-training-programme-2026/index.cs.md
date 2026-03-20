@@ -22,7 +22,7 @@ Více o programu si přečtěte v [**Open callu**](https://migact.net/news/open-
 
 ### **Jak se přihlásit?**
 
-- \*\*Vyplnit registrační formulář: 🔗 [Přihláška](https://forms.gle/ybST94zbynNJsbZ27)
+- \*\*Vyplnit registrační formulář: [Přihláška](https://forms.gle/ybST94zbynNJsbZ27)
 - **Termín programu:** duben – říjen 2026.
 - **Uzávěrka přihlášek:** 23. března 2026.
 - **Kapacita:** Max. 12 účastníků (přihlášky posuzujeme průběžně, doporučujeme neotálet).
