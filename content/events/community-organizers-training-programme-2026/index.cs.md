@@ -2,7 +2,7 @@
 title: Vzdělávací program pro komunitní organizátory 2026
 featured: opencallcz.webp
 date: 2026-03-16
-dtstart: 2026-03-23T00:00:00
+dtstart: 2026-03-26T00:00:00
 tend: 23:59:00
 location: Prague/Praha
 languages: EN
