@@ -16,7 +16,7 @@ Are you passionate about civic life in Prague? Whether you are mobilizing neighb
 
 Join our **Community Organizers Training**—a 40-hour capacity-building journey designed for those ready to deepen their practice and amplify their impact.
 
-Read more about the program in [**Open call**](https://migact.net/news/open-call-for-participants-community-organizers-training-programme-2026/oc-organizers-en.pdf) and [**Workshops overview**](workshops_organizers_en.pdf)
+Read more about the program in [**Open call**](https://migact.net/news/open-call-for-participants-community-organizers-training-programme-2026/oc-organizers-en.pdf) and [**Workshops overview**](https://migact.net/news/open-call-for-participants-community-organizers-training-programme-2026/workshops_organizers_en.pdf)
 
 <!--more-->
 
