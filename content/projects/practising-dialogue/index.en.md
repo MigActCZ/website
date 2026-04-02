@@ -16,9 +16,7 @@ This project promotes inclusive civic participation in Prague and Zagreb by intr
 ### **What we’re working on**
 
 **Training of Local Facilitators (Prague, Czechia)**
- A practical training program will equip a diverse group of local facilitators — civil society actors, educators, and community leaders — with the skills and tools to implement structured dialogue using the DEMOS Dialogue method.
-
-**Applications are now open for the Democracy Dialogues Facilitator Training—don’t miss it! Details in “Project News.”**
+ A practical training program in March has equipped a diverse group of local facilitators — civil society actors, educators, and community leaders — with the skills and tools to implement structured dialogue using the DEMOS Dialogue method.
 
 **Community Dialogue Sessions**
 Trained facilitators will organize structured dialogue sessions on locally relevant topics such as inclusion, civic participation, and trust in public institutions. Each session will bring together residents from diverse social and migration backgrounds to exchange perspectives, identify shared challenges, and co-create solutions.

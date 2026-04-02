@@ -15,9 +15,7 @@ partners:
 
 **Školení místních facilitátorů (Praha)**
 
-Praktický vzdělávací program vybaví různorodou skupinu místních facilitátorů — zástupce občanské společnosti, pedagogy a komunitní lídry na vedení strukturovaných dialogů metodou DEMOS Dialogue. Školení poskytne účastníkům odborné znalosti i praktické nástroje pro vytváření bezpečného a respektujícího prostoru pro diskusi.
-
-**Přihlášky do školení facilitátorů Democracy Dialogues jsou nyní otevřené—nenechte si to ujít! Více informací najdete v sekci „Zprávy projektu“.**
+Praktický vzdělávací program ve březnu vybavil různorodou skupinu místních facilitátorů — zástupce občanské společnosti, pedagogy a komunitní lídry na vedení strukturovaných dialogů metodou DEMOS Dialogue. Školení poskytlo účastníkům odborné znalosti i praktické nástroje pro vytváření bezpečného a respektujícího prostoru pro diskusi.
 
 **Komunitní setkání**
 
