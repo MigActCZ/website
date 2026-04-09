@@ -3,7 +3,7 @@ title: 'Together in Prague 3: Discover civic and community life'
 featured: featured.webp
 date: 2025-10-01
 dtstart: 2025-10-23T17:30:00
-tend: 19:00:00
+dtend: 2025-10-23T19:00:00
 location: Krenovka, Husitská 22, 130 00 Praha 3-Žižkov
 languages: EN CZ
 registration: https://forms.gle/6hr5bcXfJC544gUs5

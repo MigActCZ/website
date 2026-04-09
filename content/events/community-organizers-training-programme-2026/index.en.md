@@ -3,7 +3,7 @@ title: Community Organizers Training Programme 2026
 featured: opencall.webp
 date: 2026-03-16
 dtstart: 2026-03-26T00:00:00
-tend: 23:59:00
+dtend: 2026-03-26T23:59:00
 location: Prague/Praha
 languages: EN
 registration: https://docs.google.com/forms/d/e/1FAIpQLScwMbKMh4SSc6knkL3caYAC_M6uG-pI-kcTXrHmqTru68bcsg/viewform

@@ -3,7 +3,7 @@ title: MigAct Meetups - Propojení Prahy 7
 featured: featured.webp
 date: 2024-05-01
 dtstart: 2024-05-15T17:30:00
-tend: 20:00:00
+dtend: 2024-05-15T20:00:00
 location: Letohradská 711/10, 170 00 Praha 7-Holešovice
 languages: EN CZ
 registration: https://forms.gle/VPZKxQXshP4JCouY6

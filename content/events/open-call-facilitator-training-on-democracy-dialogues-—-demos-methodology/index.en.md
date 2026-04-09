@@ -3,7 +3,7 @@ title: 'Open call: Facilitator training on Democracy Dialogues — DEMOS methodo
 featured: img_2276.webp
 date: 2026-02-12
 dtstart: 2026-03-02T12:00:00
-tend: 19:00:00
+dtend: 2026-03-02T19:00:00
 location: Community Center Přístav 7,  V Přístavu 1639/24, 170 00 Praha 7
 languages: EN
 registration: https://forms.gle/XVxeNivEssdZogRW9

@@ -2,7 +2,7 @@
 title: Together in Prague 7 Vol. 2 – Community Breakfast
 featured: featured.webp
 dtstart: 2025-09-17T09:00:00
-tend: 11:00:00
+dtend: 2025-09-17T11:00:00
 location: KC Přístav 7, V Přístavu 24, 170 00 Praha 7-Holešovice
 languages: EN CZ
 registration: https://forms.gle/2MWR13Tu8sKqnCvu7

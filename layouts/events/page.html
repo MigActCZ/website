@@ -12,7 +12,7 @@
   </section>
   <div id="info" class="side-panel column">
     <dl class="attributes column">
-      {{ $dtend := time (printf "%s%s" (substr .Params.dtstart 0 11 ) .Params.tend ) }}
+      {{ $dtend := time .Params.dtend }}
       {{ $dtstart := time .Params.dtstart }}
       {{ $dtstart_utc := $dtstart | dateFormat "2006-01-02T15:04Z0700" }}
       {{ $dtend_utc := $dtend | dateFormat "2006-01-02T15:04Z0700" }}
@@ -24,9 +24,9 @@
         <dt>{{ i18n "date" }}</dt>
         <dd class="timeline">
           <time datetime='{{ $dtstart | dateFormat "2006-01-02" }}'>
-            {{ .Params.dtstart | dateFormat "2 Jan 2006" }}</time>, 
+            {{ $dtstart | dateFormat "2 Jan 2006" }}</time>, 
             <time datetime='{{ $dtstart_utc }}'>
-              {{ .Params.dtstart | dateFormat "15:04" }}</time>
+              {{ $dtstart | dateFormat "15:04" }}</time>
             -
             <time datetime='{{ $dtend_utc }}'>
               {{ $dtend | dateFormat "15:04" }}</time>

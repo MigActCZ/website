@@ -3,7 +3,7 @@ title: Networking Večírek!
 featured: featured.webp
 date: 2024-11-19
 dtstart: 2024-11-29T17:00:00
-tend: 20:00:00
+dtend: 2024-11-29T20:00:00
 location: Prague City University, Biskupský dvůr 1147/6, 110 00 Praha 1-Petrská čtvrť
 languages: EN CZ
 registration: https://forms.gle/1L7pAaEQg7gDvrLg6

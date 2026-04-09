@@ -3,7 +3,7 @@ title: Working for change in your country of origin, while also making a differe
 featured: featured.webp
 date: 2025-03-09
 dtstart: 2025-03-21T17:30:00
-tend: 19:30:00
+dtend: 2025-03-21T19:30:00
 location: Horse Hug, Prokopova 21, 130 00 Praha 3-Žižkov
 languages: EN CZ
 registration: https://forms.gle/SQukpSYoYXuBxFkw9

@@ -3,7 +3,7 @@ title: Bringing Community Organizing into the Czech Context
 featured: img_20241001_172922371.webp
 date: 2025-04-07
 dtstart: 2025-04-25T17:30:00
-tend: 19:30:00
+dtend: 2025-04-25T19:30:00
 location: Horse Hug, Prokopova 572/14, 130 00 Praha 3-Žižkov
 languages: EN CZ
 registration: https://forms.gle/GqhswLgVJCrp6z747
