@@ -31,7 +31,7 @@ collections:
     public_folder: ''
     i18n: true
     fields:
-      - {label: Title, name: title, widget: string, i18n: duplicate }
+      - {label: Title, name: title, widget: string, i18n: true }
       - {label: Logo, name: image, widget: image, choose_url: false, i18n: duplicate }
       - {label: Link, name: website, widget: string, i18n: true }
       - name: build
