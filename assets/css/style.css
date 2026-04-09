@@ -51,6 +51,12 @@ body {
     }
   }
 }
+a {
+  &:visited {
+    color: var(--color-bg-teal);
+  }
+  color: var(--color-blue);
+}
 /* Links in navs don't need underline */
 menu {
   margin-block: unset;
