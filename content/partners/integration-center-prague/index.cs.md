@@ -1,5 +1,5 @@
 ---
-title: Integration Center Prague
+title: Integrační Centrum Praha
 image: logo.webp
 website: https://icpraha.com/
 build:
