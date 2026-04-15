@@ -1,5 +1,5 @@
 ---
-title: Nadace OSF
+title: OSF Foundation
 image: logo.webp
 website: https://osf.cz/en/about-us/
 build:
