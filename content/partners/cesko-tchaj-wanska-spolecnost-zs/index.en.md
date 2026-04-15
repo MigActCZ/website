@@ -1,5 +1,5 @@
 ---
-title: Česko-Tchaj-wanská společnost z.s.
+title: Czech-Taiwanese Community
 image: logo.webp
 website: https://en.taiwanese.cz/
 build:
