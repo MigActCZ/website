@@ -34,8 +34,8 @@
         {{- partial "menu.html" (dict "menuID" "main" "page" .) }}
     </header>
     {{ block "main" . }}{{ end }}
-    <footer id="site-footer">
-        <nav id="footer-content">
+    <footer id="site-footer" class="column">
+        <nav id="footer-content" class="column">
             <h2><a href="{{ $.Site.Home.RelPermalink }}" title='{{ i18n "home" }}'>
                 {{- partial "inline-svg" "logos/migact" -}}
             </a></h2>
@@ -46,7 +46,17 @@
                     {{- partial "inline-svg" "logos/facebook" -}}</a></li>
                 <li><a href="{{ .Site.Params.socials.instagram}}" target="_blank" title="instagram">
                     {{- partial "inline-svg" "logos/instagram" -}}</a></li>
-              </menu>
+            </menu>
+            <section id="footer-legal">
+                <menu>
+                    {{ with site.GetPage "about" }}
+                        {{ with .Resources.Get "directive_gdpr" }}
+                    <li><a href="{{ .RelPermalink }}">{{- partial "inline-svg" "icons/file-text" -}}
+                            {{ .Title }}</a></li>
+                        {{ end }}
+                    {{ end }}
+                </menu>
+            </section>
         </nav>
         <nav id="footer-links">
             <h2>{{ i18n "footer_actions" }}</h2>

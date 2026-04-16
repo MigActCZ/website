@@ -443,14 +443,18 @@ main > section:last-child {
 /* || FOOTER */
 #site-footer {
   padding-block-start: 5rem;
-  display: flex;
-  flex-direction: column;
   gap: var(--wide-gap);
   color: var(--color-text);
   h2 {
     font-size: 1rem;
     margin-block: 0 var(--wide-gap);
     font-weight: bold;
+  }
+  #footer-content {
+    h2 {
+      margin: 0;
+    }
+    gap: var(--wide-gap);
   }
   .logo {
     height: 4rem;
@@ -461,6 +465,13 @@ main > section:last-child {
     svg.socials {
       color: var(--color-text-light);
       background: var(--color-bg-light);
+    }
+  }
+  #footer-legal {
+    margin-block-start: auto;
+    color: var(--color-text-light);
+    a:hover {
+      text-decoration: underline;
     }
   }
   #footer-links {
