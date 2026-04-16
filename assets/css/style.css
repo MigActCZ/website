@@ -52,7 +52,7 @@ body {
   }
 }
 a {
-  &:visited {
+  &:is(visited) {
     color: var(--color-bg-teal);
   }
   color: var(--color-blue);
