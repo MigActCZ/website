@@ -51,11 +51,11 @@
                 <menu>
                     {{ with site.GetPage "about" }}
                         {{ with .Resources.Get "directive_gdpr" }}
-                    <li><a href="{{ .RelPermalink }}">{{- partial "inline-svg" "icons/file-text" -}}
+                    <li><a href="{{ .RelPermalink }}" target="_blank">{{- partial "inline-svg" "icons/file-text" -}}
                             {{ .Title }}</a></li>
                         {{ end }}
                         {{ with .Resources.Get "info_personal_data_processing" }}
-                    <li><a href="{{ .RelPermalink }}">{{- partial "inline-svg" "icons/file-text" -}}
+                    <li><a href="{{ .RelPermalink }}" target="_blank">{{- partial "inline-svg" "icons/file-text" -}}
                             {{ .Title }}</a></li>
                         {{ end }}
                     {{ end }}
