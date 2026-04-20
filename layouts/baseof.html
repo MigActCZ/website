@@ -54,6 +54,11 @@
                     <li><a href="{{ .RelPermalink }}">{{- partial "inline-svg" "icons/file-text" -}}
                             {{ .Title }}</a></li>
                         {{ end }}
+                    {{ with site.GetPage "about" }}
+                        {{ with .Resources.Get "info_personal_data_processing" }}
+                     <li><a href="{{ .RelPermalink }}">{{- partial "inline-svg" "icons/file-text" -}}
+                            {{ .Title }}</a></li>
+                        {{ end }}
                     {{ end }}
                 </menu>
             </section>
