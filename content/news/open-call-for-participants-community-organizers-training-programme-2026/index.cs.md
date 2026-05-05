@@ -18,7 +18,7 @@ Více o programu si přečtěte v [**Open callu**](https://migact.net/news/open-
 
 <!--more-->
 
-![](workshopschedule_cz.webp)
+![](rozvrh-organizatori.webp)
 
 ### **Jak se přihlásit?**
 
