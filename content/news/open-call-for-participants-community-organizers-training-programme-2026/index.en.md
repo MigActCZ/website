@@ -4,7 +4,7 @@ category: brief
 date: 2026-03-09
 project: civiclink-advancing-civic-integration-in-prague
 resources:
-  - workshops_organizers_en.pdf
+  - workshops-—-organizers.pdf
   - oc-organizers-en.pdf
 ---
 
