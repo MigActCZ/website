@@ -18,7 +18,7 @@ Read more about the program in [**Open call**](https://migact.net/news/open-call
 
 <!--more-->
 
-![](workshopschedule_en.webp)
+![](schedule-organizers.webp)
 
 ### How to Apply
 
