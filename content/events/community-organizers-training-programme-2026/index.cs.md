@@ -16,11 +16,11 @@ Jste aktivní v občanských nebo veřejně prospěšných iniciativách v Praze
 
 Pokud chcete posílit dopad svých aktivit, rozvinout své dovednosti a propojit se s dalšími aktivními lidmi v Praze, tento program je přesně pro vás. Zveme vás do našeho vzdělávacího programu — 40hodinového tréninku pro všechny, kteří chtějí prohloubit svou praxi jako komunitní organizátoři.
 
-Více o programu si přečtěte v [**Open callu**](https://migact.net/news/open-call-for-participants-community-organizers-training-programme-2026/oc-organizatori-cz-1.pdf) a [**Přehledů workshopů**](https://migact.net/news/open-call-for-participants-community-organizers-training-programme-2026/workshops_organizeri_cz.pdf).
+Více o programu si přečtěte v [**Open callu**](https://migact.net/news/open-call-for-participants-community-organizers-training-programme-2026/oc-organizatori-cz-1.pdf) a [**Přehledů workshopů**](https://migact.net/news/open-call-for-participants-community-organizers-training-programme-2026/workshops_organizeri_cz-1.pdf).
 
 <!--more-->
 
-![](rozvrh-organizatori.webp)
+![](workshopschedule_cz.webp)
 
 ### **Jak se přihlásit?**
 
