@@ -5,6 +5,7 @@ date: 2026-03-09
 project: civiclink-advancing-civic-integration-in-prague
 resources:
   - oc-organizers-en.pdf
+  - workshops_organizers_en-1.pdf
 ---
 
 **Prague | April – October 2026**
