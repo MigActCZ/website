@@ -5,7 +5,7 @@ dtstart: 2026-03-01
 dtend: 2026-12-31
 partner: mc-praha-7
 supporters:
-  - agora-network
+  - nadacni-centrum-agora-7
   - ministry-of-the-interior-of-the-czech-republic
   - unhcr
 ---
