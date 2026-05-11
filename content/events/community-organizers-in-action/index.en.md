@@ -14,6 +14,8 @@ How do we  build strong, open communities in Prague? Is "community organizing" j
 
 Join us for **_Community Organizers in Action_**, an afternoon of networking and honest conversation about what it takes to act together in the Czech Republic.
 
+<!--more-->
+
 **What will happen:**
 
 **Real Talk:** Discussion with the with experts from the field about what community organizing really looks like.

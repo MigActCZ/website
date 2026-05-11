@@ -14,6 +14,8 @@ Jak vlastně budujeme silné a otevřené komunity v Praze? Je „komunitní org
 
 Přijďte na **Komunitní organizátoři v akci** — odpoledne plné networkingu a otevřené, upřímné debaty o tom, co znamená jednat společně v České republice.
 
+<!--more-->
+
 **Co vás čeká:**
 
 **Real Talk:** Diskuse s odborníky z praxe o realitě komunitního organizování.
