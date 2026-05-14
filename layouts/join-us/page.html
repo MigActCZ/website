@@ -7,6 +7,13 @@
         <h1>{{ .Title }}</h1>
         {{ .Content }}
     </header>
+    <section id="join-newsletter">
+        <div class="card">
+            <h3>{{ i18n "join_newsletter_header" }}</h3>
+            <p>{{ i18n "join_newsletter_text" }}</p>
+            <p class="button emphasized"><a href='{{ .Site.Params.newsletter }}' target="_blank">{{ i18n "join_newsletter_action" }}</a></p>
+        </div>
+    </section>
     <section id="join-volunteer" class="split">
         <img class="split-support rounded"
             src='{{ (.Resources.Get "join.webp").RelPermalink }}' alt=""
