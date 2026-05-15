@@ -30,10 +30,6 @@ Decided to use Sveltia, looks and feels better than DecapCMS. Mainly it allows s
 
 # CSS
 
-## Header border
-The border is a rainbow image, which prevents me to add regular border beneath the header.
-The workaround is to add top header for the first sibling of header, which is main.
-
 ## Hamburger menu
 I used CSS only tricks to avoid javascript. I have a hidden checkbox, which keeps track of open/close menu.
 The menu appears using change in height, because visibility is not animatable.

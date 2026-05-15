@@ -36,8 +36,6 @@ body {
   flex-direction: column;
   & > main {
     flex: 1; /* Footer position */
-    /* Workaround because of rainbow border image */
-    border-block-start: thin solid var(--color-teal);
     /* Headers */
     & > .intro {
       padding-block: 3rem;
@@ -349,6 +347,7 @@ main > section:last-child {
   background: var(--color-bg);
   z-index: 10;
   padding-block: 1.25rem;
+  box-shadow: 0 1px 0 0 var(--color-teal); /* Workaround to add bottom border - gradient image prevents regular border. */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -386,11 +385,11 @@ main > section:last-child {
   }
   & > #nav-panel {
     position: absolute;
-    top: calc(100% + 1px);
+    top: 100%;
     left: 0;
     right: 0;
     background: var(--color-bg);
-    z-index: 1;
+
     height: 0; /* When checked this changes and creates a smooth appearance */
     transition: height 0.5s ease-out;
     overflow-y: auto; /* To allow scrolling if the menu is bigger than screen */
