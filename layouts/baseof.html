@@ -48,7 +48,7 @@
                     {{- partial "inline-svg" "logos/instagram" -}}</a></li>
             </menu>
             <section id="footer-legal">
-                <menu>
+                <menu class="column">
                     {{ with site.GetPage "about" }}
                         {{ with .Resources.Get "directive_gdpr" }}
                     <li><a href="{{ .RelPermalink }}" target="_blank">{{- partial "inline-svg" "icons/file-text" -}}

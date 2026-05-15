@@ -467,7 +467,6 @@ main > section:last-child {
     }
   }
   #footer-legal {
-    margin-block-start: auto;
     color: var(--color-text-light);
     a:hover {
       text-decoration: underline;
