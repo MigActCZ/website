@@ -1499,6 +1499,7 @@ main > .intro {
     flex-direction: row;
     gap: 8.75rem;
     font-size: revert;
+    overflow-y: revert;
     & > #site-nav {
       padding: 0;
       display: flex;
@@ -1518,13 +1519,14 @@ main > .intro {
         }
       }
       /* Top level menu item with submenu */
-      & > li:has(menu):hover {
+      & > li:has(> menu):is(:hover, :focus-within) {
         /* Display submenu on hover */
         & > menu {
           display: block;
+          margin-block-start: var(--separator-gap);
         }
         /* I expect parent menuitem to have an svg indicator */
-        svg {
+        > a svg {
           transform: rotate(90deg);
         }
       }
