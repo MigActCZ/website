@@ -7,7 +7,7 @@ resources:
   - open-call-migact-10-pages.pdf
 ---
 
-In March, April and May 2025 MigAct is organizing its inaugural Training Program for Community Organizers. [Our program](Open Call-MigAct-10-pages.pdf) is designed to train and support local community organizers living in Prague who have ideas that promote intercultural openness, connect communities, and support active citizenship or socially beneficial goals (e.g., environmental protection, support of vulnerable groups, etc.).
+In March, April and May 2025 MigAct is organizing its inaugural Training Program for Community Organizers. [Our program](open-call-migact-10-pages.pdf) is designed to train and support local community organizers living in Prague who have ideas that promote intercultural openness, connect communities, and support active citizenship or socially beneficial goals (e.g., environmental protection, support of vulnerable groups, etc.).
 
 <!--more-->
 
