@@ -25,16 +25,16 @@ params:
   attribution: Made by Michal Tarina, designed by [Daniel Mevit](https://danielmevit.com) and led by Suzanne Verhaar.
 languages:
   en:
-    languageName: English
-    languageCode: en-US
+    label: English
+    locale: en-US
     title: MigAct - Support of Civic Engagement
     weight: 1
     params:
       description: Supporting civic engagement and community building for people with
         migration backgrounds in Prague
   cs:
-    languageName: Čeština
-    languageCode: cs-CZ
+    label: Čeština
+    locale: cs-CZ
     title: MigAct - Podpora občanské angažovanosti
     weight: 2
     params:
