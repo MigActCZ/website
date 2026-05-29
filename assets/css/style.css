@@ -1054,7 +1054,6 @@ main.section > div.content {
   background: var(--gradient-color);
   color: var(--color-bg);
 }
-#documents ul.buttons a,
 p.button.emphasized > a,
 ul.buttons.emphasized li:first-child:not(:only-child) > a {
   background-color: var(--block-color);
@@ -1167,17 +1166,43 @@ ul#introductionlist {
   }
 }
 #documents {
-  .buttons a {
-    font-size: 1.75rem;
+  ol {
+    list-style: none;
+    padding: 0;
+    width: 50%;
+    margin-inline: auto;
+
+    border: 1px solid var(--color-teal);
+    border-radius: var(--separator-gap);
+
+    gap: 0;
   }
-  li:nth-child(3n + 1) {
-    --block-color: var(--color-red);
+  ol > li {
+    padding: var(--separator-gap) var(--tight-gap);
   }
-  li:nth-child(3n + 2) {
-    --block-color: var(--color-teal);
+  ol > li:nth-child(even){
+    background-color: var(--color-bg-teal);
   }
-  li:nth-child(3n + 3) {
-    --block-color: var(--color-blue);
+  ol > li a {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    color: var(--color-teal);
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.25em;
+  }
+  ol > li a:hover,
+  ol > li a:focus {
+    color: var(--color-red);
+  }
+  ol > li a::before {
+    --size: 1.25em;
+    content: '';
+    display: inline-block;
+    width: var(--size);
+    height: var(--size);
+    background: url('/icons/file-text.svg') no-repeat center / contain;
   }
 }
 /* Backgrounds */
@@ -1404,7 +1429,8 @@ main > .intro {
   #story,
   #introduction > h2,
   #join-events,
-  #theory {
+  #theory,
+  #documents {
     text-align: center;
     & > p {
       padding-inline: 20%;

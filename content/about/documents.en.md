@@ -1,6 +1,10 @@
 ---
-title: Documents
+resources:
+  - migact_annual_report_2024.en.pdf
+  - statute.en.pdf
 ---
-- [MigAct z.s. statutes](statute.en.pdf)
-- [News, Reports and Resources](/news)
-{.buttons}
+
+## Annual Reports & Statutes
+
+1. [Annual report 2024](migact_annual_report_2024.en.pdf)
+2. [MigAct z.s. statutes](statute.en.pdf)

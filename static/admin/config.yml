@@ -219,12 +219,20 @@ collections:
         i18n: true
         fields:
           - { label: Body, name: body, widget: markdown, i18n: true }
-      - name: about_documents
-        label: About – Documents
+      - name: annual_reports
+        label: Annual Reports
         file: content/about/documents.{{locale}}.md
         i18n: true
+        media_folder: ''
         fields:
           - { label: Body, name: body, widget: markdown, i18n: true }
+          - label: Reports
+            name: resources
+            widget: file
+            choose_url: false
+            required: true
+            i18n: true
+            multiple: true
 
   - name: home_sections
     label: Home sections
