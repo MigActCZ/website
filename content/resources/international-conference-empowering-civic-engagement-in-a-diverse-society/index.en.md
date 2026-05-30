@@ -1,6 +1,5 @@
 ---
 title: 'International conference: Empowering Civic Engagement in a Diverse Society'
-category: resource
 date: 2023-10-01
 project: UNITES
 ---

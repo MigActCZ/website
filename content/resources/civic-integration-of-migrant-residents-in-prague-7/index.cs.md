@@ -1,10 +1,8 @@
 ---
 title: 'Publikace: Občanská integrace obyvatel s migračním původem v Praze 7'
-category: resource
 date: 2026-01-16
 project: pathways-to-civic-integration-of-residents-with-migrant-backgrounds
-resources:
-  - priklady-dobre-praxe-a-zkusenosti-s-obcanskou-integraci-obyvatel-s-migracnim-puvodem-v-praze-7_cz.pdf
+file: priklady-dobre-praxe-a-zkusenosti-s-obcanskou-integraci-obyvatel-s-migracnim-puvodem-v-praze-7_cz.pdf
 ---
 
 **Stáhnete naší novou studii:**

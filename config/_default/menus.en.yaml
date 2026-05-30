@@ -22,6 +22,9 @@ main:
   - identifier: join_us
     pageRef: /join-us
     weight: 50
+  - identifier: resources
+    pageRef: /resources
+    weight: 55
   - identifier: contact
     pageRef: /contact
     weight: 60

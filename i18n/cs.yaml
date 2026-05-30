@@ -2,9 +2,11 @@
 about: O nás
 our_team: Náš tým
 our_partners: Naši partneři a dárci
+activity: Činnost
 news: Aktuality
 events: Akce
 projects: Projekty
+resources: Zdroje
 join_us: Přidejte se k nám
 contact: Kontaktujte nás
 
@@ -70,7 +72,6 @@ register: Registrovat
 explore_events: Vyhledat nadcházející akce
 
 # News
-resource: Zdroj
 brief: Zpráva
 report: Report
 

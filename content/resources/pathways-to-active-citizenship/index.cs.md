@@ -1,10 +1,8 @@
 ---
 title: Cesta k aktivnímu občanství
-category: report
 date: 2023-12-31
 project: ''
-resources:
-  - inbaze_migact_vysledky-vyzkumu_cz.pdf
+file: inbaze_migact_vysledky-vyzkumu_cz.pdf
 ---
 
 **Stáhnete naší novou studii**

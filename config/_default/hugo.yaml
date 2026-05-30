@@ -45,11 +45,13 @@ languages:
         events: /akce/:slug/
         news: /zpravy/:slug/
         projects: /projekty/:slug/
+        resources: /materialy/:slug/
       section:
         events: /akce/
         news: /zpravy/
         partners: /partneri/
         projects: /projekty/
+        resources: /materialy/
         team: /tym/
 outputFormats:
   calendar:

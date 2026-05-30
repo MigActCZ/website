@@ -1,0 +1,20 @@
+{{ define "main" }}
+<main id="resource" class="detail">
+  <h1>{{ .Title }}</h1>
+  {{ with .Params.project }}
+  {{ $project := (site.GetPage "projects").GetPage . }}
+  <h2>{{ i18n "project" }}: <a href='{{ $project.RelPermalink }}'>{{ $project.Title }}</a></h2>
+  {{ end }}
+  <time datetime='{{ .Date | dateFormat "2006-01-02" }}'>{{ .Date | dateFormat "2 Jan 2006" }}</time>
+  <section>
+    {{ .Content }}
+  </section>
+  {{ with .Params.file }}
+  <section>
+    <h2>{{ i18n "attachments" }}</h2>
+        <a href="{{ ($.Resources.Get .).RelPermalink }}">
+          {{ partial "inline-svg" "icons/file-text" }}{{ . }}</a>
+  </section>
+  {{ end }}
+</main>
+{{ end }}

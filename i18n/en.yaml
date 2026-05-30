@@ -2,9 +2,11 @@
 about: About us
 our_team: Our Team
 our_partners: Our Partners and Donors
+activity: Activity
 news: News
 events: Events
 projects: Projects
+resources: Resources
 join_us: Join us
 contact: Get in touch
 
@@ -70,7 +72,6 @@ register: Register
 explore_events: Explore upcoming events
 
 # News
-resource: Resource
 brief: News
 report: Report
 
