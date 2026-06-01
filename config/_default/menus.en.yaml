@@ -10,11 +10,8 @@ main:
     parent: about
     pageRef: /partners
     weight: 14
-  - identifier: news
-    pageRef: /news
-    weight: 16
-  - identifier: events
-    pageRef: /events
+  - identifier: activity
+    pageRef: /activity
     weight: 30
   - identifier: projects
     pageRef: /projects

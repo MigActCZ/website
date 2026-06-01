@@ -1,6 +1,5 @@
 ---
 title: Annual Report 2024
-category: report
 date: 2025-07-02
 ---
 We’re already halfway through 2025, but before we move further ahead, let’s take one last look back at 2024 at MigAct. Read our Annual Report [here](/about/migact_annual_report_2024.en.pdf).

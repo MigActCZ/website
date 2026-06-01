@@ -1,6 +1,5 @@
 ---
 title: Výroční zpráva 2024
-category: report
 date: 2025-07-02
 ---
 Jsme už v polovině roku 2025, ale než se posuneme dál, pojďme se ještě naposledy ohlédnout za rokem 2024 u MigAct. Přečtěte si naši Výroční zprávu [zde](/cs/o-nas/migact_annual_report_2024.cs.pdf).

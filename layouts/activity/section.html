@@ -1,0 +1,14 @@
+{{ define "main" }}
+<main class="section">
+    <h1 class="intro">{{ .Title }}</h1>
+    {{ $news := (site.GetPage "news").RegularPages }}
+    {{ $events := (site.GetPage "events").RegularPages }}
+    {{ $pages := (union $news $events).ByDate.Reverse }}
+    <ul id="activity" class="entities">
+        {{ range (.Paginate $pages).Pages }}
+            <li>{{ .Render (printf "view_%s" (singularize .Type )) }}</li>
+        {{ end }}
+    </ul>
+    {{ partial "pagination.html" . }}
+</main>
+{{ end }}

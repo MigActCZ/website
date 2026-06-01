@@ -71,10 +71,6 @@ calendar: Add to calendar
 register: Register
 explore_events: Explore upcoming events
 
-# News
-brief: News
-report: Report
-
 # Contact page
 phone: Phone
 email: Email

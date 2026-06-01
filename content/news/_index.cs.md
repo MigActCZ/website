@@ -1,3 +1,3 @@
 ---
-title: Aktuality, zpravy a materialy
+title: Aktuality
 ---

@@ -32,6 +32,13 @@ languages:
     params:
       description: Supporting civic engagement and community building for people with
         migration backgrounds in Prague
+    permalinks:
+      page:
+        events: /activity/events/:slug/
+        news: /activity/news/:slug/
+      section:
+        events: /activity/events/
+        news: /activity/news/
   cs:
     label: Čeština
     locale: cs-CZ
@@ -42,13 +49,15 @@ languages:
         pozadím v Praze
     permalinks:
       page:
-        events: /akce/:slug/
-        news: /zpravy/:slug/
+        activity: /cinnost/:slug/
+        events: /cinnost/akce/:slug/
+        news: /cinnost/zpravy/:slug/
         projects: /projekty/:slug/
         resources: /materialy/:slug/
       section:
-        events: /akce/
-        news: /zpravy/
+        activity: /cinnost/
+        events: /cinnost/akce/
+        news: /cinnost/zpravy/
         partners: /partneri/
         projects: /projekty/
         resources: /materialy/

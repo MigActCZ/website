@@ -820,7 +820,7 @@ ul.entities {
     font-size: 1.125rem;
   }
 }
-.resource {
+.resource, .news {
   --block-color: var(--color-orange);
   border: thin solid var(--block-color);
   & > header {
@@ -845,7 +845,8 @@ ul#attachments {
   }
 }
 #events,
-#join-events {
+#join-events,
+#activity {
   --block-color: var(--color-teal);
   article {
     header {
@@ -1479,6 +1480,7 @@ main > .intro {
   }
   #team.entities,
   #events.entities,
+  #activity.entities,
   #join-events .entities {
     grid-template-columns: repeat(3, 1fr);
   }
