@@ -820,7 +820,13 @@ ul.entities {
     font-size: 1.125rem;
   }
 }
-.resource, .news {
+#resources {
+  article.resource {
+    border: thin solid var(--color-orange);
+  }
+}
+
+.news {
   --block-color: var(--color-orange);
   border: thin solid var(--block-color);
   & > header {

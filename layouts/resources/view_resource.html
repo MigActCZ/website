@@ -1,12 +1,8 @@
-<article class='resource'>
-  <header>
-    <time datetime='{{ .Date | dateFormat "2006-01-02" }}'>{{ .Date | dateFormat "2 Jan 2006" }}</time>
-    {{ if .Params.file }}
-      {{ partial "inline-svg" "icons/paperclip" }}
-    {{ end }}
-  </header>
-  <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-  <section>
-    {{ .Summary }}
-  </section>
+<article class='resource column'>
+  {{ with .Resources.Get .Params.file }}
+  <h2><a href="{{ .RelPermalink }}">{{ $.Title }}</a></h2>
+  {{ else }}
+  <h2><a href="{{ .Params.link }}">{{ $.Title }}</a></h2>
+  {{ end }}
+  {{ .Summary }}
 </article>
