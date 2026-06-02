@@ -18,5 +18,5 @@ The workshop will be held in English. Small refreshments will be provided.
 
 **Registration is required, max. capacity is 15 people, max. 2 people per organization.**
 
-Trainer: Natallia Allen
+Trainer: Natallia Allen\
 Contact: natallia@migact.net

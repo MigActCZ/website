@@ -1,6 +1,6 @@
 ---
 title: Community Organizers in Action
-featured: networking-2026-formal-en.webp
+featured: networking-2026-formal.en.webp
 date: 2026-05-08
 dtstart: 2026-05-27T16:00:00
 dtend: 2026-05-27T18:30:00
@@ -30,7 +30,7 @@ Join us for **_Community Organizers in Action_**, an afternoon of networking and
 ⏰ 16:00–18:30
 📍 Podnikatelské a inovační centrum hl. m. Prahy (PIC), _Škodův palác_. Charvátova 41/6, Praha 1
 
- Please RSVP here by May 25th: [https://forms.gle/anbrdkVHTNbJKXiF9](https://forms.gle/anbrdkVHTNbJKXiF9?fbclid=IwZXh0bgNhZW0CMTAAYnJpZBEwRUg1WVFsa1Nyd0NWUlQwd3NydGMGYXBwX2lkEDIyMjAzOTE3ODgyMDA4OTIAAR75UCdeOR1Df2AyO9jMzkiPjCIIDmRAfw_HdpBkQ4BVk1C1W9i7ddr_gZ1htA_aem_ZtxTRKkjJtpAFZDCYAwQ1w)
+ Please RSVP here by May 25th: [https://forms.gle/opWbRdqsp9tCwUJM7](https://forms.gle/opWbRdqsp9tCwUJM7)
 
 We’re excited to meet you!
 
