@@ -3,7 +3,7 @@ title: 'Open call: Facilitator training on Democracy Dialogues — DEMOS methodo
 date: 2026-02-06
 project: practising-dialogue
 resources:
-  - open-call-facilitator-training-on-democracy-dialogues-demos-methodology-1.pdf
+  - open-call-facilitator-training-on-democracy-dialogues-demos-methodology.pdf
 ---
 
 In a time of growing polarization, many conversations leave us feeling unheard, disconnected, or divided. We speak to argue, persuade, or solve problems, but too rarely to truly listen and connect with each other. Meaningful dialogue creates something different: a space for expanding our empathy, trust, and connection with others and with ourselves, where democracy can be practiced, not just discussed.
@@ -12,6 +12,6 @@ MigAct invites facilitators, trainers, civic educators, and community organizers
 
 This training is for those who work with communities and want to strengthen their ability to bring people together, bridge differences, and create spaces where every voice can be heard.
 
-More info: [Open Call - facilitator training on Democracy Dialogues - DEMOS methodology](https://migact.net/news/open-call-facilitator-training-on-democracy-dialogues--demos-methodology/open-call-facilitator-training-on-democracy-dialogues-demos-methodology-1.pdf)
+More info: [Open Call - facilitator training on Democracy Dialogues - DEMOS methodology](open-call-facilitator-training-on-democracy-dialogues-demos-methodology.pdf)
 
-## Apply here: [https://forms.gle/XVxeNivEssdZogRW9](https://forms.gle/XVxeNivEssdZogRW9)
+## Apply [here](https://forms.gle/XVxeNivEssdZogRW9).

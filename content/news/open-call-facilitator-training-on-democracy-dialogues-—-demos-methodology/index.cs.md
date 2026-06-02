@@ -12,6 +12,6 @@ MigAct zve facilitátory, školitele, lektoři a lektorky občanského vzděláv
 
 Školení proběhne v angličtině.
 
-Více informací:  [Open Call - facilitator training on Democracy Dialogues - DEMOS methodology](https://migact.net/news/open-call-facilitator-training-on-democracy-dialogues--demos-methodology/open-call-facilitator-training-on-democracy-dialogues-demos-methodology-1.pdf)
+Více informací: [Open Call - facilitator training on Democracy Dialogues - DEMOS methodology](open-call-facilitator-training-on-democracy-dialogues-demos-methodology.pdf)
 
-## Přihlaste se zde: [https://forms.gle/XVxeNivEssdZogRW9](https://forms.gle/XVxeNivEssdZogRW9)
+## Přihlaste se [zde](https://forms.gle/XVxeNivEssdZogRW9).

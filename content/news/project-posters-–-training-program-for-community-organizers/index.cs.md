@@ -9,7 +9,7 @@ Náš vzdělávací program je v plném proudu! Dne 26. března se 8 účastník
 
 <!--more-->
 
-Více informací o programu si můžete přečíst [zde](http://migact.net/en/wp-content/uploads/2025/02/Open-Call.pdf).
+Více informací o programu si můžete přečíst [zde](/news/open-call-training-program/).
 
 - **Marharyta Golobrodska** – Odborně zaměřené workshopy pro ženy uprchlice z Ukrajiny s dětmi do a vč. 12 let.
 - **Suzanne Verhaar** – [Pohlednice od cizích Čechů / Postcards from Foreign Czechs](https://www.suzanneverhaar.eu/postcards-from-foreign-czechs?fbclid=IwY2xjawJXT1xleHRuA2FlbQIxMAABHaVRFH6kgxzoCWQNbAQ__vXiQ342S5k5-y62Ue1B076DDvr0Y-Of3ruujw_aem_CU7WbKtQVe8zkzZeD1Beuw)

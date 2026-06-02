@@ -9,7 +9,7 @@ Our training program is in full swing! On 26 March 8 project participants joined
 
 <!--more-->
 
-You can read more about the program [here](news/open-call-training-program/).
+You can read more about the program [here](/news/open-call-training-program/).
 
 - **Marharyta Golobrodska** – Odborně zaměřené workshopy pro ženy uprchlice z Ukrajiny s dětmi do a vč. 12 let.
 - **Suzanne Verhaar** – Pohlednice od cizích Čechů / Postcards from Foreign Czechs

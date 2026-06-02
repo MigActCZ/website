@@ -3,8 +3,8 @@ title: 'Open Call for Participants: Community Organizers Training Programme 2026
 date: 2026-03-09
 project: civiclink-advancing-civic-integration-in-prague
 resources:
-  - oc-organizers-en.pdf
-  - workshops_organizers_en-1.pdf
+  - oc-organizers.en.pdf
+  - workshops_organizers.en.pdf
 ---
 
 **Prague | April – October 2026**
@@ -13,11 +13,11 @@ Are you passionate about civic life in Prague? Whether you are mobilizing neighb
 
 Join our **Community Organizers Training**—a 40-hour capacity-building journey designed for those ready to deepen their practice and amplify their impact.
 
-Read more about the program in [**Open call**](https://migact.net/news/open-call-for-participants-community-organizers-training-programme-2026/oc-organizers-en.pdf) and [**Workshops overview**](workshops_organizers_en.pdf)
+Read more about the program in [**Open call**](oc-organizers.en.pdf) and [**Workshops overview**](workshops_organizers.en.pdf)
 
 <!--more-->
 
-![](workshopschedule_en.webp)
+![](workshopschedule.en.webp)
 
 ### How to Apply
 
