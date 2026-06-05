@@ -2,7 +2,7 @@
 title: Pathways to active citizenship
 date: 2023-12-31
 project: ''
-file: inbaze_migact_pilot-study.en.pdf
+file: inbaze-migact-pilot-study.en.pdf
 ---
 
 Allen, Natallia, Klára Slepičková. 2023. Pathways to active citizenship of residents with a migrant background in the city of Prague.
