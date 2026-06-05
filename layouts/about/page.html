@@ -51,9 +51,28 @@
         </a>
     </section>
     <section id="documents">
-        {{ with .Resources.Get "documents.md" }}
-            {{ .Content }}
+        {{ $section_header := i18n "about_documents_header" }}
+        <h2 id="{{ anchorize $section_header }}">{{ $section_header }}</h2>
+        <ol>
+        {{ $reports := .Resources.Match "reports/*.pdf" }}
+        {{ range (sort $reports "Name" "desc") }}
+            {{ $matches := findRESubmatch `^(\d{4})-[^.]*(?:\.(\w{2}))?\.pdf$` (path.Base .Name) }}
+            {{ $year := index (index $matches 0) 1 }}
+            {{ $lang := index (index $matches 0) 2 }}
+            {{ if or (eq $lang "") (eq $lang site.Language.Name) }}
+            <li>
+                <a href="{{ .RelPermalink }}">{{ printf (i18n "annual_report_template") $year }}
+                    <span class="size">{{- partial "human_size" (len .Content) -}}</span></a>
+            </li>
+            {{ end }}
         {{ end }}
+        {{ with .Resources.Get "statute" }}
+            <li>
+                <a href="{{ .RelPermalink }}">{{ .Title }}
+                    <span class="size">{{- partial "human_size" (len .Content) -}}</span></a>
+            </li>
+        {{ end }}
+        </ol>
     </section>
 </main>
 {{ end }}

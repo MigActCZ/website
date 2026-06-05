@@ -39,6 +39,8 @@ inv_newsletter_action: Přihlásit se k odběru
 
 #About us
 theory: Teorie zmeny
+about_documents_header: Výroční zprávy & Stanovy
+annual_report_template: Výroční zpráva %v
 
 # Dynamic lists
 home: Domov

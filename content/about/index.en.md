@@ -7,5 +7,8 @@ resources:
   - src: InformationPersonalDataProcessing.en.pdf
     name: info_personal_data_processing
     title: Information on Personal Data Processing
+  - src: migact-statute.en.pdf
+    name: statute
+    title: Statute
 ---
 MigAct is defined not just by where we come from, but by what we build together. We exist to turn individual stories into shared strength and active community.

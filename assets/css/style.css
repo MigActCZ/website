@@ -1182,9 +1182,14 @@ ul#introductionlist {
     align-items: center;
     gap: 0.5em;
     color: var(--color-teal);
-    font-weight: 700;
+    font-weight: bolder;
     text-decoration: none;
     font-size: 1.25em;
+
+    span.size {
+      margin-left: auto;
+      font-weight: normal;
+    }
   }
   ol > li a:hover,
   ol > li a:focus {
