@@ -2,7 +2,7 @@
 title: Nastassia Anishchanka
 contact: nastassia@migact.net
 image: photo.webp
-position: Koordinátorka vzdělávacího programu pro komunitní lídry, členka MigAct
+position: Koordinátorka vzdělávacího programu pro komunitní lídry, Členka spravní rady
 weight: 7
 build:
   list: always

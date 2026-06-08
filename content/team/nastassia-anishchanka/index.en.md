@@ -2,7 +2,7 @@
 title: Nastassia Anishchanka
 contact: nastassia@migact.net
 image: photo.webp
-position: Coordinator of the Community Organizer Training Program, MigAct Member
+position: Coordinator of the Community Organizer Training Program, Board Member
 weight: 7
 build:
   list: always
