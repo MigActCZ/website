@@ -2,7 +2,7 @@
 title: Mónica Márquez
 contact: monica@migact.net
 image: photo.webp
-position: Spoluředitelka
+position: Spoluředitelka, Členka spravní rady
 weight: 2
 build:
   list: always

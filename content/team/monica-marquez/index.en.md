@@ -2,7 +2,7 @@
 title: Mónica Márquez
 contact: monica@migact.net
 image: photo.webp
-position: Co-Director
+position: Co-Director, Board Member
 weight: 2
 build:
   list: always
