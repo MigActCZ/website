@@ -5,6 +5,7 @@ window.updateGridStatusTag = function(){
 
     entities.querySelectorAll(":scope article").forEach(article => {
       const endTime = article.querySelector(":scope > header > .timeline > time:last-child");
+      if (!endTime) return; // Early exit from within news activity.
       const date = new Date(endTime.dateTime);
       const tag = article.querySelector("header > .status-tag");
       let key = "active";
