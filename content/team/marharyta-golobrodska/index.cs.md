@@ -3,7 +3,7 @@ title: Marharyta Golobrodska
 contact: rita@migact.net
 image: rita.webp
 position: Vedoucí komunikace
-weight: 6
+weight: 5
 build:
   list: always
 ---
