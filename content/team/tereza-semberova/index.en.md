@@ -3,7 +3,7 @@ title: Tereza Šemberová
 contact: tereza@migact.net
 image: photo.webp
 position: Financial manager
-weight: 12
+weight: 9
 build:
   list: always
 ---
