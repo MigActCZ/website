@@ -1163,8 +1163,6 @@ ul#introductionlist {
   ol {
     list-style: none;
     padding: 0;
-    width: 50%;
-    margin-inline: auto;
 
     border: 1px solid var(--color-teal);
     border-radius: var(--separator-gap);
@@ -1434,6 +1432,10 @@ main > .intro {
     & > p {
       padding-inline: 20%;
     }
+  }
+  #documents ol {
+    width: 50%;
+    margin-inline: auto;
   }
   #gallery {
     grid-template-columns: repeat(6, 1fr);
