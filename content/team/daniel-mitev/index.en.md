@@ -3,7 +3,7 @@ title: Daniel Mitev
 contact: hi@danielmevit.com
 image: photo.webp
 position: Multimedia Designer, MigAct member
-weight: 10
+weight: 8
 build:
   list: always
 ---
