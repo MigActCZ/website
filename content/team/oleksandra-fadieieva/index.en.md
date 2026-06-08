@@ -3,7 +3,7 @@ title: Oleksandra Fadieieva
 contact: alex@migact.net
 image: photo.webp
 position: MigAct Member
-weight: 9
+weight: 12
 build:
   list: always
 ---
