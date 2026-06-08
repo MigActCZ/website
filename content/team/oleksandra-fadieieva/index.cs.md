@@ -2,7 +2,7 @@
 title: Oleksandra Fadieieva
 contact: alex@migact.net
 image: photo.webp
-position: Členka správní rady
+position: Členka MigAct
 weight: 5
 build:
   list: always
