@@ -3,7 +3,7 @@ title: Marina Puzdrova
 contact: marina@migact.net
 image: photo.webp
 position: MigAct Member
-weight: 6
+weight: 8
 build:
   list: always
 ---
