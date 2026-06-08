@@ -3,7 +3,7 @@ title: Suzanne Verhaar
 contact: suzanne@migact.net
 image: 20210116_122834.webp
 position: Web Admin, MigAct Member
-weight: 8
+weight: 7
 build:
   list: always
 ---
