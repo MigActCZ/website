@@ -3,7 +3,7 @@ title: Ronald Rodrigues
 contact: ronald@migact.net
 image: ronald-rodrigues.webp
 position: Koordinátor projektu na Praze 7
-weight: 8
+weight: 6
 build:
   list: always
 ---
