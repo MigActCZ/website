@@ -1,13 +1,13 @@
 ---
-title: General members - Všeobecní členové
+title: MigAct members - Členové a členky MigActu
 contact: contact@migact.net
 image: generalmembers.webp
 position: Člen(ka) MigAct
 weight: 10
 build:
   list:
-    label: Relevant
     value: always
+    label: Relevant
 ---
 
 Pokud se k nám chcete přidat, [ozvěte se](https://migact.net/cs/kontakt/)!
