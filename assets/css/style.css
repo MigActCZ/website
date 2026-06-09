@@ -1164,10 +1164,12 @@ ul#introductionlist {
     list-style: none;
     padding: 0;
 
-    border: 1px solid var(--color-teal);
+    border: thin solid var(--color-teal);
     border-radius: var(--separator-gap);
 
     gap: 0;
+
+    background-color: var(--color-bg);
   }
   ol > li {
     padding: var(--separator-gap) var(--tight-gap);
