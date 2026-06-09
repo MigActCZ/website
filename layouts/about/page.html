@@ -66,7 +66,7 @@
             </li>
             {{ end }}
         {{ end }}
-        {{ with .Resources.Get "statute" }}
+        {{ with .Resources.Get "statutes" }}
             <li>
                 <a href="{{ .RelPermalink }}">{{ .Title }}
                     <span class="size">{{- partial "human_size" (len .Content) -}}</span></a>
