@@ -16,12 +16,12 @@ main:
   - identifier: projects
     pageRef: /projects
     weight: 40
+  - identifier: resources
+    pageRef: /resources
+    weight: 45
   - identifier: join_us
     pageRef: /join-us
     weight: 50
-  - identifier: resources
-    pageRef: /resources
-    weight: 55
   - identifier: contact
     pageRef: /contact
     weight: 60
