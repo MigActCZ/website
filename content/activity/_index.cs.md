@@ -1,3 +1,3 @@
 ---
-title: Činnost
+title: Novinky a akce
 ---
