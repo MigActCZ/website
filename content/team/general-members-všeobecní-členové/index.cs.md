@@ -1,7 +1,7 @@
 ---
 title: MigAct members - Členové a členky MigActu
 contact: contact@migact.net
-image: generalmembers.webp
+image: generalmembers-1.webp
 position: Člen(ka) MigAct
 weight: 10
 build:
