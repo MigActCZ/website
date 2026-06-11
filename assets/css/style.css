@@ -1552,7 +1552,6 @@ main > .intro {
         /* Display submenu on hover */
         & > menu {
           display: block;
-          margin-block-start: var(--separator-gap);
         }
         /* I expect parent menuitem to have an svg indicator */
         > a svg {
