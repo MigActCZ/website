@@ -5,9 +5,7 @@ image: generalmembers-1.webp
 position: Člen(ka) MigAct
 weight: 10
 build:
-  list:
-    value: always
-    label: Relevant
+  list: always
 ---
 
 Pokud se k nám chcete přidat, [ozvěte se](https://migact.net/cs/kontakt/)!
