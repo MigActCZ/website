@@ -45,7 +45,7 @@ collections:
             options:
               - { label: "Relevant", value: "always" }
               - { label: "Archived", value: "never" }
-            default: { label: "Relevant", value: "always" }
+            default: always
             i18n: duplicate
   - name: team
     label: Team
@@ -75,7 +75,7 @@ collections:
             options:
               - { label: "Relevant", value: "always" }
               - { label: "Archived", value: "never" }
-            default: { label: "Relevant", value: "always" }
+            default: always
             i18n: duplicate
   - name: projects
     label: Projects
