@@ -827,18 +827,9 @@ ul.entities {
 }
 
 .news {
-  --block-color: var(--color-orange);
-  border: thin solid var(--block-color);
-  & > header {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: center;
-    gap: var(--medium-gap);
-  }
-  & > section a {
-    color: var(--block-color);
-  }
+  --block-color: var(--color-blue);
 }
+
 ul#attachments {
   display: flex;
   flex-wrap: wrap;
@@ -852,16 +843,21 @@ ul#attachments {
 }
 #events,
 #join-events,
-#activity {
+#activity,
+#news {
   --block-color: var(--color-teal);
   article {
+    border: thin solid var(--block-color);
     header {
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
-    & > div {
+    & > section {
       flex: 1;
+      a {
+        color: var(--block-color);
+      }
     }
     footer {
       display: flex;

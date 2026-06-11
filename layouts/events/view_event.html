@@ -14,7 +14,7 @@
     <div class="status-tag"></div>
   </header>
   <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-  <div>{{ .Summary }}</div>
+  <section>{{ .Summary }}</section>
   <footer class="logistics">
     <div class="location">
       {{- partial "inline-svg" "icons/map-pin" -}}{{ replaceRE `^.*,\s*\d\d\d\s+\d\d\s+` "" (default "TBA" .Params.location) }}</div>
