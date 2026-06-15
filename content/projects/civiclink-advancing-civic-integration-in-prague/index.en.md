@@ -4,6 +4,13 @@ date: 2025-08-15
 dtstart: 2025-09-01
 dtend: 2027-08-31
 partner: epim
+images:
+  - epim-6.webp
+  - epim-5.webp
+  - epim-4.webp
+  - epim-3.webp
+  - epim-2.webp
+  - epim-1.webp
 ---
 
 One of our key priorities for the coming years is to continue building a vibrant and engaged community where people connect, share knowledge, and support one another in strengthening their civic and political presence within Czech society. In the framework of this cooperation with EPIM we would like to expand and strengthen the MigAct community while providing continuous support for the civic and political participation of Prague residents with migration backgrounds.
