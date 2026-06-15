@@ -38,7 +38,7 @@ body {
     flex: 1; /* Footer position */
     /* Headers */
     & > .intro {
-      padding-block: 3rem;
+      padding-block: 3rem 2rem;
     }
     & > h1.intro {
       margin-block-start: 0;
@@ -112,6 +112,10 @@ h4 {
   font-weight: normal;
   a {
     color: var(--color-text);
+  }
+
+  &:first-child {
+    margin-block-start: 0;
   }
 }
 h3 {
@@ -321,7 +325,7 @@ address#contacts {
   padding-inline: var(--content-inline-padding);
 }
 :where(#home, .page) > section {
-  padding-block: var(--big-gap);
+  padding-block: var(--tight-gap);
 }
 /* This is for background */
 main > section:last-child {
@@ -601,6 +605,9 @@ main > section:last-child {
   border: thin solid var(--color-border);
   border-radius: 1rem;
   background: var(--color-bg);
+  h2 {
+    margin-block-start: revert;
+  }
   h3 {
     margin: 0;
   }
@@ -704,7 +711,7 @@ ul.elevated-cards > li,
   & > .dl-item {
     border: thin solid var(--block-color);
     border-radius: 2em;
-    padding: 5rem;
+    padding: 3rem;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     font-size: 1.5em;
@@ -739,6 +746,7 @@ ul.entities {
   gap: var(--big-gap);
   grid-template-columns: 1fr;
   margin-block-end: var(--big-gap);
+  text-align: start;
   article {
     /* Needed to stretch to entire row height */
     box-sizing: border-box;
@@ -1352,6 +1360,9 @@ main > .intro {
         }
       }
     }
+  }
+  :where(#home, .page) > section {
+    padding-block: var(--big-gap);
   }
   #story,
   header.intro,
