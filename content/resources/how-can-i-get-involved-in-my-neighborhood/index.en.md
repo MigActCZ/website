@@ -1,5 +1,6 @@
 ---
 title: How can i get involved in my neighborhood?
+date: 2021-10-05
 link: ''
 project: ''
 file: praha11-how-can-i-get-involved-in-my-neigborhood.en.pdf

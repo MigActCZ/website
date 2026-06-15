@@ -1,5 +1,6 @@
 ---
 title: Jak se mohu zapojit ve své čtvrti?
+date: 2021-10-05
 link: ''
 project: ''
 file: praha11-jak-se-mohu-zapojit-ve-sve-ctvrti.cs.pdf
