@@ -809,6 +809,9 @@ ul.entities {
   #linked-news {
     --block-color: var(--color-blue);
   }
+  #linked-resources {
+    --block-color: var(--color-orange);
+  }
   .cards li {
     padding: var(--medium-gap);
     article {

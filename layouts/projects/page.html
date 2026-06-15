@@ -52,8 +52,31 @@
         {{ range . }}
           <li><article class="column">
             <time datetime='{{ .Date | dateFormat "2006-01-02" }}'>
-              {{ partial "inline-svg" "icons/notebook-pen" }}{{ .Date | dateFormat "2 Jan 2006" }}</time>
+              {{ partial "inline-svg" "icons/newspaper" }}{{ .Date | dateFormat "2 Jan 2006" }}</time>
             <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          </article></li>
+        {{ end }}
+      </ul>
+      </section>
+    {{ end }}
+    {{ $res := site.GetPage "resources" }}
+    {{ $key := path.Base $.Path }}
+    {{ $related := where $res.RegularPages "Params.project" $key }}
+    {{ with $related }}
+      <section id="linked-resources">
+      <h2>{{ i18n "linked_resources" }}</h2>
+      <ul class="column cards">
+        {{ range . }}
+          <li><article class="column">
+            <time datetime='{{ .Date | dateFormat "2006-01-02" }}'>
+              {{ partial "inline-svg" "icons/notebook-pen" }}{{ .Date | dateFormat "2 Jan 2006" }}</time>
+              {{ $title := .Title }}
+              <h3>
+              {{ with .Resources.Get .Params.file }}
+              <a href="{{ .RelPermalink }}">{{ $title }}</a>
+              {{ else }}
+              <a href="{{ .Params.link }}">{{ $title }}</a>
+              {{ end }}</h3>
           </article></li>
         {{ end }}
       </ul>
