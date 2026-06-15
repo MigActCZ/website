@@ -26,12 +26,6 @@ Join us for **_Community Organizers in Action_**, an afternoon of networking and
 
 **Networking Wall:** Bring your flyers or business cards! We’ll have a space for you to share your work and find collaborators.
 
-🗓️ May 27, 2026
-⏰ 16:00–18:30
-📍 Podnikatelské a inovační centrum hl. m. Prahy (PIC), _Škodův palác_. Charvátova 41/6, Praha 1
-
- Please RSVP here by May 25th: [https://forms.gle/opWbRdqsp9tCwUJM7](https://forms.gle/opWbRdqsp9tCwUJM7)
-
 We’re excited to meet you!
 
 This Project has been supported by the European Philanthropic Initiative for Migration (EPIM), a collaborative initiative of the Network of European Foundations (NEF).

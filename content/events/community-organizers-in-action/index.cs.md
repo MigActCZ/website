@@ -18,19 +18,13 @@ Přijďte na **Komunitní organizátoři v akci** — odpoledne plné networki
 
 **Co vás čeká:**
 
-**Real Talk:** Diskuse s odborníky z praxe o realitě komunitního organizování.
+\*\*Real Talk:\*\* Diskuse s odborníky z praxe o realitě komunitního organizování.
 
-**Projects in Action:** Účastníci našeho vzdělávacího programu představí lokální projekty, které právě teď spouštějí.
+\*\*Projects in Action:\*\* Účastníci našeho vzdělávacího programu představí lokální projekty, které právě teď spouštějí.
 
-**Speed Dating & Networking:** Rychlý a zábavný způsob, jak se seznámit s lidmi v místnosti a najít nové spojence.
+\*\*Speed Dating & Networking:\*\* Rychlý a zábavný způsob, jak se seznámit s lidmi v místnosti a najít nové spojence.
 
-**Networking Wall:** Přineste letáky nebo vizitky! Připravíme prostor, kde můžete představit svou práci a najít spolupracovníky.
-
-🗓️  27. května, 2026
-⏰  16:00–18:30
-📍  Podnikatelské a inovační centrum hl. m. Prahy (PIC), _Škodův palác_. Charvátova 41/6, Praha 1
-
- Prosíme o potvrzení účasti přes odkaz do 25. 05.: [https://forms.gle/opWbRdqsp9tCwUJM7](https://forms.gle/opWbRdqsp9tCwUJM7)
+\*\*Networking Wall:\*\* Přineste letáky nebo vizitky! Připravíme prostor, kde můžete představit svou práci a najít spolupracovníky.
 
 Těšíme se na vás!
 
