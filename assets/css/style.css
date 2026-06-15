@@ -1047,7 +1047,7 @@ main.section > div.content {
 }
 
 #join-newsletter {
-  --block-color: var(--color-orange);
+  --block-color: var(--color-red);
   a {
     margin: var(--medium-gap) auto 0;
   }
@@ -1383,6 +1383,7 @@ main > .intro {
   header.intro,
   main.section > div.content,
   #site-footer,
+  #join-newsletter,
   #join-donate {
     padding-inline: calc(var(--content-inline-padding) * 1.2);
   }
@@ -1410,7 +1411,8 @@ main > .intro {
     }
   }
   #donate,
-  #socials-newsletter {
+  #socials-newsletter,
+  #join-newsletter > .card {
     background-image: url("/pattern-side.svg");
     padding-inline: 130px;
   }
