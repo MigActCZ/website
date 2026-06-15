@@ -6,6 +6,10 @@ dtend: 2026-09-30
 partner: civic-innovation-fund
 supporters:
   - hermes
+images:
+  - d-3.webp
+  - d-1.webp
+  - d2.webp
 partners:
   - hermes
   - civic-innovation-fund
