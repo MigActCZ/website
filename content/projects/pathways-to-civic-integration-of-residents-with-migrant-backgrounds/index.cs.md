@@ -13,6 +13,9 @@ images:
   - img_20250917_100329665.webp
   - img_20250917_100549264.webp
   - img_9008.webp
+  - p7.1.webp
+  - p7.2.webp
+  - p7.3.webp
 ---
 
 Tento projekt si klade za cíl zmapovat příklady dobré praxe občanské integrace obyvatel s migračním původem v rámci místní občanské společnosti na Praze 7, které mohou sloužit jako příklad a inspirace pro další iniciativy. Mapování bude probíhat participativním způsobem – nejprve formou rešerší, následně pak prostřednictvím společného hledání dobrých praxí a vhodných nástrojů během komunitních a participativních setkání.
