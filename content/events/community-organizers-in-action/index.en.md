@@ -4,7 +4,7 @@ featured: networking-2026-formal.en.webp
 date: 2026-05-08
 dtstart: 2026-05-27T16:00:00
 dtend: 2026-05-27T18:30:00
-location: Podnikatelské a inovační centrum hl. m. Prahy (PIC), Škodův palác - Charvátova 6, 110 00 Nové Město
+location: Podnikatelské a inovační centrum hl. m. Prahy (PIC), Škodův palác - Charvátova 6, 110 00 Praha 1-Nové Město
 languages: EN, CZ
 registration: https://forms.gle/opWbRdqsp9tCwUJM7
 project: civiclink-advancing-civic-integration-in-prague
