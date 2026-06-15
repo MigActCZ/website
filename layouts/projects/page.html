@@ -91,9 +91,15 @@
           <a href="{{ $image.RelPermalink }}"
           data-pswp-width="{{ $image.Width }}"
           data-pswp-height="{{ $image.Height }}">
-            {{ with $image.Fit "200x150 center lanczos" }}
-            <img src="{{ .RelPermalink }}" alt="{{ . }}">
+          {{ if gt $image.Height $image.Width }}
+            {{ with $image.Fill "200x150 center lanczos" }}
+              <img src="{{ .RelPermalink }}" alt="{{ .}}">
             {{ end }}
+          {{ else }}
+            {{ with $image.Fit "200x150 center lanczos" }}
+              <img src="{{ .RelPermalink }}" alt="{{ . }}">
+            {{ end }}
+          {{ end }}
           </a>
           {{ end }}
         </div>
