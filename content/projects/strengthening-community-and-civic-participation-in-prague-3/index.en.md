@@ -4,7 +4,8 @@ date: 2026-05-06
 dtstart: 2026-04-01
 dtend: 2026-12-31
 partner: mč-praha-3
-supporters: []
+supporters:
+  - ministry-of-the-interior-of-the-czech-republic
 images:
   - p3.1.webp
   - p3.2.webp
