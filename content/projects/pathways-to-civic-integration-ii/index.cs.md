@@ -7,7 +7,6 @@ partner: mc-praha-7
 supporters:
   - nadacni-centrum-agora-7
   - ministry-of-the-interior-of-the-czech-republic
-  - unhcr
 images:
   - p7.1.webp
   - p7.3.webp
