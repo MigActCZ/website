@@ -30,8 +30,6 @@ We look forward to seeing you.
 
 With warm regards,
 
-Vendula Guhová – community coordinator for Prague 3  
-
+Vendula Guhová – community coordinator for Prague 3 
 Natallia Allen – MigAct  
-
 Jakub Morávek – Krenovka

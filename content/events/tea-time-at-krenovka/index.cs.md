@@ -30,8 +30,6 @@ Těšíme se na Vás.
 
 S přátelským pozdravem,
 
-Vendula Guhová – komunitní koordinátorka pro Prahu 3  
-
+Vendula Guhová – komunitní koordinátorka pro Prahu 3
 Natallia Allen – MigAct  
-
 Jakub Morávek – Krenovka\*
