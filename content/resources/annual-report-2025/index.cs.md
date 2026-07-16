@@ -2,7 +2,7 @@
 title: Výroční zpráva 2025
 link: ''
 project: ''
-file: výroční-zpráva-2025-migact-final-web.pdf
+file: výroční-zpráva-2025-migact-web.pdf
 ---
 
 Žijeme ve světě, který se extrémně rychle mění, je méně předvídatelný a čím dál složitější. Demokracie je trvale v ohrožení a téma migrace je stále palčivější. A přesto je to také svět, který je navzájem pevně provázaný. Lidé se ustavičně stěhují, přemisťují a budují si nové domovy a budoucnost.
