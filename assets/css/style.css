@@ -1151,8 +1151,13 @@ ul#values {
   gap: var(--medium-gap);
   & > li {
     display: flex;
+    flex-direction: column;
     gap: var(--medium-gap);
     align-items: center;
+
+    & > h3 {
+      text-align: center;
+    }
     &:nth-child(3n + 1) {
       --block-color: var(--color-red);
     }
@@ -1432,14 +1437,10 @@ main > .intro {
     gap: var(--big-gap);
   }
   ul#values {
-    grid-auto-flow: unset;
     grid-template-columns: repeat(3, 1fr);
-    & > li {
-      flex-direction: column;
-    }
+    text-align: initial;
   }
   ul#introductionlist {
-    grid-auto-flow: unset;
     grid-template-columns: repeat(2, 1fr);
   }
   #join-donate {
