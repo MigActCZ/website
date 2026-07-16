@@ -984,8 +984,12 @@ main.detail {
       inset: var(--big-gap);
       display: flex;
       flex-direction: column;
-      p {
+      overflow-y: auto;
+      div.content {
         margin-block-end: auto;
+        a {
+          display: revert;
+        }
       }
     }
     .overlay {
