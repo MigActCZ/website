@@ -1,6 +1,6 @@
 ---
 title: DEMOS Dialogue vol. 3
-featured: demos-3.webp
+featured: demos-3-web-2.webp
 date: 2026-07-16
 dtstart: 2026-08-04T17:30:00
 dtend: 2026-08-04T20:00:00
