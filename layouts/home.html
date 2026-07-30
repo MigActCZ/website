@@ -3,7 +3,7 @@
   <section id="about">
       {{- .Content -}}
       {{ with .Resources.Get "home.webp" }}
-          <img id="hero" class="rounded" src='{{ .RelPermalink }}' alt="" fetchpriority="high"/>
+          <img id="hero" class="rounded" src='{{ .RelPermalink }}' alt="" width="{{ .Width }}" height="{{ .Height }}" fetchpriority="high"/>
       {{ end }}
   </section>
   <section id="activities">
