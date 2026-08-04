@@ -1,6 +1,6 @@
 ---
 title: Oleksandra Fadieieva
-contact: alex@migact.net
+contact: alyannaya@gmail.com
 image: photo.webp
 position: Členka MigAct
 weight: 12
