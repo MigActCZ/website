@@ -7,6 +7,8 @@
     {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
   </menu>
   {{- end }}
+  <a id="menu-donate" class="button" href='{{ partial "get-donate-link" . }}' target="_blank">
+    {{ i18n "donate" }}</a>
   {{ with $page.AllTranslations }}
   <menu id="lang-switcher">
     {{ range . }}

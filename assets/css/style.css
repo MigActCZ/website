@@ -246,7 +246,8 @@ section > p.button > a {
   margin: auto;
 }
 ul.buttons a,
-p.button > a {
+p.button > a,
+a.button {
   display: block;
   width: fit-content;
   padding: var(--medium-gap) var(--big-gap);
@@ -403,7 +404,6 @@ main > section:last-child {
     /* Navigation links when mobile menu is active */
     a {
       padding: var(--separator-gap) var(--medium-gap);
-      color: var(--color-text);
     }
     & > #site-nav {
       padding: 0 var(--medium-gap); /* Keeps menuitems and underline from edges of the screen */
@@ -418,6 +418,11 @@ main > section:last-child {
       li > menu {
         padding-inline-start: revert;
       }
+    }
+    & > #menu-donate{
+      margin-inline: auto;
+      border-width: thin;
+      padding-inline: var(--wide-gap);
     }
     /* || Language Switcher */
     & > #lang-switcher {
@@ -1058,7 +1063,8 @@ main.section > div.content {
 }
 
 #about ul.buttons > li:first-child > a,
-#vision p.button > a {
+#vision p.button > a,
+#menu-donate {
   --gradient-color: linear-gradient(
     90deg,
     var(--color-orange) 0%,
@@ -1555,7 +1561,7 @@ main > .intro {
     background: revert;
     height: revert;
     flex-direction: row;
-    gap: 8.75rem;
+    gap: 3rem;
     font-size: revert;
     overflow-y: revert;
     & > #site-nav {
