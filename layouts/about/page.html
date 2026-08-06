@@ -33,23 +33,6 @@
             {{ .Content }}
         {{ end }}
     </section>
-    <section id="introduction">
-        {{ with .Resources.Get "introduction.md" }}
-            {{ .Content }}
-        {{ end }}
-    </section>
-    <section id="theory">
-        {{ with .Resources.Get "theory.md" }}
-            {{ .Content }}
-        {{ end }}
-        {{ $image := .Resources.Get "theory-of-change.webp" }}
-        <a href="{{ $image.Permalink }}"
-        data-pswp-width="{{ $image.Width }}"
-        data-pswp-height="{{ $image.Height }}">
-          <img class="rounded"
-            src="{{ $image.Permalink }}" alt='{{ i18n "theory" }}'>
-        </a>
-    </section>
     <section id="documents">
         {{ $section_header := i18n "about_documents_header" }}
         <h2 id="{{ anchorize $section_header }}">{{ $section_header }}</h2>
@@ -73,6 +56,23 @@
             </li>
         {{ end }}
         </ol>
+    </section>
+    <section id="introduction">
+        {{ with .Resources.Get "introduction.md" }}
+            {{ .Content }}
+        {{ end }}
+    </section>
+    <section id="theory">
+        {{ with .Resources.Get "theory.md" }}
+            {{ .Content }}
+        {{ end }}
+        {{ $image := .Resources.Get "theory-of-change.webp" }}
+        <a href="{{ $image.Permalink }}"
+        data-pswp-width="{{ $image.Width }}"
+        data-pswp-height="{{ $image.Height }}">
+          <img class="rounded"
+            src="{{ $image.Permalink }}" alt='{{ i18n "theory" }}'>
+        </a>
     </section>
 </main>
 {{ end }}

@@ -1280,20 +1280,24 @@ main > .intro {
   }
 }
 #about-us {
-  #vision {
-    background: linear-gradient(var(--color-bg) 30%, var(--color-bg-red));
+  & > section:nth-of-type(1) {
+    background: linear-gradient(var(--color-bg) 30%, var(--color-bg-red)),
+    var(--noise-filter);
   }
-  #story {
-    background: linear-gradient(var(--color-bg-red), var(--color-bg-orange));
+  & > section:nth-of-type(2) {
+    background: linear-gradient(var(--color-bg-red), var(--color-bg-orange)),
+    var(--noise-filter);
   }
-  #introduction {
-    background: linear-gradient(var(--color-bg-orange), var(--color-bg-teal));
+  & > section:nth-of-type(3) {
+    background: linear-gradient(var(--color-bg-orange), var(--color-bg-teal)),
+    var(--noise-filter);
   }
-  #theory {
-    background: linear-gradient(var(--color-bg-teal), var(--color-bg-blue));
+  & > section:nth-of-type(4) {
+    background: linear-gradient(var(--color-bg-teal), var(--color-bg-blue)),
+    var(--noise-filter);
   }
-  #documents {
-    background: var(--color-bg-blue);
+  & > section:nth-of-type(5) {
+    background: var(--color-bg-blue)
   }
 }
 #join-us {
