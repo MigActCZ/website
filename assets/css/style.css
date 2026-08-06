@@ -1153,16 +1153,15 @@ ul.buttons.emphasized li:nth-child(2) > a {
   }
 }
 ul#values {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: var(--medium-gap);
   & > li {
-    display: flex;
-    flex-direction: column;
-    gap: var(--medium-gap);
-    align-items: center;
-
     & > h3 {
       text-align: center;
+    }
+    & > svg.icon {
+      margin: var(--medium-gap) auto;
     }
     &:nth-child(3n + 1) {
       --block-color: var(--color-red);
@@ -1447,8 +1446,25 @@ main > .intro {
     gap: var(--big-gap);
   }
   ul#values {
-    grid-template-columns: repeat(3, 1fr);
     text-align: initial;
+    & > li {
+      display: grid;
+      grid-template-columns: 1fr 20%;   /* content | icon */
+      column-gap: var(--medium-gap);
+
+      & > :is(h3, p) {
+        grid-column: 1;
+      }
+      & > svg.icon {
+        grid-column: 2;
+        grid-row: 1 / span 2;
+        align-self: center;
+        justify-self: center;
+        height: auto;
+        width: 50%;
+        border-radius: 25%;
+      }
+    }
   }
   ul#introductionlist {
     grid-template-columns: repeat(2, 1fr);
