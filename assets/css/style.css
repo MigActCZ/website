@@ -318,6 +318,7 @@ a > svg {
 #site-header,
 #site-footer,
 ul.entities,
+.grid-header,
 #home > section,
 main > .intro,
 main.page > section,
@@ -747,6 +748,9 @@ ul.elevated-cards > li,
   }
 }
 /* || Section pages */
+.grid-header {
+  font-size: xx-large;
+}
 ul.entities {
   display: grid;
   gap: var(--big-gap);
@@ -952,12 +956,19 @@ main.detail {
   }
 }
 /* || PARTNERS PAGE */
-#partners {
+.partners-grid {
+  a {
+    text-decoration: none;
+  }
   img {
     aspect-ratio: 1 / 1;
     width: 100%;
     height: auto;
     object-fit: scale-down;
+  }
+  .partner-name {
+    color: var(--color-text-light);
+    text-align: center;
   }
 }
 /* || TEAM PAGE */
@@ -1546,7 +1557,7 @@ main > .intro {
       }
     }
   }
-  #partners.entities {
+  ul.partners-grid {
     grid-template-columns: repeat(4, 1fr);
   }
   #team.entities,
