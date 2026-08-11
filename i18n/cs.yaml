@@ -49,6 +49,9 @@ annual_report_template: Výroční zpráva %v
 home: Domov
 bio: Přečíst si víc
 attachments: Prilohy
+PublicSector: Veřejný sektor
+GrantPartners: Nadace a grantoví partneři
+InternationalNetworks: Mezinárodní sítě
 
 # Error pages
 error_404_title: Stránka nebyla nalezena

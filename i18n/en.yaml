@@ -49,6 +49,9 @@ annual_report_template: Annual report %v
 home: Home
 bio: Read more
 attachments: Attachments
+PublicSector: Public sector
+GrantPartners: Foundations and grant partners
+InternationalNetworks: International networks
 
 # Error pages
 error_404_title: Page not found

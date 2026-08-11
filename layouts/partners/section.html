@@ -1,0 +1,14 @@
+{{ define "main" }}
+<main class="section">
+    <h1 class="intro">{{ .Title }}</h1>
+    {{ $keys := slice "PublicSector" "GrantPartners" "InternationalNetworks" }}
+    {{ range $keys }}
+    <h2 class="grid-header">{{ i18n . }}</h2>
+    <ul class="entities partners-grid">
+        {{ range where $.RegularPages "Params.category" . }}
+        <li>{{ .Render (printf "view_%s" (singularize .Section )) }}</li>
+        {{ end }}
+    </ul>
+    {{ end }}
+</main>
+{{ end }}
