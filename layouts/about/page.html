@@ -57,11 +57,6 @@
         {{ end }}
         </ol>
     </section>
-    <section id="introduction">
-        {{ with .Resources.Get "introduction.md" }}
-            {{ .Content }}
-        {{ end }}
-    </section>
     <section id="theory">
         {{ with .Resources.Get "theory.md" }}
             {{ .Content }}
@@ -73,6 +68,11 @@
           <img class="rounded"
             src="{{ $image.Permalink }}" alt='{{ i18n "theory" }}'>
         </a>
+    </section>
+      <section id="introduction">
+        {{ with .Resources.Get "introduction.md" }}
+            {{ .Content }}
+        {{ end }}
     </section>
 </main>
 {{ end }}
