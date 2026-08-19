@@ -30,6 +30,25 @@ collections:
     media_folder: ''
     public_folder: ''
     i18n: true
+    summary: '**{{title}}** — {{category}} (#{{weight}})'
+    reorder:
+      key: weight
+      group: categories
+    sortable_fields:
+      fields: weight
+      default:
+        field: weight
+        direction: ascending
+    view_groups:
+      groups:
+        - name: categories
+          label: Categories
+          field: category
+      default: categories
+    view_filters:
+      - { label: Public Sector, field: category, pattern: '^PublicSector$' }
+      - { label: Grant Partners, field: category, pattern: '^GrantPartners$' }
+      - { label: International Networks, field: category, pattern: '^InternationalNetworks$' }
     fields:
       - {label: Title, name: title, widget: string, i18n: true }
       - {label: Logo, name: image, widget: image, choose_url: false, i18n: duplicate }
