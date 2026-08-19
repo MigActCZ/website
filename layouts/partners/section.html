@@ -1,6 +1,9 @@
 {{ define "main" }}
 <main class="section">
-    <h1 class="intro">{{ .Title }}</h1>
+    <header class="intro">
+        <h1>{{ .Title }}</h1>
+        {{ .Content }}
+    </header>
     {{ $keys := slice "PublicSector" "GrantPartners" "InternationalNetworks" }}
     {{ range $keys }}
     <h2 class="grid-header">{{ i18n . }}</h2>
