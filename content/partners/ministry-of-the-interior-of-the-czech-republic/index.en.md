@@ -1,6 +1,6 @@
 ---
 title: Ministry of the Interior of the Czech Republic
-image: logo.svg
+image: logo_mv_barevne-pozitivni_rgb.svg
 website: https://mv.gov.cz/
 category: PublicSector
 weight: 8
