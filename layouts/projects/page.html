@@ -112,20 +112,14 @@
     {{ with .Params.partner }}
       {{ $partnerPage := $partnersPage.GetPage . }}
       {{ $img := $partnerPage.Resources.Get $partnerPage.Params.image }}
-      {{ if and (ne $img.MediaType.SubType "svg") (gt $img.Width 300) (gt $img.Height 300) }}
-      {{ $img = $img.Fit "300x300 center" }}
-      {{ end }}
-    <img class="partner-logo" src="{{ $img.Permalink }}" alt="Logo of {{ $partnerPage.Title }}">
+      {{ partial "partner-logo.html" (dict "img" $img "title" $partnerPage.Title) }}
     {{ end }}
     {{ with .Params.supporters }}
     <ul id="logos">
       {{ range . }}
         {{ $partnerPage := $partnersPage.GetPage . }}
         {{ $img := $partnerPage.Resources.GetMatch $partnerPage.Params.image }}
-        {{ if and (ne $img.MediaType.SubType "svg") (gt $img.Width 300) (gt $img.Height 300) }}
-        {{ $img = $img.Fit "300x300 center" }}
-        {{ end }}
-        <li><img class="partner-logo" src="{{ $img.Permalink }}" alt="Logo of {{ $partnerPage.Title }}"></li>
+        <li>{{ partial "partner-logo.html" (dict "img" $img "title" $partnerPage.Title) }}</li>
       {{ end }}
     </ul>
     {{ end }}

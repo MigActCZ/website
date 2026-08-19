@@ -1,0 +1,23 @@
+{{/*
+  Renders a partner logo with Retina srcset.
+  Params:
+    - img   (resource) – the image resource
+    - title (string)   – alt text (partner name)
+
+  Expects: square images, minimum 600×600 for raster.
+  SVGs are served as-is.
+*/}}
+{{ if ne .img.MediaType.SubType "svg" }}
+  {{ if or (gt .img.Width 600) (gt .img.Height 600) }}
+    {{ $small := .img.Fit "300x300 center" }}
+    {{ $large := .img.Fit "600x600 center" }}
+    <img src="{{ $small.RelPermalink }}" srcset="{{ $small.RelPermalink }} 1x, {{ $large.RelPermalink }} 2x" alt="{{ .title }}">
+  {{ else if or (gt .img.Width 300) (gt .img.Height 300) }}
+    {{ $resized := .img.Fit "300x300 center" }}
+    <img src="{{ $resized.RelPermalink }}" alt="{{ .title }}">
+  {{ else }}
+    <img src="{{ .img.RelPermalink }}" alt="{{ .title }}">
+  {{ end }}
+{{ else }}
+  <img src="{{ .img.RelPermalink }}" alt="{{ .title }}">
+{{ end }}
