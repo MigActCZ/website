@@ -9,4 +9,4 @@ cascade:
     render: never
 ---
 
-Máte zájem o systémovou podporu naší komunity nebo strategické partnerství? Jsme tu pro vás. Ať už jste soused, budoucí dobrovolník nebo dárce, ozvěte se nám: [natallia@migact.net](mailto:natallia@migact.net)
+Máte zájem o systémovou podporu naší komunity nebo strategické partnerství? Jsme tu pro vás. Ozvěte se nám: [natallia@migact.net](mailto:natallia@migact.net)
