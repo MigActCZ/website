@@ -10,10 +10,10 @@ images:
   - d-3.webp
   - d-1.webp
   - d2.webp
-  - img_4839.heic
-  - img_4856.heic
-  - img_4858.heic
-  - img_4917.heic
+  - img_4839.webp
+  - img_4856.webp
+  - img_4858.webp
+  - img_4917.webp
 partners:
   - hermes
   - civic-innovation-fund
