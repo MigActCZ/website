@@ -11,6 +11,10 @@ images:
   - p7.1.webp
   - p7.3.webp
   - p7.2.webp
+  - img_4839.webp
+  - img_4856.webp
+  - img_4858.webp
+  - img_4917.webp
 ---
 
 Projekt navazuje na [pilotní spolupráci](https://migact.net/cs/projekty/cesty-k-ob%C4%8Dansk%C3%A9-integraci-obyvatel-s-migra%C4%8Dn%C3%ADm-p%C5%AFvodem/) spolku MigAct z. s., Nadačního fondu Agora 7 a MČ Praha 7 z roku 2025, která přinesla [odbornou publikaci](https://migact.net/cs/materialy/ob%C4%8Dansk%C3%A1-integrace-obyvatel-s-migra%C4%8Dn%C3%ADm-p%C5%AFvodem-v-praze-7/priklady-dobre-praxe-a-zkusenosti-s-obcanskou-integraci-obyvatel-s-migracnim-puvodem-v-praze-7.cs.pdf) i novou pracovní skupinu aktivních sousedů. V tomto roce se zaměřujeme na metodickou podporu této skupiny, posílení role tzv. gatekeeperů – průvodců komunitním životem – a pořádání networkingových setkání. Společným plánováním aktivit a sdílením zkušeností vytváříme na Praze 7 otevřený prostor pro přirozenou integraci a aktivní občanství všech obyvatel.
