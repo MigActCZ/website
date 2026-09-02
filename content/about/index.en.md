@@ -1,6 +1,9 @@
 ---
 title: About Us
 resources:
+  - src: SafeguardingPolicy.en.pdf
+    name: safeguarding_policy
+    title: Safeguarding Policy
   - src: directiveGDPR.en.pdf
     name: directive_gdpr
     title: Directive GDPR
