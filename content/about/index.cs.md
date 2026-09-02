@@ -2,6 +2,9 @@
 title: O nás
 slug: o-nas
 resources:
+  - src: SafeguardingPolicy.cs.pdf
+    name: safeguarding_policy
+    title: Ochrana bezpečného prostředí
   - src: smerniceGDPR.cs.pdf
     name: directive_gdpr
     title: Směrnice GDPR
