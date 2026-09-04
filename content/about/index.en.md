@@ -1,6 +1,9 @@
 ---
 title: About Us
 resources:
+  - src: CODEOFCONDUCT.en.pdf
+    name: code_of_conduct
+    title: Code of Conduct
   - src: SafeguardingPolicy.en.pdf
     name: safeguarding_policy
     title: Safeguarding Policy
