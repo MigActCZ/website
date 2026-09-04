@@ -2,6 +2,9 @@
 title: O nás
 slug: o-nas
 resources:
+  - src: NÁVŠTĚVNÍŘÁD.cs.pdf
+    name: code_of_conduct
+    title: Návštěvní Řád
   - src: SafeguardingPolicy.cs.pdf
     name: safeguarding_policy
     title: Ochrana bezpečného prostředí
