@@ -60,6 +60,10 @@
                     <li><a href="{{ .RelPermalink }}" target="_blank">{{- partial "inline-svg" "icons/file-text" -}}
                             {{ .Title }}</a></li>
                         {{ end }}
+                        {{ with .Resources.Get "code_of_conduct" }}
+                    <li><a href="{{ .RelPermalink }}" target="_blank">{{- partial "inline-svg" "icons/file-text" -}}
+                            {{ .Title }}</a></li>
+                        {{ end }}
                     {{ end }}
                 </menu>
             </section>
