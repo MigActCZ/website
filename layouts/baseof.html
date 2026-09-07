@@ -45,28 +45,6 @@
                 <li><a href="{{ .Site.Params.socials.instagram}}" target="_blank" title="instagram">
                     {{- partial "inline-svg" "logos/instagram" -}}</a></li>
             </menu>
-            <section id="footer-legal">
-                <menu class="column">
-                    {{ with site.GetPage "about" }}
-                        {{ with .Resources.Get "directive_gdpr" }}
-                    <li><a href="{{ .RelPermalink }}" target="_blank">{{- partial "inline-svg" "icons/file-text" -}}
-                            {{ .Title }}</a></li>
-                        {{ end }}
-                        {{ with .Resources.Get "info_personal_data_processing" }}
-                    <li><a href="{{ .RelPermalink }}" target="_blank">{{- partial "inline-svg" "icons/file-text" -}}
-                            {{ .Title }}</a></li>
-                        {{ end }}
-                         {{ with .Resources.Get "safeguarding_policy" }}
-                    <li><a href="{{ .RelPermalink }}" target="_blank">{{- partial "inline-svg" "icons/file-text" -}}
-                            {{ .Title }}</a></li>
-                        {{ end }}
-                        {{ with .Resources.Get "code_of_conduct" }}
-                    <li><a href="{{ .RelPermalink }}" target="_blank">{{- partial "inline-svg" "icons/file-text" -}}
-                            {{ .Title }}</a></li>
-                        {{ end }}
-                    {{ end }}
-                </menu>
-            </section>
         </nav>
         <nav id="footer-links">
             <h2>{{ i18n "footer_actions" }}</h2>
@@ -102,6 +80,29 @@
                         {{ $val }}</a></li>
             </menu>
         </address>
+        <nav id="footer-legal">
+            <h2>{{ i18n "policies" }}</h2>
+            <menu class="column">
+                {{ with site.GetPage "about" }}
+                    {{ with .Resources.Get "directive_gdpr" }}
+                <li><a href="{{ .RelPermalink }}" target="_blank">{{- partial "inline-svg" "icons/file-text" -}}
+                        {{ .Title }}</a></li>
+                    {{ end }}
+                    {{ with .Resources.Get "info_personal_data_processing" }}
+                <li><a href="{{ .RelPermalink }}" target="_blank">{{- partial "inline-svg" "icons/file-text" -}}
+                        {{ .Title }}</a></li>
+                    {{ end }}
+                        {{ with .Resources.Get "safeguarding_policy" }}
+                <li><a href="{{ .RelPermalink }}" target="_blank">{{- partial "inline-svg" "icons/file-text" -}}
+                        {{ .Title }}</a></li>
+                    {{ end }}
+                    {{ with .Resources.Get "code_of_conduct" }}
+                <li><a href="{{ .RelPermalink }}" target="_blank">{{- partial "inline-svg" "icons/file-text" -}}
+                        {{ .Title }}</a></li>
+                    {{ end }}
+                {{ end }}
+            </menu>
+        </nav>
         <section id="footer-copyright">
             <p>{{ printf (i18n "copyright") now.Year .Site.Title }}</p>
             <p>{{ .Site.Params.attribution | markdownify }}</p>
