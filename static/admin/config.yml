@@ -80,7 +80,7 @@ collections:
     i18n: true
     fields:
       - {label: Name, name: title, widget: string, i18n: duplicate }
-      - {label: Contact, name: contact, widget: string, i18n: duplicate }
+      - {label: Contact, name: contact, widget: string, i18n: duplicate, required: false }
       - {label: Photo, name: image, widget: image, choose_url: false, i18n: duplicate }
       - {label: Position, name: position, widget: string, i18n: true }
       - {label: Order, name: weight, widget: number, value_type: int, i18n: duplicate }

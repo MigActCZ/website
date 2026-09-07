@@ -1,6 +1,5 @@
 ---
 title: Oleksandra Fadieieva
-contact: .
 image: photo.webp
 position: Členka MigAct
 weight: 12

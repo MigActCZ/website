@@ -23,6 +23,8 @@
     <h2>{{ .Title }}</h2>
     <h3>{{ .Params.position }}</h3>
     <div class="content">{{ .Content }}</div>
-    <a href="mailto:{{ .Params.contact }}">{{ partial "inline-svg" "icons/mail" }}{{ .Params.contact }}</a>
+    {{ with .Params.contact }}
+    <a href="mailto:{{ . }}">{{ partial "inline-svg" "icons/mail" }}{{ . }}</a>
+    {{ end }}
   </div>
 </article>
