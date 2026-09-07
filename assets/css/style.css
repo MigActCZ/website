@@ -1459,21 +1459,25 @@ main > .intro {
   }
   ul#values {
     text-align: initial;
+    gap: var(--wide-gap);
+    margin-block: var(--big-gap);
     & > li {
       display: grid;
-      grid-template-columns: 1fr 20%;   /* content | icon */
-      column-gap: var(--medium-gap);
+      grid-template-columns: 1fr 15%;   /* content | icon */
+      column-gap: var(--big-gap);
+      padding-inline: 3rem;
 
       & > :is(h3, p) {
         grid-column: 1;
       }
       & > svg.icon {
+        box-sizing: border-box;
         grid-column: 2;
         grid-row: 1 / span 2;
         align-self: center;
         justify-self: center;
         height: auto;
-        width: 50%;
+        width: 100%;
         border-radius: 25%;
       }
     }
