@@ -2,10 +2,10 @@
 title: Nastassia Anishchanka
 contact: nastassia@migact.net
 image: photo.webp
-position: Coordinator of the Community Organizer Training Program, Board Member
+position: Coordinator of the Community Organizers Training Program, MigAct Board Member
 weight: 3
 build:
   list: always
 ---
 
-Nastassia is a member of MigAct, where she coordinates training program for community organizers. She also leads the non-profit organisation Matertera, which supports women in their personal and professional development. In addition, she works as a lecturer delivering adult education programmes and as a coach specialising in stress management, burnout prevention, and agile planning. In her coaching practice, she applies a neuroscience-based approach that focuses on emotional regulation, mindset shifts, and building resilience to stress.
+Nastassia is a board member of MigAct. She is also involved in developing future coaches in the neurointegration method, guiding them along their professional path. She works as a lecturer in education programmes and as a coach specialising in stress, burnout, and thinking patterns. In her coaching practice, she uses a neuroscience-powered method, focused on working with one's psycho-emotional state, behavioural patterns, and building resilience to stress.
