@@ -4,7 +4,7 @@ featured: image0.webp
 date: 2026-09-10
 dtstart: 2026-09-24T14:00:00
 dtend: 2026-09-24T18:00:00
-location: Společenské středisko VIA, Újezd 426/26, Praha 1 – Malá Strana
+location: Újezd 426/26/118 00, 118 00 Malá Strana
 languages: EN
 registration: https://docs.google.com/forms/d/e/1FAIpQLSd1atHUDClNKfhnErBA4_SD5oAMMr4bYyuSQb4zS8ChePOQQQ/viewform
 project: city-for-all-supporting-civic-participation-of-foreigners
@@ -16,7 +16,7 @@ Hlavní město Praha ve spolupráci s Integračním centrem Praha připravuje no
 
 Při přípravě Koncepce nevycházíme jen z dat a pohledu odborníků, ale chceme ji tvořit společně s vámi. Chceme znát vaše zkušenosti a nápady, které pomohou tvarovat budoucí podobu života ve městě. Co vám při životě v Praze pomáhá? Co je naopak složité? A hlavně – jaká konkrétní řešení navrhujete a co by se mělo dělat jinak?
 
-Koncepce se věnuje pěti hlavním oblastem: [**fungování úřadů a institucí**](https://docs.google.com/document/d/1XaIyYazEXQoZyD1Yfk79n3uPCgnOZk0Ik8i2xXUK4mM/edit?usp=sharing)**,** [**dostupnosti služeb a pomoci**](https://docs.google.com/document/d/1VB2OWvzEL2oTM2PBCCtflgFqKBMnZ1_q5oHZ-NvHhFQ/edit?usp=sharing)**,** [**informacím a orientaci v životě v Praze**](https://docs.google.com/document/d/1h1ErJVCxOQjnW_THTIzh_AxMYp6q-34V86ocUzUF-gg/edit?usp=sharing)**,** [**společnému soužití**](https://docs.google.com/document/d/14TKyYiy_TwplGufUCNKOpJ7ujjJrA9lbMyJxI46HgBQ/edit?tab=t.0#heading=h.u0gpylqx6hqq) **a** [**vzdělávání**](https://docs.google.com/document/d/19RVwDJPH6GkB7yyXKM2OjeBioPYofZOeeKnIxmwR_5A/edit?usp=drive_link) (odkazy vedou na [předběžné návrhy textů](https://drive.google.com/drive/folders/16-dRxHMNAd-Uy2HDD1Ni7QKsUTqPNZkK)). 
+Koncepce se věnuje pěti hlavním oblastem: [fungování úřadů a institucí](https://docs.google.com/document/d/1XaIyYazEXQoZyD1Yfk79n3uPCgnOZk0Ik8i2xXUK4mM/edit?usp=sharing), [dostupnosti služeb a pomoci](https://docs.google.com/document/d/1VB2OWvzEL2oTM2PBCCtflgFqKBMnZ1_q5oHZ-NvHhFQ/edit?usp=sharing), [informacím a orientaci v životě v Praze](https://docs.google.com/document/d/1h1ErJVCxOQjnW_THTIzh_AxMYp6q-34V86ocUzUF-gg/edit?usp=sharing), [společnému soužití](https://docs.google.com/document/d/14TKyYiy_TwplGufUCNKOpJ7ujjJrA9lbMyJxI46HgBQ/edit?tab=t.0#heading=h.u0gpylqx6hqq) a [vzdělávání](https://docs.google.com/document/d/19RVwDJPH6GkB7yyXKM2OjeBioPYofZOeeKnIxmwR_5A/edit?usp=drive_link) (odkazy vedou na [předběžné návrhy textů](https://drive.google.com/drive/folders/16-dRxHMNAd-Uy2HDD1Ni7QKsUTqPNZkK)). 
 
 Jak se můžete zapojit:
 
