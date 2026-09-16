@@ -1,11 +1,11 @@
 ---
-title: Členové a členky MigActu
+title: MigAct members
 contact: contact@migact.net
 image: migactmembers.webp
-position:
+position: .
 weight: 10
 build:
-  list: always
+  list: never
 ---
 
 Pokud se k nám chcete přidat, [ozvěte se](https://migact.net/cs/kontakt/)!
