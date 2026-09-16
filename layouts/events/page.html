@@ -49,14 +49,25 @@
         <dt>{{ i18n "languages" }}</dt>
         <dd>{{ .Params.languages }}</dd>
       </div>
-      {{ with .Params.project }}
+      {{ with .Params.projects }}
       <div class="dl-item">
         <div class="icon">
             {{- partial "inline-svg" "icons/briefcase" -}}
         </div>
+        {{ $projects := (site.GetPage "projects") }}
+        {{ if eq (len .) 1 }}
+        {{ $project := $projects.GetPage (index . 0) }}
         <dt>{{ i18n "project" }}</dt>
-        {{ $project := (site.GetPage "projects").GetPage . }}
         <dd><a href='{{ $project.RelPermalink }}'>{{ $project.Title }}</a></dd>
+        {{ else }}
+        <dt>{{ i18n "projects" }}</dt>
+        <dd><ul>
+          {{ range $slug := . }}
+          {{ $project := $projects.GetPage $slug }}
+          <li><a href='{{ $project.RelPermalink }}'>{{ $project.Title }}</a></li>
+          {{ end }}
+        </ul></dd>
+        {{ end }}
       </div>
       {{ end }}
     </dl>

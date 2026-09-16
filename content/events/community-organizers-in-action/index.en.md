@@ -7,7 +7,8 @@ dtend: 2026-05-27T18:30:00
 location: Podnikatelské a inovační centrum hl. m. Prahy (PIC), Škodův palác - Charvátova 6, 110 00 Praha 1-Nové Město
 languages: EN, CZ
 registration: https://forms.gle/opWbRdqsp9tCwUJM7
-project: civiclink-advancing-civic-integration-in-prague
+projects:
+  - civiclink-advancing-civic-integration-in-prague
 ---
 
 How do we  build strong, open communities in Prague? Is "community organizing" just a concept, or is it what happens in our neighborhoods every day?

@@ -7,7 +7,8 @@ dtend: 2025-10-23T19:00:00
 location: Krenovka, Husitská 22, 130 00 Praha 3-Žižkov
 languages: EN CZ
 registration: https://forms.gle/6hr5bcXfJC544gUs5
-project: together-for-prague
+projects:
+  - together-for-prague
 ---
 Zveme vás na večer plný setkávání v Krenovce! Seznamte se s aktivními sousedy a podělte se o příběhy a inspirace z občanského a komunitního života na Praze 3.
 

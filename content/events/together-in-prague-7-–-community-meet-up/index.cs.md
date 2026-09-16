@@ -7,7 +7,8 @@ dtend: 2025-06-23T20:00:00
 location: Přístav 7, V Přístavu 24, 170 00 Praha 7-Holešovice
 languages: EN CZ
 registration: https://forms.gle/6EvRWNJUqQCJLMep8
-project: pathways-to-civic-integration-of-residents-with-migrant-backgrounds
+projects:
+  - pathways-to-civic-integration-of-residents-with-migrant-backgrounds
 ---
 🌍 Komunitní setkání a večer propojení v Přístavu 7
 Seznamte se se sousedy z Prahy 7 i z celého světa!

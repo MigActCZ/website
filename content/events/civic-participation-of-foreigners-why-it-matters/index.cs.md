@@ -7,7 +7,8 @@ dtend: 2025-03-26T16:30:00
 location: Podnikatelské inovační centrum, Škodův palác, Charvátová 6, 110 00 Praha 1-Nové Město
 languages: EN CZ
 registration: https://forms.gle/EssRD2YstV9z53K66
-project: migact-capacity-building
+projects:
+  - migact-capacity-building
 ---
 Zveme vás na networking a panelovou diskuzi na téma: Aktivní občanství lidí s migračním původem – proč je to důležité?
 

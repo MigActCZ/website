@@ -7,7 +7,8 @@ dtend: 2025-02-25T11:00:00
 location: MigAct Office, 4th Floor, Room 414, Revoluční 762/13, 110 00 Praha 1-Staré Město
 languages: ''
 registration: https://forms.gle/xobNK9FF1MAcF4Zp8
-project: migact-capacity-building
+projects:
+  - migact-capacity-building
 ---
 **MigAct Kafe! ☕ Coffee, Cookies & Conversations – You’re Invited!**
 

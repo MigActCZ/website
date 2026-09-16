@@ -6,7 +6,8 @@ dtend: 2024-09-12T19:30:00
 location: Škodův palác - room n. 201, Jungmannova 35, 110 00 Praha 1-Nové Město
 languages: EN CZ
 registration: https://forms.gle/ypc2Ksn3xB7TVTvv8
-project: city-for-all
+projects:
+  - city-for-all
 date: 2024-09-10
 ---
 As part of its vision of grassroots democracy, MigAct is excited to host a public forum that asks a simple question:

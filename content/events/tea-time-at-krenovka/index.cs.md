@@ -7,7 +7,8 @@ dtend: 2026-06-08T19:00:00
 location: Usedlost Krenovka, ArtHub - Husitská 22, 130 00 Praha 3-Žižkov
 languages: EN, CZ
 registration: ''
-project: strengthening-community-and-civic-participation-in-prague-3
+projects:
+  - strengthening-community-and-civic-participation-in-prague-3
 ---
 
 Dobrý den,

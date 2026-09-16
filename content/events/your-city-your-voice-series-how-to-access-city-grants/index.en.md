@@ -7,7 +7,8 @@ dtend: 2024-08-27T19:30:00
 location: Expat Center Prague, Charvátova 6, 110 00 Praha 1-Nové Město
 languages: EN CZ
 registration: https://forms.gle/aKiwX8Ada29uV77T7
-project: UNITES
+projects:
+  - UNITES
 ---
 Are you an individual or small organization with a big idea, but no money to make it happen? Have you considered applying for grants and public funds? MigAct and Prague City Hall have you covered!
 

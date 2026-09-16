@@ -7,7 +7,8 @@ dtend: 2024-12-07T17:00:00
 location: InBáze, Legerova 357/50, 120 00 Praha 2-Vinohrady
 languages: UKR CZ
 registration: https://forms.gle/CqxKb68Sndv6opmb7
-project: city-for-all
+projects:
+  - city-for-all
 ---
 🚀 7 грудня 2024 року відбудеться воркшоп для ініціативних українців ‘Як з фінансуванням власних проєктів?’
 

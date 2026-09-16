@@ -7,7 +7,8 @@ dtend: 2026-06-15T20:30:00
 location: ''
 languages: EN
 registration: ''
-project: practising-dialogue
+projects:
+  - practising-dialogue
 ---
 
 Jak můžeme mluvit o důležitých tématech způsobem, který buduje porozumění namísto rozdělování? Přesně o tom je metoda Demokratických dialogů (Democracy Dialogues) – o hledání spojení s ostatními i se sebou samými. Využívá facilitované rozhovory v malých skupinách a navržené karty, které pomáhají vést diskusi, podporují naslouchání a otevírají širší porozumění věcem, aniž by bylo nutné hledat okamžitá řešení.

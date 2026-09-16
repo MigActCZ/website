@@ -162,13 +162,14 @@ collections:
       - { label: Location, name: location, widget: string, i18n: duplicate, required: false }
       - { label: Languages, name: languages, widget: string, i18n: duplicate, required: false, default: EN }
       - { label: Registration, name: registration, widget: string, required: false, i18n: duplicate }
-      - label: Project
-        name: project
+      - label: Projects
+        name: projects
         widget: relation
         collection: projects
         value_field: "{{slug}}"
         display_fields: [title]
         search_fields: [title]
+        multiple: true
         i18n: duplicate
         required: false
       - { label: Body, name: body, widget: markdown, i18n: true }

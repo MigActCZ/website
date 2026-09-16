@@ -7,7 +7,8 @@ dtend: 2026-09-24T18:00:00
 location: Újezd 426/26/118 00, 118 00 Malá Strana
 languages: EN
 registration: https://docs.google.com/forms/d/e/1FAIpQLSd1atHUDClNKfhnErBA4_SD5oAMMr4bYyuSQb4zS8ChePOQQQ/viewform
-project: city-for-all-supporting-civic-participation-of-foreigners
+projects:
+  - city-for-all-supporting-civic-participation-of-foreigners
 ---
 
 **Have Your Say on the Prague Integration Strategy 2028–2033!**

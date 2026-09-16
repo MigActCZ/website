@@ -7,7 +7,8 @@ dtend: 2025-06-19T20:00:00
 location: Přístav 7, V Přístavu 24, 170 00 Praha 7-Holešovice
 languages: EN
 registration: https://forms.gle/xxUjzZg8JyuTkyMu7
-project: together-for-prague
+projects:
+  - together-for-prague
 ---
 **Want to get involved in Prague’s civic life?**
 

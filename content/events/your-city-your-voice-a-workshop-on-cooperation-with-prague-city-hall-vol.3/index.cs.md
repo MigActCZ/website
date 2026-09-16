@@ -7,7 +7,8 @@ dtend: 2023-11-29T20:00:00
 location: Dům U Kamenného zvonu (City Gallery Prague), Staroměstské nám. 605/13, 110 00 Praha 1-Staré Město
 languages: EN CZ
 registration: https://forms.gle/ATJDgZEyhP2azh2J7
-project: UNITES
+projects:
+  - UNITES
 ---
 Join us for a series of participatory meetings aimed at fostering cooperation with representatives from Prague City Hall.
 

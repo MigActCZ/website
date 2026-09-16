@@ -1,3 +1,22 @@
+# Domain
+## News
+A short message, equivalent to a social media status. A good example is open-call for participation. Sometimes it has a link for registration.
+## Event
+Information about an event. Time, place, description, sometimes an agenda (program). They are financed from projects, sometimes with a direct support from a partner (for example providing a location).
+## Partner
+A friendly organization with which Migact cooperates or is funded by. They fund projects, support Migact in organizing events etc...
+## Project
+Long term project with goals and funds. These are then used for organizing events.
+
+## Relationships
+An event is usually financed by a projects, sometimes multiple. Sometimes there's a direct support from a partner without a project.
+Projects are funded by Partners. One project has multiple partners which are all equal.
+
+# Use cases
+# Partner
+Cares about projects and wants to see evidence of how the funds were spent. Main concern is project page. Link to events is important.
+They also care about activity. Therefore they want one place to see what's happening. Both news and events.
+
 # Config
 ## Menu
 The config is duplicated for each language. The structure is the same, using translation tables to differentiate languages. The file cannot be unified, Hugo doesn't support it. It would break language links.

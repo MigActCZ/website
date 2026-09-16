@@ -7,7 +7,8 @@ dtend: 2026-08-04T20:00:00
 location: Společenské středisko VIA, Újezd 426/26, 118 00 Prague 1 – Malá Strana
 languages: EN
 registration: https://forms.gle/RepeitRcVUXCEoXCA
-project: practising-dialogue
+projects:
+  - practising-dialogue
 ---
 
 Zveme vás na třetí setkání ze série DEMOS Dialogů, které probíhají podle metodiky HERMES. V bezpečném a otevřeném prostředí budeme společně sdílet různé pohledy, naslouchat jeden druhému a hledat porozumění napříč zkušenostmi.

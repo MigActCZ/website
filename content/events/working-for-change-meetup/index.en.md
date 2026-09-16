@@ -7,7 +7,8 @@ dtend: 2025-03-21T19:30:00
 location: Horse Hug, Prokopova 21, 130 00 Praha 3-Žižkov
 languages: EN CZ
 registration: https://forms.gle/SQukpSYoYXuBxFkw9
-project: pathways-to-civic-integration-of-residents-with-migrant-backgrounds
+projects:
+  - pathways-to-civic-integration-of-residents-with-migrant-backgrounds
 ---
 Join the first event of a new series of informal meetings. In a storytelling format we will engage in discussions, activities, community coaching, and networking on topics related to civic participation and experiences of foreigners living in Prague.
 

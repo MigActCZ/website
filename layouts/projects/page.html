@@ -27,7 +27,7 @@
     {{ .Content }}
     {{ $events := site.GetPage "events" }}
     {{ $key := path.Base $.Path }}
-    {{ $related := where $events.RegularPages "Params.project" $key }}
+    {{ $related := where $events.RegularPages "Params.projects" "intersect" (slice $key) }}
     {{ with $related }}
       <section id="linked-events">
       <h2>{{ i18n "linked_events" }}</h2>

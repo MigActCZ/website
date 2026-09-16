@@ -7,7 +7,8 @@ dtend: 2026-06-15T20:30:00
 location: ''
 languages: EN
 registration: ''
-project: practising-dialogue
+projects:
+  - practising-dialogue
 ---
 
 How can we talk about important topics in a way that builds understanding rather than division? That’s exactly what the Democracy Dialogues method is about—finding connection with others and with ourselves. It uses facilitated conversations in small groups and specially designed cards that help guide the discussion, encourage listening, and open up a broader understanding of things without the need to seek solutions.

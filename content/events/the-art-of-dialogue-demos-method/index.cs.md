@@ -7,7 +7,8 @@ dtend: 2026-04-29T19:00:00
 location: Greenpeace, Prvního pluku 143/12, 186 00 Praha 8-Karlín
 languages: EN
 registration: https://docs.google.com/forms/d/e/1FAIpQLSeVKS_c_SXYsxeSG7Wy7ma6vJyuqPVcA9oP3H8sgQ_jbaPfMw/viewform
-project: practising-dialogue
+projects:
+  - practising-dialogue
 ---
 
 Umění dialogu. Přidejte se k nám 29. dubna!

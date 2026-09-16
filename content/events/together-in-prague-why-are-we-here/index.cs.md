@@ -7,7 +7,6 @@ dtend: 2025-11-13T19:30:00
 location: Centrum a Kavárna Člověka v tísni, Vodičkova 707/37, 110 00 Praha 1-Nové Město
 languages: EN CZ
 registration: ''
-project: ''
 ---
 Přijďte na večer propojení, sdílení a zamyšlení s dalšími, kteří nazývají Prahu svým domovem. Setkání je o poznávání sebe navzájem – o našich příbězích, o tom, co nás spojuje, a o otázce: „Proč jsme tady?“
 

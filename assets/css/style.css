@@ -955,6 +955,14 @@ main.detail {
     margin-block: 0;
   }
 }
+#info > .attributes > .dl-item > dd ul {
+  margin: 0;
+  padding-inline-start: 0;
+  list-style: none;
+}
+#info > .attributes > .dl-item > dd li + li {
+  margin-block-start: var(--separator-gap);
+}
 /* || PARTNERS PAGE */
 .partners-grid {
   a {
