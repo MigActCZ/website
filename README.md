@@ -1,3 +1,43 @@
+# How it works
+```mermaid
+---
+title: How it works
+---
+sequenceDiagram
+    actor User
+    participant Browser
+    participant Netlify
+    participant GitHub as GitHub API
+    participant Build as Build Process
+
+    note over GitHub, Netlify: Triggered by push / CMS commit
+    GitHub->>Netlify: Webhook: new commit
+    Netlify->>Build: Start build
+
+    rect rgb(240, 240, 240)
+    note over Build, GitHub: Build time
+    Build->>GitHub: Fetch content files
+    GitHub-->>Build: File data
+    Build->>Netlify: Deploy generated site
+    end
+
+    note over Netlify: Site now static & independent of GitHub
+
+    rect rgb(230, 245, 255)
+    note over User, Netlify: Runtime (site visit)
+    User->>Browser: Open site
+    Browser->>Netlify: Request page
+    Netlify-->>Browser: Static HTML
+    end
+
+    note over User, GitHub: CMS editing (separate flow)
+    User->>Browser: Open /admin
+    Browser->>Netlify: Fetch Sveltia CMS script & config.yml
+    Netlify-->>Browser: Script + config
+    Browser->>GitHub: Authenticate & read/write files
+    GitHub-->>Browser: File data / commit result
+    note over GitHub: Commit triggers webhook →
+```
 # Domain
 ## News
 A short message, equivalent to a social media status. A good example is open-call for participation. Sometimes it has a link for registration.
@@ -12,8 +52,19 @@ Long term project with goals and funds. These are then used for organizing event
 An event is usually financed by a projects, sometimes multiple. Sometimes there's a direct support from a partner without a project.
 Projects are funded by Partners. One project has multiple partners which are all equal.
 
+```mermaid
+---
+title: Entity relationships
+---
+erDiagram
+    NEWS }o--|{ PROJECT : about
+    PARTNER }|--o{ PROJECT : supports
+    PROJECT }o--o{ EVENT : supports
+    PARTNER }o--o{ EVENT : supports
+```
+
 # Use cases
-# Partner
+## Partner
 Cares about projects and wants to see evidence of how the funds were spent. Main concern is project page. Link to events is important.
 They also care about activity. Therefore they want one place to see what's happening. Both news and events.
 
