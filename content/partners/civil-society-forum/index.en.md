@@ -1,9 +1,9 @@
 ---
+weight: 24
 title: Civil Society Forum
-image: civilsocietyforum.webp
+image: logo.svg
 website: https://csf-ev.org/
 category: InternationalNetworks
-weight: 24
 build:
   list: always
 ---
