@@ -114,18 +114,8 @@ collections:
       - { label: CreationDate, name: date, widget: datetime, time_format: false, default: "{{datetime}}", i18n: duplicate}
       - { label: Starts, name: dtstart, widget: datetime, time_format: false, i18n: duplicate}
       - { label: Ends, name: dtend, widget: datetime, time_format: false, i18n: duplicate }
-      - label: Partner
-        name: partner
-        widget: relation
-        collection: partners
-        value_field: "{{slug}}"
-        display_fields: [title]
-        search_fields: [title]
-        required: false
-        multiple: false
-        i18n: duplicate
-      - label: Supporters
-        name: supporters
+      - label: Partners
+        name: partners
         widget: relation
         collection: partners
         value_field: "{{slug}}"

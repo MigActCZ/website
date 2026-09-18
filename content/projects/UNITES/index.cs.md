@@ -3,11 +3,9 @@ title: UNITES
 date: 2020-12-13
 dtstart: 2022-01-01
 dtend: 2024-12-31
-partner: prague-city-hall
-supporters:
-  - european-union
 partners:
   - prague-city-hall
+  - european-union
 ---
 
 Pod vedením [Eurocities](https://eurocities.eu/latest/cities-rally-for-integration/), projekt UNITES (UrbaN InTEgration Strategies through co-design) školí a provází orgány místní samosprávy při spoluvytváření strategií integrace s ostatními zainteresovanými aktéry, včetně migrantů.

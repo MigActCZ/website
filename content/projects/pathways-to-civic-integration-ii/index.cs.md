@@ -3,8 +3,8 @@ title: Cesty k občanské integraci II
 date: 2026-05-06
 dtstart: 2026-03-01
 dtend: 2026-12-31
-partner: mc-praha-7
-supporters:
+partners:
+  - mc-praha-7
   - nadacni-centrum-agora-7
   - ministry-of-the-interior-of-the-czech-republic
 images:

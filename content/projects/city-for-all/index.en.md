@@ -3,8 +3,8 @@ title: City for All – Support for Civic Participation in an Intercultural Envi
 date: 2024-03-13
 dtstart: 2024-05-01
 dtend: 2024-12-31
-partner: prague-city-hall
-supporters: []
+partners:
+  - prague-city-hall
 images:
   - 2024-05-15_migact-meetups-prague-7-networking_01.webp
   - 2024-05-15_migact-meetups-prague-7-networking_02.webp

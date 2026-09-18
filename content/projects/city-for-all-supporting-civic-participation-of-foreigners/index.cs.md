@@ -3,8 +3,8 @@ title: 'Metropole všech: Podpora participace cizinců'
 date: 2026-07-01
 dtstart: 2026-07-01
 dtend: 2026-12-31
-partner: prague-city-hall
-supporters:
+partners:
+  - prague-city-hall
   - ministry-of-the-interior-of-the-czech-republic
 ---
 

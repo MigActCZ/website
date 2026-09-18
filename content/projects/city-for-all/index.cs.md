@@ -3,8 +3,8 @@ title: Metropole všech – podpora občanské participace v interkulturním pro
 date: 2024-03-13
 dtstart: 2024-05-01
 dtend: 2024-12-31
-partner: prague-city-hall
-supporters: []
+partners:
+  - prague-city-hall
 images:
   - 2024-05-15_migact-meetups-prague-7-networking_01.webp
   - 2024-05-15_migact-meetups-prague-7-networking_02.webp

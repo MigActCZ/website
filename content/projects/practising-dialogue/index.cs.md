@@ -3,8 +3,8 @@ title: 'Podpora dialogu: Inovace občanské participace v rozmanitých městský
 date: 2025-12-15
 dtstart: 2026-02-01
 dtend: 2026-09-30
-partner: civic-innovation-fund
-supporters:
+partners:
+  - civic-innovation-fund
   - hermes
 images:
   - d-3.webp
@@ -14,9 +14,6 @@ images:
   - img_4856.webp
   - img_4858.webp
   - img_4917.webp
-partners:
-  - hermes
-  - civic-innovation-fund
 ---
 
 ### **Na čem pracujeme**

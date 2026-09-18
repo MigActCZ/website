@@ -3,8 +3,8 @@ title: Pathways to Civic Integration of Residents with Migrant Backgrounds
 date: 2025-03-15
 dtstart: 2025-04-01
 dtend: 2025-12-31
-partner: mc-praha-7
-supporters:
+partners:
+  - mc-praha-7
   - nadacni-centrum-agora-7
   - ministry-of-the-interior-of-the-czech-republic
   - unhcr

@@ -3,8 +3,8 @@ title: Posílení komunitní a občanské participace v Praze 3
 date: 2026-05-06
 dtstart: 2026-04-01
 dtend: 2026-12-31
-partner: mč-praha-3
-supporters:
+partners:
+  - mč-praha-3
   - ministry-of-the-interior-of-the-czech-republic
 images:
   - p3.1.webp

@@ -109,12 +109,7 @@
   <section id="project-partners" class="side-panel">
     <h2>{{ i18n "partners" }}</h2>
     {{ $partnersPage := site.GetPage "partners" }}
-    {{ with .Params.partner }}
-      {{ $partnerPage := $partnersPage.GetPage . }}
-      {{ $img := $partnerPage.Resources.Get $partnerPage.Params.image }}
-      {{ partial "partner-logo.html" (dict "img" $img "title" $partnerPage.Title) }}
-    {{ end }}
-    {{ with .Params.supporters }}
+    {{ with .Params.partners }}
     <ul id="logos">
       {{ range . }}
         {{ $partnerPage := $partnersPage.GetPage . }}

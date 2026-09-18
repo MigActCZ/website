@@ -3,8 +3,8 @@ title: MigAct capacity building
 date: 2024-05-13
 dtstart: 2024-06-01
 dtend: 2025-03-31
-partner: epim
-supporters:
+partners:
+  - epim
   - amiga-zs
 ---
 

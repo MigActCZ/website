@@ -3,7 +3,8 @@ title: 'CivicLink: Advancing Civic Integration in Prague'
 date: 2025-08-15
 dtstart: 2025-09-01
 dtend: 2027-08-31
-partner: epim
+partners:
+  - epim
 images:
   - epim-6.webp
   - epim-5.webp
