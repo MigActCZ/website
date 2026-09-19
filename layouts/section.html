@@ -38,9 +38,27 @@
 {{ define "inline-scripts" }}
 {{ if eq .Section "team"}}
 <script>
+    function flipTeamCard(card) {
+        card.classList.toggle("flipped");
+        const flipped = card.classList.contains("flipped");
+        card.querySelector(".front").inert = flipped;
+        card.querySelector(".back").inert = !flipped;
+        card.querySelector((flipped ? ".back" : ".front") + " .toggle")?.focus();
+    }
     document.querySelector(".entities")?.addEventListener("click", (e) => {
-        e.target.closest('article')?.classList.toggle('flipped');
-    })
+        const card = e.target.closest("article");
+        if (!card) return;
+        if (e.target.closest(".front") || e.target.closest(".back .toggle")) {
+            flipTeamCard(card);
+        }
+    });
+    document.querySelector(".entities")?.addEventListener("keydown", (e) => {
+        if (e.key !== "Enter" && e.key !== " ") return;
+        const card = e.target.closest("article");
+        if (!card || !e.target.closest(".toggle")) return;
+        e.preventDefault();
+        flipTeamCard(card);
+    });
 </script>
 {{ else if or (eq .Section "projects") (eq .Section "events") (eq .Section "activity") }}
 <script>window.updateGridStatusTag();</script>

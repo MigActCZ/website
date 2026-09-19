@@ -28,6 +28,7 @@ html {
   font-family: "Hanken Grotesk", sans-serif;
   /* font-size: clamp(1rem, 0.8rem + 0.8vw, 1.5rem); */
   height: 100%; /* Footer position */
+  scroll-padding-top: 6rem; /* Keep some space for the header */ 
 }
 body {
   margin: 0; /* Fill entire viewport */
@@ -990,7 +991,6 @@ main.detail {
   justify-content: center;
   article {
     position: relative;
-    cursor: pointer;
     padding: unset;
     overflow: clip;
     h2 {
@@ -1005,10 +1005,14 @@ main.detail {
       backface-visibility: hidden;
       transition: ease-in-out 0.4s;
     }
+    .front{
+      cursor: pointer;
+    }
     .back {
       position: absolute;
       transform: rotateY(-180deg);
-      inset: var(--big-gap);
+      inset: var(--medium-gap); /* inset for absolute positioning, padding for outlines and clip */
+      padding: var(--medium-gap);
       display: flex;
       flex-direction: column;
       overflow-y: auto;
@@ -1018,16 +1022,23 @@ main.detail {
           display: revert;
         }
       }
+      .back-actions {
+        display: flex;
+        align-items: center;
+        gap: var(--separator-gap);
+        .toggle {
+          margin-inline-start: auto;
+        }
+      }
     }
     .overlay {
       position: absolute;
       bottom: 0;
       margin: var(--big-gap); /* Using margin to see the image underneath */
       color: var(--color-bg);
+      pointer-events: none;
     }
     a {
-      display: flex;
-      gap: var(--separator-gap);
       color: inherit;
     }
     &.flipped {

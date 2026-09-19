@@ -2,29 +2,32 @@
   {{ $photo := .Resources.Get .Params.image }}
   {{ $name := .Title }}
   <div class="front">
-    {{ with $photo }}
-      {{ if and (ge .Width 1040) (ge .Height 1280) }}
-        {{ $small := .Fill "480x640 center lanczos" }}
-        {{ $large := .Fill "960x1280 center lanczos" }}
-        <img src="{{ $small.RelPermalink }}" srcset="{{ $small.RelPermalink }} 1x, {{ $large.RelPermalink }} 2x" alt="Portrait of {{ $name }}">
-      {{ else }}
-        {{ with .Fill "480x640 center lanczos" }}
-        <img src="{{ .RelPermalink }}" alt="Portrait of {{ $name }}">
+      {{ with $photo }}
+        {{ if and (ge .Width 1040) (ge .Height 1280) }}
+          {{ $small := .Fill "480x640 center lanczos" }}
+          {{ $large := .Fill "960x1280 center lanczos" }}
+          <img src="{{ $small.RelPermalink }}" srcset="{{ $small.RelPermalink }} 1x, {{ $large.RelPermalink }} 2x" alt="Portrait of {{ $name }}">
+        {{ else }}
+          {{ with .Fill "480x640 center lanczos" }}
+          <img src="{{ .RelPermalink }}" alt="Portrait of {{ $name }}">
+          {{ end }}
         {{ end }}
       {{ end }}
-    {{ end }}
     <div class="overlay">
       <h2>{{ .Title }}</h2>
       <h3>{{ .Params.position }}</h3>
-      <a>{{ i18n "bio" }} {{ partial "inline-svg" "icons/arrow-right" }}</a>
+      <a class="toggle" role="button" tabindex="0">{{ i18n "bio" }} {{ partial "inline-svg" "icons/arrow-right" }}</a>
     </div>
   </div>
-  <div class="back">
+  <div class="back" inert>
     <h2>{{ .Title }}</h2>
     <h3>{{ .Params.position }}</h3>
     <div class="content">{{ .Content }}</div>
-    {{ with .Params.contact }}
-    <a href="mailto:{{ . }}">{{ partial "inline-svg" "icons/mail" }}{{ . }}</a>
-    {{ end }}
+    <div class="back-actions">
+      {{ with .Params.contact }}
+      <a href="mailto:{{ . }}">{{ partial "inline-svg" "icons/mail" }}{{ . }}</a>
+      {{ end }}
+      <a class="toggle" role="button" tabindex="0">{{ i18n "back" }}{{ partial "inline-svg" "icons/arrow-right" }}</a>
+    </div>
   </div>
 </article>
