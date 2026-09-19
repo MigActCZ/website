@@ -3,12 +3,12 @@
   {{ $name := .Title }}
   <div class="front">
     {{ with $photo }}
-      {{ if and (gt .Width 1040) (gt .Height 1280) }}
-        {{ $small := .Fill "520x640 center lanczos" }}
-        {{ $large := .Fill "1040x1280 center lanczos" }}
+      {{ if and (ge .Width 1040) (ge .Height 1280) }}
+        {{ $small := .Fill "480x640 center lanczos" }}
+        {{ $large := .Fill "960x1280 center lanczos" }}
         <img src="{{ $small.RelPermalink }}" srcset="{{ $small.RelPermalink }} 1x, {{ $large.RelPermalink }} 2x" alt="Portrait of {{ $name }}">
       {{ else }}
-        {{ with .Fill "520x640 center lanczos" }}
+        {{ with .Fill "480x640 center lanczos" }}
         <img src="{{ .RelPermalink }}" alt="Portrait of {{ $name }}">
         {{ end }}
       {{ end }}

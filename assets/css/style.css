@@ -20,6 +20,8 @@
   --tight-gap: calc(var(--medium-gap) * 3 / 4);
   --separator-gap: calc(var(--medium-gap) / 2);
   --noise-filter: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.2' numOctaves='1' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.08'/%3E%3C/svg%3E");
+
+  --team-photo-width: 480px;
 }
 /* || GENERAL */
 html {
@@ -317,7 +319,6 @@ a > svg {
 /* Layout */
 #site-header,
 #site-footer,
-ul.entities,
 .grid-header,
 #home > section,
 main > .intro,
@@ -982,13 +983,16 @@ main.detail {
 }
 /* || TEAM PAGE */
 #team {
-  display: grid;
-  grid-template-columns: 1fr;
+  width: 90%;
+  max-width: calc(3 * var(--team-photo-width) + 2 * var(--big-gap));
+  margin-inline: auto;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, calc(var(--team-photo-width) * .75)), max-content));
+  justify-content: center;
   article {
     position: relative;
-    height: 640px;
     cursor: pointer;
     padding: unset;
+    overflow: clip;
     h2 {
       font-size: 2.25em;
     }
@@ -998,14 +1002,11 @@ main.detail {
     }
     .front,
     .back {
-      position: absolute;
       backface-visibility: hidden;
       transition: ease-in-out 0.4s;
     }
-    .front {
-      inset: 0;
-    }
     .back {
+      position: absolute;
       transform: rotateY(-180deg);
       inset: var(--big-gap);
       display: flex;
@@ -1023,11 +1024,6 @@ main.detail {
       bottom: 0;
       margin: var(--big-gap); /* Using margin to see the image underneath */
       color: var(--color-bg);
-    }
-    img {
-      object-fit: cover;
-      height: 100%;
-      border-radius: 2rem;
     }
     a {
       display: flex;
@@ -1571,20 +1567,16 @@ main > .intro {
       justify-content: space-between;
     }
   }
-  ul.entities {
-    gap: var(--big-gap);
-    article .timeline {
+  ul.entities article .timeline {
       flex-direction: row;
       time + time::before {
         content: "-";
         margin-inline: var(--separator-gap);
       }
     }
-  }
   ul.partners-grid {
     grid-template-columns: repeat(4, 1fr);
   }
-  #team.entities,
   #events.entities,
   #activity.entities,
   #join-events .entities {
@@ -1597,8 +1589,8 @@ main > .intro {
     grid-template-columns: 1fr 1fr;
   }
 }
-/* ============================================     Desktop (1024px+)     ============================================ */
-@media (min-width: 1024px) {
+/* ============================================     Desktop (1366px+)     ============================================ */
+@media (min-width: 1366px) {
   ul#activitylist {
     gap: var(--big-gap);
     grid-auto-flow: unset;
