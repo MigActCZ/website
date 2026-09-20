@@ -284,9 +284,7 @@ a.button {
 }
 /* Scroll row */
 .scroll-row {
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: 85%;
+  display: flex;
   gap: var(--medium-gap);
   overflow-x: auto;
   scroll-snap-type: x mandatory;
@@ -294,8 +292,8 @@ a.button {
   scroll-padding-inline: var(--wide-gap);
   margin-inline: calc(var(--wide-gap) * -1);
   & > li {
-    min-width: 0;
     scroll-snap-align: start;
+    flex: 0 0 min(85%, 636px); /* Cap width at picture size < 640px */
   }
 }
 ul.pagination {
@@ -541,13 +539,13 @@ main > section:last-child {
     color: var(--color-text-light);
   }
   & > section > header {
-      text-align: center;
-      margin-block-end: 3rem;
-      h2 {
-        margin-block: 0;
-      }
+    text-align: center;
+    margin-block-end: 3rem;
+    h2 {
+      margin-block: 0;
     }
   }
+}
 #about {
   padding: 4rem var(--separator-gap);
   display: grid;
@@ -560,6 +558,38 @@ main > section:last-child {
     grid-row: 2;
     height: 25rem;
     object-fit: cover;
+    place-self: center;
+  }
+  /* Buttons override because of custom switch */
+  ul.buttons {
+    justify-content: center;
+  }
+  /* Custom media switch for this section */
+  @media (min-width: 1024px) {
+    padding-block: 7.5rem;
+    gap: var(--tight-gap) 5rem;
+    grid-template-rows: auto auto 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "featured image"
+      "text image"
+      "links image";
+    align-items: center;
+    #hero {
+      grid-area: image;
+      height: 40rem;
+    }
+    p {
+      font-size: 1.25rem;
+    }
+    #featured {
+      text-align: revert;
+      font-size: 2rem;
+      line-height: initial;
+    }
+  ul.buttons {
+    justify-content: unset;
+  }
   }
 }
 #activities {
@@ -893,7 +923,7 @@ ul#attachments {
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), max-content));
 }
 #join-events > ul.entities :is(p, h2) {
-    font-size: revert;
+  font-size: revert;
 }
 main.detail {
   padding-block: var(--big-gap);
@@ -1427,29 +1457,6 @@ main > .intro {
   #join-events {
     --content-width: 100rem;
   }
-  section#about {
-    padding-block: 7.5rem;
-    gap: var(--tight-gap) 5rem;
-    grid-template-rows: auto auto 1fr;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      "featured image"
-      "text image"
-      "links image";
-    align-items: center;
-    #hero {
-      grid-area: image;
-      height: 40rem;
-    }
-    p {
-      font-size: 1.25rem;
-    }
-    #featured {
-      text-align: revert;
-      font-size: 2rem;
-      line-height: initial;
-    }
-  }
   #donate,
   #socials-newsletter,
   #join-newsletter > .card {
@@ -1591,8 +1598,8 @@ main > .intro {
 /* ============================================     Desktop (1366px+)     ============================================ */
 @media (min-width: 1366px) {
   ul#activitylist {
+    display: grid;
     gap: var(--big-gap);
-    grid-auto-flow: unset;
     grid-template-columns: 1fr 1fr;
     & > li > img {
       height: 15rem;
