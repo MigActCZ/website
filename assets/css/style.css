@@ -320,6 +320,7 @@ a > svg {
 /* Layout */
 #site-header,
 #site-footer,
+ul.entities,
 .grid-header,
 #home > section,
 main > .intro,
@@ -755,10 +756,11 @@ ul.elevated-cards > li,
 }
 ul.entities {
   display: grid;
-  gap: var(--big-gap);
+  gap: var(--wide-gap);
   grid-template-columns: 1fr;
   margin-block-end: var(--big-gap);
   text-align: start;
+  justify-content: center;
   article {
     /* Needed to stretch to entire row height */
     box-sizing: border-box;
@@ -895,11 +897,12 @@ ul#attachments {
     }
   }
 }
-#join-events > ul.entities {
-  padding-inline: 0;
-  :is(p, h2) {
+#events,
+#activity{
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), max-content));
+}
+#join-events > ul.entities :is(p, h2) {
     font-size: revert;
-  }
 }
 main.detail {
   padding-block: var(--big-gap);
@@ -1588,16 +1591,9 @@ main > .intro {
   ul.partners-grid {
     grid-template-columns: repeat(4, 1fr);
   }
-  #events.entities,
-  #activity.entities,
-  #join-events .entities {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  #contacts > dl {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  #contacts > dl,
   #projects.entities {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 /* ============================================     Desktop (1366px+)     ============================================ */
@@ -1659,5 +1655,8 @@ main > .intro {
   }
   #home > :is(#about, #stay-connected) {
     background-size: 100% 100%;
+  }
+  #join-events .entities {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
