@@ -9,7 +9,9 @@ languages: EN CZ
 registration: https://forms.gle/EssRD2YstV9z53K66
 projects:
   - migact-capacity-building
+  - together-for-prague
 ---
+
 Join us for a networking session and a panel discussion on the topic: Civic participation of foreigners: Why it matters?
 
 You’ll also have the chance to connect with community organizers, discover migrant-led projects in Prague, and learn about MigAct’s upcoming plans and activities.

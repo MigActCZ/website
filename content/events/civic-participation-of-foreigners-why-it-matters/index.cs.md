@@ -9,7 +9,9 @@ languages: EN CZ
 registration: https://forms.gle/EssRD2YstV9z53K66
 projects:
   - migact-capacity-building
+  - together-for-prague
 ---
+
 Zveme vás na networking a panelovou diskuzi na téma: Aktivní občanství lidí s migračním původem – proč je to důležité?
 
 Budete mít také příležitost objevit zajímavé projekty vedené lidmi s migračním původem v Praze a dozvědět se více o plánech a aktivitách MigActu na tento rok.
