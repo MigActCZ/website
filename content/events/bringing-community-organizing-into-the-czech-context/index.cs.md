@@ -7,9 +7,9 @@ dtend: 2025-04-25T19:30:00
 location: Horse Hug, Prokopova 572/14, 130 00 Praha 3-Žižkov
 languages: EN CZ
 registration: https://forms.gle/GqhswLgVJCrp6z747
-projects:
-  - UNITES
+projects: []
 ---
+
 Komunitní organizování je silný nástroj pro pozitivní změny v společnosti kde žijeme. Ale jak ho přizpůsobit českému kontextu? Jak mohou Češi a lidi s migračním původem spolupracovat, zapojit místní komunity a vytvářet smysluplné vazby? Pojďme diskutovat o praktických strategiích, výzvách i úspěšných příkladech, aby komunitní organizování fungovalo pro všechny v Praze.
 
 <!--more-->
