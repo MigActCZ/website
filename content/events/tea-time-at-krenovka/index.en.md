@@ -9,6 +9,7 @@ languages: EN, CZ
 registration: ''
 projects:
   - strengthening-community-and-civic-participation-in-prague-3
+  - civiclink-advancing-civic-integration-in-prague
 ---
 
 Dear all,
@@ -31,6 +32,6 @@ We look forward to seeing you.
 
 With warm regards,
 
-Vendula Guhová – community coordinator for Prague 3\
-Natallia Allen – MigAct\
+Vendula Guhová – community coordinator for Prague 3
+Natallia Allen – MigAct
 Jakub Morávek – Krenovka
