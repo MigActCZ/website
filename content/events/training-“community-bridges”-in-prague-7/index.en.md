@@ -7,7 +7,8 @@ dtend: 2026-10-27T21:00:00
 location: Community Center Přistav 7, Studánka-Komunitní prostor Letná
 languages: EN
 registration: https://forms.gle/fRZsmpZ8D1SVexhC8
-projects: []
+projects:
+  - pathways-to-civic-integration-ii
 ---
 
 We would like to invite you to a five-workshop training programme, which will train residents and those interested in Prague 7 to become  “Community bridges” for the neighbourhood. The workshops will dive deep into 5-key-focus areas of strengthening community connections:

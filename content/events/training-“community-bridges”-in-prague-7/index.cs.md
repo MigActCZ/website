@@ -7,7 +7,8 @@ dtend: 2026-10-27T21:00:00
 location: Community Center Přistav 7, Studánka-Komunitní prostor Letná
 languages: EN
 registration: https://forms.gle/fRZsmpZ8D1SVexhC8
-projects: []
+projects:
+  - pathways-to-civic-integration-ii
 ---
 
 Rádi bychom vás pozvali na pětidílný vzdělávací cyklus workshopů, který připraví obyvatele a zájemce z Prahy 7 na roli „komunitních průvodců“ pro svou čtvrť. Workshopy se podrobně zaměří na 5 klíčových oblastí posilování komunitních vazeb:
