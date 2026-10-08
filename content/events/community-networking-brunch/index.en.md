@@ -19,6 +19,6 @@ Let’s meet each other and get more involved in the neighbourhood!
 
 Light brunch, coffee, tea and refreshments will be provided— no need to bring anything but yourself!
 
-Don’t forget to register via this form—we’re excited to meet you!
+Don’t forget to register — we’re excited to meet you!
 
 The event is free to attend. This project is supported by MigAct, Agora 7, Prague 7 Municipality and the Ministry of Interior of the Czech Republic.

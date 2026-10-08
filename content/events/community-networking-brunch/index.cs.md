@@ -19,6 +19,6 @@ Pojďme se navzájem poznat a více se zapojit do života v naší čtvrti!
 
 Lehký brunch, káva, čaj a občerstvení budou zajištěny – nemusíte s sebou brát nic kromě sebe sama!
 
-Nezapomeňte se zaregistrovat prostřednictvím tohoto formuláře – těšíme se na vás!
+Nezapomeňte se zaregistrovat  – těšíme se na vás!
 
 Vstup na akci je zdarma. Tento projekt je podporován organizacemi MigAct, Agora 7, Městskou částí Praha 7 a Ministerstvem vnitra České republiky.
