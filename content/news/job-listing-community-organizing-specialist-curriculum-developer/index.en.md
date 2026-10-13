@@ -7,8 +7,11 @@ resources:
 ---
 
 **Location:** Prague (Office-based with flexible work from home upon agreement)
+
 **Duration:** November, 2026- September 2027 (with potential for long-term collaboration)
+
 **Contract:** Part-time (DPP / Contract), -20 hrs/month (higher workload Nov 2026 - Feb 2027)
+
 **Pay:** CZK 400 / hour
 
 **About the Role:**
@@ -17,15 +20,15 @@ Help us train the next generation of community organizers in Prague! We’re rec
 
 **Key Responsibilities:**
 
-\*\*Curriculum Design & Enhancement:\*\* Co-create and refine the curriculum for a multi-country community organizing training program.
+**Curriculum Design & Enhancement:** Co-create and refine the curriculum for a multi-country community organizing training program.
 
-\*\*Trainer Support:\*\* Communicate regularly with trainers to align learning outcomes, educational methods, and content delivery.
+**Trainer Support:** Communicate regularly with trainers to align learning outcomes, educational methods, and content delivery.
 
-\*\*Methodological Support:\*\* Deliver ongoing methodological guidance for educational activities and provide direct mentoring to participants.
+**Methodological Support:** Deliver ongoing methodological guidance for educational activities and provide direct mentoring to participants.
 
-\*\*Participant Recruitment:\*\* Support the recruitment strategy and selection process for training participants.
+**Participant Recruitment:** Support the recruitment strategy and selection process for training participants.
 
-\*\*Evaluation & Data Analysis:\*\* Co-create evaluation tools for the training program, analyze data, and synthesize findings.
+**Evaluation & Data Analysis:** Co-create evaluation tools for the training program, analyze data, and synthesize findings.
 
 **What We Are Looking For:**
 
@@ -39,13 +42,13 @@ Help us train the next generation of community organizers in Prague! We’re rec
 
 **What We Offer:**
 
-\*\*Meaningful Work:\*\* Help build stronger, more resilient communities across Europe through targeted educational programs.
+**Meaningful Work:** Help build stronger, more resilient communities across Europe through targeted educational programs.
 
-\*\*Co-Creation & Autonomy:\*\* An innovative, friendly and diverse NGO culture where your ideas matter.
+**Co-Creation & Autonomy:** An innovative, friendly and diverse NGO culture where your ideas matter.
 
-\*\*Flexibility:\*\* Part-time engagement (\~25 hours/month on average, with increased intensity from Nov 2026 to Feb 2027), flexible working hours.
+**Flexibility:** Part-time engagement (\~25 hours/month on average, with increased intensity from Nov 2026 to Feb 2027), flexible working hours.
 
-\*\*Future Growth:\*\* Opportunity for long-term cooperation.
+**Future Growth:** Opportunity for long-term cooperation.
 
 **How to Apply:**
 
