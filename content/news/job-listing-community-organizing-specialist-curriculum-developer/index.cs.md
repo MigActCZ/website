@@ -7,8 +7,11 @@ resources:
 ---
 
 **Místo výkonu:** Praha (kancelář s možností home office dle dohody)
+
 **Doba trvání:** Listopad 2026 - září 2027 (s možností navázání dlouhodobé spolupráce)
+
 **Typ úvazku:** Zkrácený úvazek (DPP ), \~25 hod./měsíc
+
 **Odměna:** 400 Kč / hodina
 
 **O pozici:**
@@ -17,7 +20,7 @@ Hledáme metodika/čku, který/á se bude podílet na přípravě, adaptaci a ev
 
 **Hlavní náplň práce:** 
 
-**Tvorba a rozvoj vzdělávacího programu:** Spoluvytváření a úprava vzdělávacího programu pro komunitní organizátory a organizátorky.
+**Tvorba a rozvoj vzdělávacího programu:** Spoluvytváření a úprava vzdělávacího programu pro komunitní organizátory a organizátorky.
 
 **Koordinace s lektory:** Pravidelná komunikace s lektorským týmem a slaďování vzdělávacích cílů, výukových metod a obsahu.
 
