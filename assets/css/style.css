@@ -928,6 +928,28 @@ ul#attachments {
 main.detail {
   padding-block: var(--big-gap);
 }
+/* || Definition lists in article content */
+main:is(.detail, .page) > section > dl {
+  dt {
+    display: inline;
+    font-weight: bold;
+    &::after {
+      content: ":";
+    }
+  }
+  dd {
+    display: inline;
+    margin-inline-start: 0.35em;
+  }
+  /* Blank line separates term/definition pairs, like paragraphs */
+  dd::after {
+    content: "\A";
+    white-space: pre;
+  }
+  dd:last-child::after {
+    content: none;
+  }
+}
 #event #hero {
   aspect-ratio: 16 / 10;
   object-fit: contain;
