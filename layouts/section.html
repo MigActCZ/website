@@ -43,7 +43,7 @@
         const flipped = card.classList.contains("flipped");
         card.querySelector(".front").inert = flipped;
         card.querySelector(".back").inert = !flipped;
-        card.querySelector((flipped ? ".back" : ".front") + " .toggle")?.focus();
+        card.querySelector((flipped ? ".back" : ".front") + " .toggle")?.focus({ preventScroll: true });
     }
     document.querySelector(".entities")?.addEventListener("click", (e) => {
         const card = e.target.closest("article");
