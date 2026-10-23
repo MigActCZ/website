@@ -7,7 +7,8 @@ dtend: 2026-10-27T21:00:00
 location: Prvního pluku 143/12, 186 00 Karlín
 languages: EN, CZ
 registration: https://forms.gle/QvB3DG7xEsfiaQc29
-projects: []
+projects:
+  - migact-local-meetups
 ---
 
 MigAct is starting its own series of DEMOS Dialogues! 🗣️✨
