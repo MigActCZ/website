@@ -52,4 +52,4 @@ Help us train the next generation of community organizers in Prague! We’re rec
 
 **How to Apply:**
 
-In case you are interested, please send your **CV and a short motivation letter in English** to Natallia Allen at natallia@migact.net by **October 23rd, 2026.** Applications will be reviewed on a rolling basis. Ideal start date is November 1st, 2026.
+In case you are interested, please send your **CV and a short motivation letter in English** to Natallia Allen at natallia@migact.net by **October 26rd, 2026.** Applications will be reviewed on a rolling basis. Ideal start date is November 1st, 2026.

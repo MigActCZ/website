@@ -52,4 +52,4 @@ Hledáme metodika/čku, který/á se bude podílet na přípravě, adaptaci a ev
 
 **Jak se přihlásit:**
 
-V případě zájmu zašlete svůj **životopis (CV) a krátký motivační dopis** v angličtině Natallii Allen na adresu natallia@migact.net do **23. října 2026.** Přihlášky vyhodnocujeme průběžně. Ideální nástup je 1. listopadu 2026.
+V případě zájmu zašlete svůj **životopis (CV) a krátký motivační dopis** v angličtině Natallii Allen na adresu natallia@migact.net do **26. října 2026.** Přihlášky vyhodnocujeme průběžně. Ideální nástup je 1. listopadu 2026.
