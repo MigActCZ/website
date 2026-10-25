@@ -8,7 +8,8 @@
     <img id="hero" src="{{ .RelPermalink }}" alt="" fetchpriority="high"/>
     {{ end }}
     <h1>{{ .Title }}</h1>
-    {{ .Content }}
+    {{ $emoji := `<li>\s*((?:[\x{1F300}-\x{1FAFF}\x{2600}-\x{27BF}][\x{FE0F}\x{200D}\x{1F3FB}-\x{1F3FF}]*)+)\s+` }}
+{{ .Content | replaceRE $emoji `<li style="list-style-type: '${1} '">` | safeHTML }}
   </section>
   <div id="info" class="side-panel column">
     <dl class="attributes column">
