@@ -21,17 +21,18 @@ Toto první setkání z naší nové série je otevřeným prostorem, kde se pon
 Cílem není vyhrát debatu ani dosáhnout konsenzu za každou cenu, ale budovat vzájemné porozumění a propojení — a to i u složitých témat.
 
 Společně si vybereme z 5 hlavních oblastí:
-📊 Ekonomická nerovnost
-🎓 Vzdělávání
-⚖️ Právní stát
-🤝 Důvěra
-🚀 Budoucnost práce
+- 📊 Ekonomická nerovnost
+- 🎓 Vzdělávání
+- ⚖️ Právní stát
+- 🤝 Důvěra
+- 🚀 Budoucnost práce
 
-💬 Jasyky: Angličtina i čeština. Česky mluvící mají možnost připojit se k diskusní skupině vedené výhradně v češtině!
+💬 Jazyky: Angličtina i čeština.  
+Česky mluvící mají možnost připojit se k diskusní skupině vedené výhradně v češtině!
 
 🗓️ Program setkání:
-18:00 – Otevření dveří
-18:15 – Úvod a výběr tématu
-18:30 – Moderovaný dialog
-19:40 – Závěrečné shrnutí
-20:00 – Networking a neformální povídání
+- **18:00** – Otevření dveří
+- **18:15** – Úvod a výběr tématu
+- **18:30** – Moderovaný dialog
+- **19:40** – Závěrečné shrnutí
+- **20:00** – Networking a neformální povídání

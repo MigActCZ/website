@@ -21,17 +21,18 @@ This first session of our new meeting series is an open space where we’ll dive
 The goal isn’t to win debates or force a consensus, but to build mutual understanding and connection—even around complex topics.
 
 Together, we’ll choose from 5 key focus areas:
-📊 Economic Inequality
-🎓 Education
-⚖️ Rule of Law
-🤝 Trust
-🚀 Future of Work
+- 📊 Economic Inequality
+- 🎓 Education
+- ⚖️ Rule of Law
+- 🤝 Trust
+- 🚀 Future of Work
 
-💬 Languages: English & Czech. Czech speakers have the option to join a dialogue session exclusively in Czech!
+💬 Languages: English & Czech.  
+Czech speakers have the option to join a dialogue session exclusively in Czech!
 
 🗓️ Event Schedule:
-\* 18:00 – Doors open
-\* 18:15 – Intro & topic selection
-\* 18:30 – Guided dialogues session
-\* 19:40 – Closing thoughts
-\* 20:00 – Networking & casual chat
+- **18:00** - Doors open
+- **18:15** - Intro & topic selection
+- **18:30** - Guided dialogues session
+- **19:40** - Closing thoughts
+- **20:00** - Networking & casual chat
