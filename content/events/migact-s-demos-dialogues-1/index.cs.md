@@ -1,5 +1,6 @@
 ---
 title: 'Dialogy DEMOS od MigAct #1'
+slug: dialogy-demos-od-migact-1
 featured: 2.webp
 date: 2026-10-23
 dtstart: 2026-10-27T18:00:00
