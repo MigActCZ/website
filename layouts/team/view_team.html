@@ -22,7 +22,7 @@
   <div class="back" inert>
     <h2>{{ .Title }}</h2>
     <h3>{{ .Params.position }}</h3>
-    <div class="content">{{ .Content }}</div>
+    {{ partial "content" .Content }}
     <div class="back-actions">
       {{ with .Params.contact }}
       <a href="mailto:{{ . }}">{{ partial "inline-svg" "icons/mail" }}{{ . }}</a>

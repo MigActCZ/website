@@ -929,7 +929,7 @@ main.detail {
   padding-block: var(--big-gap);
 }
 /* || Definition lists in article content */
-main:is(.detail, .page) > section > dl {
+.content dl {
   dt {
     display: inline;
     font-weight: bold;
@@ -1059,7 +1059,7 @@ main:is(.detail, .page) > section > dl {
       display: flex;
       flex-direction: column;
       overflow-y: auto;
-      div.content {
+      & > .content {
         margin-block-end: auto;
         a {
           display: revert;

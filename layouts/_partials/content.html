@@ -1,0 +1,6 @@
+{{/* Wraps rendered Markdown HTML in section.content and applies shared post-processing.
+
+     Input: rendered HTML, e.g. .Content or .Summary.
+*/}}
+{{- $emoji := `<li>\s*((?:[\x{1F300}-\x{1FAFF}\x{2600}-\x{27BF}][\x{FE0F}\x{200D}\x{1F3FB}-\x{1F3FF}]*)+)\s+` -}}
+<section class="content">{{ . | replaceRE $emoji `<li style="list-style-type: '${1} '">` | safeHTML }}</section>

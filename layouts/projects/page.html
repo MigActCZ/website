@@ -24,7 +24,7 @@
       ·
       <span class="status" data-archived='{{ i18n "finished" }}' data-active='{{ i18n "ongoing" }}'></span>
     </section>
-    {{ .Content }}
+    {{ partial "content" .Content }}
     {{ $events := site.GetPage "events" }}
     {{ $key := path.Base $.Path }}
     {{ $related := where $events.RegularPages "Params.projects" "intersect" (slice $key) }}

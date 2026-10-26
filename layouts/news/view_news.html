@@ -6,7 +6,5 @@
     {{ end }}
   </header>
   <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-  <section>
-    {{ .Summary }}
-  </section>
+  {{ partial "content" .Summary }}
 </article>

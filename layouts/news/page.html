@@ -6,9 +6,7 @@
   <h2>{{ i18n "project" }}: <a href='{{ $project.RelPermalink }}'>{{ $project.Title }}</a></h2>
   {{ end }}
   <time datetime='{{ .Date | dateFormat "2006-01-02" }}'>{{ .Date | dateFormat "2 Jan 2006" }}</time>
-  <section>
-    {{ .Content }}
-  </section>
+  {{ partial "content" .Content }}
   {{ with .Params.resources }}
   <section>
     <h2>{{ i18n "attachments" }}</h2>
