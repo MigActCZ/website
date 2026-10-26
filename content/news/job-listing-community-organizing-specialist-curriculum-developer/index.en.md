@@ -13,7 +13,7 @@ Duration
 : November, 2026- September 2027 (with potential for long-term collaboration)
 
 Contract
-: Part-time (DPP / Contract), -20 hrs/month (higher workload Nov 2026 - Feb 2027)
+: Part-time (DPP / Contract), -25 hrs/month (higher workload Nov 2026 - Feb 2027)
 
 Pay
 : CZK 400 / hour
