@@ -42,17 +42,17 @@ join_newsletter_text: Přihlaste se k odběru našeho newsletteru a dostávejte 
 join_newsletter_action: Přihlásit se k odběru
 
 #About us
-theory: Teorie zmeny
-about_documents_header: Výroční zprávy & Stanovy
+theory: Teorie změny
+about_documents_header: Výroční zprávy a stanovy
 annual_report_template: Výroční zpráva %v
 
 # Dynamic lists
 home: Domov
 bio: Přečíst si víc
 back: Zpět
-attachments: Prilohy
+attachments: Přílohy
 PublicSector: Veřejný sektor
-GrantPartners: Nadace a partnerské organizace
+GrantPartners: Nadace a grantoví partneři
 InternationalNetworks: Mezinárodní sítě
 
 # Error pages
@@ -63,7 +63,7 @@ error_404_action: Zpět na úvod
 # Project
 status: Status
 finished: Ukončen
-ongoing: Probíha
+ongoing: Probíhá
 timeline: Realizace
 partners: Partneři
 linked_events: Akce projektu
@@ -77,9 +77,9 @@ date: Kdy
 location: Kde
 languages: Jazyky
 project: Projekt
-tba: Bude oznameno
-calendar: Pridat do kalendáře
-register: Registrovat
+tba: Bude oznámeno
+calendar: Přidat do kalendáře
+register: Registrovat se
 explore_events: Vyhledat nadcházející akce
 
 # Contact page
