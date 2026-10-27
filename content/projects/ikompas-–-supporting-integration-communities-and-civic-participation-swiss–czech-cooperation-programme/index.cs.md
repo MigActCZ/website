@@ -3,7 +3,9 @@ title: iKOMPAS – podpora integrace, komunit a občanské participace (Program 
 date: 2026-09-01
 dtstart: 2026-09-01
 dtend: 2028-08-31
-partners: []
+partners:
+  - swiss-czech-cooperation-programme
+  - inbaze
 ---
 
 ## Společně vytváříme prostředí, ve kterém se lidé s migrační zkušeností mohou lépe orientovat, rozvíjet svůj potenciál a aktivně se zapojovat do života společnosti.
