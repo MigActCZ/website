@@ -15,8 +15,11 @@ The project is implemented by InBáze, z. s., in cooperation with five partner o
 ## **Project Information**
 
 \*\*Project title:\*\* iKOMPAS
+
 \*\*Registration number:\*\* SC_25_001-037
+
 \*\*Grant recipient:\*\* InBáze, z. s.
+
 \*\*Project duration:\*\* 1 September 2026 – 31 August 2028
 
 \*\*Contact:\*\* Ing. Alexandr Zpěvák, zpevak@inbaze.cz
