@@ -8,7 +8,7 @@ partners:
   - inbaze
 ---
 
-## Společně vytváříme prostředí, ve kterém se lidé s migrační zkušeností mohou lépe orientovat, rozvíjet svůj potenciál a aktivně se zapojovat do života společnosti.
+Společně vytváříme prostředí, ve kterém se lidé s migrační zkušeností mohou lépe orientovat, rozvíjet svůj potenciál a aktivně se zapojovat do života společnosti.
 
 Projekt iKOMPAS propojuje přímou podporu cizinců, komunitní práci, rozvoj občanských a profesních kompetencí a vzdělávání odborníků. Jeho cílem je usnadnit integraci lidí s migrační zkušeností do české společnosti, posílit jejich samostatnost a přispět k vzájemnému porozumění a sociální soudržnosti.
 
@@ -16,31 +16,32 @@ Projekt iKOMPAS propojuje přímou podporu cizinců, komunitní práci, rozvoj o
 
 ## Základní informace o projektu
 
-\*\*Název projektu:\*\* iKOMPAS
+Název projektu
+: iKOMPAS
 
-\*\*Registrační číslo:\*\* SC_25_001-037
+Registrační číslo
+: SC_25_001-037
 
-\*\*Příjemce dotace:\*\* InBáze, z. s.
+Příjemce dotace
+: InBáze, z. s.
 
-\*\*Doba realizace:\*\* 1. 9. 2026 – 31. 8. 2028
+Doba realizace
+: 1.9.2026 – 31.8.2028
 
-\*\*Kontakt:\*\* Ing. Alexandr Zpěvák, zpevak@inbaze.cz
+Kontakt
+: Ing. Alexandr Zpěvák, zpevak@inbaze.cz
 
 **Projekt iKOMPAS je podpořen z Programu švýcarsko-české spolupráce v rámci Druhého švýcarského příspěvku. Program přispívá ke snižování hospodářských a sociálních rozdílů v rámci Evropské unie.**
 
-\*\*Více informací o programu:\*\* [Program švýcarsko-české spolupráce](https://www.swiss-contribution.cz/)
+Více informací o programu: [Program švýcarsko-české spolupráce](https://www.swiss-contribution.cz/)
 
 ## Partneři projektu
 
-\*\*InBáze, z. s.\*\* – interkulturní podpora, sociální a právní poradenství, psychosociální pomoc, komunitní aktivity a podpora mladých lidí.
-
-\*\*Dobroženky, z. s.\*\* – kariérní poradenství, rozvoj kompetencí a komunitní podpora žen.
-
-\*\*CeHuPo – Centrum humanitární pomoci, z. s.\*\* – interkulturní práce a psychosociální podpora v Ústeckém kraji.
-
-\*\*Ščedryk, společenství Ukrajinců Olomouckého kraje, z. ú.\*\* – interkulturní podpora a pomoc zranitelným skupinám v Olomouckém kraji.
-
-\*\*HOMETOWN association, z. s.\*\* – interkulturní podpora a asistence cizincům ve Zlínském kraji.
+- **InBáze, z. s.** – interkulturní podpora, sociální a právní poradenství, psychosociální pomoc, komunitní aktivity a podpora mladých lidí.
+- **Dobroženky, z. s.** – kariérní poradenství, rozvoj kompetencí a komunitní podpora žen.
+- **CeHuPo – Centrum humanitární pomoci, z. s.** – interkulturní práce a psychosociální podpora v Ústeckém kraji.
+- **Ščedryk, společenství Ukrajinců Olomouckého kraje, z. ú.** – interkulturní podpora a pomoc zranitelným skupinám v Olomouckém kraji.
+- **HOMETOWN association, z. s.** – interkulturní podpora a asistence cizincům ve Zlínském kraji.
 
 ## Co projekt nabízí?
 
