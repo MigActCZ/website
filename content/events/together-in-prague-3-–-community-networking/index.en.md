@@ -1,6 +1,6 @@
 ---
 title: Together in Prague 3 – community networking
-featured: 1.webp
+featured: 2-1.webp
 date: 2026-11-05
 dtstart: 2026-11-25T17:00:00
 dtend: 2026-11-25T19:30:00

@@ -1,6 +1,6 @@
 ---
 title: Společně na Praze 3 – komunitní networking
-featured: 2.webp
+featured: 1-1.webp
 date: 2026-11-05
 dtstart: 2026-11-25T17:00:00
 dtend: 2026-11-25T19:30:00
