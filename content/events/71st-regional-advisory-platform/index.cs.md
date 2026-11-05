@@ -10,7 +10,7 @@ registration: https://docs.google.com/forms/d/e/1FAIpQLSdRhYi7it5d2GY2UxF_C7OkDi
 projects: []
 ---
 
-\*\*Integrační centrum Praha zve na 71. regionální poradní platformu na téma Spolupráce mezi městskými částmi a neziskovými organizacemi, která se uskuteční ve čtvrtek 19. listopadu 2026 od 13:00 do 16:00 hodin v Sále architektů,\*\* [**Staroměstské náměstí 1, Praha 1**](https://www.google.com/maps/search/Starom%C4%9Bstsk%C3%A9+n%C3%A1m.+1)
+**Integrační centrum Praha zve na 71. regionální poradní platformu na téma Spolupráce mezi městskými částmi a neziskovými organizacemi, která se uskuteční ve čtvrtek 19. listopadu 2026 od 13:00 do 16:00 hodin v Sále architektů,** [**Staroměstské náměstí 1, Praha 1**](https://www.google.com/maps/search/Starom%C4%9Bstsk%C3%A9+n%C3%A1m.+1)
 
 Listopadovou platformu věnujeme představení projektů, které se přímo zaměřují na vzájemnou spolupráci městských částí (MČ) a neziskových organizací nebo mohou městským částem pomoci při řešení aktuálních problémů. 
 
@@ -18,7 +18,7 @@ Listopadovou platformu věnujeme představení projektů, které se přímo zam�
 
 Organizace [MigAct](https://migact.cz/) ve spolupráci s městskými částmi vytváří příznivé prostředí pro občanskou participaci (nejen) obyvatel s migračním původem. [Sdružení pro integraci a migraci (SIMI)](https://migrace.com/) a organizace [La Strada](https://www.strada.cz/) svými projekty reagují na nárůst počtu mladých lidí z Ukrajiny ohrožených pracovním vykořisťováním a obchodem s lidmi.
 
-### Program
+### **Program**
 
 **13:00–13:30 | Aktuality z MHMP a ICP**
 
@@ -40,7 +40,7 @@ Prostor pro síťování a občerstvení.
 
 _Změna programu vyhrazena._
 
-### Registrace
+### **Registrace**
 
 Pro přihlášení na platformu [vyplňte registrační formulář](https://go.sparkpostmail.com/f/a/dB_V26aoA_clFNu27klh0g~~/AAA-fBA~/XDCf2Yxw9h8HsHVMG77ffQENk22Aw3QMv1CUrvdc4ieupEHDWECvkOkJCuy7P6XqrlnylSkh_T9KPnKoBUr9uMBt64MsDTmASfphU_92mhAAdmy6wuUCfAIBEDJg9T0Q) nejpozději do pátku 13. listopadu 2026. Kapacita prostor je omezená, proto doporučujeme přihlásit se co nejdříve.
 
