@@ -23,4 +23,4 @@ Szubjektív Értékek Alapítvány, Hungary
 
 **Contact:** Natallia Allen, [natallia@migact.net](mailto:natallia@migact.net)
 
-\*\*Funded by the European Union.\*\*
+**Funded by the European Union.**
