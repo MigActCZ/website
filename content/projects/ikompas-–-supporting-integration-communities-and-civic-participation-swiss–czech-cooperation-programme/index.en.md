@@ -17,28 +17,19 @@ We’re working together to create an environment where people with migration ex
 The iKOMPAS project combines direct support for foreigners, community work, the development of civic and professional skills, and training for professionals.
 Its aim is to facilitate the integration of people with migration experience into Czech society, strengthen their independence, and contribute to mutual understanding and social cohesion.
 
-\*\*The project is implemented by
-InBáze, z. s.,
-in cooperation with five partner organisations.
-Activities take place in Prague and selected regions of the Czech Republic,
-particularly the Ústí nad Labem, Olomouc, and Zlín regions.\*\*
+The project is implemented by InBáze, z. s., in cooperation with five partner organisations. Activities take place in Prague and selected regions of the Czech Republic, particularly the Ústí nad Labem, Olomouc, and Zlín regions.
 
 ## Project Information
 
-Project title
-: iKOMPAS
+**Project title:** iKOMPAS
 
-Registration number
-: SC_25_001-037
+**Registration number:** SC_25_001-037
 
-Grant recipient
-: InBáze, z. s.
+**Grant recipient:** InBáze, z. s.
 
-Project duration
-: 1 September 2026 – 31 August 2028
+**Project duration:** 1 September 2026 – 31 August 2028
 
-Contact
-: Ing. Alexandr Zpěvák, zpevak@inbaze.cz
+**Contact:** Ing. Alexandr Zpěvák, zpevak@inbaze.cz
 
 **The iKOMPAS project is supported by the Swiss–Czech Cooperation Programme under the Second Swiss Contribution. The programme contributes to reducing economic and social disparities within the European Union.**
 
@@ -46,8 +37,8 @@ More information about the programme: [Swiss–Czech Cooperation Programme](http
 
 ## Project Partners
 
-- \*\*InBáze, z. s.\*\* (lead partner) – Intercultural support, social and legal counselling, psychosocial assistance, community activities, and support for young people.
-- MigAct z.s. – promoting civic participation, running an incubation programme, and supporting initiatives led by people with migration experience.
+- **InBáze, z. s.** (lead partner) – Intercultural support, social and legal counselling, psychosocial assistance, community activities, and support for young people.
+- **MigAct z.s.** – promoting civic participation, running an incubation programme, and supporting initiatives led by people with migration experience.
 - \*\*Dobroženky, z. s.\*\* – Career counselling, skills development, and community support for women.
 - \*\*CeHuPo – Centrum humanitární pomoci, z. s.\*\* – Intercultural support and psychosocial assistance in the Ústí nad Labem Region.
 - \*\*Ščedryk, společenství Ukrajinců Olomouckého kraje, z. ú.\*\* – Intercultural support and assistance to vulnerable groups in the Olomouc Region.
