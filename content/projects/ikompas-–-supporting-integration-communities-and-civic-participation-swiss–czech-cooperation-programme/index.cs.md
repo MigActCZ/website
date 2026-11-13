@@ -41,11 +41,12 @@ Více informací o programu: [Program švýcarsko-české spolupráce](https://
 
 ## Partneři projektu
 
-- **InBáze, z. s.** – interkulturní podpora, sociální a právní poradenství, psychosociální pomoc, komunitní aktivity a podpora mladých lidí.
-- **Dobroženky, z. s.** – kariérní poradenství, rozvoj kompetencí a komunitní podpora žen.
-- **CeHuPo – Centrum humanitární pomoci, z. s.** – interkulturní práce a psychosociální podpora v Ústeckém kraji.
-- **Ščedryk, společenství Ukrajinců Olomouckého kraje, z. ú.** – interkulturní podpora a pomoc zranitelným skupinám v Olomouckém kraji.
-- **HOMETOWN association, z. s.** – interkulturní podpora a asistence cizincům ve Zlínském kraji.
+- \*\*InBáze, z. s.\*\* – interkulturní podpora, sociální a právní poradenství, psychosociální pomoc, komunitní aktivity a podpora mladých lidí.
+- MigAct z.s. – občanská participace, inkubační program a podpora migrantských iniciativ.
+- \*\*Dobroženky, z. s.\*\* – kariérní poradenství, rozvoj kompetencí a komunitní podpora žen.
+- \*\*CeHuPo – Centrum humanitární pomoci, z. s.\*\* – interkulturní práce a psychosociální podpora v Ústeckém kraji.
+- \*\*Ščedryk, společenství Ukrajinců Olomouckého kraje, z. ú.\*\* – interkulturní podpora a pomoc zranitelným skupinám v Olomouckém kraji.
+- \*\*HOMETOWN association, z. s.\*\* – interkulturní podpora a asistence cizincům ve Zlínském kraji.
 
 ## Co projekt nabízí?
 
@@ -80,3 +81,5 @@ Kvalitní integrační služby vyžadují kvalifikované pracovníky a spoluprá
 ## Komu je projekt určen?
 
 Projekt je určen především státním příslušníkům třetích zemí legálně pobývajícím v České republice, včetně žadatelů o mezinárodní ochranu a jejích držitelů. Jednotlivé aktivity se zaměřují zejména na osoby, které při integraci čelí zvýšeným překážkám, například rodiny s dětmi, ženy, mladé lidi nebo osoby v náročné životní situaci. Do vybraných aktivit se může zapojit také širší veřejnost a odborníci, kteří pracují s lidmi s migrační zkušeností.
+
+**Financováno z Programu švýcarsko-české spolupráce v rámci Druhého švýcarského příspěvku a ze státního rozpočtu České republiky.**
