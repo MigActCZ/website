@@ -6,6 +6,10 @@ dtend: 2028-08-31
 partners:
   - swiss-czech-cooperation-programme
   - inbaze
+  - dobroženky
+  - cehupo
+  - ščedryk
+  - hometown-association
 ---
 
 We’re working together to create an environment where people with migration experience can find their way more easily, develop their potential, and take an active part in society.
@@ -21,11 +25,11 @@ into Czech society,
 strengthen their independence,
 and contribute to mutual understanding and social cohesion.
 
-**The project is implemented by
+\*\*The project is implemented by
 InBáze, z. s.,
 in cooperation with five partner organisations.
 Activities take place in Prague and selected regions of the Czech Republic,
-particularly the Ústí nad Labem, Olomouc, and Zlín regions.**
+particularly the Ústí nad Labem, Olomouc, and Zlín regions.\*\*
 
 ## Project Information
 
@@ -50,11 +54,11 @@ More information about the programme: [Swiss–Czech Cooperation Programme](http
 
 ## Project Partners
 
-- **InBáze, z. s.** – Intercultural support, social and legal counselling, psychosocial assistance, community activities, and support for young people.
-- **Dobroženky, z. s.** – Career counselling, skills development, and community support for women.
-- **CeHuPo – Centrum humanitární pomoci, z. s.** – Intercultural support and psychosocial assistance in the Ústí nad Labem Region.
-- **Ščedryk, společenství Ukrajinců Olomouckého kraje, z. ú.** – Intercultural support and assistance to vulnerable groups in the Olomouc Region.
-- **HOMETOWN association, z. s.** – Intercultural support and assistance for foreigners in the Zlín Region.
+- \*\*InBáze, z. s.\*\* – Intercultural support, social and legal counselling, psychosocial assistance, community activities, and support for young people.
+- \*\*Dobroženky, z. s.\*\* – Career counselling, skills development, and community support for women.
+- \*\*CeHuPo – Centrum humanitární pomoci, z. s.\*\* – Intercultural support and psychosocial assistance in the Ústí nad Labem Region.
+- \*\*Ščedryk, společenství Ukrajinců Olomouckého kraje, z. ú.\*\* – Intercultural support and assistance to vulnerable groups in the Olomouc Region.
+- \*\*HOMETOWN association, z. s.\*\* – Intercultural support and assistance for foreigners in the Zlín Region.
 
 ## What Does the Project Offer?
 

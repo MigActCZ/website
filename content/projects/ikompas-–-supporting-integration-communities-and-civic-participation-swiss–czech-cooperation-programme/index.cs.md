@@ -6,6 +6,10 @@ dtend: 2028-08-31
 partners:
   - swiss-czech-cooperation-programme
   - inbaze
+  - dobroženky
+  - cehupo
+  - ščedryk
+  - hometown-association
 ---
 
 Společně vytváříme prostředí, ve kterém se lidé s migrační zkušeností mohou lépe orientovat, rozvíjet svůj potenciál a aktivně se zapojovat do života společnosti.
