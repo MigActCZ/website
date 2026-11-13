@@ -41,7 +41,7 @@ Více informací o programu: [Program švýcarsko-české spolupráce](https://
 
 ## Partneři projektu
 
-- \*\*InBáze, z. s.\*\* – interkulturní podpora, sociální a právní poradenství, psychosociální pomoc, komunitní aktivity a podpora mladých lidí.
+- \*\*InBáze, z. s.\*\* (vedoucí partner) – interkulturní podpora, sociální a právní poradenství, psychosociální pomoc, komunitní aktivity a podpora mladých lidí.
 - MigAct z.s. – občanská participace, inkubační program a podpora migrantských iniciativ.
 - \*\*Dobroženky, z. s.\*\* – kariérní poradenství, rozvoj kompetencí a komunitní podpora žen.
 - \*\*CeHuPo – Centrum humanitární pomoci, z. s.\*\* – interkulturní práce a psychosociální podpora v Ústeckém kraji.
