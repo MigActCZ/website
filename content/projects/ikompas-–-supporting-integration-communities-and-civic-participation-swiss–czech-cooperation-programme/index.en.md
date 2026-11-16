@@ -39,10 +39,10 @@ More information about the programme: [Swiss–Czech Cooperation Programme](http
 
 - **InBáze, z. s.** (lead partner) – Intercultural support, social and legal counselling, psychosocial assistance, community activities, and support for young people.
 - **MigAct z.s.** – promoting civic participation, running an incubation programme, and supporting initiatives led by people with migration experience.
-- \*\*Dobroženky, z. s.\*\* – Career counselling, skills development, and community support for women.
-- \*\*CeHuPo – Centrum humanitární pomoci, z. s.\*\* – Intercultural support and psychosocial assistance in the Ústí nad Labem Region.
-- \*\*Ščedryk, společenství Ukrajinců Olomouckého kraje, z. ú.\*\* – Intercultural support and assistance to vulnerable groups in the Olomouc Region.
-- \*\*HOMETOWN association, z. s.\*\* – Intercultural support and assistance for foreigners in the Zlín Region.
+- **Dobroženky, z. s.** – Career counselling, skills development, and community support for women.
+- **CeHuPo – Centrum humanitární pomoci, z. s.** – Intercultural support and psychosocial assistance in the Ústí nad Labem Region.
+- **Ščedryk, společenství Ukrajinců Olomouckého kraje, z. ú.** – Intercultural support and assistance to vulnerable groups in the Olomouc Region.
+- **HOMETOWN association, z. s.** – Intercultural support and assistance for foreigners in the Zlín Region.
 
 ## What Does the Project Offer?
 
