@@ -6,6 +6,7 @@ timeZone: Europe/Prague
 disableKinds:
   - taxonomy
   - term
+removePathAccents: true
 params:
   contact:
     phone: +420 774 324 035
