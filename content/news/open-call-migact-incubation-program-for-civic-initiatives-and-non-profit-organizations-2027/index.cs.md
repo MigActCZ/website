@@ -6,12 +6,8 @@ resources:
   - oc_incubation-program_cz.pdf
 ---
 
-**O Programu**
+Jste aktivní v pražském občanském životě a jste připraveni svou iniciativu rozjet nebo posunout dál? Zapojte se do inkubačního programu MigAct – bezplatného 30+ hodinového programu, který pomáhá neformálním skupinám a spolkům posílit jejich kapacity, propojit se s ostatními a znásobit jejich dopad.
 
 Inkubační program MigAct je zaměřen na podporu, profesionalizaci a posilování kapacit neformálních skupin a spolků založených či vedených lidmi s migračním původem, zejména pak mladými dospělými (18–30 let) žijícími v Praze.
 
-Je určen týmům, které se aktivně zapojují do veřejného života, ať už chtějí své aktivity teprve rozjet, nebo je posunout dál.
-
-Cílem programu je podpořit projekty a aktivity, které přispívají k větší sounáležitosti v občanské společnosti, rozvíjejí a propojují místní komunity, podporují aktivní občanství nebo sledují jiné veřejně a společensky prospěšné cíle (jako je ochrana životního prostředí, podpora zranitelných skupin obyvatel a další).
-
-**Více informací naleznete v přiložené otevřené výzvě.**
+**Více informací a odkaz na registraci naleznete v přiložené otevřené výzvě.**
