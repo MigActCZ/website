@@ -4,7 +4,6 @@ date: 2026-11-25
 project: ikompas-–-supporting-integration-communities-and-civic-participation-swiss–czech-cooperation-programme
 resources:
   - oc_incubation-program_cz.pdf
-  - open-call-cz.webp
 ---
 
 Jste aktivní v pražském občanském životě a jste připraveni svou iniciativu rozjet nebo posunout dál? Zapojte se do inkubačního programu MigAct – bezplatného 30+ hodinového programu, který pomáhá neformálním skupinám a spolkům posílit jejich kapacity, propojit se s ostatními a znásobit jejich dopad.
